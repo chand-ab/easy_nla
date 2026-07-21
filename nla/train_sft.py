@@ -30,6 +30,42 @@ import unicodedata
 from pathlib import Path
 from typing import cast
 
+
+def _dp_mask_visible_devices():
+    """Data-parallel (torchrun) launches only: pin THIS rank to exactly one GPU
+    BEFORE torch/CUDA initializes, taking a STRICT SUBSET of the allocation.
+
+    Same contract as train_rl_vllm._dp_mask_visible_devices, minus the
+    tensor-parallel arithmetic — SFT holds one full model replica per rank, so
+    it is always 1 GPU per rank. No-op when WORLD_SIZE is unset or 1, so
+    single-GPU behavior is byte-identical.
+    """
+    ws = int(os.environ.get("WORLD_SIZE", "1"))
+    if ws <= 1 or os.environ.get("_DP_DEVICES_MASKED") == "1":
+        return
+    lr = int(os.environ.get("LOCAL_RANK", "0"))
+    visible = os.environ.get("CUDA_VISIBLE_DEVICES")
+    if visible:
+        devs = [d for d in visible.split(",") if d.strip()]
+    else:
+        import subprocess
+        out = subprocess.run(
+            ["nvidia-smi", "--query-gpu=index", "--format=csv,noheader"],
+            capture_output=True, text=True)
+        devs = [x.strip() for x in out.stdout.splitlines() if x.strip()]
+        assert devs, ("DP run (WORLD_SIZE>1) but CUDA_VISIBLE_DEVICES is unset AND "
+                      "nvidia-smi enumeration failed — can't assign a GPU per rank.")
+    assert len(devs) >= ws, (
+        f"CUDA_VISIBLE_DEVICES has {len(devs)} GPUs but WORLD_SIZE={ws} — "
+        f"SFT needs one full model replica per rank.")
+    os.environ["CUDA_VISIBLE_DEVICES"] = devs[lr]
+    os.environ["_DP_DEVICES_MASKED"] = "1"
+    print(f"[dp] rank {os.environ.get('RANK','?')} (local {lr}): "
+          f"CUDA_VISIBLE_DEVICES={os.environ['CUDA_VISIBLE_DEVICES']}", flush=True)
+
+
+_dp_mask_visible_devices()   # MUST run before `import torch` below
+
 import numpy as np
 import pyarrow.parquet as pq
 import torch
@@ -587,6 +623,38 @@ def main():
     apply_config_defaults(p)   # YAML (--config) -> argparse defaults; CLI still overrides
     args = p.parse_args()
 
+    # ---- data parallelism (torchrun) -------------------------------------
+    # One full model replica per rank on a disjoint slice of each global batch,
+    # gradients averaged before the step == one full-batch step, N x faster.
+    # world_size==1 (no torchrun) makes every `is_dist` branch below a no-op, so
+    # single-GPU behavior is unchanged.
+    #
+    # Manual all-reduce rather than nn.DistributedDataParallel: the AV path runs
+    # gradient checkpointing with a re-firing injection hook and a mostly-frozen
+    # LoRA parameter set, which DDP's autograd-hook bucketing handles badly
+    # (unused-parameter errors / missed recompute grads). This is the same
+    # approach train_rl_vllm.py already uses.
+    world_size = int(os.environ.get("WORLD_SIZE", "1"))
+    rank = int(os.environ.get("RANK", "0"))
+    is_dist = world_size > 1
+    is_main = rank == 0
+    if is_dist:
+        from datetime import timedelta
+
+        import torch.distributed as dist
+        torch.cuda.set_device(0)   # rank is masked to one GPU => cuda:0 is it
+        # Long timeout: rank 0 runs the held-out eval and checkpoint save while
+        # the other ranks sit in the next all-reduce. NCCL's default 600 s
+        # watchdog would abort them mid-eval.
+        dist.init_process_group(backend="nccl", timeout=timedelta(hours=2),
+                                device_id=torch.device("cuda:0"))
+        assert torch.cuda.device_count() == 1, (
+            f"[dp] rank sees {torch.cuda.device_count()} GPUs, expected 1 "
+            f"(device masking failed).")
+
+    # Seeded AFTER the dist setup but identically on every rank: the manual
+    # all-reduce keeps replicas in sync only if they START identical, and both
+    # the LoRA A matrices and the AR value_head are randomly initialized.
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
     device = "cuda"
@@ -843,15 +911,19 @@ def main():
               f"{args.heldout_parquet}; baseline (paper def) = {heldout_baseline:.4f}")
 
     # ---- wandb ----
-    if not args.no_wandb:
+    # Rank-0 owns all side effects (wandb, stdout, checkpoints, held-out evals):
+    # the replicas are bit-identical after every all-reduce, so rank 0's copy is
+    # authoritative and N-way duplicate runs/writes would just race.
+    if not args.no_wandb and is_main:
         wandb.init(project=args.wandb_project, name=args.wandb_name,
                    group=args.wandb_group,
                    tags=(args.wandb_tags.split(",") if args.wandb_tags else None),
                    config=vars(args))
 
     save_dir = Path(args.save_dir)
-    save_dir.mkdir(parents=True, exist_ok=True)
-    save_resolved_config(args, save_dir)   # snapshot merged config for reproducibility
+    if is_main:
+        save_dir.mkdir(parents=True, exist_ok=True)
+        save_resolved_config(args, save_dir)   # snapshot merged config for reproducibility
 
     # ---- debug sampling: fixed example set + accumulating table ----
     sample_rows = rows[: args.n_samples] if args.sample_every > 0 else []
@@ -865,8 +937,17 @@ def main():
 
     grad_accum = args.gradient_accumulation_steps
     eff_batch = args.batch_size * grad_accum
+    # --batch-size is the GLOBAL batch, split across ranks (same convention as
+    # train_rl_vllm's --batch-prompts). Keeping it global means the effective
+    # batch — and so the tuned LR — is identical at any GPU count; only the
+    # wall-clock changes.
+    assert args.batch_size % world_size == 0, (
+        f"--batch-size ({args.batch_size}) must be divisible by world_size "
+        f"{world_size}; it is the global batch, split across ranks.")
+    local_bs = args.batch_size // world_size
     print(f"[loop] {args.num_steps} steps, batch={args.batch_size} × "
-          f"grad_accum={grad_accum} = eff_batch={eff_batch}")
+          f"grad_accum={grad_accum} = eff_batch={eff_batch}"
+          + (f" | {world_size} ranks × local_bs={local_bs}" if is_dist else ""))
 
     for step in range(args.num_steps):
         t0 = time.time()
@@ -879,10 +960,15 @@ def main():
 
         for accum_idx in range(grad_accum):
             # ---- pick batch ----
+            # Every rank drives the SAME rng/perm/cursor (identical seed and call
+            # order), then takes a disjoint slice of the global batch — so the
+            # union across ranks is exactly the batch a single-GPU run would see,
+            # with no row processed twice.
             if cursor + args.batch_size > len(perm):
                 rng.shuffle(perm)
                 cursor = 0
-            chunk_rows = [rows[i] for i in perm[cursor:cursor + args.batch_size]]
+            _lo = cursor + rank * local_bs
+            chunk_rows = [rows[i] for i in perm[_lo:_lo + local_bs]]
             cursor += args.batch_size
 
             # ---- forward + loss ----
@@ -943,11 +1029,38 @@ def main():
             accum_n += 1
 
         # ---- step ----
+        if is_dist:
+            # Average grads across ranks BEFORE clipping, so the clip sees the
+            # true full-batch gradient (clipping per-rank first would scale each
+            # shard differently and change the update).
+            #
+            # Note this averages per-rank means. In AV mode each rank normalizes
+            # its own loss by ITS response-token count, so when ranks hold
+            # different token counts the result is a rank-mean rather than an
+            # exact global token-weighted mean — the standard DDP approximation,
+            # and unbiased in expectation over shuffled shards.
+            for p in trainable:
+                if p.grad is None:
+                    p.grad = torch.zeros_like(p)
+                dist.all_reduce(p.grad, op=dist.ReduceOp.SUM)
+                p.grad /= world_size
         grad_norm = torch.nn.utils.clip_grad_norm_(trainable, args.max_grad_norm)
         optim.step()
         sched.step()
 
         mean_loss = accum_loss / max(accum_n, 1)
+        if is_dist:
+            # Log the GLOBAL loss, not this rank's shard — otherwise the printed
+            # curve is a noisier 1/world_size sample of what is actually trained on.
+            _l = torch.tensor([mean_loss, accum_av_entropy], device=device,
+                              dtype=torch.float64)
+            dist.all_reduce(_l, op=dist.ReduceOp.SUM)
+            mean_loss = float(_l[0]) / world_size
+            accum_av_entropy = float(_l[1]) / world_size
+            _t = torch.tensor([float(accum_resp_tokens)], device=device,
+                              dtype=torch.float64)
+            dist.all_reduce(_t, op=dist.ReduceOp.SUM)   # tokens SUM, not mean
+            accum_resp_tokens = int(_t[0])
         cur_lr = sched.get_last_lr()[0]
 
         log = {
@@ -976,10 +1089,11 @@ def main():
             log.update(ar_dbg)
             line += (f" | cos {ar_dbg['cos_pred_gold']:.3f} "
                      f"| |p|/|g| {ar_dbg['pred_norm']:.1f}/{ar_dbg['gold_norm']:.1f}")
-        print(line, flush=True)
+        if is_main:
+            print(line, flush=True)
 
         # ---- periodic example-generation table (debug) ----
-        if args.sample_every > 0 and (
+        if is_main and args.sample_every > 0 and (
             (step + 1) % args.sample_every == 0 or (step + 1) == args.num_steps
         ):
             if args.mode == "av":
@@ -1022,7 +1136,7 @@ def main():
                     )
 
         # ---- held-out val token-CE/ppl (AV mode, doc-disjoint) ----
-        if heldout_av_rows is not None and (
+        if is_main and heldout_av_rows is not None and (
             (step + 1) % args.heldout_every == 0 or (step + 1) == args.num_steps
         ):
             model.eval()
@@ -1036,7 +1150,7 @@ def main():
             print(f"  [heldout@{step}] val_loss {h_ce:.4f} | val_ppl "
                   f"{log['heldout_ppl']:.3f} (n={h_n})", flush=True)
         # ---- held-out FVE (AR mode, doc-disjoint) ----
-        if heldout_pairs is not None and (
+        if is_main and heldout_pairs is not None and (
             (step + 1) % args.heldout_every == 0 or (step + 1) == args.num_steps
         ):
             model.eval()
@@ -1052,11 +1166,13 @@ def main():
             print(f"  [heldout@{step}] mse {h_mse:.4f} | FVE {h_fve:.1f}% "
                   f"(n={h_n})", flush=True)
 
-        if not args.no_wandb:
+        if not args.no_wandb and is_main:
             wandb.log(log, step=step)
 
         # ---- save ----
-        if (step + 1) % args.save_every == 0 or (step + 1) == args.num_steps:
+        if is_main and (
+            (step + 1) % args.save_every == 0 or (step + 1) == args.num_steps
+        ):
             out_dir = save_dir / f"iter_{step + 1:07d}"
             out_dir.mkdir(parents=True, exist_ok=True)
             print(f"[save] → {out_dir}", flush=True)
@@ -1098,9 +1214,16 @@ def main():
                 if sidecar_yaml.exists():
                     shutil.copy2(sidecar_yaml, out_dir / "nla_meta.yaml")
 
-    print("done.", flush=True)
-    if not args.no_wandb:
+    if is_main:
+        print("done.", flush=True)
+    if not args.no_wandb and is_main:
         wandb.finish()
+    if is_dist:
+        # Ranks reach here at different times (rank 0 does the final save); the
+        # barrier keeps the group alive until every rank is done, then tears it
+        # down cleanly instead of leaking the NCCL communicator on exit.
+        dist.barrier()
+        dist.destroy_process_group()
 
 
 if __name__ == "__main__":

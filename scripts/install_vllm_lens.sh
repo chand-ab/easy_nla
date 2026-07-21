@@ -16,9 +16,16 @@ uv venv "$VENV" --python 3.12
 # transformers==4.57.1 (repo-wide pin): vllm's resolver otherwise pulls v5,
 #   whose apply_chat_template break crashes the trainers. peft/bitsandbytes/wandb
 #   are needed by nla.train_rl_vllm itself (this venv runs the trainer).
+# peft==0.18.1: peft 0.19.x's set_peft_model_state_dict unconditionally imports
+#   EmbeddingParallel from transformers.integrations.tensor_parallel, which does
+#   not exist in the pinned transformers 4.57.1 -> ImportError. It is guarded by
+#   `torch.distributed.is_initialized()`, so it only fires on DISTRIBUTED adapter
+#   loads: single-process merge_lora_to_hf.py is unaffected, but every torchrun
+#   train_rl_vllm run with --av-adapter (the README's recommended warm-start)
+#   dies at startup on all ranks. 0.18.1 is the newest peft without that import.
 uv pip install --python "$VENV/bin/python" \
   "vllm==0.19.0" "vllm-lens==1.1.0" \
-  "transformers==4.57.1" "peft" "bitsandbytes" "wandb" \
+  "transformers==4.57.1" "peft==0.18.1" "bitsandbytes" "wandb" \
   --torch-backend=cu128
 
 echo "=== verify (imports vllm._C -> exercises libcudart) ==="

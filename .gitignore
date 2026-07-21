@@ -32,5 +32,8 @@ data/
 # editor / OS / notebook noise
 .ipynb_checkpoints/
 .DS_Store
+# Claude Code local settings + its atomic-write temp files (shared settings.json
+# is not matched, so it can still be committed if you want one).
+.claude/settings.local.json*
 .venv/
 venv/
