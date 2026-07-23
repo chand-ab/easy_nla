@@ -613,6 +613,14 @@ def main():
                    help="Cap training rows (smoke runs)")
     p.add_argument("--save-every", type=int, default=500)
     p.add_argument("--seed", type=int, default=0)
+    p.add_argument("--init-seed", type=int, default=None,
+                   help="Seed for torch RNG (LoRA A / AR value_head init). "
+                        "Default = --seed. Split from --data-seed so a run can "
+                        "vary the LoRA init while holding the data order fixed "
+                        "(seed-influence experiment).")
+    p.add_argument("--data-seed", type=int, default=None,
+                   help="Seed for the training-data shuffle order (numpy). "
+                        "Default = --seed.")
     p.add_argument("--wandb-project", default="nla-qwen3-8b")
     p.add_argument("--wandb-name", default=None)
     p.add_argument("--wandb-group", default="warmstart",
@@ -655,8 +663,16 @@ def main():
     # Seeded AFTER the dist setup but identically on every rank: the manual
     # all-reduce keeps replicas in sync only if they START identical, and both
     # the LoRA A matrices and the AR value_head are randomly initialized.
-    torch.manual_seed(args.seed)
-    np.random.seed(args.seed)
+    # --init-seed / --data-seed split from --seed: lets a run vary the LoRA init
+    # independently of the data order (both default to --seed). Resolved here and
+    # written back so the data-shuffle rng below reads the same values. All ranks
+    # pass identical seeds, preserving the "replicas start identical" invariant.
+    if args.init_seed is None:
+        args.init_seed = args.seed
+    if args.data_seed is None:
+        args.data_seed = args.seed
+    torch.manual_seed(args.init_seed)
+    np.random.seed(args.data_seed)
     device = "cuda"
     dtype = torch.bfloat16
     if args.lr is None:
@@ -930,7 +946,7 @@ def main():
     sample_table_data = []
 
     # ---- training loop ----
-    rng = np.random.default_rng(args.seed)
+    rng = np.random.default_rng(args.data_seed)
     perm = list(range(len(rows)))
     rng.shuffle(perm)
     cursor = 0
