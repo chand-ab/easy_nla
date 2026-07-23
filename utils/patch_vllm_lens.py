@@ -375,7 +375,12 @@ HUNKS = [
     (OLD_HOOK, NEW_HOOK),
     (OLD_CALL, NEW_CALL, [SATISFIED_CALL]),
     (OLD_FIND, NEW_FIND),
-    (OLD_COUNT_GLOBAL, NEW_COUNT_GLOBAL),
+    # Satisfied-marker makes this hunk idempotent: STEERLOG_GLOBAL inserts
+    # text between get_and_reset_steer_count and _find_steering_configs,
+    # breaking NEW_COUNT_GLOBAL's verbatim match on a re-run; without this
+    # the OLD anchor (still present) caused a DOUBLE insertion. The marker
+    # is absent on a fresh venv (applies) and present after (skips).
+    (OLD_COUNT_GLOBAL, NEW_COUNT_GLOBAL, ["\ndef get_and_reset_steer_count("]),
     (OLD_COUNT_INCR, NEW_COUNT_INCR),
     (OLD_STEERLOG_GLOBAL, NEW_STEERLOG_GLOBAL),
     (OLD_STEERLOG_SIG, NEW_STEERLOG_SIG),
