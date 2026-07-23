@@ -37,3 +37,8 @@ data/
 .claude/settings.local.json*
 .venv/
 venv/
+
+
+## plan
+plan.md
+goal.png
