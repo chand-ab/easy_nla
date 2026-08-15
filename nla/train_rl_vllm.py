@@ -1033,10 +1033,18 @@ def main():
                    help="vLLM tensor_parallel_size. Set to 4 for 4-GPU runs to "
                         "speed up rollout ~3-4×. Training-side HF actor stays on "
                         "GPU 0 only (LoRA's 122M trainable params don't need FSDP).")
-    p.add_argument("--ipc-weight-sync", action="store_true", default=False,
+    p.add_argument("--ipc-weight-sync", action=argparse.BooleanOptionalAction,
+                   default=False,
                    help="GPU->GPU weight sync via CUDA-IPC handles instead of the "
-                        "default GPU->CPU->pickle->IPC->GPU path. Much faster (no 16GB "
-                        "CPU round-trip ×workers) but needs same-node + GPU P2P. "
+                        "GPU->CPU->pickle->IPC->GPU path. Much faster (no 16GB "
+                        "CPU round-trip ×workers) but needs same-node + GPU P2P, and "
+                        "costs GPU MEMORY: sync_actor_to_vllm builds the merged "
+                        "state_dict into `buckets` BEFORE pushing, and under ipc those "
+                        "tensors stay resident (`if not ipc: t = t.cpu()` is skipped) — "
+                        "a second full copy of the model, ~23.5 GB for a 12B. Use "
+                        "--no-ipc-weight-sync when the trainer and engine share a GPU "
+                        "with little slack. configs/rl_vllm.yaml sets this true, so "
+                        "the negated form is the only way to turn it off. "
                         "Validate via FVE tracking single-GPU before trusting it.")
     p.add_argument("--save-every", type=int, default=50)
     p.add_argument("--resume-from-lora", type=str, default=None,
