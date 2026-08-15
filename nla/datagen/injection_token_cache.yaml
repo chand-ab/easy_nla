@@ -1,6 +1,9 @@
 Qwen/Qwen3-8B:
   char: ㈎
   token_id: 149705
+google/gemma-3-12b-it:
+  char: ㈜
+  token_id: 246566
 meta-llama/Llama-3.3-70B-Instruct:
   char: ㎡
   token_id: 105565
