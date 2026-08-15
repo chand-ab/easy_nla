@@ -450,44 +450,53 @@ def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True):
         if only_adapted and any("modules_to_save" in k for k in sd):
             print("[sync] modules_to_save present — falling back to full push", flush=True)
             only_adapted = False
+        # Pass 1: bucket by NAME only — no tensors built yet. Building every
+        # merged tensor before pushing any is what made the ipc path hold a
+        # second full copy of the model on GPU (the CPU path hides it because
+        # `t = t.cpu()` offloads each one as it is built). Same reasoning that
+        # already made _delta lazy above; the merged tensors just never got it.
+        # Layer params look like "model.layers.<N>.<...>" (Llama family) or
+        # "transformer.h.<N>.<...>" (GPT-2/Falcon). Non-layer params (embed,
+        # norm, lm_head) go to "_other". Arch-aware: with a hardcoded prefix
+        # a GPT-arch model dumps ~16GB into one "_other" chunk and blows
+        # msgspec's 4GB single-encode cap on the CPU-pickle path.
         buckets = defaultdict(list)
-        for k, v in sd.items():
+        for k in sd:
             if "lora_" in k or "modules_to_save" in k:
                 continue
             new_k = _clean(k)
             if only_adapted and new_k not in lora_mods:
                 continue   # frozen + already in vLLM from --av-ckpt: skip
-            # ipc: keep on GPU (we ship a CUDA-IPC handle, not the data).
-            # else: CPU detach (the apply_model pickle path serialises the data).
-            if new_k in lora_mods:
-                # merged copy, fp32-accumulated then rounded once — bit-exact vs
-                # merge_adapter (peft adds the fp32 delta un-rounded on CPU;
-                # pre-rounding the delta to bf16 double-rounds). Actor untouched.
-                d = _delta(lora_mods[new_k])
-                t = (v.detach().float() + d.float()).to(v.dtype).detach()
-                del d
-                if not ipc:
-                    t = t.cpu()
-            else:
-                t = v.detach() if ipc else v.detach().cpu()
-            # Layer params look like "model.layers.<N>.<...>" (Llama family) or
-            # "transformer.h.<N>.<...>" (GPT-2/Falcon). Non-layer params (embed,
-            # norm, lm_head) go to "_other". Arch-aware: with a hardcoded prefix
-            # a GPT-arch model dumps ~16GB into one "_other" chunk and blows
-            # msgspec's 4GB single-encode cap on the CPU-pickle path.
             _m_layer = re.match(r"(?:model\.layers|transformer\.h)\.(\d+)\.", new_k)
-            if _m_layer:
-                buckets[f"layer_{int(_m_layer.group(1)):03d}"].append((new_k, t))
-            else:
-                buckets["_other"].append((new_k, t))
+            key = f"layer_{int(_m_layer.group(1)):03d}" if _m_layer else "_other"
+            buckets[key].append((k, new_k))
+
+        # Pass 2: build + push ONE bucket at a time, freeing before the next.
         # Push _other first (small), then each layer in order.
         import functools as _ft
         if ipc:
             from torch.multiprocessing.reductions import reduce_tensor
         for group_name in ["_other"] + sorted(k for k in buckets if k != "_other"):
-            chunk = buckets[group_name]
-            if not chunk:
+            names = buckets[group_name]
+            if not names:
                 continue
+            chunk = []
+            for k, new_k in names:
+                v = sd[k]
+                # ipc: keep on GPU (we ship a CUDA-IPC handle, not the data).
+                # else: CPU detach (the apply_model pickle path serialises the data).
+                if new_k in lora_mods:
+                    # merged copy, fp32-accumulated then rounded once — bit-exact vs
+                    # merge_adapter (peft adds the fp32 delta un-rounded on CPU;
+                    # pre-rounding the delta to bf16 double-rounds). Actor untouched.
+                    d = _delta(lora_mods[new_k])
+                    t = (v.detach().float() + d.float()).to(v.dtype).detach()
+                    del d
+                    if not ipc:
+                        t = t.cpu()
+                else:
+                    t = v.detach() if ipc else v.detach().cpu()
+                chunk.append((new_k, t))
             if ipc:
                 # reduce_tensor -> (rebuild_fn, args): a small picklable CUDA-IPC
                 # handle, NOT the data. Source tensors (the merged params) stay alive
@@ -496,6 +505,10 @@ def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True):
                 llm.apply_model(_ft.partial(_vllm_load_weights_ipc, handle_chunk=handles))
             else:
                 llm.apply_model(_ft.partial(_vllm_load_weights_chunk, chunk=chunk))
+            # apply_model is synchronous, so the workers are done mapping these
+            # handles; releasing here caps residency at one bucket instead of
+            # the whole model.
+            del chunk
         # Prefix cache keys on token IDs; weights changed, cache is stale.
         try:
             llm.llm_engine.reset_prefix_cache()
