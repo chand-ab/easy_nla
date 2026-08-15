@@ -2041,6 +2041,16 @@ def main():
         # nothing (at grad_accum=4 that's 3 wasted syncs per real update). ----
         vllm_sync_secs = 0.0
         if is_accum_end:
+            # Release cached-but-unused blocks first. sync_actor_to_vllm rebuilds
+            # each adapted weight out-of-place in fp32 (v.float() + d.float()),
+            # which needs a few hundred MB of TRANSIENT headroom per tensor — the
+            # largest here is gate/up_proj at 3840x15360 = 226 MB in fp32. When the
+            # trainer and a vLLM engine co-reside (12B at layer 47 leaves the rank
+            # head ~1 GB spare), the step's freed-but-cached blocks are enough to
+            # starve that allocation and OOM the sync *after* a successful step.
+            # Costs one allocator flush per weight update; the sync itself is
+            # seconds, so the re-allocation is noise against it.
+            torch.cuda.empty_cache()
             vllm_sync_secs = sync_actor_to_vllm(actor, llm, ipc=args.ipc_weight_sync)
             print(f"  [vllm sync@{step+1}] {vllm_sync_secs:.1f}s", flush=True)
 
