@@ -25,6 +25,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from nla.models import NLACriticModel
 from nla.train_sft import init_critic_from_base
+from nla.utils.arch_adapters import resolve_text_model
 
 
 def _copy_sidecar(src: Path, dst: Path):
@@ -37,6 +38,11 @@ def _copy_sidecar(src: Path, dst: Path):
 def merge_av(base_ckpt: str, av_dir: Path, out: Path):
     print(f"[av] base={base_ckpt} + LoRA={av_dir} -> {out}")
     base = AutoModelForCausalLM.from_pretrained(base_ckpt, torch_dtype=torch.bfloat16)
+    # The AV adapter is saved against the RESOLVED text model (train_sft), so the
+    # merge target must be resolved too or PeftModel matches no keys and silently
+    # merges nothing. Also keeps the merged checkpoint text-only, which is what
+    # vLLM and the RL actor load. Pass-through for Qwen/Llama.
+    base = resolve_text_model(base)
     peft = PeftModel.from_pretrained(base, str(av_dir))
     merged = peft.merge_and_unload()
     out.mkdir(parents=True, exist_ok=True)

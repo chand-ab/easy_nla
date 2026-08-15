@@ -741,6 +741,16 @@ def main():
         elif args.device_map == "auto" and hasattr(model, "hf_device_map"):
             print(f"[av] device_map=auto → GPUs used: "
                   f"{sorted({d for d in model.hf_device_map.values() if isinstance(d, int)})}")
+        # Same routing the AR path (build_truncated_backbone) already does.
+        # Multimodal wrappers (Gemma-3) nest the text model under
+        # .language_model, and resolving matters BEFORE LoRA for two reasons:
+        # resolve_lora_target_modules' pattern is unanchored, so on the wrapper
+        # it also matches the VISION tower's self_attn (421M params that never
+        # run); and the saved adapter would key against the wrapper tree, so it
+        # would not load onto the resolved actor train_rl_vllm builds for the
+        # --av-adapter warm start. Pass-through for Qwen/Llama.
+        from nla.utils.arch_adapters import resolve_text_model
+        model = resolve_text_model(model)
         if args.use_lora:
             if quant_config is not None:
                 model = prepare_model_for_kbit_training(
