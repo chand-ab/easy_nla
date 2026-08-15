@@ -68,12 +68,27 @@ def _shard_bounds(n_rows: int, world: int) -> list[tuple[int, int]]:
     return list(zip(edges[:-1], edges[1:]))
 
 
-def _keep_indices(args: argparse.Namespace, n_rows: int) -> np.ndarray:
-    """Row indices whose text retokenizes back to exactly n_raw_tokens.
+def _keep_indices(args: argparse.Namespace, n_rows: int) -> tuple[np.ndarray, np.ndarray]:
+    """Row indices to extract, plus the token length of each kept row.
 
     One cheap CPU pass with the fast (Rust, multithreaded) tokenizer, so the GPU
-    workers never see a row that would land on the wrong position. See the module
-    docstring for why the failures are dropped rather than repositioned.
+    workers never see a row that would land on the wrong position.
+
+    Two modes, because `n_raw_tokens` is only meaningful under the tokenizer that
+    wrote it:
+
+    - default (same-model regen): a row is kept iff its text retokenizes to
+      exactly `n_raw_tokens`. See the module docstring for why the failures are
+      dropped rather than repositioned.
+    - `--cross-model` (retarget onto a DIFFERENT base model): `n_raw_tokens` came
+      from the source model's tokenizer and will disagree on nearly every row, so
+      there is nothing to validate against — it is RECOMPUTED here instead. This
+      is not a weakening of the check: the contract is "the activation at the
+      final token of `detokenized_text_truncated`", which is well-defined for any
+      tokenizer, and the recomputed lengths are what the workers then assert
+      against. The rows the same-model path drops (text ending mid-multibyte, so
+      it no longer round-trips) are kept here — under a different tokenizer that
+      text is simply text, and its final token is as valid as any other.
     """
     tok = load_tokenizer(args.base_model)
     tbl = pq.ParquetFile(args.inp).read(columns=[TEXT_COL, NTOK_COL]).slice(0, n_rows)
@@ -85,6 +100,20 @@ def _keep_indices(args: argparse.Namespace, n_rows: int) -> np.ndarray:
     for s in range(0, n_rows, step):
         enc = tok(texts[s : s + step], add_special_tokens=True)["input_ids"]
         got[s : s + len(enc)] = [len(e) for e in enc]
+    got = np.minimum(got, args.max_length)
+
+    if args.cross_model:
+        keep = np.arange(n_rows)
+        src_med, new_med = int(np.median(ntoks)), int(np.median(got))
+        n_repl = sum(1 for t in texts if "�" in t)
+        print(
+            f"cross-model retarget: keeping all {n_rows} rows; n_raw_tokens "
+            f"RECOMPUTED under {args.base_model}'s tokenizer "
+            f"(median {src_med} -> {new_med} tokens/row, "
+            f"{n_repl} rows contain U+FFFD from the source truncation)",
+            flush=True,
+        )
+        return keep, got
 
     keep = np.nonzero(got == np.minimum(ntoks, args.max_length))[0]
     dropped = n_rows - len(keep)
@@ -97,9 +126,11 @@ def _keep_indices(args: argparse.Namespace, n_rows: int) -> np.ndarray:
     assert frac <= args.max_drop_frac, (
         f"{frac:.2%} of rows fail the retokenize check (limit {args.max_drop_frac:.2%}). "
         f"That is tokenizer drift, not multibyte edge cases — check that "
-        f"--base-model {args.base_model} is the model datagen actually used."
+        f"--base-model {args.base_model} is the model datagen actually used. "
+        f"If you are deliberately retargeting this dataset onto a different base "
+        f"model, pass --cross-model."
     )
-    return keep
+    return keep, got[keep]
 
 
 @torch.no_grad()
@@ -128,7 +159,12 @@ def _run_shard(rank: int, args: argparse.Namespace, bounds: list[tuple[int, int]
     pf = pq.ParquetFile(args.inp)
     tbl = pf.read(columns=[TEXT_COL, NTOK_COL, LAYER_COL]).take(pa.array(keep))
     texts = tbl.column(TEXT_COL).to_pylist()
-    ntoks = tbl.column(NTOK_COL).to_numpy()
+    # Lengths come from the parent's tokenizer pass (already clamped to
+    # max_length), not from the NTOK_COL column: under --cross-model the column
+    # holds the SOURCE model's counts and is wrong for this tokenizer. In the
+    # same-model path the two are equal by construction — every surviving row
+    # round-tripped — so this is one code path for both modes.
+    ntoks = np.load(Path(args.shard_dir) / "ntoks_kept.npy")[lo:hi]
     if args.layer is not None:
         layer_index = args.layer
     else:
@@ -178,11 +214,11 @@ def _run_shard(rank: int, args: argparse.Namespace, bounds: list[tuple[int, int]
         attn = enc["attention_mask"].to(device, non_blocking=True)
 
         lengths = attn.sum(dim=1)
-        # Guard, not a filter: main() already dropped the rows that fail this.
-        # Tripping here means the parent's tokenizer and the worker's disagree.
-        expect = torch.tensor(
-            [min(int(ntoks[i]), args.max_length) for i in batch], device=device
-        )
+        # Guard, not a filter: main() already resolved the expected length of
+        # every row (dropping mismatches in the same-model path, recomputing them
+        # under --cross-model). Tripping here means the parent's tokenizer and
+        # the worker's disagree.
+        expect = torch.tensor([int(ntoks[i]) for i in batch], device=device)
         assert torch.equal(lengths, expect), (
             f"rank{rank} batch{bi}: retokenized length != n_raw_tokens "
             f"(first mismatch {int((lengths != expect).nonzero()[0][0])}) "
@@ -236,6 +272,15 @@ def main() -> None:
     p.add_argument("--limit", type=int, default=0, help="debug: only first N rows")
     p.add_argument("--max-drop-frac", type=float, default=0.01,
                    help="abort if more than this fraction fails the retokenize check")
+    p.add_argument("--cross-model", action="store_true",
+                   help="Retarget onto a DIFFERENT base model than the one that "
+                        "wrote the dataset (e.g. Qwen-tokenized text -> Gemma "
+                        "activations). Skips the n_raw_tokens round-trip check, "
+                        "which can only hold for the original tokenizer, and "
+                        "RECOMPUTES that column under --base-model's tokenizer. "
+                        "The extracted position is unchanged in meaning: the "
+                        "final token of detokenized_text_truncated. Pair it with "
+                        "--layer, since a new model's depths are its own.")
     p.add_argument("--layer", type=int, default=None,
                    help="Extraction layer. Default: the dataset's own activation_layer. "
                         "Set this to RETARGET a dataset at a different model/depth — "
@@ -274,9 +319,12 @@ def main() -> None:
     args.shard_dir = args.shard_dir or f"{args.out}.shards"
     Path(args.shard_dir).mkdir(parents=True, exist_ok=True)
 
-    keep_idx = _keep_indices(args, n_rows)
+    keep_idx, ntoks_kept = _keep_indices(args, n_rows)
     np.save(Path(args.shard_dir) / "keep_idx.npy", keep_idx)
+    np.save(Path(args.shard_dir) / "ntoks_kept.npy", ntoks_kept)
     n_keep = len(keep_idx)
+    assert len(ntoks_kept) == n_keep, (
+        f"length bookkeeping: {len(ntoks_kept)} lengths for {n_keep} kept rows")
 
     bounds = _shard_bounds(n_keep, args.gpus)
     print(f"{n_keep} rows -> {args.gpus} GPU shards {bounds[0]}..{bounds[-1]}", flush=True)
@@ -306,6 +354,15 @@ def main() -> None:
                 chunk = chunk.set_column(
                     chunk.schema.get_field_index(LAYER_COL), LAYER_COL,
                     pa.array(np.full(chunk.num_rows, args.layer, dtype=np.int64)))
+            if args.cross_model:
+                # Same reasoning for the token count: the source model's
+                # n_raw_tokens does not describe this parquet any more, and a
+                # stale value here would put any later same-model regen (or any
+                # consumer that trusts it to locate the final token) on the
+                # wrong position.
+                chunk = chunk.set_column(
+                    chunk.schema.get_field_index(NTOK_COL), NTOK_COL,
+                    pa.array(ntoks_kept[lo:hi].astype(np.int64)))
             if writer is None:
                 writer = pq.ParquetWriter(args.out, chunk.schema, compression="zstd")
             writer.write_table(chunk)
