@@ -105,6 +105,7 @@ from nla.utils import rl_logging
 from nla.utils import build_prompt_text, cjk_fraction, critic_predict, register_karvonen_hook
 from nla.utils.vllm_steer import read_reset_steer_count
 from nla.utils.run_config import add_config_arg, apply_config_defaults, save_resolved_config
+from nla.utils.arch_adapters import resolve_text_model
 
 # Evals selectable via the config `evals:` list. base_fve is the core held-out FVE.
 KNOWN_EVALS = ("base_fve", "text_judges")
@@ -1273,9 +1274,15 @@ def main():
         # vLLM still serves the merged --av-ckpt; the sync merges 'default'.
         from peft import PeftModel
         print(f"[actor] CONTINUED: base {args.base_ckpt} + SFT adapter {args.av_adapter}")
-        actor = AutoModelForCausalLM.from_pretrained(
+        # Same routing train_sft.py:306 and NLACriticModel.from_pretrained do.
+        # Without it, a multimodal wrapper (Gemma-3) keeps its text model nested
+        # under .language_model, so the SFT adapter — saved against the RESOLVED
+        # `model.layers.*` names — matches nothing here and PEFT silently
+        # random-inits the policy (arch_adapters.resolve_text_model docstring).
+        # Pass-through for Qwen/Llama, which have no .language_model.
+        actor = resolve_text_model(AutoModelForCausalLM.from_pretrained(
             args.base_ckpt, torch_dtype=torch.bfloat16, attn_implementation="sdpa",
-        ).to(device)
+        )).to(device)
         if args.gradient_checkpointing:
             actor.enable_input_require_grads()
         # Resume: the trainable 'default' adapter is the saved RL LoRA; the frozen
@@ -1304,9 +1311,13 @@ def main():
             "pass --base-ckpt <raw base> --av-adapter <sft adapter dir>.",
             flush=True,
         )
-        actor = AutoModelForCausalLM.from_pretrained(
+        # Resolve before attaching LoRA: resolve_lora_target_modules' pattern is
+        # unanchored, so on an unresolved Gemma-3 wrapper it also matches the
+        # VISION tower's `.self_attn.q_proj` etc. and would train adapters on
+        # 421M params of a tower that never runs.
+        actor = resolve_text_model(AutoModelForCausalLM.from_pretrained(
             args.av_ckpt, torch_dtype=torch.bfloat16, attn_implementation="sdpa",
-        ).to(device)
+        )).to(device)
         from nla.utils.arch_adapters import resolve_lora_target_modules
         lora_cfg = LoraConfig(
             r=args.lora_r, lora_alpha=args.lora_alpha,
