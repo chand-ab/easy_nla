@@ -42,6 +42,7 @@ Per step:
 """
 
 import argparse
+import functools
 import math
 import os
 import re
@@ -403,6 +404,224 @@ def _vllm_load_weights_ipc(model, handle_chunk):
     del rebuilt
 
 
+# ---- NCCL weight-sync transport ---------------------------------------------
+# Worker-side state. The worker processes import this module already (that is how
+# apply_model's pickled partials resolve), so a module-level dict is where the
+# communicator lives between pushes: apply_model hands the callable the model and
+# nothing else, so there is no other place to keep it.
+_NCCL_SYNC = {}
+
+
+def _vllm_nccl_init(model, host, port, world_size):
+    """apply_model helper: join the trainer's weight-update process group.
+
+    TP RANK 0 IS DELIBERATELY EXCLUDED. It is colocated with the trainer — the
+    rank head carries the actor and an engine shard on one GPU — and NCCL allows
+    only one rank per device per communicator, so including it fails outright at
+    ncclCommInitRank with 'invalid usage' (measured 2026-08-16: worker TP0 raised,
+    TP1 on the partner GPU did not). The group is therefore trainer + workers
+    1..tp-1, every member on its own device, and rank 0 gets its copy in a second
+    hop over the workers' existing TP group — also one-rank-per-device, also legal.
+    """
+    import torch as _torch
+    from vllm.distributed.parallel_state import (
+        get_tensor_model_parallel_rank, get_tp_group)
+    from vllm.distributed.utils import StatelessProcessGroup
+    from vllm.distributed.device_communicators.pynccl import PyNcclCommunicator
+
+    if _NCCL_SYNC.get("init"):
+        return   # idempotent: one group per worker for the life of the run
+    tp_rank = get_tensor_model_parallel_rank()
+    _NCCL_SYNC["tp_rank"] = tp_rank
+    _NCCL_SYNC["device"] = _torch.device(f"cuda:{_torch.cuda.current_device()}")
+    # The relay source is TP rank 1 — the first worker that IS in the trainer's
+    # group, so it holds the bucket before the fan-out starts.
+    _NCCL_SYNC["relay_src"] = 1
+    _NCCL_SYNC["tp_group"] = get_tp_group()
+    print(f"[sync:init] worker tp_rank={tp_rank} entered "
+          f"(relay={_NCCL_SYNC['relay_src']}, dev={_NCCL_SYNC['device']})", flush=True)
+    if tp_rank == _NCCL_SYNC["relay_src"]:
+        # Only the relay joins the trainer's group: the bytes have to cross the
+        # TP group anyway to reach rank 0, so sending them from the trainer once
+        # and fanning out there beats sending them tp-1 times.
+        pg = StatelessProcessGroup.create(
+            host=host, port=port, rank=1, world_size=world_size)
+        print(f"[sync:init] worker tp_rank={tp_rank} store joined", flush=True)
+        _NCCL_SYNC["pg"] = pg
+        _NCCL_SYNC["comm"] = PyNcclCommunicator(pg, device=_NCCL_SYNC["device"])
+        print(f"[sync:init] worker tp_rank={tp_rank} comm up", flush=True)
+    _NCCL_SYNC["init"] = True
+    print(f"[sync:init] worker tp_rank={tp_rank} done", flush=True)
+
+
+def _nccl_checksum(t):
+    """Collision-resistant enough to catch a garbled transfer: sum and sum-of-
+    squares in float64, plus the element count. A wrong-bytes bug moves both
+    moments; comparing shapes alone would not."""
+    f = t.detach().float()
+    return (float(f.sum().item()), float((f * f).sum().item()), int(t.numel()))
+
+
+def _vllm_nccl_recv_chunk(model, meta, verify=False):
+    """apply_model helper: receive one bucket over NCCL, then load it.
+
+    `meta` is a list of (name, shape, dtype) — a few hundred bytes, not weights.
+    The trainer broadcasts the tensors in this same order from a helper thread
+    while this call blocks its main thread.
+
+    Unlike the CUDA-IPC path this holds no handle on the trainer's memory: the
+    bytes are copied into buffers this process owns, so the trainer's allocator
+    can reuse the source block the moment the broadcast completes. That is the
+    whole reason this transport exists — IPC's exports stayed pinned into the
+    next push and cost ~2x the pushed weights (~36 GB at 12B).
+    """
+    import torch as _torch
+
+    dev = _NCCL_SYNC["device"]
+    comm = _NCCL_SYNC.get("comm")           # set on the relay worker only
+    tp_group = _NCCL_SYNC["tp_group"]
+    relay_src = _NCCL_SYNC["relay_src"]
+    chunk = []
+    for name, shape, dtype in meta:
+        buf = _torch.empty(tuple(shape), dtype=dtype, device=dev)
+        if comm is not None:
+            comm.broadcast(buf, src=0)      # hop 1: from the trainer
+        # hop 2: relay to the colocated rank over the TP group. Every worker
+        # takes part (broadcast is collective), and all of them reach this in the
+        # same bucket order, so the two hops cannot interleave differently.
+        tp_group.broadcast(buf, src=relay_src)
+        chunk.append((name, buf))
+    # The broadcasts are async on the stream; load_weights slices these buffers
+    # into the TP shards, so the data has to have landed first.
+    _torch.cuda.synchronize()
+    # Checksum what ARRIVED, before load_weights consumes it. This verifies the
+    # transport — the thing that is new — rather than load_weights, which is
+    # shared with the already-trusted CPU path. Returned to the trainer, which
+    # compares against what it sent.
+    sums = [(name, _nccl_checksum(t)) for name, t in chunk] if verify else None
+    model.load_weights(iter(chunk))
+    _torch.cuda.synchronize()
+    del chunk
+    return sums
+
+
+def _nccl_send_chunk(comm, tensors, device, errbox):
+    """Trainer-side broadcast of one bucket, run on a helper thread.
+
+    apply_model is synchronous — it blocks the caller until every worker returns —
+    so the trainer cannot both send and wait for the receivers on one thread. The
+    sends therefore happen here while the main thread sits in apply_model.
+
+    PyTorch's current stream is thread-local but the default stream is the same
+    underlying stream for both threads, so the merged tensors built on the main
+    thread are ordered before these broadcasts without explicit synchronisation.
+
+    Exceptions go to `errbox` rather than the thread's default handler, which
+    would print and vanish: the receivers would then block forever in their
+    broadcasts and the run would hang with no reason recorded. A raise here still
+    hangs the push, but the cause is on the caller's side to report.
+    """
+    try:
+        if device.type == "cuda":   # cpu tensors only ever occur under test
+            torch.cuda.set_device(device)
+        for t in tensors:
+            comm.broadcast(t, src=0)
+    except BaseException as e:
+        errbox.append(e)
+
+
+def _nccl_sync_init(llm, vllm_tp, device, host="127.0.0.1", timeout_s=300):
+    """Build the trainer<->workers NCCL group. Returns the trainer's communicator.
+
+    Binds the rendezvous port and hands the socket to StatelessProcessGroup rather
+    than picking a number and hoping: a port derived from the rank collides with
+    the TIME_WAIT leavings of a crashed run, which fails as a 5-minute hang at
+    startup rather than an error.
+    """
+    import socket
+    import threading
+    from vllm.distributed.utils import StatelessProcessGroup
+    from vllm.distributed.device_communicators.pynccl import PyNcclCommunicator
+
+    # PyNcclCommunicator compares tensor.device against its own with strict
+    # equality, and torch.device("cuda") != torch.device("cuda:0"). main() holds
+    # the actor device as the bare string "cuda", so an unnormalised value here
+    # builds a communicator that rejects every tensor pushed through it — as an
+    # assertion inside the rendezvous, which is a silent hang unless the error is
+    # surfaced. Pin the index.
+    device = torch.device(device)
+    if device.type == "cuda" and device.index is None:
+        device = torch.device(f"cuda:{torch.cuda.current_device()}")
+
+    if vllm_tp < 2:
+        raise SystemExit(
+            "[fatal] --nccl-weight-sync needs --vllm-tp >= 2. At tp=1 the only "
+            "worker is colocated with the trainer, and NCCL cannot put two ranks "
+            "of one communicator on the same device — there is no second worker "
+            "to receive the push and relay it.")
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    sock.bind((host, 0))
+    port = sock.getsockname()[1]
+    sock.listen(vllm_tp + 8)
+    # Two members only: the trainer and the ONE relay worker. TP rank 0 is
+    # colocated with the trainer (NCCL forbids two ranks per device) and the
+    # remaining workers pick the bucket up from the relay's TP broadcast.
+    world_size = 2
+    box = {}
+
+    def _join():
+        try:
+            pg = StatelessProcessGroup.create(
+                host=host, port=port, rank=0, world_size=world_size,
+                listen_socket=sock,
+            )
+            print(f"[sync:init] trainer store joined (port {port})", flush=True)
+            box["pg"] = pg
+            box["comm"] = PyNcclCommunicator(pg, device=device)
+            print("[sync:init] trainer comm up", flush=True)
+        except BaseException as e:      # surfaced on the main thread below
+            box["err"] = e
+
+    def _dispatch():
+        try:
+            print("[sync:init] dispatching worker init via apply_model", flush=True)
+            llm.apply_model(functools.partial(
+                _vllm_nccl_init, host=host, port=port, world_size=world_size))
+        except BaseException as e:
+            box["dispatch_err"] = e
+
+    # The DISPATCH goes on the helper thread and the RENDEZVOUS stays on the
+    # main one, not the other way round. Both release the GIL (measured), so
+    # either order runs — but with the rendezvous on a helper, a failure inside
+    # PyNcclCommunicator lands in a box that is only read AFTER apply_model
+    # returns, and apply_model never returns because the workers are blocked
+    # waiting for a trainer that just died. That is an infinite hang with an
+    # empty log, which is exactly how this path failed the first time. On the
+    # main thread the same failure raises immediately, with its traceback.
+    th = threading.Thread(target=_dispatch, name="nccl-sync-init", daemon=True)
+    th.start()
+    _join()
+    if "err" in box:
+        raise RuntimeError(
+            "NCCL weight-sync rendezvous failed on the trainer") from box["err"]
+    if "comm" not in box:
+        raise RuntimeError(
+            f"NCCL weight-sync rendezvous did not complete within {timeout_s}s")
+    th.join(timeout=timeout_s)
+    if "dispatch_err" in box:
+        raise RuntimeError(
+            "NCCL weight-sync init failed inside the vLLM workers") from box["dispatch_err"]
+    if th.is_alive():
+        raise RuntimeError(
+            f"vLLM workers did not finish joining the weight-sync group within "
+            f"{timeout_s}s (trainer side is up)")
+    print(f"[sync] NCCL weight-sync group up on port {port} (trainer -> TP "
+          f"rank 1 -> the other {vllm_tp - 1} workers over the TP group)",
+          flush=True)
+    return box["comm"]
+
+
 def memory_census(tag, actor, critic=None, optims=(), topk=15):
     """One-shot breakdown of what actually holds CUDA memory.
 
@@ -467,7 +686,8 @@ def memory_census(tag, actor, critic=None, optims=(), topk=15):
               flush=True)
 
 
-def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True, census=False):
+def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True, census=False,
+                       nccl_comm=None, profile=False, verify_sync=False):
     """Colocate weight sync: push the LoRA-merged state to vLLM, OUT-OF-PLACE.
 
     Unlike TRL's merge_adapter() -> push -> unmerge_adapter() pattern, this never
@@ -487,6 +707,14 @@ def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True, census=False):
     nothing. Measured 1.5-3x faster than the old full merge-push (H200,
     node-dependent), ~200MiB transient GPU. Auto-falls back to a full push
     if modules_to_save is present (those train outside the deltas).
+
+    nccl_comm (from _nccl_sync_init): GPU->GPU sync by NCCL broadcast to the TP
+    workers. Preferred over both other paths where it fits: the CPU path costs
+    ~137 s per push at 12B (~21 GB of adapted weights, pageable copies through a
+    pickle), and IPC — while 1.7 s — keeps its exports pinned into the next push
+    and needs ~2x the pushed weights, which does not fit on an 80 GB card. A
+    broadcast copies into worker-owned buffers, so residency stays at one bucket
+    (~0.45 GB) and nothing is retained after the push returns.
 
     ipc=True: GPU->GPU sync via CUDA-IPC handles instead of the default CPU path.
     Ships ~tiny reduce_tensor() handles over apply_model (weights stay on GPU0;
@@ -572,16 +800,27 @@ def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True, census=False):
             print(f"[sync:census] ipc={ipc} buckets={len(buckets)} | start "
                   f"allocated {torch.cuda.memory_allocated()/2**30:.2f} GB", flush=True)
             _c_start = torch.cuda.memory_allocated()
+        # Where the wall-clock actually goes, split three ways. The CPU path costs
+        # 137 s at 12B and the fixes for each region are different — pinned
+        # staging only helps `offload`, cutting bytes only helps `apply` — so the
+        # split, not the total, is what picks the next transport.
+        _prof = {"build": 0.0, "offload": 0.0, "apply": 0.0, "bytes": 0}
         _order = ["_other"] + sorted(k for k in buckets if k != "_other")
         for _bi, group_name in enumerate(_order):
             names = buckets[group_name]
             if not names:
                 continue
             chunk = []
+            if profile:
+                torch.cuda.synchronize()
+                _t_build = time.time()
             for k, new_k in names:
                 v = sd[k]
                 # ipc: keep on GPU (we ship a CUDA-IPC handle, not the data).
                 # else: CPU detach (the apply_model pickle path serialises the data).
+                # nccl, like ipc, keeps the merged tensor on the GPU — it is the
+                # broadcast source. Only the CPU path pays the offload.
+                on_gpu = ipc or nccl_comm is not None
                 if new_k in lora_mods:
                     # merged copy, fp32-accumulated then rounded once — bit-exact vs
                     # merge_adapter (peft adds the fp32 delta un-rounded on CPU;
@@ -589,12 +828,61 @@ def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True, census=False):
                     d = _delta(lora_mods[new_k])
                     t = (v.detach().float() + d.float()).to(v.dtype).detach()
                     del d
-                    if not ipc:
+                    if not on_gpu:
+                        if profile:
+                            torch.cuda.synchronize()
+                            _t_off = time.time()
+                            _prof["build"] += _t_off - _t_build
                         t = t.cpu()
+                        if profile:
+                            _prof["offload"] += time.time() - _t_off
+                            _t_build = time.time()
                 else:
-                    t = v.detach() if ipc else v.detach().cpu()
+                    t = v.detach() if on_gpu else v.detach().cpu()
                 chunk.append((new_k, t))
-            if ipc:
+                if profile:
+                    _prof["bytes"] += t.numel() * t.element_size()
+            if profile:
+                torch.cuda.synchronize()
+                _prof["build"] += time.time() - _t_build
+                _t_apply = time.time()
+            if nccl_comm is not None:
+                import threading
+                # Metadata only — the bytes go over NCCL. Send from a helper
+                # thread: apply_model blocks until every worker returns, and the
+                # workers are blocked in their matching broadcasts, so a
+                # same-thread send would deadlock.
+                meta = [(name, tuple(t.shape), t.dtype) for name, t in chunk]
+                errbox = []
+                sender = threading.Thread(
+                    target=_nccl_send_chunk,
+                    args=(nccl_comm, [t for _, t in chunk], chunk[0][1].device, errbox),
+                    name="nccl-sync-send", daemon=True)
+                sender.start()
+                try:
+                    _rets = llm.apply_model(functools.partial(
+                        _vllm_nccl_recv_chunk, meta=meta, verify=verify_sync))
+                finally:
+                    sender.join(timeout=300)
+                if verify_sync:
+                    want = {name: _nccl_checksum(t) for name, t in chunk}
+                    for _wi, got in enumerate(r for r in (_rets or []) if r):
+                        for name, cs in got:
+                            exp = want[name]
+                            if not (abs(cs[0] - exp[0]) <= 1e-3 * (abs(exp[0]) + 1)
+                                    and abs(cs[1] - exp[1]) <= 1e-3 * (abs(exp[1]) + 1)
+                                    and cs[2] == exp[2]):
+                                raise RuntimeError(
+                                    f"NCCL weight-sync CORRUPTION on {name} "
+                                    f"(worker {_wi}): sent {exp}, received {cs}")
+                if sender.is_alive():
+                    raise RuntimeError(
+                        f"NCCL weight-sync send thread hung on bucket {group_name}")
+                if errbox:
+                    raise RuntimeError(
+                        f"NCCL weight-sync send failed on bucket {group_name}"
+                    ) from errbox[0]
+            elif ipc:
                 # reduce_tensor -> (rebuild_fn, args): a small picklable CUDA-IPC
                 # handle, NOT the data. Source tensors (the merged params) stay alive
                 # through this synchronous apply_model, so workers can safely map them.
@@ -602,6 +890,8 @@ def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True, census=False):
                 llm.apply_model(_ft.partial(_vllm_load_weights_ipc, handle_chunk=handles))
             else:
                 llm.apply_model(_ft.partial(_vllm_load_weights_chunk, chunk=chunk))
+            if profile:
+                _prof["apply"] += time.time() - _t_apply
             # apply_model is synchronous, so the workers are done mapping these
             # handles; releasing here caps residency at one bucket instead of
             # the whole model.
@@ -648,6 +938,16 @@ def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True, census=False):
                       f"({_bi + 1}/{len(_order)}): allocated {now/2**30:6.2f} GB "
                       f"(+{(now - _c_start)/2**30:5.2f} since start) "
                       f"peak {torch.cuda.max_memory_allocated()/2**30:6.2f} GB", flush=True)
+        if profile:
+            _gb = _prof["bytes"] / 2**30
+            _tot = time.time() - t0
+            print(f"[sync:profile] transport="
+                  f"{'nccl' if nccl_comm is not None else ('ipc' if ipc else 'cpu')} "
+                  f"| build {_prof['build']:6.1f}s | offload {_prof['offload']:6.1f}s "
+                  f"| apply {_prof['apply']:6.1f}s "
+                  f"| other {_tot - sum(v for k, v in _prof.items() if k != 'bytes'):5.1f}s "
+                  f"| total {_tot:6.1f}s | pushed {_gb:.1f} GB "
+                  f"({_gb / max(_tot, 1e-9):.2f} GB/s effective)", flush=True)
         # Prefix cache keys on token IDs; weights changed, cache is stale.
         try:
             llm.llm_engine.reset_prefix_cache()
@@ -1213,6 +1513,32 @@ def main():
                         "with little slack. configs/rl_vllm.yaml sets this true, so "
                         "the negated form is the only way to turn it off. "
                         "Validate via FVE tracking single-GPU before trusting it.")
+    p.add_argument("--verify-sync", action="store_true", default=False,
+                   help="Checksum every tensor the NCCL transport delivers "
+                        "against what was sent, and abort on mismatch. A "
+                        "wrong-bytes sync does not crash — it degrades the "
+                        "policy — and the downstream signal (eval FVE) samples "
+                        "at temperature 1.0, so it is too noisy to prove the "
+                        "transport correct. Costs a pass over each bucket.")
+    p.add_argument("--sync-profile", action="store_true", default=False,
+                   help="Print a per-sync breakdown (build / offload / apply) "
+                        "of where the weight-push wall-clock goes. The total is "
+                        "already in the step timing; this is for choosing between "
+                        "transports, since each fix targets a different region.")
+    p.add_argument("--nccl-weight-sync", action=argparse.BooleanOptionalAction,
+                   default=False,
+                   help="GPU->GPU weight sync by NCCL broadcast to the TP workers. "
+                        "The transport to prefer when it fits: measured 137 s per "
+                        "push on the CPU path at 12B (~21 GB of adapted weights "
+                        "through pageable copies and a pickle) = 31%% of a 447 s "
+                        "step. Unlike --ipc-weight-sync it retains nothing after "
+                        "the push — the workers copy into their own buffers — so "
+                        "residency stays at one bucket (~0.45 GB) instead of IPC's "
+                        "~2x-the-pushed-weights, which is what made IPC unusable at "
+                        "12B on 80 GB. Needs the workers colocated on the node "
+                        "(they are: the engine is in-process). Mutually exclusive "
+                        "with --ipc-weight-sync. Validate via FVE + the sampler "
+                        "mismatch rate before trusting it.")
     p.add_argument("--critic-device", type=int, default=None,
                    help="GPU index WITHIN this rank's masked slice to hold the "
                         "critic (e.g. 1). Default: same GPU as the actor. With "
@@ -1317,6 +1643,12 @@ def main():
     args = p.parse_args()
 
     # ---- fail-fast checks (BEFORE any model/engine loading) ----
+    if args.nccl_weight_sync and args.ipc_weight_sync:
+        raise SystemExit(
+            "[fatal] --nccl-weight-sync and --ipc-weight-sync are two transports "
+            "for the same push; pick one. configs/rl_vllm.yaml sets "
+            "ipc_weight_sync true, so pass --no-ipc-weight-sync alongside "
+            "--nccl-weight-sync.")
     save_dir = Path(args.save_dir)
     save_dir.mkdir(parents=True, exist_ok=True)
     # Refuse to silently overwrite an existing run: iter_* checkpoints present
@@ -1718,6 +2050,9 @@ def main():
         enable_prefix_caching=False,
     )
     print(f"[vllm] ready", flush=True)
+    # Weight-sync transport. Built once, here, because the rendezvous needs the
+    # engine up and every later push reuses the same communicator.
+    nccl_comm = _nccl_sync_init(llm, args.vllm_tp, device) if args.nccl_weight_sync else None
     # Initial weight sync: push the (fresh) LoRA-merged actor into vLLM.
     # At step 0 the LoRA is zero AND vLLM already loaded the same merged ckpt, so
     # this is a true no-op (~180s wasted). OFF by default; --initial-sync-warmup
@@ -1728,7 +2063,10 @@ def main():
         # would come from the SFT policy (off-policy under our no-ratio surrogate).
         why = "resume" if args.resume_from_lora is not None else "warm-up"
         print(f"[vllm] initial weight sync ({why})", flush=True)
-        sync_secs = sync_actor_to_vllm(actor, llm, ipc=args.ipc_weight_sync)
+        sync_secs = sync_actor_to_vllm(actor, llm, ipc=args.ipc_weight_sync,
+                                       nccl_comm=nccl_comm,
+                                       profile=args.sync_profile,
+                                       verify_sync=args.verify_sync)
         print(f"[vllm] initial sync done in {sync_secs:.1f}s", flush=True)
     else:
         print(f"[vllm] skipping initial sync warm-up (fresh run: vLLM already "
@@ -2246,7 +2584,8 @@ def main():
                 memory_census("pre-sync", actor, critic,
                               (("actor_optim", optim), ("critic_optim", critic_optim)))
             vllm_sync_secs = sync_actor_to_vllm(
-                actor, llm, ipc=args.ipc_weight_sync,
+                actor, llm, ipc=args.ipc_weight_sync, nccl_comm=nccl_comm,
+                profile=args.sync_profile, verify_sync=args.verify_sync,
                 census=(args.memory_census and step == args.start_step))
             print(f"  [vllm sync@{step+1}] {vllm_sync_secs:.1f}s", flush=True)
 

@@ -335,3 +335,78 @@ def test_resumed_adapter_discovery(tmp_dir="/tmp/nla_test_resume_adapter"):
     assert not torch.equal(llm.pushed[q], raw.detach().cpu()), \
         "resumed adapter delta not merged into the push"
     shutil.rmtree(tmp_dir, ignore_errors=True)
+
+
+# ---- NCCL transport ---------------------------------------------------------
+# The broadcast itself needs GPUs and worker processes, so what is testable on
+# CPU is the part that actually broke in review: the metadata contract and the
+# send/receive ORDERING across the helper thread. If sender and receiver ever
+# disagree on order, every weight lands in the wrong tensor — a corruption that
+# looks like a training bug, not a transport bug, so it is worth a test that
+# cannot pass by accident.
+
+class FakeComm:
+    """Records broadcasts onto a queue, standing in for PyNcclCommunicator."""
+
+    def __init__(self):
+        import queue
+        self.q = queue.Queue()
+        self.n = 0
+
+    def broadcast(self, tensor, src):
+        assert src == 0, "trainer must be rank 0 of the update group"
+        self.n += 1
+        self.q.put(tensor.clone())
+
+
+class FakeNcclLLM:
+    """Emulates apply_model for the NCCL path: plays the worker, draining the
+    queue in meta order exactly as _vllm_nccl_recv_chunk does."""
+
+    def __init__(self, comm):
+        self.comm = comm
+        self.pushed = {}
+        self.llm_engine = FakeEngine()
+
+    def apply_model(self, fn):
+        meta = fn.keywords["meta"]
+        for name, shape, dtype in meta:
+            t = self.comm.q.get(timeout=30)
+            assert tuple(t.shape) == tuple(shape), f"{name}: shape != metadata"
+            assert t.dtype == dtype, f"{name}: dtype != metadata"
+            self.pushed[name] = t
+        return [None]
+
+
+def test_nccl_transport_pushes_identical_bytes_to_cpu_path():
+    """Same weights, same keys, whichever transport carries them."""
+    actor = add_lora(tiny_base(), r=8, seed=3)
+    randomize_lora(actor, seed=5)
+
+    cpu_llm = FakeLLM()
+    sync_actor_to_vllm(actor, cpu_llm, ipc=False)
+
+    comm = FakeComm()
+    nccl_llm = FakeNcclLLM(comm)
+    snap = snapshot(actor)
+    sync_actor_to_vllm(actor, nccl_llm, ipc=False, nccl_comm=comm)
+
+    assert set(nccl_llm.pushed) == set(cpu_llm.pushed), "key sets differ by transport"
+    assert comm.n == len(cpu_llm.pushed), \
+        f"broadcast {comm.n} tensors for {len(cpu_llm.pushed)} weights"
+    for k, v in cpu_llm.pushed.items():
+        assert torch.equal(nccl_llm.pushed[k].cpu(), v), f"{k}: transports disagree"
+    assert_bit_identical(actor, snap, ctx="nccl sync")
+
+
+def test_nccl_transport_keeps_tensors_on_device():
+    """The CPU offload must NOT fire: the merged tensor is the broadcast source,
+    and copying it to host first would reintroduce the 137 s that this path
+    exists to remove."""
+    actor = add_lora(tiny_base(), r=8, seed=3)
+    comm = FakeComm()
+    sync_actor_to_vllm(actor, comm_llm := FakeNcclLLM(comm), ipc=False, nccl_comm=comm)
+    p = next(actor.parameters())
+    assert comm_llm.pushed, "nothing pushed"
+    for k, t in comm_llm.pushed.items():
+        assert t.device == p.device, f"{k} left the actor's device before broadcast"
