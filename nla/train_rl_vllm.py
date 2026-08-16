@@ -595,6 +595,32 @@ def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True, census=False):
                 # OOMs partway through a 12B sync.
                 del handles
                 torch.cuda.ipc_collect()
+            if census and _bi == 8:
+                # memory_allocated() counts LIVE blocks, so the growth means
+                # something in THIS process still references each pushed bucket.
+                # Ask gc who, instead of guessing again.
+                import gc as _gc
+                _gc.collect()
+                torch.cuda.synchronize()
+                _known = {p.data_ptr() for p in actor.parameters()}
+                _known |= {p.data_ptr() for p in (critic.parameters() if critic is not None else [])}
+                _big = [o for o in _gc.get_objects()
+                        if torch.is_tensor(o) and o.is_cuda
+                        and o.numel() * o.element_size() > 50 * 2**20
+                        and o.data_ptr() not in _known]
+                print(f"[sync:probe] {len(_big)} live non-param CUDA tensors >50MB "
+                      f"after {_bi + 1} buckets", flush=True)
+                for _t in sorted(_big, key=lambda x: -x.numel() * x.element_size())[:4]:
+                    _refs = _gc.get_referrers(_t)
+                    _kinds = []
+                    for _r in _refs[:8]:
+                        _k = type(_r).__name__
+                        if isinstance(_r, dict):
+                            _k += f"(keys~{list(_r)[:3]})" if len(_r) < 50 else "(bigdict)"
+                        _kinds.append(_k)
+                    print(f"[sync:probe]   {_t.numel()*_t.element_size()/2**20:7.0f} MB "
+                          f"{tuple(_t.shape)} {_t.dtype} nrefs={len(_refs)} {_kinds}",
+                          flush=True)
             if census and (_bi % 8 == 0 or _bi == len(_order) - 1):
                 torch.cuda.synchronize()
                 now = torch.cuda.memory_allocated()
