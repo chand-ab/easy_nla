@@ -377,6 +377,70 @@ def _vllm_load_weights_ipc(model, handle_chunk):
     _torch.cuda.synchronize()
 
 
+def memory_census(tag, actor, critic=None, optims=(), topk=15):
+    """One-shot breakdown of what actually holds CUDA memory.
+
+    Totals from nvidia-smi cannot distinguish "this workload needs N GB" from
+    "an allocator grew to fill N GB", and chasing that difference by varying
+    config is how you burn a dozen runs. This attributes live tensors to
+    params / grads / optimizer state and then lists the largest UNACCOUNTED
+    tensors, which is where a surprise lives.
+    """
+    import gc
+    torch.cuda.synchronize()
+    print(f"[census:{tag}] allocated {torch.cuda.memory_allocated()/2**30:.2f} GB | "
+          f"reserved {torch.cuda.memory_reserved()/2**30:.2f} GB", flush=True)
+
+    seen: set[int] = set()
+
+    def _gb(ts):
+        tot = 0
+        for t in ts:
+            if torch.is_tensor(t) and t.is_cuda:
+                tot += t.numel() * t.element_size()
+        return tot / 2**30
+
+    def _mark(ts):
+        for t in ts:
+            if torch.is_tensor(t) and t.is_cuda:
+                seen.add(t.data_ptr())
+
+    for name, mod in (("actor", actor), ("critic", critic)):
+        if mod is None:
+            continue
+        ps = list(mod.parameters())
+        gs = [p.grad for p in ps]
+        print(f"[census:{tag}]   {name:6s} params {_gb(ps):6.2f} GB   grads {_gb(gs):6.2f} GB",
+              flush=True)
+        _mark(ps)
+        _mark(gs)
+
+    for name, opt in optims:
+        if opt is None:
+            continue
+        st = [v for s in opt.state.values() for v in s.values() if torch.is_tensor(v)]
+        print(f"[census:{tag}]   {name:12s} state {_gb(st):6.2f} GB", flush=True)
+        _mark(st)
+
+    others = []
+    for o in gc.get_objects():
+        try:
+            if torch.is_tensor(o) and o.is_cuda and o.data_ptr() not in seen:
+                others.append(o)
+        except Exception:
+            continue
+    print(f"[census:{tag}]   UNACCOUNTED {_gb(others):.2f} GB across {len(others)} tensors",
+          flush=True)
+    others.sort(key=lambda t: -t.numel() * t.element_size())
+    for t in others[:topk]:
+        sz = t.numel() * t.element_size() / 2**30
+        if sz < 0.01:
+            break
+        print(f"[census:{tag}]      {sz:6.3f} GB  {tuple(t.shape)} {t.dtype} "
+              f"grad_fn={type(t.grad_fn).__name__ if t.grad_fn is not None else None}",
+              flush=True)
+
+
 def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True):
     """Colocate weight sync: push the LoRA-merged state to vLLM, OUT-OF-PLACE.
 
@@ -1059,6 +1123,12 @@ def main():
                         "with little slack. configs/rl_vllm.yaml sets this true, so "
                         "the negated form is the only way to turn it off. "
                         "Validate via FVE tracking single-GPU before trusting it.")
+    p.add_argument("--memory-census", action="store_true", default=False,
+                   help="One-shot CUDA memory breakdown before the first weight "
+                        "sync: params/grads/optimizer state per module, then the "
+                        "largest UNACCOUNTED live tensors. Diagnostic for OOMs "
+                        "where nvidia-smi totals cannot separate 'needs N GB' "
+                        "from 'an allocator grew to N GB'.")
     p.add_argument("--save-every", type=int, default=50)
     p.add_argument("--resume-from-lora", type=str, default=None,
                    help="Directory containing a saved LoRA adapter (iter_NNNNNN); "
@@ -2071,6 +2141,9 @@ def main():
             # starve that allocation and OOM the sync *after* a successful step.
             # Costs one allocator flush per weight update; the sync itself is
             # seconds, so the re-allocation is noise against it.
+            if args.memory_census and step == args.start_step:
+                memory_census("pre-sync", actor, critic,
+                              (("actor_optim", optim), ("critic_optim", critic_optim)))
             torch.cuda.empty_cache()
             vllm_sync_secs = sync_actor_to_vllm(actor, llm, ipc=args.ipc_weight_sync)
             print(f"  [vllm sync@{step+1}] {vllm_sync_secs:.1f}s", flush=True)
