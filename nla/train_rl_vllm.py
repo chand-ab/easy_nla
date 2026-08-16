@@ -602,8 +602,9 @@ def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True, census=False):
                 import gc as _gc
                 _gc.collect()
                 torch.cuda.synchronize()
+                # actor only — `critic` is not in this function's scope, and the
+                # buckets we are hunting come from the actor's state_dict anyway.
                 _known = {p.data_ptr() for p in actor.parameters()}
-                _known |= {p.data_ptr() for p in (critic.parameters() if critic is not None else [])}
                 _big = [o for o in _gc.get_objects()
                         if torch.is_tensor(o) and o.is_cuda
                         and o.numel() * o.element_size() > 50 * 2**20
