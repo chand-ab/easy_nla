@@ -835,9 +835,24 @@ def _allreduce_grads_(params, world_size, measure=False):
         torch.cuda.synchronize()
         wait_s = _time.time() - _t
         _t = _time.time()
+    # The process group is initialised with device_id=cuda:0 (see main), so NCCL
+    # rejects a collective on a tensor from any other device:
+    #   "Attempt to perform collective on tensor not on device passed to
+    #    init_process_group".
+    # --critic-device puts the critic's grads on cuda:1, so stage those through
+    # cuda:0 for the reduction and copy the result back. For the critic's ~277M
+    # trainable params that is ~0.55 GB each way over NVLink, ~20 ms against a
+    # multi-second step. No-op for anything already on the PG device.
+    _pg_dev = torch.device("cuda:0")
     for p in plist:
-        dist.all_reduce(p.grad, op=dist.ReduceOp.SUM)
-        p.grad /= world_size
+        if p.grad.device == _pg_dev:
+            dist.all_reduce(p.grad, op=dist.ReduceOp.SUM)
+            p.grad /= world_size
+        else:
+            _staged = p.grad.to(_pg_dev)
+            dist.all_reduce(_staged, op=dist.ReduceOp.SUM)
+            _staged /= world_size
+            p.grad.copy_(_staged)
     if measure:
         torch.cuda.synchronize()
         comm_s = _time.time() - _t
