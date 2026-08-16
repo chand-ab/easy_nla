@@ -102,7 +102,26 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import wandb
 
 from nla.utils import rl_logging
-from nla.utils import build_prompt_text, cjk_fraction, critic_predict, register_karvonen_hook
+from nla.utils import build_prompt_text, cjk_fraction, register_karvonen_hook
+from nla.utils import critic_predict as _critic_predict_raw
+
+
+def critic_predict(critic, input_ids, attention_mask, mse_scale_f):
+    """critic_predict, transparent to the critic living on another GPU.
+
+    See --critic-device. Inputs move to wherever the critic is, the [B, d_model]
+    output comes back to the caller's device so every call site (scoring, eval,
+    co-training backward) is unchanged. Autograd handles the cross-device hop, so
+    the critic's backward runs on its own GPU. No-op when they share a device.
+    """
+    cdev = next(critic.parameters()).device
+    src = input_ids.device
+    if cdev == src:
+        return _critic_predict_raw(critic, input_ids, attention_mask, mse_scale_f)
+    input_ids = input_ids.to(cdev, non_blocking=True)
+    if attention_mask is not None:
+        attention_mask = attention_mask.to(cdev, non_blocking=True)
+    return _critic_predict_raw(critic, input_ids, attention_mask, mse_scale_f).to(src)
 from nla.utils.vllm_steer import read_reset_steer_count
 from nla.utils.run_config import add_config_arg, apply_config_defaults, save_resolved_config
 from nla.utils.arch_adapters import resolve_text_model
@@ -1179,6 +1198,13 @@ def main():
                         "with little slack. configs/rl_vllm.yaml sets this true, so "
                         "the negated form is the only way to turn it off. "
                         "Validate via FVE tracking single-GPU before trusting it.")
+    p.add_argument("--critic-device", type=int, default=None,
+                   help="GPU index WITHIN this rank's masked slice to hold the "
+                        "critic (e.g. 1). Default: same GPU as the actor. With "
+                        "--vllm-tp>1 the non-head GPUs hold only a vLLM shard and "
+                        "idle through training, while the head carries actor + "
+                        "critic and caps how many data-parallel ranks fit. Moving "
+                        "the critic off the head frees ~25 GB there.")
     p.add_argument("--memory-census", action="store_true", default=False,
                    help="One-shot CUDA memory breakdown before the first weight "
                         "sync: params/grads/optimizer state per module, then the "
@@ -1519,9 +1545,22 @@ def main():
             ar_src = str(_crit_latest)
             print(f"[critic] RESUMING co-trained critic from {ar_src}")
     print(f"[critic] loading {ar_src}")
+    # --critic-device: put the critic on another GPU in THIS rank's slice. With
+    # vllm_tp>1 the non-head GPUs hold only a vLLM shard and sit idle through the
+    # training phase (measured: 0% util, ~25% memory), while the head carries the
+    # actor AND the critic and is the thing that caps data-parallel width. Moving
+    # ~25 GB (params + optimizer + activations) off the head is what buys more
+    # ranks. Transfers are token ids in and [B, d_model] out — tens of KB against
+    # a 12B forward.
+    critic_device = device if args.critic_device is None else f"cuda:{args.critic_device}"
+    if args.critic_device is not None:
+        assert args.critic_device < torch.cuda.device_count(), (
+            f"--critic-device {args.critic_device} but this rank sees only "
+            f"{torch.cuda.device_count()} GPUs (it is masked to its --vllm-tp slice)")
+        print(f"[critic] offloaded to {critic_device} (actor on {device})", flush=True)
     critic = NLACriticModel.from_pretrained(
         ar_src, torch_dtype=torch.bfloat16,
-    ).to(device)
+    ).to(critic_device)
     # NLACriticModel.from_pretrained returns params with requires_grad=True by
     # default. Freeze everything first, then conditionally unfreeze backbone.
     for p_ in critic.parameters():
