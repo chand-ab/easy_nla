@@ -375,6 +375,13 @@ def _vllm_load_weights_ipc(model, handle_chunk):
     rebuilt = [(name, fn(*args)) for name, (fn, args) in handle_chunk]
     model.load_weights(iter(rebuilt))
     _torch.cuda.synchronize()
+    # Drop the mapped views once the copy is done. A CUDA-IPC export pins the
+    # SOURCE block in the trainer's allocator until every peer unmaps it, so
+    # holding these here makes the trainer's memory grow by one bucket per push
+    # (measured: +0.419 GB/bucket, ~20 GB over a full sync) no matter what the
+    # trainer frees on its side. The synchronize above guarantees the copy has
+    # landed, so releasing now is safe.
+    del rebuilt
 
 
 def memory_census(tag, actor, critic=None, optims=(), topk=15):
@@ -581,7 +588,13 @@ def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True, census=False):
             # the whole model.
             del chunk
             if ipc:
+                # Order matters: drop our handles, THEN ipc_collect(). The export
+                # keeps the source block reserved even after the worker unmaps;
+                # ipc_collect is the only thing that reclaims it. Without this the
+                # trainer grows by one bucket per push (+0.419 GB measured) and
+                # OOMs partway through a 12B sync.
                 del handles
+                torch.cuda.ipc_collect()
             if census and (_bi % 8 == 0 or _bi == len(_order) - 1):
                 torch.cuda.synchronize()
                 now = torch.cuda.memory_allocated()
