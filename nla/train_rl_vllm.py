@@ -441,7 +441,7 @@ def memory_census(tag, actor, critic=None, optims=(), topk=15):
               flush=True)
 
 
-def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True):
+def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True, census=False):
     """Colocate weight sync: push the LoRA-merged state to vLLM, OUT-OF-PLACE.
 
     Unlike TRL's merge_adapter() -> push -> unmerge_adapter() pattern, this never
@@ -540,7 +540,14 @@ def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True):
         import functools as _ft
         if ipc:
             from torch.multiprocessing.reductions import reduce_tensor
-        for group_name in ["_other"] + sorted(k for k in buckets if k != "_other"):
+        if census:
+            torch.cuda.synchronize()
+            torch.cuda.reset_peak_memory_stats()
+            print(f"[sync:census] ipc={ipc} buckets={len(buckets)} | start "
+                  f"allocated {torch.cuda.memory_allocated()/2**30:.2f} GB", flush=True)
+            _c_start = torch.cuda.memory_allocated()
+        _order = ["_other"] + sorted(k for k in buckets if k != "_other")
+        for _bi, group_name in enumerate(_order):
             names = buckets[group_name]
             if not names:
                 continue
@@ -573,6 +580,15 @@ def sync_actor_to_vllm(actor, llm, ipc=False, only_adapted=True):
             # handles; releasing here caps residency at one bucket instead of
             # the whole model.
             del chunk
+            if ipc:
+                del handles
+            if census and (_bi % 8 == 0 or _bi == len(_order) - 1):
+                torch.cuda.synchronize()
+                now = torch.cuda.memory_allocated()
+                print(f"[sync:census]   after {group_name:>10s} "
+                      f"({_bi + 1}/{len(_order)}): allocated {now/2**30:6.2f} GB "
+                      f"(+{(now - _c_start)/2**30:5.2f} since start) "
+                      f"peak {torch.cuda.max_memory_allocated()/2**30:6.2f} GB", flush=True)
         # Prefix cache keys on token IDs; weights changed, cache is stale.
         try:
             llm.llm_engine.reset_prefix_cache()
@@ -2145,7 +2161,9 @@ def main():
                 memory_census("pre-sync", actor, critic,
                               (("actor_optim", optim), ("critic_optim", critic_optim)))
             torch.cuda.empty_cache()
-            vllm_sync_secs = sync_actor_to_vllm(actor, llm, ipc=args.ipc_weight_sync)
+            vllm_sync_secs = sync_actor_to_vllm(
+                actor, llm, ipc=args.ipc_weight_sync,
+                census=(args.memory_census and step == args.start_step))
             print(f"  [vllm sync@{step+1}] {vllm_sync_secs:.1f}s", flush=True)
 
         # ---- AR critic co-training (paper-faithful, optional) ----
