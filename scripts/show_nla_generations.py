@@ -41,6 +41,22 @@ def load_ar_critic(ar_ckpt, base_ckpt, device):
     from safetensors.torch import load_file
 
     ar_src = Path(ar_ckpt)
+    # Two on-disk critic formats exist. RL's `critic_latest/` and `merged/ar_hf/`
+    # are HF-format (save_pretrained: config.json + sharded weights +
+    # value_head.safetensors); AR-SFT / RL `iter_*` dirs are the LoRA format
+    # (ar_meta.json + ar_lora_value_head.safetensors). Published NLAs point users
+    # at critic_latest, so accept both rather than dying on a missing ar_meta.json.
+    if not (ar_src / "ar_meta.json").exists() and (ar_src / "config.json").exists():
+        from nla.models import NLACriticModel
+        step = (ar_src / "saved_at_step.txt")
+        print(f"[critic] AR from {ar_src}: HF-format checkpoint"
+              + (f" (saved at step {step.read_text().strip()})" if step.exists() else ""))
+        critic = NLACriticModel.from_pretrained(
+            str(ar_src), torch_dtype=torch.bfloat16, attn_implementation="sdpa",
+        ).to(device)
+        critic.eval()
+        return critic
+
     ar_meta = json.loads((ar_src / "ar_meta.json").read_text())
     print(f"[critic] AR from {ar_src}: {ar_meta}")
     ar_quant = None
@@ -157,7 +173,14 @@ def main():
         if row.get("source"):
             s = row["source"]
             tail = s if len(s) <= 700 else "…" + s[-700:]
-            print(f"SOURCE TEXT (activation = layer-{cfg.critic_num_layers or 24} state at its END):\n{tail}\n")
+            # extraction_layer_index is the authoritative field; critic_num_layers
+            # is an OPTIONAL sidecar key (critic.extraction_layer_index) that most
+            # datasets omit -> the old `or 24` fallback silently mislabelled every
+            # non-Qwen-L24 run (an L47 checkpoint printed "layer-24").
+            _lyr = cfg.extraction_layer_index
+            _lyr = _lyr if _lyr is not None else cfg.critic_num_layers
+            _lbl = f"layer-{_lyr}" if _lyr is not None else "layer-? (not in sidecar)"
+            print(f"SOURCE TEXT (activation = {_lbl} state at its END):\n{tail}\n")
         print("FULL RESPONSE:\n" + resp)
         if not expl:
             print("\n(no <explanation> extracted)")
