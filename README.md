@@ -27,17 +27,29 @@ a held-out split.
 > Built on **Celeste's nanoNLA** (https://github.com/ceselder/nanoNLA), a minimal
 > implementation of Natural Language Autoencoders (Anthropic, 2026).
 
-> ⚠️ **Primarily built and tested on Qwen3-8B.** The code is written to be
+> **Origin.** This repository descends from **asherps/EasyNLA**
+> (https://github.com/asherps/EasyNLA) and retains its full history and MIT
+> licence; upstream commits keep their original authorship. It is not a GitHub
+> fork, so there is no "forked from" banner — the git history is the record.
+> Changes since `4d72847` add Gemma-3 support (adapter-loading fixes, cross-model
+> activation regeneration, sidecar token retargeting) and the memory/throughput
+> work needed to train a 12B NLA on 80 GB cards. These have not been submitted
+> upstream, so **upstream does not contain them.**
+
+> ⚠️ **Best tested on Qwen3-8B / Qwen2.5-7B.** The code is written to be
 > architecture-generic (tokenization is BOS-safe, layer/module resolution goes
-> through `nla/utils/arch_adapters.py`), but other model families (Llama, Gemma,
-> GPT-2, …) have not been tested nearly as thoroughly — expect rough edges and
-> validate the injection path (e.g. `av/steer_apply_rate`, CJK-free generations)
-> before trusting a run on a new architecture.
+> through `nla/utils/arch_adapters.py`). **Gemma-3-12B has since been taken
+> end-to-end** — datagen → AV/AR SFT → merge → 400-step GRPO — so that path is
+> exercised; note it requires `resolve_text_model` at every adapter-loading site,
+> because attaching a LoRA to the unresolved multimodal wrapper matches zero keys
+> and PEFT random-initializes silently rather than raising. Other families (Llama,
+> GPT-2, …) remain lightly tested: validate the injection path (e.g.
+> `av/steer_apply_rate`, CJK-free generations) before trusting a run.
 
 ## Setup
 
 ```bash
-git clone https://github.com/asherps/EasyNLA.git && cd EasyNLA
+git clone https://github.com/chand-ab/easy_nla.git && cd easy_nla
 python -m venv .venv && source .venv/bin/activate
 pip install -e .                       # core deps (torch, transformers, peft, …)
 pip install bitsandbytes               # optional: 4-bit (QLoRA) single-GPU training
@@ -173,4 +185,4 @@ utils/patch_vllm_lens.py            # required patch for the vLLM rollout path
 
 ## License
 
-MIT. Built on [Celeste's nanoNLA](https://github.com/ceselder/nanoNLA).
+MIT. Built on [Celeste's nanoNLA](https://github.com/ceselder/nanoNLA). Built on [asherps's EasyNLA](https://github.com/asherps/EasyNLA)

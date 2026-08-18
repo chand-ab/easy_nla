@@ -27,6 +27,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from nla.config import load_nla_config
 from nla.schema import EXPLANATION_RE, normalize_activation, resolve_target_scale
 from nla.utils import build_prompt_text, critic_predict, register_karvonen_hook
+from nla.utils.arch_adapters import resolve_text_model
 from nla.train_sft import _resolve_device_map, init_critic_from_base
 
 
@@ -121,6 +122,12 @@ def main():
     base = AutoModelForCausalLM.from_pretrained(
         args.base_ckpt, torch_dtype=torch.bfloat16, attn_implementation="sdpa",
         quantization_config=quant).to(device)
+    # Resolve to the CausalLM-shaped text model before attaching the adapter, as
+    # train_sft/train_rl_vllm/merge_lora_to_hf do. On multimodal wrappers (Gemma-3
+    # nests the LM under model.language_model.*) the adapter's model.layers.* keys
+    # match nothing and PEFT silently random-inits instead of raising. Pass-through
+    # for Qwen/Llama.
+    base = resolve_text_model(base)
     actor = PeftModel.from_pretrained(base, args.av_lora).eval()
     vref = [None]
     register_karvonen_hook(actor, vref, cfg.injection_token_id,
