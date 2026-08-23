@@ -185,4 +185,4 @@ utils/patch_vllm_lens.py            # required patch for the vLLM rollout path
 
 ## License
 
-MIT. Built on [Celeste's nanoNLA](https://github.com/ceselder/nanoNLA). Built on [asherps's EasyNLA](https://github.com/asherps/EasyNLA)
+MIT. Built on [Yooniel's EasyNLA](https://github.com/Yooniel/EasyNLA) which is a descendent of [asherps's EasyNLA](https://github.com/asherps/EasyNLA) which is a descendent of [Ceselder's EasyNLA](https://github.com/ceselder/nanoNLA).
