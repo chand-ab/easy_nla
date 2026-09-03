@@ -1,0 +1,1032 @@
+[
+  {
+    "input": "go",
+    "past": "went",
+    "future": "will go"
+  },
+  {
+    "input": "run",
+    "past": "ran",
+    "future": "will run"
+  },
+  {
+    "input": "eat",
+    "past": "ate",
+    "future": "will eat"
+  },
+  {
+    "input": "see",
+    "past": "saw",
+    "future": "will see"
+  },
+  {
+    "input": "take",
+    "past": "took",
+    "future": "will take"
+  },
+  {
+    "input": "give",
+    "past": "gave",
+    "future": "will give"
+  },
+  {
+    "input": "know",
+    "past": "knew",
+    "future": "will know"
+  },
+  {
+    "input": "come",
+    "past": "came",
+    "future": "will come"
+  },
+  {
+    "input": "think",
+    "past": "thought",
+    "future": "will think"
+  },
+  {
+    "input": "bring",
+    "past": "brought",
+    "future": "will bring"
+  },
+  {
+    "input": "buy",
+    "past": "bought",
+    "future": "will buy"
+  },
+  {
+    "input": "catch",
+    "past": "caught",
+    "future": "will catch"
+  },
+  {
+    "input": "teach",
+    "past": "taught",
+    "future": "will teach"
+  },
+  {
+    "input": "fight",
+    "past": "fought",
+    "future": "will fight"
+  },
+  {
+    "input": "seek",
+    "past": "sought",
+    "future": "will seek"
+  },
+  {
+    "input": "find",
+    "past": "found",
+    "future": "will find"
+  },
+  {
+    "input": "bind",
+    "past": "bound",
+    "future": "will bind"
+  },
+  {
+    "input": "grind",
+    "past": "ground",
+    "future": "will grind"
+  },
+  {
+    "input": "wind",
+    "past": "wound",
+    "future": "will wind"
+  },
+  {
+    "input": "hold",
+    "past": "held",
+    "future": "will hold"
+  },
+  {
+    "input": "fall",
+    "past": "fell",
+    "future": "will fall"
+  },
+  {
+    "input": "tell",
+    "past": "told",
+    "future": "will tell"
+  },
+  {
+    "input": "sell",
+    "past": "sold",
+    "future": "will sell"
+  },
+  {
+    "input": "feel",
+    "past": "felt",
+    "future": "will feel"
+  },
+  {
+    "input": "keep",
+    "past": "kept",
+    "future": "will keep"
+  },
+  {
+    "input": "sleep",
+    "past": "slept",
+    "future": "will sleep"
+  },
+  {
+    "input": "sweep",
+    "past": "swept",
+    "future": "will sweep"
+  },
+  {
+    "input": "weep",
+    "past": "wept",
+    "future": "will weep"
+  },
+  {
+    "input": "creep",
+    "past": "crept",
+    "future": "will creep"
+  },
+  {
+    "input": "leave",
+    "past": "left",
+    "future": "will leave"
+  },
+  {
+    "input": "lose",
+    "past": "lost",
+    "future": "will lose"
+  },
+  {
+    "input": "meet",
+    "past": "met",
+    "future": "will meet"
+  },
+  {
+    "input": "feed",
+    "past": "fed",
+    "future": "will feed"
+  },
+  {
+    "input": "lead",
+    "past": "led",
+    "future": "will lead"
+  },
+  {
+    "input": "read",
+    "past": "read",
+    "future": "will read"
+  },
+  {
+    "input": "speak",
+    "past": "spoke",
+    "future": "will speak"
+  },
+  {
+    "input": "break",
+    "past": "broke",
+    "future": "will break"
+  },
+  {
+    "input": "wake",
+    "past": "woke",
+    "future": "will wake"
+  },
+  {
+    "input": "choose",
+    "past": "chose",
+    "future": "will choose"
+  },
+  {
+    "input": "freeze",
+    "past": "froze",
+    "future": "will freeze"
+  },
+  {
+    "input": "steal",
+    "past": "stole",
+    "future": "will steal"
+  },
+  {
+    "input": "weave",
+    "past": "wove",
+    "future": "will weave"
+  },
+  {
+    "input": "swear",
+    "past": "swore",
+    "future": "will swear"
+  },
+  {
+    "input": "wear",
+    "past": "wore",
+    "future": "will wear"
+  },
+  {
+    "input": "tear",
+    "past": "tore",
+    "future": "will tear"
+  },
+  {
+    "input": "bear",
+    "past": "bore",
+    "future": "will bear"
+  },
+  {
+    "input": "drive",
+    "past": "drove",
+    "future": "will drive"
+  },
+  {
+    "input": "ride",
+    "past": "rode",
+    "future": "will ride"
+  },
+  {
+    "input": "rise",
+    "past": "rose",
+    "future": "will rise"
+  },
+  {
+    "input": "write",
+    "past": "wrote",
+    "future": "will write"
+  },
+  {
+    "input": "bite",
+    "past": "bit",
+    "future": "will bite"
+  },
+  {
+    "input": "hide",
+    "past": "hid",
+    "future": "will hide"
+  },
+  {
+    "input": "slide",
+    "past": "slid",
+    "future": "will slide"
+  },
+  {
+    "input": "shine",
+    "past": "shone",
+    "future": "will shine"
+  },
+  {
+    "input": "strike",
+    "past": "struck",
+    "future": "will strike"
+  },
+  {
+    "input": "swim",
+    "past": "swam",
+    "future": "will swim"
+  },
+  {
+    "input": "begin",
+    "past": "began",
+    "future": "will begin"
+  },
+  {
+    "input": "drink",
+    "past": "drank",
+    "future": "will drink"
+  },
+  {
+    "input": "sing",
+    "past": "sang",
+    "future": "will sing"
+  },
+  {
+    "input": "sink",
+    "past": "sank",
+    "future": "will sink"
+  },
+  {
+    "input": "ring",
+    "past": "rang",
+    "future": "will ring"
+  },
+  {
+    "input": "spring",
+    "past": "sprang",
+    "future": "will spring"
+  },
+  {
+    "input": "shrink",
+    "past": "shrank",
+    "future": "will shrink"
+  },
+  {
+    "input": "stink",
+    "past": "stank",
+    "future": "will stink"
+  },
+  {
+    "input": "swing",
+    "past": "swung",
+    "future": "will swing"
+  },
+  {
+    "input": "sting",
+    "past": "stung",
+    "future": "will sting"
+  },
+  {
+    "input": "cling",
+    "past": "clung",
+    "future": "will cling"
+  },
+  {
+    "input": "fling",
+    "past": "flung",
+    "future": "will fling"
+  },
+  {
+    "input": "hang",
+    "past": "hung",
+    "future": "will hang"
+  },
+  {
+    "input": "dig",
+    "past": "dug",
+    "future": "will dig"
+  },
+  {
+    "input": "stick",
+    "past": "stuck",
+    "future": "will stick"
+  },
+  {
+    "input": "win",
+    "past": "won",
+    "future": "will win"
+  },
+  {
+    "input": "spin",
+    "past": "spun",
+    "future": "will spin"
+  },
+  {
+    "input": "stand",
+    "past": "stood",
+    "future": "will stand"
+  },
+  {
+    "input": "understand",
+    "past": "understood",
+    "future": "will understand"
+  },
+  {
+    "input": "sit",
+    "past": "sat",
+    "future": "will sit"
+  },
+  {
+    "input": "spit",
+    "past": "spit",
+    "future": "will spit"
+  },
+  {
+    "input": "shoot",
+    "past": "shot",
+    "future": "will shoot"
+  },
+  {
+    "input": "hit",
+    "past": "hit",
+    "future": "will hit"
+  },
+  {
+    "input": "cut",
+    "past": "cut",
+    "future": "will cut"
+  },
+  {
+    "input": "hurt",
+    "past": "hurt",
+    "future": "will hurt"
+  },
+  {
+    "input": "put",
+    "past": "put",
+    "future": "will put"
+  },
+  {
+    "input": "set",
+    "past": "set",
+    "future": "will set"
+  },
+  {
+    "input": "build",
+    "past": "built",
+    "future": "will build"
+  },
+  {
+    "input": "send",
+    "past": "sent",
+    "future": "will send"
+  },
+  {
+    "input": "spend",
+    "past": "spent",
+    "future": "will spend"
+  },
+  {
+    "input": "lend",
+    "past": "lent",
+    "future": "will lend"
+  },
+  {
+    "input": "bend",
+    "past": "bent",
+    "future": "will bend"
+  },
+  {
+    "input": "blend",
+    "past": "blended",
+    "future": "will blend"
+  },
+  {
+    "input": "mend",
+    "past": "mended",
+    "future": "will mend"
+  },
+  {
+    "input": "light",
+    "past": "lit",
+    "future": "will light"
+  },
+  {
+    "input": "have",
+    "past": "had",
+    "future": "will have"
+  },
+  {
+    "input": "make",
+    "past": "made",
+    "future": "will make"
+  },
+  {
+    "input": "say",
+    "past": "said",
+    "future": "will say"
+  },
+  {
+    "input": "pay",
+    "past": "paid",
+    "future": "will pay"
+  },
+  {
+    "input": "lay",
+    "past": "laid",
+    "future": "will lay"
+  },
+  {
+    "input": "hear",
+    "past": "heard",
+    "future": "will hear"
+  },
+  {
+    "input": "flee",
+    "past": "fled",
+    "future": "will flee"
+  },
+  {
+    "input": "grow",
+    "past": "grew",
+    "future": "will grow"
+  },
+  {
+    "input": "throw",
+    "past": "threw",
+    "future": "will throw"
+  },
+  {
+    "input": "blow",
+    "past": "blew",
+    "future": "will blow"
+  },
+  {
+    "input": "fly",
+    "past": "flew",
+    "future": "will fly"
+  },
+  {
+    "input": "draw",
+    "past": "drew",
+    "future": "will draw"
+  },
+  {
+    "input": "withdraw",
+    "past": "withdrew",
+    "future": "will withdraw"
+  },
+  {
+    "input": "do",
+    "past": "did",
+    "future": "will do"
+  },
+  {
+    "input": "shake",
+    "past": "shook",
+    "future": "will shake"
+  },
+  {
+    "input": "forsake",
+    "past": "forsook",
+    "future": "will forsake"
+  },
+  {
+    "input": "mistake",
+    "past": "mistook",
+    "future": "will mistake"
+  },
+  {
+    "input": "forget",
+    "past": "forgot",
+    "future": "will forget"
+  },
+  {
+    "input": "get",
+    "past": "got",
+    "future": "will get"
+  },
+  {
+    "input": "beget",
+    "past": "begot",
+    "future": "will beget"
+  },
+  {
+    "input": "become",
+    "past": "became",
+    "future": "will become"
+  },
+  {
+    "input": "wring",
+    "past": "wrung",
+    "future": "will wring"
+  },
+  {
+    "input": "bleed",
+    "past": "bled",
+    "future": "will bleed"
+  },
+  {
+    "input": "breed",
+    "past": "bred",
+    "future": "will breed"
+  },
+  {
+    "input": "speed",
+    "past": "sped",
+    "future": "will speed"
+  },
+  {
+    "input": "arise",
+    "past": "arose",
+    "future": "will arise"
+  },
+  {
+    "input": "burn",
+    "past": "burned",
+    "future": "will burn"
+  },
+  {
+    "input": "dream",
+    "past": "dreamed",
+    "future": "will dream"
+  },
+  {
+    "input": "kneel",
+    "past": "kneeled",
+    "future": "will kneel"
+  },
+  {
+    "input": "lean",
+    "past": "leaned",
+    "future": "will lean"
+  },
+  {
+    "input": "leap",
+    "past": "leaped",
+    "future": "will leap"
+  },
+  {
+    "input": "learn",
+    "past": "learned",
+    "future": "will learn"
+  },
+  {
+    "input": "smell",
+    "past": "smelled",
+    "future": "will smell"
+  },
+  {
+    "input": "spell",
+    "past": "spelled",
+    "future": "will spell"
+  },
+  {
+    "input": "spill",
+    "past": "spilled",
+    "future": "will spill"
+  },
+  {
+    "input": "spoil",
+    "past": "spoiled",
+    "future": "will spoil"
+  },
+  {
+    "input": "walk",
+    "past": "walked",
+    "future": "will walk"
+  },
+  {
+    "input": "talk",
+    "past": "talked",
+    "future": "will talk"
+  },
+  {
+    "input": "play",
+    "past": "played",
+    "future": "will play"
+  },
+  {
+    "input": "jump",
+    "past": "jumped",
+    "future": "will jump"
+  },
+  {
+    "input": "climb",
+    "past": "climbed",
+    "future": "will climb"
+  },
+  {
+    "input": "cook",
+    "past": "cooked",
+    "future": "will cook"
+  },
+  {
+    "input": "clean",
+    "past": "cleaned",
+    "future": "will clean"
+  },
+  {
+    "input": "paint",
+    "past": "painted",
+    "future": "will paint"
+  },
+  {
+    "input": "brush",
+    "past": "brushed",
+    "future": "will brush"
+  },
+  {
+    "input": "dance",
+    "past": "danced",
+    "future": "will dance"
+  },
+  {
+    "input": "laugh",
+    "past": "laughed",
+    "future": "will laugh"
+  },
+  {
+    "input": "smile",
+    "past": "smiled",
+    "future": "will smile"
+  },
+  {
+    "input": "cry",
+    "past": "cried",
+    "future": "will cry"
+  },
+  {
+    "input": "shout",
+    "past": "shouted",
+    "future": "will shout"
+  },
+  {
+    "input": "whisper",
+    "past": "whispered",
+    "future": "will whisper"
+  },
+  {
+    "input": "open",
+    "past": "opened",
+    "future": "will open"
+  },
+  {
+    "input": "close",
+    "past": "closed",
+    "future": "will close"
+  },
+  {
+    "input": "start",
+    "past": "started",
+    "future": "will start"
+  },
+  {
+    "input": "finish",
+    "past": "finished",
+    "future": "will finish"
+  },
+  {
+    "input": "help",
+    "past": "helped",
+    "future": "will help"
+  },
+  {
+    "input": "watch",
+    "past": "watched",
+    "future": "will watch"
+  },
+  {
+    "input": "listen",
+    "past": "listened",
+    "future": "will listen"
+  },
+  {
+    "input": "move",
+    "past": "moved",
+    "future": "will move"
+  },
+  {
+    "input": "turn",
+    "past": "turned",
+    "future": "will turn"
+  },
+  {
+    "input": "pull",
+    "past": "pulled",
+    "future": "will pull"
+  },
+  {
+    "input": "push",
+    "past": "pushed",
+    "future": "will push"
+  },
+  {
+    "input": "carry",
+    "past": "carried",
+    "future": "will carry"
+  },
+  {
+    "input": "lift",
+    "past": "lifted",
+    "future": "will lift"
+  },
+  {
+    "input": "drop",
+    "past": "dropped",
+    "future": "will drop"
+  },
+  {
+    "input": "kick",
+    "past": "kicked",
+    "future": "will kick"
+  },
+  {
+    "input": "pack",
+    "past": "packed",
+    "future": "will pack"
+  },
+  {
+    "input": "unpack",
+    "past": "unpacked",
+    "future": "will unpack"
+  },
+  {
+    "input": "print",
+    "past": "printed",
+    "future": "will print"
+  },
+  {
+    "input": "type",
+    "past": "typed",
+    "future": "will type"
+  },
+  {
+    "input": "click",
+    "past": "clicked",
+    "future": "will click"
+  },
+  {
+    "input": "scroll",
+    "past": "scrolled",
+    "future": "will scroll"
+  },
+  {
+    "input": "design",
+    "past": "designed",
+    "future": "will design"
+  },
+  {
+    "input": "plant",
+    "past": "planted",
+    "future": "will plant"
+  },
+  {
+    "input": "water",
+    "past": "watered",
+    "future": "will water"
+  },
+  {
+    "input": "wash",
+    "past": "washed",
+    "future": "will wash"
+  },
+  {
+    "input": "dry",
+    "past": "dried",
+    "future": "will dry"
+  },
+  {
+    "input": "fold",
+    "past": "folded",
+    "future": "will fold"
+  },
+  {
+    "input": "iron",
+    "past": "ironed",
+    "future": "will iron"
+  },
+  {
+    "input": "bake",
+    "past": "baked",
+    "future": "will bake"
+  },
+  {
+    "input": "boil",
+    "past": "boiled",
+    "future": "will boil"
+  },
+  {
+    "input": "fry",
+    "past": "fried",
+    "future": "will fry"
+  },
+  {
+    "input": "grill",
+    "past": "grilled",
+    "future": "will grill"
+  },
+  {
+    "input": "roast",
+    "past": "roasted",
+    "future": "will roast"
+  },
+  {
+    "input": "travel",
+    "past": "traveled",
+    "future": "will travel"
+  },
+  {
+    "input": "visit",
+    "past": "visited",
+    "future": "will visit"
+  },
+  {
+    "input": "explore",
+    "past": "explored",
+    "future": "will explore"
+  },
+  {
+    "input": "hike",
+    "past": "hiked",
+    "future": "will hike"
+  },
+  {
+    "input": "camp",
+    "past": "camped",
+    "future": "will camp"
+  },
+  {
+    "input": "fish",
+    "past": "fished",
+    "future": "will fish"
+  },
+  {
+    "input": "sail",
+    "past": "sailed",
+    "future": "will sail"
+  },
+  {
+    "input": "row",
+    "past": "rowed",
+    "future": "will row"
+  },
+  {
+    "input": "paddle",
+    "past": "paddled",
+    "future": "will paddle"
+  },
+  {
+    "input": "study",
+    "past": "studied",
+    "future": "will study"
+  },
+  {
+    "input": "train",
+    "past": "trained",
+    "future": "will train"
+  },
+  {
+    "input": "practice",
+    "past": "practiced",
+    "future": "will practice"
+  },
+  {
+    "input": "exercise",
+    "past": "exercised",
+    "future": "will exercise"
+  },
+  {
+    "input": "stretch",
+    "past": "stretched",
+    "future": "will stretch"
+  },
+  {
+    "input": "jog",
+    "past": "jogged",
+    "future": "will jog"
+  },
+  {
+    "input": "skate",
+    "past": "skated",
+    "future": "will skate"
+  },
+  {
+    "input": "surf",
+    "past": "surfed",
+    "future": "will surf"
+  },
+  {
+    "input": "slay",
+    "past": "slew",
+    "future": "will slay"
+  },
+  {
+    "input": "stride",
+    "past": "strode",
+    "future": "will stride"
+  },
+  {
+    "input": "dive",
+    "past": "dove",
+    "future": "will dive"
+  },
+  {
+    "input": "sneak",
+    "past": "snuck",
+    "future": "will sneak"
+  },
+  {
+    "input": "strive",
+    "past": "strove",
+    "future": "will strive"
+  },
+  {
+    "input": "outgrow",
+    "past": "outgrew",
+    "future": "will outgrow"
+  },
+  {
+    "input": "overthrow",
+    "past": "overthrew",
+    "future": "will overthrow"
+  },
+  {
+    "input": "rewrite",
+    "past": "rewrote",
+    "future": "will rewrite"
+  },
+  {
+    "input": "mislead",
+    "past": "misled",
+    "future": "will mislead"
+  },
+  {
+    "input": "uphold",
+    "past": "upheld",
+    "future": "will uphold"
+  },
+  {
+    "input": "withhold",
+    "past": "withheld",
+    "future": "will withhold"
+  },
+  {
+    "input": "overtake",
+    "past": "overtook",
+    "future": "will overtake"
+  },
+  {
+    "input": "partake",
+    "past": "partook",
+    "future": "will partake"
+  },
+  {
+    "input": "awake",
+    "past": "awoke",
+    "future": "will awake"
+  }
+]
