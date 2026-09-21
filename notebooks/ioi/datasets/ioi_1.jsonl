@@ -1,0 +1,200 @@
+{"input": "Then, Rebecca and Jessie went to the store. Rebecca gave a peach to", "output": "Jessie"}
+{"input": "Then, Alice and Doris went to the shop. Alice gave a blackberry to", "output": "Doris"}
+{"input": "While Ginger and Mona were commuting to the market, Mona gave a blackberry to", "output": "Ginger"}
+{"input": "After the lunch, Harriet and Erika went to the bar. Erika gave a mango to", "output": "Harriet"}
+{"input": "Then, Martha and Janet were working at the market. Martha decided to give a grape to", "output": "Janet"}
+{"input": "Then, Maggie and Sheila were working at the school. Maggie decided to give a pineapple to", "output": "Sheila"}
+{"input": "Then, Fannie and David were working at the market. Fannie decided to give a raspberry to", "output": "David"}
+{"input": "When Martha and Kim got a papaya at the park, Martha decided to give the papaya to", "output": "Kim"}
+{"input": "Then, Erika and Jerry were thinking about going to the shop. Erika wanted to give a banana to", "output": "Jerry"}
+{"input": "Then, Kristi and Mattie had a lot of fun at the beach. Kristi gave a cherry to", "output": "Mattie"}
+{"input": "While Jessie and Jessica were working at the library, Jessica gave a apple to", "output": "Jessie"}
+{"input": "While Leona and Lula were commuting to the beach, Lula gave a coconut to", "output": "Leona"}
+{"input": "While Martha and Leona were working at the shop, Martha gave a cherry to", "output": "Leona"}
+{"input": "Then, Diana and Shannon were working at the theater. Shannon decided to give a watermelon to", "output": "Diana"}
+{"input": "While Miriam and Jacqueline were commuting to the bar, Miriam gave a watermelon to", "output": "Jacqueline"}
+{"input": "After Dianne and Fannie went to the library, Fannie gave a cantaloupe to", "output": "Dianne"}
+{"input": "After the lunch, Jody and Anne went to the store. Jody gave a grape to", "output": "Anne"}
+{"input": "Then, Kari and Jessie went to the bar. Kari gave a pear to", "output": "Jessie"}
+{"input": "Then, Mona and Mildred had a lot of fun at the home. Mona gave a kiwi to", "output": "Mildred"}
+{"input": "When Kelly and Paula got a strawberry at the lake, Kelly decided to give the strawberry to", "output": "Paula"}
+{"input": "Then, Angie and Jessica were thinking about going to the cave. Jessica wanted to give a mango to", "output": "Angie"}
+{"input": "When Stacy and Velma got a coconut at the shop, Velma decided to give it to", "output": "Stacy"}
+{"input": "Then, Sheila and Alice were working at the theater. Alice decided to give a cantaloupe to", "output": "Sheila"}
+{"input": "When Lula and Evelyn got a orange at the park, Lula decided to give the orange to", "output": "Evelyn"}
+{"input": "Then, Kristi and Wilma were working at the zoo. Kristi decided to give a raspberry to", "output": "Wilma"}
+{"input": "The library Violet and Heidi went to had a watermelon. Violet gave it to", "output": "Heidi"}
+{"input": "The forest Ginger and Sophia went to had a cantaloupe. Sophia gave it to", "output": "Ginger"}
+{"input": "Then, Kelly and Anne were thinking about going to the home. Kelly wanted to give a cantaloupe to", "output": "Anne"}
+{"input": "After Marsha and Evelyn went to the park, Marsha gave a honeydew to", "output": "Evelyn"}
+{"input": "Then, Sarah and Teresa went to the mountain. Teresa gave a blueberry to", "output": "Sarah"}
+{"input": "While Robin and Rosa were working at the mountain, Robin gave a blackberry to", "output": "Rosa"}
+{"input": "Then, Rachel and Heidi went to the bar. Rachel gave a coconut to", "output": "Heidi"}
+{"input": "While Ethel and David were commuting to the river, Ethel gave a grape to", "output": "David"}
+{"input": "Then, Nellie and Eleanor were thinking about going to the cafe. Eleanor wanted to give a coconut to", "output": "Nellie"}
+{"input": "Then, Susan and Stacey had a lot of fun at the home. Stacey gave a banana to", "output": "Susan"}
+{"input": "Then, Richard and Leona went to the cafe. Richard gave a blackberry to", "output": "Leona"}
+{"input": "When Velma and Loretta got a pear at the river, Velma decided to give it to", "output": "Loretta"}
+{"input": "While Kathryn and Gwen were commuting to the river, Gwen gave a honeydew to", "output": "Kathryn"}
+{"input": "Then, Bernadette and David went to the forest. Bernadette gave a kiwi to", "output": "David"}
+{"input": "After the lunch, Wilma and Leigh went to the forest. Leigh gave a coconut to", "output": "Wilma"}
+{"input": "While Kim and Erika were working at the library, Erika gave a pear to", "output": "Kim"}
+{"input": "Friends Leigh and Loretta found a blueberry at the cave. Leigh gave it to", "output": "Loretta"}
+{"input": "While Miriam and Rosemarie were commuting to the cave, Miriam gave a honeydew to", "output": "Rosemarie"}
+{"input": "Then, Sophia and Jessie were thinking about going to the desert. Sophia wanted to give a banana to", "output": "Jessie"}
+{"input": "Then, Carmen and Kristina were thinking about going to the cave. Kristina wanted to give a grape to", "output": "Carmen"}
+{"input": "When Chelsea and Pauline got a papaya at the store, Pauline decided to give it to", "output": "Chelsea"}
+{"input": "After the lunch, Leona and Ethel went to the bar. Ethel gave a cantaloupe to", "output": "Leona"}
+{"input": "Then, Diana and Fannie went to the gym. Fannie gave a apple to", "output": "Diana"}
+{"input": "When Doris and Mona got a peach at the river, Mona decided to give it to", "output": "Doris"}
+{"input": "After the lunch, Jerry and Mona went to the library. Mona gave a pineapple to", "output": "Jerry"}
+{"input": "When Leigh and Wilma got a kiwi at the market, Leigh decided to give it to", "output": "Wilma"}
+{"input": "Then, Heidi and Richard were working at the store. Richard decided to give a strawberry to", "output": "Heidi"}
+{"input": "The lake Virginia and Eleanor went to had a apple. Eleanor gave it to", "output": "Virginia"}
+{"input": "When Kevin and Alicia got a kiwi at the shop, Kevin decided to give it to", "output": "Alicia"}
+{"input": "Then, Eleanor and Jacqueline had a lot of fun at the cave. Eleanor gave a peach to", "output": "Jacqueline"}
+{"input": "Then, Jody and Sheila were working at the lake. Jody decided to give a papaya to", "output": "Sheila"}
+{"input": "Then, William and Melissa had a lot of fun at the theater. Melissa gave a blackberry to", "output": "William"}
+{"input": "After the lunch, Jessica and Harriet went to the library. Jessica gave a cherry to", "output": "Harriet"}
+{"input": "Then, Leigh and Marian went to the forest. Leigh gave a strawberry to", "output": "Marian"}
+{"input": "Then, Lorraine and Megan had a lot of fun at the market. Megan gave a papaya to", "output": "Lorraine"}
+{"input": "After the lunch, Alicia and Faye went to the library. Faye gave a pineapple to", "output": "Alicia"}
+{"input": "After the lunch, Irma and Paula went to the desert. Irma gave a raspberry to", "output": "Paula"}
+{"input": "Then, Susan and Marilyn were thinking about going to the library. Marilyn wanted to give a cantaloupe to", "output": "Susan"}
+{"input": "While Fannie and Charlene were working at the cave, Fannie gave a honeydew to", "output": "Charlene"}
+{"input": "Then, Jessica and Carmen were thinking about going to the river. Jessica wanted to give a grape to", "output": "Carmen"}
+{"input": "Then, Brian and Kelly went to the market. Kelly gave a raspberry to", "output": "Brian"}
+{"input": "Afterwards, Marsha and Mattie went to the river. Marsha gave a honeydew to", "output": "Mattie"}
+{"input": "Friends Sarah and Alice found a coconut at the park. Alice gave it to", "output": "Sarah"}
+{"input": "Afterwards, Maggie and Sarah went to the park. Maggie gave a orange to", "output": "Sarah"}
+{"input": "Then, Melanie and Kristina went to the park. Kristina gave a peach to", "output": "Melanie"}
+{"input": "When Marilyn and Amanda got a blueberry at the cave, Marilyn decided to give the blueberry to", "output": "Amanda"}
+{"input": "After Virginia and Erika went to the museum, Erika gave a blueberry to", "output": "Virginia"}
+{"input": "When Mark and Mona got a pineapple at the library, Mona decided to give it to", "output": "Mark"}
+{"input": "The park Erika and Susan went to had a orange. Erika gave it to", "output": "Susan"}
+{"input": "After the lunch, Pauline and William went to the library. Pauline gave a banana to", "output": "William"}
+{"input": "Friends Jessie and Grace found a cherry at the forest. Grace gave it to", "output": "Jessie"}
+{"input": "When Rosemarie and Estelle got a grape at the bar, Estelle decided to give the grape to", "output": "Rosemarie"}
+{"input": "Then, Megan and Virginia went to the forest. Megan gave a blueberry to", "output": "Virginia"}
+{"input": "When Geneva and Anne got a coconut at the library, Geneva decided to give the coconut to", "output": "Anne"}
+{"input": "Afterwards, Amanda and Yvette went to the cafe. Yvette gave a orange to", "output": "Amanda"}
+{"input": "Then, Janet and Megan had a lot of fun at the museum. Megan gave a grape to", "output": "Janet"}
+{"input": "Then, Jerry and Teresa were working at the gym. Teresa decided to give a watermelon to", "output": "Jerry"}
+{"input": "While Anne and Martha were working at the shop, Martha gave a banana to", "output": "Anne"}
+{"input": "Then, Lorraine and Richard were working at the desert. Richard decided to give a plum to", "output": "Lorraine"}
+{"input": "Friends Diana and Irma found a raspberry at the bar. Irma gave it to", "output": "Diana"}
+{"input": "After Estelle and Paula went to the beach, Estelle gave a apple to", "output": "Paula"}
+{"input": "Then, Estelle and Mark went to the cafe. Estelle gave a orange to", "output": "Mark"}
+{"input": "Then, Brian and Kristi were working at the park. Kristi decided to give a raspberry to", "output": "Brian"}
+{"input": "While Eleanor and Chelsea were working at the theater, Eleanor gave a kiwi to", "output": "Chelsea"}
+{"input": "Then, Melissa and Evelyn had a lot of fun at the home. Melissa gave a peach to", "output": "Evelyn"}
+{"input": "The library Kathryn and Richard went to had a pear. Richard gave it to", "output": "Kathryn"}
+{"input": "Then, Pauline and Chelsea were working at the lake. Pauline decided to give a strawberry to", "output": "Chelsea"}
+{"input": "Then, Miriam and Virginia had a lot of fun at the river. Miriam gave a plum to", "output": "Virginia"}
+{"input": "The school Alice and Heidi went to had a strawberry. Alice gave it to", "output": "Heidi"}
+{"input": "Then, Estelle and Melanie went to the market. Estelle gave a mango to", "output": "Melanie"}
+{"input": "When Ginger and Lula got a apple at the library, Lula decided to give the apple to", "output": "Ginger"}
+{"input": "While Anita and Fannie were working at the museum, Fannie gave a plum to", "output": "Anita"}
+{"input": "Then, Carmen and Pat had a lot of fun at the theater. Pat gave a mango to", "output": "Carmen"}
+{"input": "When Teresa and Angie got a plum at the home, Teresa decided to give the plum to", "output": "Angie"}
+{"input": "While Leona and Fannie were working at the home, Fannie gave a plum to", "output": "Leona"}
+{"input": "Then, Faye and Yolanda went to the beach. Faye gave a apple to", "output": "Yolanda"}
+{"input": "When Stella and Mona got a strawberry at the bar, Mona decided to give it to", "output": "Stella"}
+{"input": "While Violet and Charlene were commuting to the cafe, Violet gave a pineapple to", "output": "Charlene"}
+{"input": "Friends Rosa and Fannie found a pear at the forest. Fannie gave it to", "output": "Rosa"}
+{"input": "Then, Estelle and Paula had a lot of fun at the theater. Estelle gave a orange to", "output": "Paula"}
+{"input": "Then, Yolanda and Stacey went to the zoo. Stacey gave a cantaloupe to", "output": "Yolanda"}
+{"input": "After Virginia and Sophia went to the forest, Sophia gave a orange to", "output": "Virginia"}
+{"input": "When Pat and Paula got a coconut at the zoo, Pat decided to give it to", "output": "Paula"}
+{"input": "Then, Fannie and David were working at the theater. Fannie decided to give a mango to", "output": "David"}
+{"input": "Then, Suzanne and Mattie had a lot of fun at the park. Suzanne gave a banana to", "output": "Mattie"}
+{"input": "When Jody and William got a cherry at the theater, Jody decided to give the cherry to", "output": "William"}
+{"input": "When Jody and Paula got a strawberry at the market, Jody decided to give the strawberry to", "output": "Paula"}
+{"input": "When Amanda and Natasha got a pineapple at the cave, Natasha decided to give the pineapple to", "output": "Amanda"}
+{"input": "When Marsha and Lorraine got a honeydew at the park, Marsha decided to give it to", "output": "Lorraine"}
+{"input": "When Richard and Kathryn got a raspberry at the museum, Richard decided to give it to", "output": "Kathryn"}
+{"input": "After Leigh and Brian went to the library, Leigh gave a grape to", "output": "Brian"}
+{"input": "After Jackie and Yolanda went to the home, Jackie gave a mango to", "output": "Yolanda"}
+{"input": "Friends Irma and Mattie found a blueberry at the school. Irma gave it to", "output": "Mattie"}
+{"input": "When Lee and Stella got a apple at the market, Lee decided to give it to", "output": "Stella"}
+{"input": "Then, Kristina and Susan had a lot of fun at the market. Kristina gave a honeydew to", "output": "Susan"}
+{"input": "The market David and Marilyn went to had a pear. Marilyn gave it to", "output": "David"}
+{"input": "While Robin and Paula were commuting to the cave, Robin gave a peach to", "output": "Paula"}
+{"input": "Then, Megan and Amanda went to the river. Megan gave a peach to", "output": "Amanda"}
+{"input": "While Jessie and Inez were commuting to the desert, Inez gave a watermelon to", "output": "Jessie"}
+{"input": "When Juana and Robin got a peach at the forest, Robin decided to give the peach to", "output": "Juana"}
+{"input": "Then, Suzanne and Rosa went to the bar. Suzanne gave a blackberry to", "output": "Rosa"}
+{"input": "While Pauline and David were working at the gym, Pauline gave a pineapple to", "output": "David"}
+{"input": "Then, Diana and Estelle were thinking about going to the museum. Estelle wanted to give a grape to", "output": "Diana"}
+{"input": "After the lunch, Mark and Erika went to the park. Erika gave a blackberry to", "output": "Mark"}
+{"input": "Friends Alicia and Kristina found a coconut at the lake. Kristina gave it to", "output": "Alicia"}
+{"input": "Then, Agnes and Angie went to the shop. Agnes gave a watermelon to", "output": "Angie"}
+{"input": "Then, Rachel and Evelyn had a lot of fun at the market. Rachel gave a peach to", "output": "Evelyn"}
+{"input": "While Alice and Amanda were working at the desert, Alice gave a grape to", "output": "Amanda"}
+{"input": "Afterwards, Estelle and Nellie went to the library. Estelle gave a blackberry to", "output": "Nellie"}
+{"input": "When Suzanne and Susan got a kiwi at the library, Suzanne decided to give the kiwi to", "output": "Susan"}
+{"input": "After Erika and Lorraine went to the forest, Erika gave a kiwi to", "output": "Lorraine"}
+{"input": "While Natasha and Janet were working at the cafe, Natasha gave a plum to", "output": "Janet"}
+{"input": "Afterwards, Sheila and Rebecca went to the zoo. Rebecca gave a pineapple to", "output": "Sheila"}
+{"input": "Then, Theresa and Jessica had a long argument. Afterwards Jessica said to", "output": "Theresa"}
+{"input": "When Brandy and Marsha got a apple at the store, Marsha decided to give the apple to", "output": "Brandy"}
+{"input": "When Agnes and Stacy got a plum at the forest, Agnes decided to give it to", "output": "Stacy"}
+{"input": "Then, Inez and Charlene were thinking about going to the store. Inez wanted to give a pineapple to", "output": "Charlene"}
+{"input": "After Chelsea and Eleanor went to the home, Eleanor gave a honeydew to", "output": "Chelsea"}
+{"input": "Then, David and Gwen went to the park. Gwen gave a honeydew to", "output": "David"}
+{"input": "After Melissa and Ginger went to the museum, Melissa gave a raspberry to", "output": "Ginger"}
+{"input": "While Carol and Diana were commuting to the beach, Carol gave a watermelon to", "output": "Diana"}
+{"input": "After Kathryn and Violet went to the shop, Violet gave a pear to", "output": "Kathryn"}
+{"input": "Then, Wilma and Yvette went to the gym. Yvette gave a blackberry to", "output": "Wilma"}
+{"input": "Friends Theresa and Irma found a orange at the market. Irma gave it to", "output": "Theresa"}
+{"input": "Friends Anita and Jackie found a plum at the theater. Jackie gave it to", "output": "Anita"}
+{"input": "Then, Melissa and Sheila were working at the gym. Melissa decided to give a papaya to", "output": "Sheila"}
+{"input": "Afterwards, Heidi and Kari went to the mountain. Kari gave a mango to", "output": "Heidi"}
+{"input": "While Ella and Pauline were commuting to the zoo, Pauline gave a pear to", "output": "Ella"}
+{"input": "Then, Robin and Dianne were thinking about going to the cave. Robin wanted to give a pineapple to", "output": "Dianne"}
+{"input": "Then, Inez and Juana were working at the river. Inez decided to give a coconut to", "output": "Juana"}
+{"input": "The mountain Sophia and Mildred went to had a papaya. Sophia gave it to", "output": "Mildred"}
+{"input": "While Juana and Jackie were working at the store, Jackie gave a kiwi to", "output": "Juana"}
+{"input": "Afterwards, Brandy and Mona went to the home. Mona gave a watermelon to", "output": "Brandy"}
+{"input": "The desert Mildred and Violet went to had a peach. Violet gave it to", "output": "Mildred"}
+{"input": "Then, Mona and Marian had a lot of fun at the home. Mona gave a strawberry to", "output": "Marian"}
+{"input": "While Rebecca and Evelyn were working at the school, Rebecca gave a orange to", "output": "Evelyn"}
+{"input": "After the lunch, Alice and Angie went to the theater. Alice gave a blueberry to", "output": "Angie"}
+{"input": "Then, Angie and Marsha went to the home. Marsha gave a grape to", "output": "Angie"}
+{"input": "Then, Pat and Sheila went to the cafe. Pat gave a cherry to", "output": "Sheila"}
+{"input": "While Doris and Inez were commuting to the cafe, Inez gave a blackberry to", "output": "Doris"}
+{"input": "Friends Irma and Kathryn found a raspberry at the shop. Irma gave it to", "output": "Kathryn"}
+{"input": "After Theresa and Jody went to the cafe, Jody gave a coconut to", "output": "Theresa"}
+{"input": "When William and Jody got a watermelon at the theater, Jody decided to give the watermelon to", "output": "William"}
+{"input": "Then, Jessica and Deanna went to the museum. Jessica gave a peach to", "output": "Deanna"}
+{"input": "While Jessica and William were working at the museum, Jessica gave a cantaloupe to", "output": "William"}
+{"input": "Then, Lee and Ella were working at the store. Lee decided to give a raspberry to", "output": "Ella"}
+{"input": "Then, Jacqueline and Alice had a lot of fun at the river. Alice gave a banana to", "output": "Jacqueline"}
+{"input": "The desert Mona and Anita went to had a blackberry. Mona gave it to", "output": "Anita"}
+{"input": "After Violet and Mildred went to the forest, Violet gave a watermelon to", "output": "Mildred"}
+{"input": "After the lunch, Susan and Ethel went to the beach. Ethel gave a cantaloupe to", "output": "Susan"}
+{"input": "Afterwards, Kari and Rosa went to the store. Kari gave a blackberry to", "output": "Rosa"}
+{"input": "When Dianne and Suzanne got a cherry at the zoo, Suzanne decided to give it to", "output": "Dianne"}
+{"input": "Then, Gwen and William were thinking about going to the museum. Gwen wanted to give a pineapple to", "output": "William"}
+{"input": "Then, Suzanne and Marian were thinking about going to the museum. Suzanne wanted to give a watermelon to", "output": "Marian"}
+{"input": "After Leigh and Virginia went to the river, Leigh gave a pear to", "output": "Virginia"}
+{"input": "While Harriet and Megan were working at the museum, Megan gave a kiwi to", "output": "Harriet"}
+{"input": "After the lunch, Estelle and Jerry went to the school. Estelle gave a blackberry to", "output": "Jerry"}
+{"input": "Then, Melissa and Chelsea went to the lake. Melissa gave a grape to", "output": "Chelsea"}
+{"input": "The store Loretta and Ethel went to had a plum. Ethel gave it to", "output": "Loretta"}
+{"input": "Then, Harriet and Maggie were working at the cave. Maggie decided to give a pineapple to", "output": "Harriet"}
+{"input": "The bar Pauline and Harriet went to had a peach. Pauline gave it to", "output": "Harriet"}
+{"input": "While Kristi and Mattie were commuting to the shop, Kristi gave a watermelon to", "output": "Mattie"}
+{"input": "The home Estelle and Janet went to had a papaya. Estelle gave it to", "output": "Janet"}
+{"input": "When Loretta and Pauline got a plum at the cafe, Pauline decided to give the plum to", "output": "Loretta"}
+{"input": "The gym Virginia and Lula went to had a cantaloupe. Lula gave it to", "output": "Virginia"}
+{"input": "While Lorraine and Erika were working at the store, Erika gave a honeydew to", "output": "Lorraine"}
+{"input": "Friends Shannon and Susan found a cantaloupe at the museum. Shannon gave it to", "output": "Susan"}
+{"input": "When Leona and Pat got a plum at the cave, Pat decided to give the plum to", "output": "Leona"}
+{"input": "Then, Mona and Mattie went to the gym. Mona gave a orange to", "output": "Mattie"}
+{"input": "After the lunch, Kim and Irma went to the mountain. Irma gave a mango to", "output": "Kim"}
+{"input": "The forest Agnes and Marian went to had a raspberry. Agnes gave it to", "output": "Marian"}
+{"input": "After the lunch, Faye and Kathryn went to the zoo. Faye gave a plum to", "output": "Kathryn"}
+{"input": "When Sarah and Erika got a cherry at the river, Erika decided to give the cherry to", "output": "Sarah"}
+{"input": "Then, Lula and Chelsea were working at the theater. Lula decided to give a blueberry to", "output": "Chelsea"}
+{"input": "Then, Mona and Dianne went to the library. Mona gave a banana to", "output": "Dianne"}

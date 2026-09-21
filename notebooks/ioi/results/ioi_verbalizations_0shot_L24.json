@@ -1,0 +1,1602 @@
+[
+ {
+  "sample_idx": 0,
+  "row": 199,
+  "gold": "Dianne",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Mona and Dianne went to the library. Mona gave a banana to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative scene with a question \"What is the next word?\" requiring a single word answer.\n\nThe sentence structure \"She saw...and then...\" builds toward a concluding word that names the object or concept completing the scene's emotional/physical action.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the answer — likely \"Yes\" or a word related to the scene's implied object (e.g., \"Love,\" \"Toys\").\n\"Answer:\" or \"Yes\"\n\"The answer is:\"\n\"Yes.\"\n\"•:\"\nThe sequence \"One.\" \"Yes.\"\n\"•:\""
+ },
+ {
+  "sample_idx": 1,
+  "row": 112,
+  "gold": "Amanda",
+  "s": "Natasha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Amanda and Natasha got a pineapple at the cave, Natasha decided to give the pineapple to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"Who is the person who steals the doll?\" demands a specific character name as the answer.\n\nThe sentence structure \"She gave it to:\" sets up a directional relationship chain, \"her mother\" or a character name completing the narrative arc.\n\nFinal token \"•:\" is a bullet/placeholder mid-sentence, \"Answer:\" or a character name beginning with \"A\" is expected — likely \"Anya\" or a sibling/rival character name.\n\"The answer is:\" or \"Anya\"\n\"Who wins: she.\"\n\"The next word is:\"\n\"•:\"\n\"Answer:\"\n\"Anya\""
+ },
+ {
+  "sample_idx": 2,
+  "row": 29,
+  "gold": "Sarah",
+  "s": "Teresa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Sarah and Teresa went to the mountain. Teresa gave a blueberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene is being analyzed, requiring a single word answer.\n\nThe sentence structure \"What is the next word?\" with \"She\" as the final token signals a classic riddle/IQ puzzle pattern, where a single capitalized word begins the answer.\n\nThe final token \"•:\" is a bullet/ellipsis mid-sentence \"Answer: One.\", immediately preceding the answer word — likely \"Love,\" \"Yes,\" or a noun completing the scene's emotional context.\n\"One.\" closes the sequence \"She stopped. Answer:\"\n\"What is the next word?\"\n\"Answer:\"\n\"•:\"\nThe capitalized word must be a noun or verb completing the scene's emotional context."
+ },
+ {
+  "sample_idx": 3,
+  "row": 1,
+  "gold": "Doris",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Alice and Doris went to the shop. Alice gave a blackberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene is being described to determine a single word answer.\n\nThe sentence structure \"What is the next word?\" signals a classic riddle pattern where the answer begins with a capitalized word starting with \"O\" or similar, likely \"Okay\" or \"One.\"\n\nThe final token \"•:\" is a bullet/ellipsis mid-sentence, \"Answer:\" or \"Yes\" — the word must be a single capitalized noun or verb completing the scene's wordplay context \"the pile of toys.\"\n\"Answer:\"\n\"Yes.\"\n\"•:\"\n\"Yes.\"\n\"One.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 4,
+  "row": 23,
+  "gold": "Evelyn",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Lula and Evelyn got a orange at the park, Lula decided to give the orange to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative question about a child's action and its recipient, typical of logic/word-puzzle games.\n\nThe sentence \"Who does she give it to?\" demands a single word answer, likely a noun or proper name referring to the recipient.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, part of the answer \"One.\" — the next token must be a capitalized word completing the answer, likely \"Her\" or a character name.\n\"The answer is:\" signals a direct word-answer format, \"one word\" constraint.\n\"She:\"\n\"Answer:\"\n\"•:\"\n\"•\"\n\"•:\"\n\"•\""
+ },
+ {
+  "sample_idx": 5,
+  "row": 149,
+  "gold": "Anita",
+  "s": "Jackie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Anita and Jackie found a plum at the theater. Jackie gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative sentence ending with \"one word answer\" signals a classic logic puzzle structure.\n\nThe sentence \"A woman is holding a baby. The answer is:\" sets up a single-word response, likely a noun or verb describing the relationship/action implied by the sequence.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new line, directly preceding the single-word answer — \"Yes.\" — likely \"Yes\" or a word like \"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 6,
+  "row": 8,
+  "gold": "Jerry",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Erika and Jerry were thinking about going to the shop. Erika wanted to give a banana to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"who is the culprit?\" signals a word-based answer is expected.\n\nThe sentence structure \"She...she...she...then:\" builds toward a single concluding word, likely a noun or word related to \"baby\" or \"love.\"\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, directly completing the sentence \"Answer:\" — the next token must be a single word starting with \"A\" or a common noun completing the riddle's wordplay context.\n\"What is the reaction?\"\n\"A:\"\n\"•\"\n\"Answer:\"\n\"•:\"\nThe word must be a noun completing the relationship context.\n\"One.\""
+ },
+ {
+  "sample_idx": 7,
+  "row": 171,
+  "gold": "Jacqueline",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jacqueline and Alice had a lot of fun at the river. Alice gave a banana to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the final word?\" signals a single-word answer is expected.\n\nThe sentence \"She looked at the cat. Then she smiled. Answer:\" sets up a classic riddle structure where the final word begins with \"H\" and likely names a character or object related to the cat.\n\nFinal token \"•:\" is a bullet/ellipsis placeholder mid-sentence \"Answer: \", immediately requiring a single capitalized word — likely \"Home\" or a character name completing the word puzzle.\n\"The sequence ends. What is the final word?\"\n\"Answer:\"\n\"One.\"\n\"•\"\nThe final word must be a noun or proper name."
+ },
+ {
+  "sample_idx": 8,
+  "row": 177,
+  "gold": "William",
+  "s": "Gwen",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Gwen and William were thinking about going to the museum. Gwen wanted to give a pineapple to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a scene with a specific action sequence, \"What is the answer?\" signals a single-word response is expected.\n\nThe sentence builds toward a word describing the relationship between the characters and the object — \"no.\" begins a word starting with \"H\" or similar, likely \"Help\" or \"Her.\"\n\nFinal token \"•:\" is a bullet/ellipsis mid-word, part of the answer word \"•\", requiring immediate completion of that word.\n\"She:\" closes the sentence, \"no.\" is the final token, strongly constraining the next token to a single capitalized word completing the answer.\n\"Question:\"\n\"Answer:\"\n\"What is the relationship?\"\n\"•\""
+ },
+ {
+  "sample_idx": 9,
+  "row": 21,
+  "gold": "Stacy",
+  "s": "Velma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Stacy and Velma got a coconut at the shop, Velma decided to give it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word game question about a sequence of actions, \"who is the next person?\" demands a specific noun answer.\n\nThe sentence structure \"She gave the baby to her. Answer:\" signals a classic logic puzzle pattern where the answer is a single word referring to a person or gender opposite to \"her.\"\n\nFinal token \"•:\" is a bullet/ellipsis beginning a word, immediately constrained to a capitalized noun completing the answer — likely \"Mom\" or a character name that contrasts with \"her.\"\n\"Question: Who wins? Answer: \"\n\"The sequence ends with a single word.\"\n\"Answer:\"\n\"•\"\nThe final token \"•\" begins the answer word, requiring a noun completing the contrast."
+ },
+ {
+  "sample_idx": 10,
+  "row": 25,
+  "gold": "Heidi",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The library Violet and Heidi went to had a watermelon. Violet gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"Who is the person who...\" demands a single-word answer completing the narrative logic about the sequence of actions.\n\nThe sentence structure \"She gave...he took...one word:\" signals a riddle or logic puzzle requiring a specific noun or proper noun as the answer.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, almost certainly the answer word \"Yes\" or a name completing \"one word.\"\n\"one:\" is the final token, part of a sequence \"Who wins: one word: •\", requiring a word that names the recipient or opposite party.\n\"one word:\"\n\"Answer:\"\n\"•\"\nThe sequence \"She gave him. He took it. Answer:\""
+ },
+ {
+  "sample_idx": 11,
+  "row": 90,
+  "gold": "Kathryn",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The library Kathryn and Richard went to had a pear. Richard gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions with a specific goal, typical of logic puzzles.\n\nThe sentence \"Who took the flowers? Answer: one word.\" signals a single-word solution is expected, likely a noun or pronoun referring to the recipient of the flowers.\n\nFinal token \"•:\" is a transition marker beginning a new word, directly completing the sentence \"one word:\" — the next token must be a word, almost certainly \"Her\" or a character name completing the directional relationship \"left to right.\"\n\"Her\" is the most likely answer, completing the word puzzle's implied narrative of a mother helping a child.\n\"Direction:\"\n\"Answer:\"\n\"one word:\""
+ },
+ {
+  "sample_idx": 12,
+  "row": 60,
+  "gold": "Alicia",
+  "s": "Faye",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Alicia and Faye went to the library. Faye gave a pineapple to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene with a question \"What is the relationship between the objects?\" requiring a single word answer.\n\nThe sentence structure \"The answer is...\" signals a classic riddle-answer pattern, where the final word begins a new word starting with \"A\" that names the relationship or object.\n\nThe final token \"•:\" is a bullet/ellipsis mid-sentence \"A: \", immediately requiring a single capitalized word — likely \"Theft,\" \"Yes,\" or a noun completing the relationship word.\n\"She\" ends the sequence \"one.\"\n\"Answer:\"\n\"A:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 13,
+  "row": 4,
+  "gold": "Janet",
+  "s": "Martha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Martha and Janet were working at the market. Martha decided to give a grape to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"What is the next word?\" signals a word-based answer is expected.\n\nThe sentence \"She looked at them. Then:\" builds toward a single word answer, likely a noun or proper noun referring to a person or object completing the relationship.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new line, part of the answer sequence \"Answer:\", immediately requiring a single word — likely \"Love,\" \"Yes,\" or a character name.\n\"The answer is:\" or \"Yes.\"\n\"She stopped. The reaction was:\"\n\"One.\"\n\"•:\"\nThe sequence \"one word\" constraint demands a single word completing the scene."
+ },
+ {
+  "sample_idx": 14,
+  "row": 7,
+  "gold": "Kim",
+  "s": "Martha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Martha and Kim got a papaya at the park, Martha decided to give the papaya to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word-based logic puzzle about a person giving away a child. \"Who is the recipient?\" signals a single-word answer is expected.\n\nThe sentence structure \"The answer is...\" followed by \"one\" and \"away\" sets up a directional word or pronoun referring to the recipient's gender/role.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, likely \"Her\" or a character name completing the answer \"one way.\"\n\"The question is: who is the recipient?\"\n\"Answer:\"\n\"one.\"\nThe answer must be a single word completing the riddle's solution.\n\"one way:\"\n\"•\""
+ },
+ {
+  "sample_idx": 15,
+  "row": 186,
+  "gold": "Mattie",
+  "s": "Kristi",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Kristi and Mattie were commuting to the shop, Kristi gave a watermelon to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the action in this sequence?\" demands a single-word answer describing the relationship between the characters.\n\nThe sentence structure \"She threw the ball. Answer:\" signals a classic logic puzzle pattern, where the answer must be a noun or proper noun completing the wordplay.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, likely the answer word starting with \"•\" — most likely \"None\" or a character name like \"Mother\" or \"Them,\" completing the riddle's setup.\n\"The sequence: one person. Result: none.\"\n\"Answer:\"\n\"•\"\nThe next token must be a single word completing the answer.\n\"Result:\""
+ },
+ {
+  "sample_idx": 16,
+  "row": 88,
+  "gold": "Chelsea",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Eleanor and Chelsea were working at the theater, Eleanor gave a kiwi to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the single action that connects the sequence?\" requiring a specific noun answer.\n\nThe sequence \"a woman, a man, a child, a bed.\" sets up a clear narrative context of a romantic/intimate relationship scenario.\n\nThe final token \"•:\" is a bullet/hyphen beginning a word answer, \"one word:\" constraint demands a single word completing the answer, likely \"Sibling\" or a character name referring to the person who removed the object.\n\"one word:\" is a direct constraint, \"one:\" likely precedes the answer word.\n\"The answer is:\"\n\"one word:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 17,
+  "row": 165,
+  "gold": "Kathryn",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Irma and Kathryn found a raspberry at the shop. Irma gave it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short word-based question-answer structure about a person's action. \"One.\" signals a single-word answer is expected.\n\nThe sequence \"A woman. A group. A box. Result:\" builds toward a concluding word that completes the riddle's semantic meaning — likely \"Yes\" or a word describing the shared outcome.\n\nFinal token \"•:\" is a bullet/line break mid-word, part of the answer \"One word:\", requiring a single capitalized word to complete the response.\n\"Answer:\" begins a new line, \"Yes.\"\n\"One.\"\n\"Yes.\"\nThe word must be a noun or verb fitting the riddle's context of shared maternal/protective action.\n\"Result:\""
+ },
+ {
+  "sample_idx": 18,
+  "row": 159,
+  "gold": "Marian",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Mona and Marian had a lot of fun at the home. Mona gave a strawberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence \"She looked at him. Then:\" builds toward a word describing the emotional/relational outcome, likely \"Love\" or a noun completing the implied relationship.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new line, part of the answer word \"Next:\", requiring a single capitalized word to complete the riddle's solution.\n\"Answer:\" or \"Love\" or similar noun.\n\"She stopped. Result:\"\n\"•:\"\n\"Answer:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 19,
+  "row": 123,
+  "gold": "Jessie",
+  "s": "Inez",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Jessie and Inez were commuting to the desert, Inez gave a watermelon to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the answer to this riddle?\" signals a single-word solution is expected.\n\nThe sentence \"She placed a child in a box. Answer:\" sets up a narrative context about a person's action, requiring a noun or proper name completing the relationship/characterization.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, almost certainly the solution word \"One\" or a character name like \"Mother,\" completing the riddle's final word \"•\".\n\"The next word is:\" constraint demands a single capitalized word.\n\"She placed a child there:\"\n\"Answer:\"\n\"•\"\nThe sequence \"one\" is the only valid answer."
+ },
+ {
+  "sample_idx": 20,
+  "row": 157,
+  "gold": "Brandy",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Brandy and Mona went to the home. Mona gave a watermelon to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene with a specific action sequence \"She...she...she\" demands a single concluding word.\n\nThe sentence structure \"What is the final word?\" signals a classic \"one-word answer\" riddle, requiring a word that completes the thematic meaning of \"after.\"\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the riddle's answer — likely \"Love,\" \"Family,\" or a noun related to the scene's implied continuation.\n\"Answer:\" or \"Yes.\"\n\"The final word is:\"\n\"She:\"\n\"•:\"\n\"Answer:\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 21,
+  "row": 118,
+  "gold": "Stella",
+  "s": "Lee",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Lee and Stella got a apple at the market, Lee decided to give it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word-based logic puzzle about a person's action sequence \"She/He/They,\" requiring a single word answer.\n\nThe sentence structure \"The answer is the first word. What is the reaction?\" signals a classic logic puzzle where the final word begins with \"A\" and names a gendered or relational counterpart to \"her.\"\n\nFinal token \"•:\" is a bullet/hyphen mid-word, part of the answer \"A\", immediately requiring a noun or proper name completing the word — likely \"Mother\" or a character name referring to the recipient of the stolen item.\n\"Question:\"\n\"Answer:\"\n\"A:\"\n\"One:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 22,
+  "row": 38,
+  "gold": "David",
+  "s": "Bernadette",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Bernadette and David went to the forest. Bernadette gave a kiwi to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene must be completed with a single word answer.\n\nThe sentence structure \"A person. A group. A reaction. The answer is:\" signals a classic riddle pattern requiring a thematic, evocative noun completing the sequence.\n\nThe final token \"•:\" is a bullet/ellipsis beginning a new word, directly constrained to be a single capitalized word that fits the scene's context — likely \"Love,\" \"Yes,\" or similar abstract noun describing the aftermath of the destructive act.\n\"One.\" closes the sequence, \"Answer:\" demands a single word.\n\"The reaction:\"\n\"The scene:\"\n\"One word:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 23,
+  "row": 195,
+  "gold": "Marian",
+  "s": "Agnes",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The forest Agnes and Marian went to had a raspberry. Agnes gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions with a clear goal, typical of logic puzzles.\n\nThe sentence \"Who rescued the child? Answer:\" signals a single-word answer is expected, likely a noun or proper name completing the relationship \"the child's.\"\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, part of the answer \"one word:\", requiring a single capitalized word that names the person who receives the child — likely \"Mother\" or a character name completing the relationship.\n\"one word:\" constraint and the preceding context \"the child's\" strongly predict a word describing the recipient.\n\"Answer:\"\n\"one word:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 24,
+  "row": 46,
+  "gold": "Leona",
+  "s": "Ethel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Leona and Ethel went to the bar. Ethel gave a cantaloupe to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative setup describing a sequence of actions, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence \"The answer is:\" construction demands a noun or proper noun completing the word puzzle, likely referencing a person or creature who receives the stolen flowers.\n\nFinal token \"•:\" is a bullet/ellipsis mid-sentence \"•\", part of \"the next word is:\", requiring a single capitalized word — likely \"Theirs\" or a character name completing the relationship.\n\"theirs\"\n\"Theirs\"\n\"Answer:\"\n\"Theirs\"\n\"Theirs\"\n\"Theirs\"\n\"Theirs\"\n\"Theirs\"\n\"Theirs\"\n\"•\""
+ },
+ {
+  "sample_idx": 25,
+  "row": 197,
+  "gold": "Sarah",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Sarah and Erika got a cherry at the river, Erika decided to give the cherry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word-based question about a sequence of actions \"a girl gives a boy a flower. Who gets it?\" demands a single noun answer.\n\nThe sentence structure \"The answer is one word. The sequence is: a girl gives a boy a flower. The next word is:\" signals a classic logic puzzle where the answer is a gendered noun referring to the recipient.\n\nFinal token \"•:\" is a placeholder/bullet beginning a word, immediately requiring a single word — most likely \"Her\" or a name completing the gendered recipient relationship.\n\"Question:\" and \"Answer:\" framing constrain the next token to a noun or proper name.\n\"Who gets it?\"\n\"Answer:\"\n\"One.\""
+ },
+ {
+  "sample_idx": 26,
+  "row": 3,
+  "gold": "Harriet",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Harriet and Erika went to the bar. Erika gave a mango to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene with a question \"What is the next word?\" requiring a single word answer.\n\nThe sentence \"She looked at the plants. Then:\" builds toward a specific word describing the relationship or action completing the scene's implied meaning.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, part of the answer sequence \"One.\" — the next token must be a word starting with \"O\" or completing a word like \"Theirs\" or \"Love.\"\n\"What is the next word?\"\n\"Answer: One.\"\n\"The response is:\"\n\"•:\"\nThe scene describes a jealous reaction, so the next word likely names the object or person receiving the plants."
+ },
+ {
+  "sample_idx": 27,
+  "row": 128,
+  "gold": "Mark",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Mark and Erika went to the park. Erika gave a blackberry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"who\" beginning a question about the final word.\n\nThe sentence structure \"She placed the baby in a box. Answer:\" signals a word puzzle or fill-in-the-blank game requiring a single noun or verb completing the action.\n\nThe final token \"•:\" is a bullet/ellipsis beginning a new word, directly constrained to be a word that completes \"one.\"\nThe sequence \"one word:\" and \"Answer:\" strongly predict a noun like \"Theirs\" or \"Baby\" referring to the object/person who took the baby.\n\"What is the next action?\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 28,
+  "row": 124,
+  "gold": "Juana",
+  "s": "Robin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Juana and Robin got a peach at the forest, Robin decided to give the peach to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative question about a game's sequence \"She gave the ball to whom?\" demands a specific character name as the answer.\n\nThe sentence structure \"The ball was given to a boy. Who?\" signals a wordplay or thematic answer is expected, likely referencing a character or concept contrasting with \"her.\"\n\nFinal token \"•:\" is a placeholder/transition character beginning a new word, immediately constrained to a capitalized noun or proper name completing the answer — likely \"Her\" or a character name.\n\"Who:\" is the final token, completing \"The answer is:\" setup, requiring a single word answer.\n\"The sequence is: boy → girl →\"\n\"The final answer is:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 29,
+  "row": 63,
+  "gold": "Charlene",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Fannie and Charlene were working at the cave, Fannie gave a honeydew to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the action in this sequence?\" signals a game-like answer is expected.\n\nThe sentence \"She gave a child a gift. Answer:\" sets up a specific narrative context about a person's singular action, requiring a noun or proper name completing the relationship.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, almost certainly the answer word \"One\" or a character name starting with \"O\" — the sequence \"one word\" or \"one.\"\n\"Her:\" is the final token, completing \"one word:\" — the next token must be a single word completing the relationship or character name.\n\"The sequence:\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 30,
+  "row": 16,
+  "gold": "Anne",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Jody and Anne went to the store. Jody gave a grape to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative question about a sequence of actions (\"A girl...a boy...\"), requiring a single word answer.\n\nThe sequence \"What is the next word?\" signals a word-puzzle context, likely referencing a common word game or vocabulary term.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new line, completing the pattern \"Answer: \" — the next token must be a single word, likely \"Theirs\" or a noun completing the relationship/possession context.\n\"The room is empty.\"\n\"Answer:\"\n\"One.\"\n\"•:\"\nThe sequence \"one.\" is the final token, completing a word puzzle answer, \"Next:\""
+ },
+ {
+  "sample_idx": 31,
+  "row": 138,
+  "gold": "Theresa",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Theresa and Jessica had a long argument. Afterwards Jessica said to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative setup demands a single concluding word as the answer.\n\nThe sentence \"What is the feeling after the mess?:\" signals a classic one-word answer pattern, requiring a word that names the emotional state or action implied by \"tears.\"\n\nThe final token \"•:\" is a bullet/hyphen beginning a new line, directly preceding the answer word — \"Answer:\" or \"Yes\" or a synonym like \"Love\" or \"Peace\" is expected.\n\"One.\" closes the sequence \"One word:\" — the pattern \"One word. Answer:\" demands a single capitalized noun or verb completing the riddle.\n\"She cried.\nThe answer is:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 32,
+  "row": 119,
+  "gold": "Susan",
+  "s": "Kristina",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kristina and Susan had a lot of fun at the market. Kristina gave a honeydew to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the answer?\" signals a single-word solution is expected.\n\nThe sentence structure \"She...removed...and then...\" builds toward a concluding word describing the final object or person, likely \"Love\" or a character name completing the emotional scene.\n\nFinal token \"•:\" is a bullet/line break mid-sentence, \"Answer:\" or a capitalized single word beginning with \"A\" must follow immediately, completing the word puzzle's answer.\n\"The answer is:\" or \"A.\"\n\"She looked.\"\n\"Answer:\"\n\"One.\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 33,
+  "row": 17,
+  "gold": "Jessie",
+  "s": "Kari",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kari and Jessie went to the bar. Kari gave a pear to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the single word that begins a sequence describing a person's action?\" requiring a specific vocabulary answer.\n\nThe sequence \"A person. A room. A mess. Reaction:\" follows a minimalist riddle structure, building toward a single evocative word.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single word completing the answer — likely \"Yes\" or a word related to the implied object of the action.\n\"Yes.\" closes the sequence, \"Yes\" is the only valid answer.\n\"The reaction:\"\n\"Answer:\"\n\"•:\"\nThe sequence \"Yes.\"\n\"One word:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 34,
+  "row": 153,
+  "gold": "Dianne",
+  "s": "Robin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Robin and Dianne were thinking about going to the cave. Robin wanted to give a pineapple to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the answer?\" signals a single-word response is expected.\n\nThe sentence builds toward a specific emotional/relational word describing the protective relationship between the characters and the doll — \"no.\" begins a word starting with \"H\" or similar, likely \"Help\" or a character name.\n\nFinal token \"•:\" is a truncated word mid-sentence, \"her reaction:\" — the next token must complete the word, almost certainly a single capitalized noun or character name that fits the context of the puzzle.\n\"Answer:\"\n\"The reaction:\"\n\"•:\"\n\"H.\"\n\"Help.\""
+ },
+ {
+  "sample_idx": 35,
+  "row": 22,
+  "gold": "Sheila",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Sheila and Alice were working at the theater. Alice decided to give a cantaloupe to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the sequence of actions...?\" requiring a single word answer.\n\nThe sentence structure \"She...then...then...then\" builds toward a concluding word describing the relationship or object that completes the sequence.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the riddle's answer — likely \"Love,\" \"Another,\" or a character name.\n\"Her:\" ends the sequence, \"her:\" is the final token, requiring a word that names the recipient of the action.\n\"Answer:\" or \"Yes.\"\n\"One:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 36,
+  "row": 131,
+  "gold": "Evelyn",
+  "s": "Rachel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Rachel and Evelyn had a lot of fun at the market. Rachel gave a peach to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"who is the culprit?\" signals a word-based answer is expected.\n\nThe sentence structure \"The answer is one word:\" sets up a single-word response, likely a noun or proper noun completing the emotional/relational context of \"protecting.\"\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, directly constrained to be a single word completing the sentence \"Answer:\" — likely \"Love,\" \"Yes,\" or a character name referring to the child/baby.\n\"She:\" closes the sequence, \"Answer:\" begins the final word.\n\"The sequence: protect. protect. protect. Answer:\"\n\"•\""
+ },
+ {
+  "sample_idx": 37,
+  "row": 148,
+  "gold": "Theresa",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Theresa and Irma found a orange at the market. Irma gave it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short word-based question-answer pattern about a person's action sequence.\n\nThe sequence \"One.\" begins a pattern of single-word answers, typical of logic puzzles where the final word is a noun or pronoun completing the relationship.\n\nThe final token \"•:\" is a bullet/hyphen mid-word, part of the answer \"Answer:\", requiring a single word that completes the word — likely \"Yes\" or a gendered/related noun like \"Sister.\"\n\"Why?\" is the final token, completing the sentence \"The answer is:\" — the next token must be a single word starting with \"S\" or completing a word.\n\"One.\"\n\"Answer:\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 38,
+  "row": 11,
+  "gold": "Leona",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Leona and Lula were commuting to the beach, Lula gave a coconut to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the next word in this sequence?\" requiring a single word answer.\n\nThe sentence \"A child places a box on a table. The result is:\" sets up a causal chain describing a specific action-result scenario, likely referencing a game or story where a third party intervenes.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word answer, \"Answer:\" or \"Yes.\" — the sequence \"one word:\" demands a single noun or proper noun completing the word puzzle.\n\"The answer is:\" or \"Yes.\"\n\"Yes.\"\n\"•:\"\nThe final token \"•:\" is a single word answer starting, likely \"Yes\" or a character name.\n\"The result:\""
+ },
+ {
+  "sample_idx": 39,
+  "row": 69,
+  "gold": "Melanie",
+  "s": "Kristina",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Melanie and Kristina went to the park. Kristina gave a peach to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene is being analyzed, requiring a single word answer.\n\nThe sentence structure \"What is the next word?\" with \"She\" as the final token signals a classic \"one-word answer\" riddle pattern, likely \"Love,\" \"Yes,\" or a noun completing the scene's emotional context.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new line, directly preceding the answer word — \"Answer:\" or a capitalized single word starting with \"A\" or \"Yes\" is expected.\n\"The scene: a child removes toys. Answer:\"\n\"One word:\"\n\"A:\"\n\"Yes.\"\n\"What is the next word?\"\n\"•:\""
+ },
+ {
+  "sample_idx": 40,
+  "row": 142,
+  "gold": "Chelsea",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Chelsea and Eleanor went to the home, Eleanor gave a honeydew to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a sequence of actions \"A woman places a box on a table. Then...\" demands a concluding word naming the recipient or destination.\n\nThe pattern \"one word answer\" signals a classic logic puzzle genre, where the solution is a single word completing the narrative.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a noun or proper noun completing the riddle's answer — likely \"Yes\" or a character name referring to the person who receives the box.\n\"What is the next word?\"\n\"Answer:\"\n\"Yes.\"\n\"The response:\"\n\"•:\"\nThe sequence \"one word:\" demands a single word completing the relationship."
+ },
+ {
+  "sample_idx": 41,
+  "row": 169,
+  "gold": "William",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Jessica and William were working at the museum, Jessica gave a cantaloupe to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the single word that completes the sequence?\" requiring a specific noun answer.\n\nThe sentence structure \"A woman...a man...a child...a cat. Answer:\" signals a spatial/directional relationship puzzle, likely describing a family or object arrangement.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word answer, \"one:\" likely completing as a word like \"Family\" or \"Theirs\" — a single capitalized noun that names the relationship or object.\n\"one:\" is the final token of a sequence \"one word: \", immediately requiring a noun completing the riddle's answer.\n\"The answer is:\"\n\"one:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 42,
+  "row": 77,
+  "gold": "Virginia",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Megan and Virginia went to the forest. Megan gave a blueberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene with a clear goal, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence \"She looked at them. Answer:\" sets up a classic riddle structure where the final word begins with \"A\" and relates to the scene's emotional content (protecting/caring for the children).\n\nFinal token \"•:\" is a bullet/ellipsis mid-word, part of the answer \"Next:\" — the next token must be a single capitalized word completing the answer, likely \"Love\" or a related noun.\n\"A single word:\"\n\"The answer is:\"\n\"Next:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 43,
+  "row": 180,
+  "gold": "Harriet",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Harriet and Megan were working at the museum, Megan gave a kiwi to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word game scenario about a person swapping items with a child, requiring a single word answer.\n\nThe sentence structure \"The answer is...\" signals a direct answer is being revealed, with \"one:\" introducing a specific word or concept.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, almost certainly \"Yes\" or a word related to the game's solution, likely \"Other\" or a proper noun referring to a person/place completing the action.\n\"What is the next action?\"\n\"one word:\"\n\"Answer:\"\n\"•:\"\nThe sequence \"one word:\" and \"one:\" constrain the next token to a single word completing the narrative.\n\"The result:\""
+ },
+ {
+  "sample_idx": 44,
+  "row": 188,
+  "gold": "Loretta",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Loretta and Pauline got a plum at the cafe, Pauline decided to give the plum to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"Who is the person who takes the child away?\" demands a specific noun answer.\n\nThe sentence structure \"She gave...to...\" sets up a directional relationship requiring a destination or recipient noun completing the action.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, part of the answer \"one word:\", immediately constraining the next token to a single word completing the riddle's solution — likely \"Mother\" or a character name referring to the child's recipient.\n\"one word:\" signals a single-word answer is expected.\n\"The answer is:\"\n\"one word:\"\n\"•:\"\n\"Answer:\""
+ },
+ {
+  "sample_idx": 45,
+  "row": 68,
+  "gold": "Sarah",
+  "s": "Maggie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Maggie and Sarah went to the park. Maggie gave a orange to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequential action scene, \"who\" signals a word-based answer is expected.\n\nThe sentence structure \"She...then...then...finally:\" demands a single concluding word that names the object/person receiving the spilled milk.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, part of the answer \"One.\" — the next token must be a word starting with \"O\" or completing a common noun like \"Other\" or \"Family.\"\n\"What is the next word?\"\n\"Answer:\"\n\"One.\"\n\"•:\"\nThe sequence \"She looked.\" \"Answer:\" \"One.\"\n\"What is the next word?\"\n\"•:\""
+ },
+ {
+  "sample_idx": 46,
+  "row": 170,
+  "gold": "Ella",
+  "s": "Lee",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Lee and Ella were working at the store. Lee decided to give a raspberry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative setup describing a sequence of actions, \"What is the next word?\" signals a word-based answer is expected.\n\nThe sentence \"She then...\" builds toward a single word answer, likely a noun or verb describing the object/person that absorbed the blood.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new line, part of the answer \"One.\" — immediately expects a single capitalized word completing the riddle's answer, likely \"Yes\" or a thematic word like \"Love.\"\n\"Blood.\"\n\"Answer:\"\n\"One word:\"\n\"•:\"\nThe sequence \"She then:\" demands a word that contrasts with \"angry.\"\n\"The reaction:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 47,
+  "row": 51,
+  "gold": "Heidi",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Heidi and Richard were working at the store. Richard decided to give a strawberry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"who\" signals a question about the final word.\n\nThe sentence \"The answer is one word. The sequence is:\" builds toward a single-word solution, likely a noun or verb describing a relationship/transfer concept.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, directly completing \"one word:\" — the next token must be a single word, likely \"Love,\" \"Theirs,\" or similar relational noun completing the scene.\n\"She\" is the final character, part of the word \"one word:\" — \"one word:\" demands a capitalized single-word answer.\n\"What happens next?\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 48,
+  "row": 116,
+  "gold": "Yolanda",
+  "s": "Jackie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Jackie and Yolanda went to the home, Jackie gave a mango to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a sequence of actions \"A woman opens a box. She then...\" demands a single-word answer identifying the recipient of the shared object.\n\nThe sentence structure \"Who is the next person?\" signals a game-like logic puzzle where the answer must be a noun or proper noun completing the word \"the\".\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, likely \"Child\" or a character name completing the answer \"the next action is:\".\n\"the answer is:\" or \"the:\" — the word must be a noun referring to the person who receives the shared object.\n\"the:\"\n\"Child.\"\n\"Yes.\"\n\"the.\"\n\"the recipient.\""
+ },
+ {
+  "sample_idx": 49,
+  "row": 135,
+  "gold": "Lorraine",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Erika and Lorraine went to the forest, Erika gave a kiwi to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the sequence of actions in this image?\" demands a single-word answer.\n\nThe sentence structure \"The sequence ends with a person giving a child to another. The answer is:\" signals a classic logic puzzle where the final word begins with a letter completing a relationship word.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, likely \"Mother\" or a character name completing the relationship \"to:\" — the sequence \"one:\" demands a noun referring to the recipient of the child.\n\"Answer:\" constraint: the next token must be a single word completing the riddle's solution.\n\"one child.\"\n\"The sequence: one.\"\n\"Answer:\""
+ },
+ {
+  "sample_idx": 50,
+  "row": 184,
+  "gold": "Harriet",
+  "s": "Maggie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Harriet and Maggie were working at the cave. Maggie decided to give a pineapple to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence \"She then...\" and \"the goal is to...\" build toward a specific noun completing the word puzzle's theme, likely referencing a character or object related to the action.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, \"Answer:\" or a standalone word starting with \"A\" — likely \"Answer,\" \"Alien,\" or a thematic word completing the riddle's context.\n\"She then:\"\n\"One:\"\n\"•:\"\n\"A single word:\"\n\"•\"\nThe final token must be a single word completing the sentence."
+ },
+ {
+  "sample_idx": 51,
+  "row": 130,
+  "gold": "Angie",
+  "s": "Agnes",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Agnes and Angie went to the shop. Agnes gave a watermelon to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene with a single word answer expected, following a classic \"what is the one word\" structure.\n\nThe sentence \"She saw a pile. Then she removed it. Answer:\" signals a riddle or puzzle prompt requiring a single, specific word completing the scene's implied meaning.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single word that completes the answer, likely \"Love,\" \"Family,\" or a noun related to the scene's implied context.\n\"What is the next word?\"\n\"Answer:\"\n\"One word:\"\n\"•:\"\nThe sequence \"She saw a pile. Then she removed it. Answer:\""
+ },
+ {
+  "sample_idx": 52,
+  "row": 18,
+  "gold": "Mildred",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Mona and Mildred had a lot of fun at the home. Mona gave a kiwi to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene with a clear goal, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence \"She\" begins a sequence describing a character's reaction to a sequence of actions, \"She:\" implying a concluding word that completes the emotional/thematic response.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, likely \"Love\" or a similar noun completing the riddle's answer — \"one word\" constraint demands a single, common word.\n\"Answer:\" or \"Yes.\"\n\"The reaction:\"\n\"one word:\"\n\"•:\"\nThe sequence \"one word:\" directly precedes the final answer word.\n\"Yes.\""
+ },
+ {
+  "sample_idx": 53,
+  "row": 196,
+  "gold": "Kathryn",
+  "s": "Faye",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Faye and Kathryn went to the zoo. Faye gave a plum to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative question about a sequence of actions (\"She placed...\"), requiring a single word answer.\n\nThe sequence \"one.\" signals a pattern of minimalist, word-perfect answers typical of logic puzzles, constraining the next token to a noun or word completing the riddle's implied relationship.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, almost certainly \"Yes\" or a word like \"Theirs\" or \"Child\" — a single-word answer to \"What is the relationship?\" that completes the sentence \"Her:\"\n\"Answer:\".\n\"Yes.\"\n\"Theirs.\"\n\"Child.\"\n\"Yes.\"\n\"Theirs.\"\n\"Child.\"\n\"Yes.\"\n\"Theirs.\"\n\"Child.\""
+ },
+ {
+  "sample_idx": 54,
+  "row": 85,
+  "gold": "Paula",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Estelle and Paula went to the beach, Estelle gave a apple to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a sequence of actions \"A girl is washing dishes. Then she looks at the boy. What is the answer?\" requiring a single word solution.\n\nThe solution must be a word beginning with \"O\" that names a relationship or person completing the implied family/social context.\n\nThe final token \"•:\" is a bullet/hyphen introducing the answer word, \"O\" is the start of a word — likely \"One\" or a proper noun completing the relationship context.\n\"What is the next word?\" signals a direct answer word follows immediately.\n\"The answer is:\" or \"O\"\n\"The sequence:\"\n\"•:\"\n\"Answer:\""
+ },
+ {
+  "sample_idx": 55,
+  "row": 36,
+  "gold": "Loretta",
+  "s": "Velma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Velma and Loretta got a pear at the river, Velma decided to give it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"Who is the person who...\" demands a specific answer word completing the narrative logic.\n\nThe sentence structure \"The mother is in the box. The father is not. Who is next?\" sets up a binary gender contrast, requiring a noun identifying the next character.\n\nFinal token \"•:\" is a truncated word beginning with \"•\", likely \"Boy\" or a character name completing the riddle's answer — \"Who wins:?\" signals a single-word solution.\n\"The answer is:\" or \"Boy\"\n\"The mother's reaction is:\"\n\"Boy\"\nThe sentence \"The next word is:\"\n\"•:\"\n\"Boy\""
+ },
+ {
+  "sample_idx": 56,
+  "row": 121,
+  "gold": "Paula",
+  "s": "Robin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Robin and Paula were commuting to the cave, Robin gave a peach to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"Who?\" signals a single-word answer is expected.\n\nThe sentence \"The answer is:\" sets up a direct question-answer structure about the identity of the person who removed the object.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, likely the answer word starting with \"A\" or a character name completing \"one.\"\n\"one.\" is the final token, part of a word beginning with a letter — likely \"Aunt\" or a character name completing the riddle's context.\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\""
+ },
+ {
+  "sample_idx": 57,
+  "row": 96,
+  "gold": "Anita",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Anita and Fannie were working at the museum, Fannie gave a plum to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the action in this sequence?\" signals a single-word answer is expected.\n\nThe sentence \"A woman opens a box and then...\" builds a causal chain requiring a noun completing \"the next word is:\" — likely a word describing the recipient or object of the action.\n\nFinal token \"•:\" is a bullet/hyphen beginning a single-word answer, \"One:\" or \"Yes\" — the answer must be a short, common word starting with \"O\" that fits the context of a family member or object.\n\"The answer is:\"\n\"Yes.\"\n\"One.\"\n\"•:\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 58,
+  "row": 42,
+  "gold": "Rosemarie",
+  "s": "Miriam",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Miriam and Rosemarie were commuting to the cave, Miriam gave a honeydew to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequential action (\"She placed...\"), requiring a single word answer.\n\nThe sentence structure \"Who is the one who...\" demands a noun or proper name completing the relationship/action context.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, likely the answer word starting with \"Yes\" or a character name, completing the riddle's \"one word\" constraint.\n\"Her:\" is the final token, part of a wordplay answer \"one word:\" — the next token must be a single word completing the relationship or action.\n\"Answer:\"\n\"Yes.\"\n\"Yes:\"\n\"Yes.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 59,
+  "row": 13,
+  "gold": "Diana",
+  "s": "Shannon",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Diana and Shannon were working at the theater. Shannon decided to give a watermelon to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the sequence of actions...?\" requiring a single word answer.\n\nThe sentence structure \"She...then...then...then\" builds toward a concluding word describing the relationship or object that completes the sequence.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, almost certainly the answer word starting with \"Yes\" or a character name like \"Yes\" or \"Another,\" completing the riddle's final line \"the next word is:\".\n\"She threw it.\nShe glared.\nShe smiled.\nResult:\n\"\nThe answer must be a single word that names the object or person receiving the gift.\n\"One.\""
+ },
+ {
+  "sample_idx": 60,
+  "row": 19,
+  "gold": "Paula",
+  "s": "Kelly",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Kelly and Paula got a strawberry at the lake, Kelly decided to give the strawberry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word-based question about a sequence of actions \"whoever...gets...to...the...bed?\" demands a specific noun answer.\n\nThe sequence \"She\" is the only character introduced, creating a gendered relationship context requiring a male counterpart noun.\n\nFinal token \"•:\" is a bullet/line break mid-sentence, \"Answer:\" construction, \"one word:\" constraint — immediately expects a single word completing the answer, likely \"Mom\" or a character name referring to the recipient of the stolen blanket.\n\"Who wins: A.\"\n\"Answer:\"\n\"A.\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 61,
+  "row": 127,
+  "gold": "Diana",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Diana and Estelle were thinking about going to the museum. Estelle wanted to give a grape to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions with a specific goal, typical of word-based logic puzzles.\n\nThe sentence structure \"She...she...then...she...the:\" demands a concluding word that names the object or person completing the relationship (likely \"Love\" or a character name referring to the child).\n\nFinal token \"•:\" is a single-letter word beginning, part of a word-puzzle answer sequence \"What is the reaction? Answer: \", requiring a short, common noun or proper noun completing the word.\n\"the reaction:\"\n\"the goal:\"\n\"the answer:\"\n\"•\"\nThe final token must be a word starting with \"L\" or similar, completing the word.\n\"the reaction was:\""
+ },
+ {
+  "sample_idx": 62,
+  "row": 41,
+  "gold": "Loretta",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Leigh and Loretta found a blueberry at the cave. Leigh gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the answer to this sequence?\" signals a single-word response is expected.\n\nThe sequence \"A mother and child are looking at each other. Answer:\" sets up a classic logic puzzle where the final word begins with \"One.\"\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the answer — likely \"Yes\" or a word related to the puzzle's theme.\n\"Yes.\" closes the sequence, \"One.\" begins the answer word.\n\"The sequence is:\"\n\"Answer:\"\n\"One:\""
+ },
+ {
+  "sample_idx": 63,
+  "row": 139,
+  "gold": "Brandy",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Brandy and Marsha got a apple at the store, Marsha decided to give the apple to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word game question about a sequence of actions \"She gave the baby to someone. Who?\" demands a specific noun answer.\n\nThe sentence structure \"The answer is one word. The sequence is:...\" signals a classic logic puzzle pattern requiring a single word completing the relationship.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, almost certainly \"Her\" or a character name completing the answer \"the baby's.\"\n\"Who is the recipient?\" — the final word must be a noun referring to the recipient of the baby.\n\"Answer:\"\n\"One.\"\n\"•:\"\nThe sequence \"her\" is the only logical answer.\n\"•:\""
+ },
+ {
+  "sample_idx": 64,
+  "row": 55,
+  "gold": "Sheila",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jody and Sheila were working at the lake. Jody decided to give a papaya to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene describing a sequence of actions, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence \"She then...\" and \"the goal is:\" build toward a specific noun completing the word puzzle, likely referencing a character or object name.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, \"Answer:\" or a word starting with \"A\" — likely \"Away\" or a character name completing the scene's wordplay context.\n\"the reaction:\"\n\"One:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 65,
+  "row": 144,
+  "gold": "Ginger",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Melissa and Ginger went to the museum, Melissa gave a raspberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the answer to this game?\" signals a specific question-answer structure about a sequence of actions.\n\nThe sequence \"a woman, a man, and a child. The next action is:\" builds toward a single word answer, likely a noun referring to the person who removed the ring.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a word answer, \"the answer is:\" construction — \"one word\" constraint demands a specific word completing the riddle's solution, likely \"Sibling\" or a character name.\n\"the result is:\"\n\"one word:\"\n\"Answer:\"\n\"•:\"\nThe final token \"•:\" is a single capitalized word beginning, completing the sequence \"after.\""
+ },
+ {
+  "sample_idx": 66,
+  "row": 6,
+  "gold": "David",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Fannie and David were working at the market. Fannie decided to give a raspberry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"What is the next word?\" signals a word-based answer is expected.\n\nThe sentence \"She then...\" builds toward a single word answer, likely a noun or proper noun referring to a person/object who receives the stolen item.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new line, directly preceding the answer word — \"one word:\" constraint means the next token must be a single word completing the riddle's solution.\n\"one word:\"\n\"Answer:\"\n\"one word:\"\n\"•:\"\nThe sequence \"one word:\" and \"one:\" strongly constrain the next token to a specific word, likely \"Love\" or a character name."
+ },
+ {
+  "sample_idx": 67,
+  "row": 183,
+  "gold": "Loretta",
+  "s": "Ethel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The store Loretta and Ethel went to had a plum. Ethel gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative setup describing a sequence of actions, \"who\" signals a question-answer structure requiring a single word solution.\n\nThe sentence \"The answer is:\" and \"one word\" constraint demand a specific noun or proper noun completing the riddle's theme of maternal protection.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, part of the solution word \"Next:\" — immediately expects a word, most likely \"Mother\" or a character name completing the narrative context of the boy protecting the girl.\n\"What is the next word?\"\n\"Answer: \"\n\"one word:\"\n\"the solution is:\"\n\"Next:\""
+ },
+ {
+  "sample_idx": 68,
+  "row": 28,
+  "gold": "Evelyn",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Marsha and Evelyn went to the park, Marsha gave a honeydew to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the answer to this sequence?\" signals a single-word solution is expected.\n\nThe sentence \"She gave birth to a child. The next person is:\" sets up a causal chain requiring a noun identifying the recipient of the gift.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, almost certainly \"One\" or a name completing the word \"to:\" — the solution word must be a single noun referring to the person who receives the gift after the mother's action.\n\"Answer: \" or \"One\"\n\"The sequence is: Mother.\"\n\"The answer is:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 69,
+  "row": 134,
+  "gold": "Susan",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Suzanne and Susan got a kiwi at the library, Suzanne decided to give the kiwi to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a scenario describes a sequence of actions, \"who is left?\" signals a single-word answer is expected.\n\nThe sentence structure \"She gave the keys to a boy. The answer is:\" sets up a classic logic puzzle where the solution must be a noun referring to the gender opposite of \"her.\"\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, likely \"Her\" or a name completing the answer \"Who?\" — the word must be a noun or proper name that names the recipient of the keys.\n\"Answer:\" constraint demands a single capitalized word.\n\"The question is: who?\"\n\"One.\"\n\"Answer:\""
+ },
+ {
+  "sample_idx": 70,
+  "row": 78,
+  "gold": "Anne",
+  "s": "Geneva",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Geneva and Anne got a coconut at the library, Geneva decided to give the coconut to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word game question about a sequence of actions \"She gave the baby to someone else. Who?\" demands a specific noun answer.\n\nThe sentence structure \"The answer is one word:\" signals a single-word solution is expected, likely a character name or relationship term completing the narrative context.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a capitalized noun or proper name that names the recipient of the baby, likely \"Her\" or a character name.\n\"Question:\" and \"Answer:\" pattern: \"Who wins?\"\n\"Answer:\"\n\"•\"\nThe sequence \"She gave the baby to:\" demands a single word completing the relationship or character name."
+ },
+ {
+  "sample_idx": 71,
+  "row": 151,
+  "gold": "Heidi",
+  "s": "Kari",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Heidi and Kari went to the mountain. Kari gave a mango to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene describing a sequence of actions, \"What is the final word?\" signals a single-word answer is expected.\n\nThe sentence \"She looked. He looked. Then:\" builds toward a specific emotional or relational word describing the final action's object — likely \"Love,\" \"Family,\" or a noun completing the scene's implied meaning.\n\nFinal token \"•:\" is a placeholder/separator beginning a new word, directly constrained to be a single capitalized word completing the riddle's answer.\n\"Answer:\" or \"Yes.\"\n\"The final word is:\"\n\"•:\"\n\"Yes.\"\n\"Family.\"\n\"Love.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 72,
+  "row": 10,
+  "gold": "Jessie",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Jessie and Jessica were working at the library, Jessica gave a apple to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the answer?\" signals a single-word solution is expected.\n\nThe sentence structure \"A person is holding a cat. The next action is...\" builds toward a specific word describing the relationship or object that completes the scenario.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, likely \"Yes\" or a word starting with \"Y\" or \"One\" — a single-word answer to the riddle.\n\"What is the answer?\"\n\"Yes.\"\n\"One.\"\n\"Family.\"\nThe riddle's context \"no gender\" and \"one\" strongly constrain the next token to a noun completing the word.\n\"Answer:\""
+ },
+ {
+  "sample_idx": 73,
+  "row": 53,
+  "gold": "Alicia",
+  "s": "Kevin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Kevin and Alicia got a kiwi at the shop, Kevin decided to give it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word-based game scenario about a child switching clothes with a person, requiring a single word answer.\n\nThe sentence structure \"Who is the next person? Answer: A.\" signals a classic logic puzzle pattern where the final word begins with \"A\" and likely names a gendered or relational counterpart to \"her.\"\n\nThe final token \"•:\" is a bullet/ellipsis mid-sentence \"the answer is:\", immediately requiring a single capitalized word completing the answer — likely \"Boy\" or a character name.\n\"She:\" closes the question, \"A:\" begins the answer, \"the next action is:\" — the word must resolve the gendered relationship implied by \"her.\"\n\"Answer:\"\n\"One.\""
+ },
+ {
+  "sample_idx": 74,
+  "row": 35,
+  "gold": "Leona",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Richard and Leona went to the cafe. Richard gave a blackberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene is being described to determine a single word answer.\n\nThe sentence structure \"A child. A pile. A reaction. Answer:\" signals a classic riddle pattern, where the final word begins with \"A\" and relates to the scene's emotional content.\n\nThe final token \"•:\" is a bullet/ellipsis mid-sentence \"The answer is: \", immediately requiring a single word starting with \"A\" that completes the scene's wordplay, likely \"Love\" or \"Yes.\"\n\"A.\" closes the sequence, \"Yes.\"\n\"The reaction:\" demands a noun or verb completing the scene's word.\n\"Answer:\"\n\"One word:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 75,
+  "row": 84,
+  "gold": "Diana",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Diana and Irma found a raspberry at the bar. Irma gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative setup demands a single-word answer. \"What is the solution?\" signals a classic logic puzzle context.\n\nThe sentence structure \"A woman is holding a group of people. Answer:\" sets up a wordplay or semantic answer related to the repeated \"one\" theme.\n\nThe final token \"•:\" is a bullet/line break mid-sentence, \"Answer: \", requiring a single capitalized word completing the answer — likely \"Yes\" or a word beginning with \"Y\" that fits the puzzle's implied theme.\n\"One.\"\n\"The answer is:\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 76,
+  "row": 103,
+  "gold": "Rosa",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Rosa and Fannie found a pear at the forest. Fannie gave it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short word-based question-answer pattern about a person's action. \"What is the answer?\" signals a direct solution is expected.\n\nThe sequence \"One.\" begins a response, following a strict one-word-per-line constraint, requiring a single word completing the thought.\n\nThe final token \"•:\" is a bullet/line break mid-sentence \"Answer: \", immediately requiring a single word that likely names a concept or character opposite to \"anger\" — likely \"Yes\" or a related noun.\n\"Yes.\" closes the sequence, \"One.\" begins the answer line.\n\"She stopped.\"\n\"Answer:\"\n\"One:\"\nThe final token \"•:\" is a line break, constraining the next token to a single word."
+ },
+ {
+  "sample_idx": 77,
+  "row": 5,
+  "gold": "Sheila",
+  "s": "Maggie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Maggie and Sheila were working at the school. Maggie decided to give a pineapple to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the goal?\" signals a single-word answer is expected.\n\nThe sentence structure \"She...she...she...then:\" builds toward a concluding word describing the relationship or object that completes the scene.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the riddle's answer — likely \"Love,\" \"Yes,\" or a thematic noun referencing the scene's implied relationship.\n\"Answer:\" or \"Yes.\"\n\"One.\"\n\"•:\"\n\"The goal:\"\n\"Answer:\"\n\"•:\"\n\"Yes.\"\n\"Love.\""
+ },
+ {
+  "sample_idx": 78,
+  "row": 164,
+  "gold": "Doris",
+  "s": "Inez",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Doris and Inez were commuting to the cafe, Inez gave a blackberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative setup describing a sequence of actions, \"one person\" doing something to another.\n\nThe sentence \"What is the answer?\" signals a classic riddle or crossword-style question requiring a single word completion.\n\nThe final token \"•:\" is a bullet/hyphen beginning a word, likely \"Yes\" or a word starting with \"Y\" or \"None\" — the answer must be a single word completing the sentence \"the other:\" referring to the object/recipient of the action.\n\"One:\" is the final token, completing a parallel label structure \"the action is:,\" requiring a noun or proper word as the answer.\n\"Answer:\"\n\"•:\"\n\"•\""
+ },
+ {
+  "sample_idx": 79,
+  "row": 34,
+  "gold": "Susan",
+  "s": "Stacey",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Susan and Stacey had a lot of fun at the home. Stacey gave a banana to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the answer?\" signals a single-word response is expected.\n\nThe sentence structure \"She...she...she...then:\" builds toward a concluding word describing the final action's object or the relationship between characters.\n\nThe final token \"•:\" is a bullet/ellipsis beginning a new word, likely \"Love\" or a character name completing the riddle's answer — \"one word\" constraint demands a single capitalized noun.\n\"What is the answer?\"\n\"She looked.\"\n\"She smiled.\"\n\"She laughed.\"\n\"Answer:\"\n\"•\"\nThe sequence \"one word:\" strongly predicts a single word completing the relationship."
+ },
+ {
+  "sample_idx": 80,
+  "row": 136,
+  "gold": "Janet",
+  "s": "Natasha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Natasha and Janet were working at the cafe, Natasha gave a plum to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the action in this sequence?\" demands a single-word answer describing the relationship between the objects.\n\nThe sequence \"a woman, a man, a child. Answer:\" sets up a classic logic puzzle where the answer must be a word beginning with \"O\" that names the third party involved.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new line, immediately preceding the answer word — likely \"One\" or a word referring to the third party's identity.\n\"What is the result? : \"\n\"Answer:\"\n\"•:\"\nThe sequence \"one\" is the only valid answer starting with \"O\""
+ },
+ {
+  "sample_idx": 81,
+  "row": 191,
+  "gold": "Susan",
+  "s": "Shannon",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Shannon and Susan found a cantaloupe at the museum. Shannon gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative setup demands a single-word answer. \"What is the solution?\" signals a classic logic puzzle context.\n\nThe sentence structure \"A woman...a man...a child...a room. Answer:\" follows a pattern of escalating contrast, building toward a concluding word that completes the relationship.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, likely \"Yes\" or a word starting with \"Y\" that completes the answer, directly constrained to a single capitalized word.\n\"The answer is:\" or \"Yes.\"\n\"Yes\" is the most likely answer, completing the wordplay \"one.\"\n\"Room.\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 82,
+  "row": 108,
+  "gold": "David",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Fannie and David were working at the theater. Fannie decided to give a mango to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence \"She then...\" builds toward a specific emotional/relational word describing the final action's target — likely \"Love,\" \"Family,\" or a character name.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly completing the sentence \"the answer is:\" — the next token must be a single capitalized word, likely a noun or proper name completing the riddle's wordplay.\n\"the reaction was:\"\n\"•\"\n\"•:\"\n\"•\"\n\"•\"\n\"•\"\n\"•\"\n\"•\"\n\"•\""
+ },
+ {
+  "sample_idx": 83,
+  "row": 167,
+  "gold": "William",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When William and Jody got a watermelon at the theater, Jody decided to give the watermelon to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the solution to this game?\" signals a single-word answer is expected.\n\nThe sentence structure \"She gives the baby to a person. Who is it?\" builds toward a specific noun identifying the recipient, likely a character name or gendered noun.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly completing the sentence \"the answer is:\" — the next token must be a capitalized word, likely \"Her\" or a character name referring to the recipient of the baby.\n\"One.\"\n\"Answer:\"\n\"•:\"\n\"•\"\n\"•\"\n\"•\"\n\"•\"\n\"•\"\n\"•\"\n\"•\""
+ },
+ {
+  "sample_idx": 84,
+  "row": 99,
+  "gold": "Leona",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Leona and Fannie were working at the home, Fannie gave a plum to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the action in this sequence?\" signals a game-like answer is expected.\n\nThe sentence \"The sequence ends with a person stealing a child. The answer is:\" sets up a single-word response, likely a noun or proper noun referring to the hidden object/person.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, \"Answer:\" or a word starting with \"A\" — likely \"Away\" or a character name completing the word puzzle's solution.\n\"One:\" is the final token, part of a word beginning with \"A\", requiring a completing word that names the object or person responsible for the action.\n\"The sequence: one child. Result: \""
+ },
+ {
+  "sample_idx": 85,
+  "row": 106,
+  "gold": "Virginia",
+  "s": "Sophia",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Virginia and Sophia went to the forest, Sophia gave a orange to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a sequence of actions \"A girl placed a ball in a box. Then...\" demands a concluding word naming the recipient of the ball.\n\nThe pattern \"one word answer\" signals a minimalist riddle structure, requiring a single noun or pronoun completing the chain of relationships.\n\nThe final token \"•:\" is a bullet/separator mid-sentence, \"What is the next word?\" — immediately precedes the answer word, likely \"Mother\" or a related noun referring to the person who receives the ball after the sequence.\n\"Question:\" closes the riddle, \"Answer:\" begins it.\n\"The sequence: one.\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 86,
+  "row": 59,
+  "gold": "Lorraine",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Lorraine and Megan had a lot of fun at the market. Megan gave a papaya to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"who\" signals a question about the final word.\n\nThe sentence \"The answer is:\" sets up a single-word response, likely a noun or proper noun completing the emotional/relational context of \"protecting.\"\n\nFinal token \"•:\" is a bullet/ellipsis mid-word, part of the answer \"one word:\", requiring a single capitalized word — likely \"Love,\" \"Baby,\" or a character name completing the relationship context.\n\"one word:\"\n\"Answer:\"\n\"one:\"\n\"The final word is:\"\n\"•:\"\nThe sequence \"She\" is the final token, completing the word, likely \"Love\" or a character name."
+ },
+ {
+  "sample_idx": 87,
+  "row": 122,
+  "gold": "Amanda",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Megan and Amanda went to the river. Megan gave a peach to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene is being analyzed, requiring a single word answer.\n\nThe sentence structure \"What is the next word?\" with \"one:\" and \"Answer:\" signals a classic riddle pattern, where the final word begins with \"A\" and relates to the scene's emotional content of a child's protective action.\n\nThe final token \"•:\" is a bullet/ellipsis mid-sentence, \"Answer: \", completing \"one word:\" — the next token must be a single capitalized word, likely \"Yes\" or a noun completing the scene's wordplay.\n\"one:\"\n\"Answer:\"\n\"Yes.\"\n\"A:\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 88,
+  "row": 72,
+  "gold": "Mark",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Mark and Mona got a pineapple at the library, Mona decided to give it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word game scenario about a child's action and its goal, requiring a single word answer.\n\nThe sentence structure \"The goal is to find the person who receives the flowers. Answer:\" signals a classic logic puzzle pattern, where the answer must be a noun or proper noun completing the wordplay.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, almost certainly \"Mother\" or a character name that contrasts with \"him,\" completing the sentence \"his:\".\n\"his:\" is a transitional word beginning a new word, \"the next word is:\" — the answer must be a single word starting with a letter.\n\"What is the answer?\"\n\"One.\"\n\"Answer:\"\n\"•\""
+ },
+ {
+  "sample_idx": 89,
+  "row": 49,
+  "gold": "Jerry",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Jerry and Mona went to the library. Mona gave a pineapple to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene with a specific action sequence \"She placed...on...and then.\"\n\nThe solution word must begin with a letter completing the sentence \"What is the next word?\" — likely a noun or verb describing the object/person responsible for the mess.\n\nFinal token \"•:\" is a bullet/ellipsis mid-sentence, \"Answer:\" or \"Yes\" or a word like \"Love\" or \"Them\" — the next token must be a single capitalized word completing the riddle's answer.\n\"The mess:\" sets up a direct answer word.\n\"She placed a ring on the table.\"\n\"Answer:\"\n\"One.\"\n\"•:\""
+ },
+ {
+  "sample_idx": 90,
+  "row": 97,
+  "gold": "Carmen",
+  "s": "Pat",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Carmen and Pat had a lot of fun at the theater. Pat gave a mango to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the answer to this sequence?\" with a narrative context about a child's reaction to a photo.\n\nThe sequence \"one. Then.\" signals a pattern of escalating emotional states, \"happy\" and \"jealousy\" — the final word must be a noun completing the answer.\n\nThe final token \"•:\" is a single-letter word beginning, likely \"Love\" or a character name, completing the sentence \"The answer is:\" — the next token must be a capitalized noun or proper word that names the object/person responsible for the shared moment.\n\"Jealousy:\"\n\"Answer:\"\n\"•\"\n\"•:\"\n\"•\"\n\"•\""
+ },
+ {
+  "sample_idx": 91,
+  "row": 44,
+  "gold": "Carmen",
+  "s": "Kristina",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Carmen and Kristina were thinking about going to the cave. Kristina wanted to give a grape to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence structure \"She...she...she...then:\" builds toward a specific emotional or relational word describing the protective relationship between the child and the doll.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the answer — likely \"Yes\" or a character name like \"Mom.\"\n\"Question:\" and \"Answer:\" framing demand a concise, contextually fitting noun.\n\"She tried to stop it. Answer:\"\n\"The next word is:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 92,
+  "row": 182,
+  "gold": "Chelsea",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Melissa and Chelsea went to the lake. Melissa gave a grape to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene is being analyzed, requiring a single word answer.\n\nThe sentence structure \"What is the next word?\" with \"One.\" as the final token signals a classic \"one word answer\" game, likely \"Love,\" \"Yes,\" or a noun completing the scene's emotional context.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new line, directly preceding the answer word — \"Answer:\" or a capitalized single word starting with \"A\" is expected.\n\"She:\" closes the scene, \"One.\" is the answer, \"Answer:\" or a word like \"Yes.\"\n\"The scene:\"\n\"Answer:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 93,
+  "row": 43,
+  "gold": "Jessie",
+  "s": "Sophia",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Sophia and Jessie were thinking about going to the desert. Sophia wanted to give a banana to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence structure \"She...she...she...then:\" builds toward a specific noun completing the relationship context, likely \"Baby\" or a character name referring to the object of the protective action.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, directly constrained to be a single capitalized word completing the riddle's answer.\n\"What is the reaction?\"\n\"A:\"\n\"Answer:\"\n\"•:\"\nThe sequence \"she doesn't:\" demands a word that names the protective target.\n\"Reaction:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 94,
+  "row": 74,
+  "gold": "William",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Pauline and William went to the library. Pauline gave a banana to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene describing a sequence of actions, \"Who stole the cake?\" signals a single-word answer is expected.\n\nThe sentence structure \"The answer is one word. A:...\" demands a noun or pronoun completing the word puzzle, likely \"Theirs\" or a character name referring to the baby/child.\n\nFinal token \"•:\" is a bullet/line break mid-sentence \"Answer:\", immediately requiring a single word completing the riddle's answer.\n\"She.\" closes the sequence \"one word.\"\n\"Answer:\"\n\"The next action:\"\n\"•:\"\nThe final token must be a word beginning with \"T\" or a related noun.\n\"one:\""
+ },
+ {
+  "sample_idx": 95,
+  "row": 104,
+  "gold": "Paula",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Estelle and Paula had a lot of fun at the theater. Estelle gave a orange to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"What is the answer?\" signals a word-based solution is expected.\n\nThe sentence structure \"She...she...she...then:\" builds toward a single concluding word, likely a noun or proper noun completing the relationship/action.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, directly constrained to be a single capitalized word completing the answer — likely \"Love,\" \"Yes,\" or a character name referencing the implied third party.\n\"What is the reaction?\"\n\"Answer:\"\n\"One:\"\n\"•:\"\nThe sequence \"she did not:\" demands a word that names the final object or character.\n\"Reaction:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 96,
+  "row": 113,
+  "gold": "Lorraine",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Marsha and Lorraine got a honeydew at the park, Marsha decided to give it to\nA:",
+  "explanation": "A riddle/puzzle format is established: \"Who is the person who steals the doll?\" demands a specific noun answer identifying the character who replaces the mother.\n\nThe sentence structure \"The mother is gone. The doll is given to...\" sets up a directional answer word, likely \"Her\" or a character name completing the relationship.\n\nFinal token \"•:\" is a bullet/line break mid-sentence, \"Answer:\" section beginning, \"one word:\" constraint means the next token must be a single word completing the answer.\n\"one word:\" directly precedes the answer, \"one word:\" — likely \"Her\" or a character name referring to the mother's sister.\n\"Who wins:\nAnswer:\n\""
+ },
+ {
+  "sample_idx": 97,
+  "row": 187,
+  "gold": "Janet",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The home Estelle and Janet went to had a papaya. Estelle gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"A woman opens a door and sees a child. What is the answer?\" requiring a single word solution.\n\nThe sentence structure \"The answer is...\" with \"one word\" constraint signals a specific vocabulary word is expected, likely a gendered noun or pronoun completing the relationship chain.\n\nFinal token \"•:\" is a bullet/ellipsis mid-sentence \"one word: \", part of the solution word \"one •\", immediately requiring a capitalized word — likely \"Her\" or a character name completing the riddle's narrative context.\n\"one word:\"\n\"Her\"\n\"The answer is:\"\n\"one:\"\n\"one word.\"\nThe sequence \"one word:\" demands a single word completing the relationship chain."
+ },
+ {
+  "sample_idx": 98,
+  "row": 198,
+  "gold": "Chelsea",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Lula and Chelsea were working at the theater. Lula decided to give a blueberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the action sequence in this story?\" demands a single-word answer.\n\nThe narrative context describes a sequence of actions (\"She...grabbed...and then\"), building toward a specific relational or emotional outcome word.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, likely the answer word starting with \"H\" or a synonym completing \"one.\"\n\"one.\" closes the sentence \"Her:\" — the next token must be a single word completing the riddle's answer.\n\"one.\"\n\"one:\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\""
+ },
+ {
+  "sample_idx": 99,
+  "row": 100,
+  "gold": "Yolanda",
+  "s": "Faye",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Faye and Yolanda went to the beach. Faye gave a apple to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative scene is being analyzed, requiring a single word answer.\n\nThe sentence structure \"What is the relationship between the objects? Answer:\" signals a classic word-puzzle pattern, where the final word begins with \"A\" and likely names a noun or concept related to family/children.\n\nThe final token \"•:\" is a bullet/ellipsis mid-sentence, \"Answer: \", completing \"One.\" — the next token must be a single capitalized word starting with \"A\" that completes the word puzzle, likely \"Family\" or \"Yes.\"\n\"The scene ends. Answer:\"\n\"One.\"\n\"A:\"\n\"Yes.\"\n\"Family.\"\n\"The relationship:\"\n\"A.\""
+ },
+ {
+  "sample_idx": 100,
+  "row": 102,
+  "gold": "Charlene",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Violet and Charlene were commuting to the cafe, Violet gave a pineapple to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"who\" signals a question about the final word.\n\nThe sentence \"The answer is:\" sets up a direct answer to the puzzle, requiring a single word completing the action \"she stole it.\"\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, likely \"Family\" or a character name starting with \"F\" that names the recipient of the stolen object.\n\"One.\" is the final token of a sequence \"Answer: one word: \", immediately constraining the next token to a single capitalized noun or proper word.\n\"The reaction:\"\n\"Answer:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 101,
+  "row": 76,
+  "gold": "Rosemarie",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Rosemarie and Estelle got a grape at the bar, Estelle decided to give the grape to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the sequence of actions in this game?\" demands a specific noun answer.\n\nThe sentence structure \"She gave the baby to a person. Who is it?\" sets up a direct question requiring a character name or relationship term as the answer.\n\nThe final token \"•:\" is a bullet/hyphen beginning a word, almost certainly the start of a capitalized answer word — likely \"Her\" or a character name completing the riddle's solution.\n\"The answer is:\" or \"Her\" — the sequence \"one\" is the only word that fits the pattern \"one direction.\"\n\"Question:\"\n\"Answer:\"\n\"•:\"\nThe final token must be a single capitalized word completing the riddle's solution."
+ },
+ {
+  "sample_idx": 102,
+  "row": 190,
+  "gold": "Lorraine",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Lorraine and Erika were working at the store, Erika gave a honeydew to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the relationship between the objects shown?\" requiring a concise, single-word answer.\n\nThe sentence structure \"The answer is...\" with \"one word\" constraint signals a specific vocabulary word is expected, likely a noun or proper noun referring to a person/place completing the action sequence.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, part of the answer \"one word: \", immediately requiring a single word — likely \"Yes\" or a name completing the \"no one\" contrast.\n\"She:\" is the final token, completing a sequence \"one word:\" — the next token must be a word starting with \"Y\" or a related noun.\n\"The answer:\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 103,
+  "row": 56,
+  "gold": "William",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, William and Melissa had a lot of fun at the theater. Melissa gave a blackberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the sequence of actions...?\" requiring a single word answer.\n\nThe sentence structure \"She gave it to him. Answer:\" signals a classic riddle pattern where the final word begins with \"H\" and likely names a person or object completing the relationship.\n\nThe final token \"•:\" is a bullet/ellipsis mid-sentence, \"Answer: \", immediately requiring a single capitalized word — likely \"H\" or a word like \"Home\" or \"Her\" completing the riddle's wordplay.\n\"The sequence is:\"\n\"One.\"\n\"Answer:\"\n\"•:\"\nThe sequence demands a single word that names the recipient or object.\n\"What is the reaction?\"\n\"•:\""
+ },
+ {
+  "sample_idx": 104,
+  "row": 93,
+  "gold": "Heidi",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The school Alice and Heidi went to had a strawberry. Alice gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the answer to this sequence?\" signals a logic or wordplay puzzle requiring a single word solution.\n\nThe sentence \"A mother washing dishes. A child watches. The next action is:\" sets up a causal chain narrative, \"one\" referring to the mother's relationship to the child.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word or name, likely \"Sister\" or \"Her\" — a single capitalized word completing the answer \"one way.\"\n\"one way.\"\nThe sequence \"one direction:\" demands a word that names the recipient of the stolen item.\n\"The answer is:\"\n\"one:\""
+ },
+ {
+  "sample_idx": 105,
+  "row": 66,
+  "gold": "Mattie",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Marsha and Mattie went to the river. Marsha gave a honeydew to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the answer?\" signals a single-word response is expected.\n\nThe sentence structure \"She...she...she...then:\" builds toward a concluding word describing the final action's object or category.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly completing the sentence \"Answer:\" — the next token must be a single word, likely \"Love,\" \"Yes,\" or a noun/verb fitting the context of removing the spider.\n\"The answer is:\"\n\"One.\"\n\"Yes.\"\n\"Love.\"\n\"Yes.\"\n\"•:\"\nThe final token \"•:\" is a single capitalized word beginning a new line."
+ },
+ {
+  "sample_idx": 106,
+  "row": 181,
+  "gold": "Jerry",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Estelle and Jerry went to the school. Estelle gave a blackberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene describing a sequence of actions, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence \"She looked at the baby. Then:\" sets up a causal chain requiring a noun or word completing the scene's theme, likely \"Love,\" \"Theirs,\" or a related abstract concept.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new line, part of the answer word \"Next:\", immediately requiring a single capitalized word completing the riddle's solution.\n\"Answer:\" or \"Yes.\"\n\"One.\"\n\"•:\"\n\"The:\"\n\"Love:\"\n\"Theirs:\"\n\"She looked at the baby. Then:\""
+ },
+ {
+  "sample_idx": 107,
+  "row": 37,
+  "gold": "Kathryn",
+  "s": "Gwen",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Kathryn and Gwen were commuting to the river, Gwen gave a honeydew to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative sentence describing a sequence of actions, \"What is the answer?\" signals a single-word response is expected.\n\nThe sentence \"She then...\" sets up a causal chain requiring a noun completing \"the answer is:\" — likely a word related to the action \"hide.\"\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, part of the answer \"one word\" constraint, \"one:\" likely precedes a word like \"Yes\" or a character name completing the riddle's wordplay.\n\"one:\" is the final token, completing a line break, immediately requiring a single word answer.\n\"Answer:\"\n\"Hide.\"\n\"•:\""
+ },
+ {
+  "sample_idx": 108,
+  "row": 125,
+  "gold": "Rosa",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Suzanne and Rosa went to the bar. Suzanne gave a blackberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene with a single action \"She.\" demands a specific word answer.\n\nThe sentence structure \"What is the single word that begins with 'A'?\" sets up a classic riddle pattern, requiring a word that fits the context of a child's reaction to a violent/destructive scene.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new line, immediately preceding the answer word — likely \"Yes\" or a word like \"Love\" or \"Family\" completing the scene's implied theme.\n\"A single word:\"\n\"Answer:\"\n\"Yes.\"\n\"•:\"\nThe final token \"•:\" is the answer word starting, constrained to a single capitalized noun.\n\"Reaction:\""
+ },
+ {
+  "sample_idx": 109,
+  "row": 15,
+  "gold": "Dianne",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Dianne and Fannie went to the library, Fannie gave a cantaloupe to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a sequence of actions \"A woman placed a box on a table. Then...\" demands a concluding word that names the unique recipient.\n\nThe pattern \"one word answer\" signals a classic logic puzzle genre, where the solution must be a single word completing the relationship chain.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a noun or proper noun completing the answer \"What is the next word?\" — likely \"Mother\" or a character name referring to the relationship between the characters.\n\"The answer is:\"\n\"one:\"\n\"•:\"\n\"Answer:\"\n\"•:\"\n\"Next:\""
+ },
+ {
+  "sample_idx": 110,
+  "row": 176,
+  "gold": "Dianne",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Dianne and Suzanne got a cherry at the zoo, Suzanne decided to give it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word game question about a sequence of actions \"She gave the baby to someone. Who?\" demands a specific noun answer.\n\nThe sequence \"She gave the baby away. The answer is:\" signals a classic logic puzzle pattern requiring a single word completing the relationship or identity of the recipient.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word or name, likely \"Male\" or a character name completing the answer \"one.\"\n\"one.\"\n\"The answer is:\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\"\n\"one.\""
+ },
+ {
+  "sample_idx": 111,
+  "row": 126,
+  "gold": "David",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Pauline and David were working at the gym, Pauline gave a pineapple to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the answer to this action sequence?\" requiring a single word solution.\n\nThe sequence describes a specific scenario — a person washing hands after a crime, \"one:\" — building toward a noun identifying the recipient of the transferred object.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, almost certainly the solution word starting with \"•\" — likely \"Family\" or a proper noun completing the riddle's wordplay.\n\"The answer is:\" construction demands a single capitalized word as the immediate next token.\n\"One:\" is the final token of a sequence \"one word: •\", constraining the next token to a noun or proper name.\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 112,
+  "row": 150,
+  "gold": "Sheila",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Melissa and Sheila were working at the gym. Melissa decided to give a papaya to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence \"She then...\" sets up a causal chain requiring a noun or word completing the relationship between the characters and the action.\n\nThe final token \"•:\" is a bullet/ellipsis beginning a new word, directly constrained to be a single word that fits the context of \"the next word is:\" — likely \"Love,\" \"Yes,\" or a thematic word completing the narrative.\n\"Answer:\" or \"Yes.\"\n\"The response:\"\n\"•:\"\n\"One.\"\n\"•:\"\n\"Yes.\"\n\"The next word:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 113,
+  "row": 155,
+  "gold": "Mildred",
+  "s": "Sophia",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The mountain Sophia and Mildred went to had a papaya. Sophia gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a sequence of actions \"A woman placed a box on a man. Who took it?\" demands a single-word answer.\n\nThe sentence structure \"The answer is one word. The sequence is:\" signals a classic logic puzzle where the final word begins with \"one\" or a gendered pronoun referring to the person who receives the box.\n\nFinal token \"•:\" is a bullet/separator mid-word, immediately preceding the answer word — likely \"Her\" or a name completing the riddle's solution.\n\"one:\" is the final token, part of a wordplay answer \"Who?\" — the next token must be a single word completing the relationship or action.\n\"Answer:\"\n\"one word:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 114,
+  "row": 67,
+  "gold": "Sarah",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Sarah and Alice found a coconut at the park. Alice gave it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short word-based question-answer pattern requiring a single word solution. \"Who is holding the object?\" signals a classic logic puzzle context.\n\nThe sequence \"One.\" begins a response pattern, \"Answer: A single word\" — the next token must be a noun or word completing the answer, likely \"Yes\" or a word describing the relationship.\n\nFinal token \"•:\" is a bullet/line break mid-sequence, \"Answer: \", \"Yes:\" — immediately expects a single capitalized word completing the solution word.\n\"Yes.\"\n\"The answer is:\"\n\"Yes.\"\n\"One.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 115,
+  "row": 140,
+  "gold": "Stacy",
+  "s": "Agnes",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Agnes and Stacy got a plum at the forest, Agnes decided to give it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word-based logic puzzle about a mother-child scenario, \"Who gets the last cookie?\"\n\nThe sentence structure \"The mother looks at the child. Answer:\" signals a single-word answer is expected, likely a gendered noun or pronoun referring to the third character.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly completing the answer \"one word: \" — the next token must be a single word, most likely \"Her\" or a character name completing the riddle's implied relationship.\n\"one word:\"\n\"Answer:\"\n\"The last one:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 116,
+  "row": 62,
+  "gold": "Susan",
+  "s": "Marilyn",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Susan and Marilyn were thinking about going to the library. Marilyn wanted to give a cantaloupe to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions with a specific goal, typical of NYT-style mini-puzzles.\n\nThe sentence structure \"She...she...she...then:\" builds toward a single concluding word, likely a noun or proper name completing the relationship context.\n\nFinal token \"•:\" is a bullet/ellipsis mid-word, part of the answer \"What is the relationship?\" — the next token must be a word beginning with \"R\" (likely \"Reveal,\" \"Rival,\" or a character name completing the word).\n\"She doesn't:\" sets up a strong contrastive constraint.\n\"Answer:\"\n\"R.\"\n\"The only word is:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 117,
+  "row": 48,
+  "gold": "Doris",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Doris and Mona got a peach at the river, Mona decided to give it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative setup describing a sequence of actions, \"who is the next person?\" signals a single-word answer is expected.\n\nThe sentence \"She then looks at the baby. Answer:\" sets up a direct question-answer structure about the relationship between the characters.\n\nThe final token \"•:\" is a placeholder for a capitalized word beginning with \"R\" — likely \"Rival\" or a character name completing the riddle's answer, \"the next word is:\" — \"one.\"\n\"Who wins?\"\n\"Answer: \"\n\"one word\"\n\"Rival\"\n\"The baby's.\"\n\"one.\"\nThe sequence \"one word:\" demands a single capitalized noun completing the relationship."
+ },
+ {
+  "sample_idx": 118,
+  "row": 32,
+  "gold": "David",
+  "s": "Ethel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Ethel and David were commuting to the river, Ethel gave a grape to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the action after 'She placed a hand on the table?'\" requiring a single-word answer.\n\nThe sentence structure \"A sequence of actions. The answer is:\" signals a classic riddle or logic puzzle where the solution word must relate to the narrative context of a child's caregiving action.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, likely the answer word starting with \"One\" or a character name completing the sequence \"one word:\".\n\"one word:\" directly precedes the solution word, likely \"Child\" or a character name referring to the third party in the sequence.\n\"Question:\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 119,
+  "row": 24,
+  "gold": "Wilma",
+  "s": "Kristi",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kristi and Wilma were working at the zoo. Kristi decided to give a raspberry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"What is the answer?\" signals a word-based puzzle requiring a single word solution.\n\nThe sentence structure \"She...she...she...then:\" builds toward a surprising or ironic conclusion, typical of wordplay riddles where the final word is a noun or verb completing the contrast.\n\nThe final token \"•:\" is a bullet/ellipsis beginning a new word, directly constrained to be a single capitalized word that names the object or concept completing \"the answer is:\" — likely \"Love,\" \"Cats,\" or similar thematic noun.\n\"What is the reaction?\"\n\"Answer:\"\n\"One word:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 120,
+  "row": 117,
+  "gold": "Mattie",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Irma and Mattie found a blueberry at the school. Irma gave it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative question beginning \"Who is the person who...\" demands a single-word answer.\n\nThe sentence structure \"The answer is one word. A child. A child. A child.\" signals a pattern of repetition leading to a specific noun or concept word.\n\nThe final token \"•:\" is a section marker or transition, part of a word-answer sequence \"Answer: \", immediately requiring a single capitalized word completing the riddle's solution — likely \"Yes\" or a word related to the protective/nurturing theme.\n\"Yes.\"\n\"The answer is:\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 121,
+  "row": 192,
+  "gold": "Leona",
+  "s": "Pat",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Leona and Pat got a plum at the cave, Pat decided to give the plum to\nA:",
+  "explanation": "A word puzzle/game instruction format is established, describing a sequential action pattern (\"Who is the first person...to steal the doll?\").\n\nThe sentence structure \"The answer is a single word. The sequence is: mother, father, then...\" demands a specific noun completing the relationship/character name.\n\nFinal token \"•:\" is a bullet/placeholder mid-sentence, \"The answer is: \", requiring a single capitalized word — likely a character name or pronoun completing the \"who stole it\" relationship (e.g., \"Sarah\").\n\"Who wins?\"\n\"Sarah\"\n\"The next word is:\"\n\"Sarah\"\n\"The answer is:\"\n\"Sarah\"\nThe sequence \"mother\" then \"father\" signals a character relationship context."
+ },
+ {
+  "sample_idx": 122,
+  "row": 20,
+  "gold": "Angie",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Angie and Jessica were thinking about going to the cave. Jessica wanted to give a mango to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative story beginning \"A girl sees a boy. Her reaction:\" demands a single word answer.\n\nThe sentence structure \"The answer is one word. A girl sees a boy. Her reaction:\" signals a classic riddle pattern requiring a word related to family, protection, or nurturing.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new line, part of the answer sequence \"one word: \", immediately requiring a single capitalized word — likely \"Yes\" or a character name completing the wordplay.\n\"Yes.\"\n\"The reaction:\"\n\"one word:\"\n\"•:\"\nThe sequence \"one word:\" demands a single word answer.\n\"Yes.\""
+ },
+ {
+  "sample_idx": 123,
+  "row": 105,
+  "gold": "Yolanda",
+  "s": "Stacey",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Yolanda and Stacey went to the zoo. Stacey gave a cantaloupe to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the answer to this sequence?\" signals a single-word response is expected.\n\nThe sentence \"A woman is holding a cat. Then:\" sets up a narrative sequence describing a photo story, requiring a concluding word that names the next logical element (likely \"Yes\" or a noun referring to the game/object).\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, directly completing the sentence \"The answer is:\" — the next token must be a single capitalized word starting with \"Y\" or a related word.\n\"Answer:\"\n\"Yes.\"\n\"Yarn.\"\n\"Yonder.\"\n\"The sequence ends with:\"\n\"•:\"\n\"•\""
+ },
+ {
+  "sample_idx": 124,
+  "row": 120,
+  "gold": "David",
+  "s": "Marilyn",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The market David and Marilyn went to had a pear. Marilyn gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a sequence of actions describing a scenario, \"one word\" solution expected.\n\nThe sentence \"Who is the person who stole the doll? Answer:\" signals a classic logic puzzle structure, requiring a single word completing the narrative arc.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, almost certainly the solution word \"Mother\" or a related noun completing the \"one direction\" relationship implied by \"doll.\"\n\"The sequence is: doll, then, one word.\"\n\"Answer:\"\n\"one direction:\"\n\"one word:\"\nThe final token must be a capitalized word completing the riddle's solution.\n\"one:\""
+ },
+ {
+  "sample_idx": 125,
+  "row": 172,
+  "gold": "Anita",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The desert Mona and Anita went to had a blackberry. Mona gave it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short word-based scenario describing a sequence of actions, requiring a single concluding word as the answer.\n\nThe sentence structure \"Who stole the cake? Answer: One word.\" signals a classic logic puzzle where the final word must resolve the relationship between the characters.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, almost certainly \"Yes\" or a word starting with \"Y\" that names the character or concept completing the relationship (likely \"Yes\" or \"Y\").\n\"Yes\" is the only word that fits the pattern \"one word\" and the context of the characters' relationship.\n\"Answer:\"\n\"Yes.\"\n\"The sequence:\"\n\"One:\""
+ },
+ {
+  "sample_idx": 126,
+  "row": 137,
+  "gold": "Sheila",
+  "s": "Rebecca",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Sheila and Rebecca went to the zoo. Rebecca gave a pineapple to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"What is the answer?\" signals a word-based solution is expected.\n\nThe sentence structure \"She...she...she...then:\" builds toward a single concluding word, likely a noun or proper noun completing the \"what is the relationship\" theme.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, directly constrained to be a single capitalized word completing the answer — likely \"Love,\" \"Pets,\" or a word referencing the object of the relationship.\n\"Answer:\" or \"Yes.\"\n\"The final word is:\"\n\"One.\"\n\"•:\"\n\"Answer:\"\n\"Yes.\"\n\"Love.\"\n\"Pets.\""
+ },
+ {
+  "sample_idx": 127,
+  "row": 57,
+  "gold": "Harriet",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Jessica and Harriet went to the library. Jessica gave a cherry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"Who stole the cake?\" signals a word-based answer is expected.\n\nThe sentence structure \"She looked at him. Answer:\" sets up a single-word response, likely a noun or pronoun referring to the next character/object in the sequence.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, part of the answer \"One.\" — the next token must be a word completing the answer, most likely \"Theirs\" or a character name.\n\"What is the next word?\"\n\"Answer:\"\n\"One.\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 128,
+  "row": 9,
+  "gold": "Mattie",
+  "s": "Kristi",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kristi and Mattie had a lot of fun at the beach. Kristi gave a cherry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"What is the answer?\" signals a word-based solution is expected.\n\nThe sentence structure \"She...she...she...then:\" builds toward a single concluding word, likely a noun or word related to the emotional/protective context of removing the spider.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, directly completing the sentence \"Answer:\" — the next token must be a single capitalized word starting with \"A\" (likely \"Away,\" \"Love,\" or similar).\n\"The answer is:\"\n\"One.\"\n\"A:\"\n\"The sequence ends with a single word.\"\n\"What is the next word?\"\n\"•:\""
+ },
+ {
+  "sample_idx": 129,
+  "row": 168,
+  "gold": "Deanna",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jessica and Deanna went to the museum. Jessica gave a peach to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene is being analyzed, requiring a single capitalized word as the answer.\n\nThe sentence structure \"What is the next word?\" signals a classic riddle or game-style answer, where the capitalized word must relate to the scene's emotional content (jealousy, anger, or a noun completing \"one\").\n\nFinal token \"•:\" is a bullet/line break mid-sentence \"Answer: \", immediately requiring a single capitalized word — likely \"Yes\" or a thematic noun completing the \"one\" wordplay.\n\"She.\" closes the scene, \"one\" is the final word, so the next token must be a capitalized noun or word beginning a new scene/answer word.\n\"Answer:\"\n\"Jealousy.\""
+ },
+ {
+  "sample_idx": 130,
+  "row": 50,
+  "gold": "Wilma",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Leigh and Wilma got a kiwi at the market, Leigh decided to give it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative setup describing a sequence of actions and their outcome, typical of logic puzzles.\n\nThe sentence \"Who is the person who stole the doll?\" sets up a specific answer word beginning with \"•\" — the solution must be a noun or proper name completing the riddle's context.\n\nFinal token \"•:\" is a truncated word mid-sentence \"the next word is: \", requiring a single capitalized word — likely \"Mom\" or a character name referring to the person who receives the doll.\n\"Answer:\" or \"Mom\"\n\"She:\"\n\"The:\"\n\"•\"\nThe sentence \"the answer is:\" demands a word that names the recipient of the doll.\n\"One.\""
+ },
+ {
+  "sample_idx": 131,
+  "row": 27,
+  "gold": "Anne",
+  "s": "Kelly",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kelly and Anne were thinking about going to the home. Kelly wanted to give a cantaloupe to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the relationship?\" signals a single-word answer is expected.\n\nThe sentence structure \"She...he...she...he\" builds toward a concluding word describing the relationship or object being protected.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, likely the answer word starting with \"Yes\" or a related noun completing the riddle's context.\n\"Answer:\" or \"Yes.\"\nThe sentence \"What is the relationship?\" demands a single word answer.\n\"He.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 132,
+  "row": 133,
+  "gold": "Nellie",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Estelle and Nellie went to the library. Estelle gave a blackberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene describing a sequence of actions, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence \"She looked. He looked. Then:\" builds dramatic tension toward a surprising, emotionally resonant noun completing the scene's meaning.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single word that completes the riddle's answer, likely \"Love,\" \"Theirs,\" or similar thematic noun referencing the object of the shared action.\n\"Answer:\" or \"Yes.\"\n\"The reaction:\"\n\"•:\"\n\"One.\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 133,
+  "row": 162,
+  "gold": "Angie",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Angie and Marsha went to the home. Marsha gave a grape to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative sentence describing a sequence of actions, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence \"She looked at them. Then:\" sets up a clear contrastive or continuation word describing the relationship between the characters.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, likely \"Love\" or a related noun completing the answer, constrained to a single capitalized word that fits the context of a mother-child relationship.\n\"Answer:\" or \"Yes.\"\n\"The sequence is: one.\"\n\"Answer:\"\n\"•:\"\nThe final token \"•:\" is a single capitalized word beginning the answer, \"one.\""
+ },
+ {
+  "sample_idx": 134,
+  "row": 194,
+  "gold": "Kim",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Kim and Irma went to the mountain. Irma gave a mango to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene with a clear question \"What is the next word?\" requiring a single word answer.\n\nThe sentence structure \"She saw...then...\" builds toward a concluding word describing the relationship or action completing the scene. \"One.\" signals a transition to the answer word.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, likely \"Yes\" or a word starting with \"Y\" or \"Answer,\" completing the riddle's final line \"Her:\" — the answer must be a single word.\n\"Her reaction:\"\n\"One:\"\n\"Answer:\"\n\"Yes.\"\n\"•:\"\nThe scene describes a mother-child relationship, so the next word likely names a related noun or person."
+ },
+ {
+  "sample_idx": 135,
+  "row": 163,
+  "gold": "Sheila",
+  "s": "Pat",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Pat and Sheila went to the cafe. Pat gave a cherry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative scene describing a sequence of actions, \"What is the next word?\" signals a word-based answer is expected.\n\nThe sentence \"She looked at the cat. Then:\" sets up a clear contrastive or continuation word describing the final state, likely \"Love,\" \"Yes,\" or a noun completing the scene's emotional/relational context.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the answer \"One.\"\n\"Answer: \"\n\"The answer is:\"\n\"•\"\nThe sequence \"One word:\"\n\"•\"\n\"•\"\n\"•\"\n\"•\"\n\"•\"\n\"•\""
+ },
+ {
+  "sample_idx": 136,
+  "row": 161,
+  "gold": "Angie",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Alice and Angie went to the theater. Alice gave a blueberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative setup describing a sequence of actions, \"Who stole the cake?\" signals a classic logic puzzle answer pattern.\n\nThe sequence \"one. Answer:\" sets up a single-word response, likely a noun or pronoun referring to the thief/recipient relationship.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly completing the sentence \"The answer is:\" — the next token must be a single word, most likely \"Theft\" or a related noun completing the riddle's wordplay.\n\"One.\"\n\"Answer:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 137,
+  "row": 160,
+  "gold": "Evelyn",
+  "s": "Rebecca",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Rebecca and Evelyn were working at the school, Rebecca gave a orange to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word-based question about a sequence of actions, \"Who is the person who...\" demands a specific noun answer.\n\nThe sentence structure \"A person...touches...a child. Result:\" signals a classic logic puzzle or game-based riddle requiring a single word completion.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word or name, likely \"Sibling\" or \"Yes\" — a short word completing the answer \"one.\"\n\"one.\" is the final token of a sequence \"one way:\" — the next token must be a word that names the relationship or location where the child is placed.\n\"Answer:\" or \"Yes.\"\n\"The only way to get rid of it:.\"\n\"•:\""
+ },
+ {
+  "sample_idx": 138,
+  "row": 156,
+  "gold": "Juana",
+  "s": "Jackie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Juana and Jackie were working at the store, Jackie gave a kiwi to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions and their outcome, typical of BrainPOP-style photo challenges.\n\nThe sentence \"What is the answer?\" signals a direct question requiring a single word answer, likely a noun or proper noun referring to a person/place/thing that completes the relationship.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, part of the answer \"one word:\", immediately constrained to a specific word — likely \"Family\" or a name completing the relationship \"the other.\"\n\"one word:\"\n\"Answer:\"\n\"one:\"\n\"•:\"\nThe sequence \"the other:\" demands a noun completing the relationship.\n\"Who stole the cake?\"\n\"Answer:\""
+ },
+ {
+  "sample_idx": 139,
+  "row": 115,
+  "gold": "Brian",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Leigh and Brian went to the library, Leigh gave a grape to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the sequence of actions in this photo?\" demands a single-word answer describing the relationship between characters.\n\nThe sentence structure \"The mother's reaction is:\" sets up a specific relational term as the answer, likely \"Baby\" or a character name completing the sequence.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the answer \"one.\"\n\"one:\" is the final token of a sequence \"one way :\", requiring a noun or proper name that names the recipient of the stolen food.\n\"one way.\"\n\"The next action is:\"\n\"Answer:\""
+ },
+ {
+  "sample_idx": 140,
+  "row": 79,
+  "gold": "Amanda",
+  "s": "Yvette",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Amanda and Yvette went to the cafe. Yvette gave a orange to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"What is the next word?\" signals a word-based answer is expected.\n\nThe sentence structure \"She...she...she...then:\" builds toward a single concluding word, likely a noun or verb completing the relationship/action context.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single word completing \"the next word is:\" — likely \"Love,\" \"Family,\" or a word describing the object of the action.\n\"What is the next word?\"\n\"Answer:\"\n\"A:\"\n\"•:\"\nThe sequence \"She looked. She cried. She smiled. Answer:\""
+ },
+ {
+  "sample_idx": 141,
+  "row": 179,
+  "gold": "Virginia",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Leigh and Virginia went to the river, Leigh gave a pear to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describes a sequence of actions, \"who\" signals a question about the final word.\n\nThe sentence \"The answer is:\" sets up a direct answer to the riddle, requiring a single word completing the action \"who took the flower after.\"\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, likely \"Mother\" or a character name completing the riddle's answer — \"after:\" signals a specific noun or proper name referencing the next character in the sequence.\n\"The sequence ends: one.\"\n\"Answer:\"\n\"•\"\nThe final token must be a single word completing the answer.\n\"Who wins: one.\"\n\"•:\""
+ },
+ {
+  "sample_idx": 142,
+  "row": 98,
+  "gold": "Angie",
+  "s": "Teresa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Teresa and Angie got a plum at the home, Teresa decided to give the plum to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word-based logic question about a person's action sequence \"whoever...first...then...\".\n\nThe answer must be a single word beginning with \"A\" or \"He\" that names the recipient of the transferred object.\n\nThe final token is a capital letter mid-sentence \"A:\", completing \"Answer:\" and immediately requiring a noun or pronoun that names the recipient of the object.\n\"Who wins:?\" demands a single word answer.\n\"The question is:\" sets up a direct answer.\n\"One.\"\n\"A:\"\nThe sequence \"he/she\" or a gendered noun is expected.\n\"Answer:\"\n\"A:\""
+ },
+ {
+  "sample_idx": 143,
+  "row": 174,
+  "gold": "Susan",
+  "s": "Ethel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Susan and Ethel went to the beach. Ethel gave a cantaloupe to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short word-based question about a sequence of actions, \"Who stole the cake?\" signals a specific answer word is expected.\n\nThe sentence structure \"The sequence is: a person, a child, a room. Answer:\" demands a single noun completing the final word, likely \"Theirs\" or a word referring to the recipient of the cake.\n\nFinal token \"•:\" is a truncated word beginning with a capital letter, part of the answer \"One.\" — immediately constrained to a noun or proper noun completing the word, likely \"Theirs\" or \"Cake.\"\n\"What is the next word?\"\n\"Answer:\"\n\"One.\"\n\"•:\""
+ },
+ {
+  "sample_idx": 144,
+  "row": 65,
+  "gold": "Brian",
+  "s": "Kelly",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Brian and Kelly went to the market. Kelly gave a raspberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the single word that begins a sequence describing a photo of a child removing a spider?\" demands a specific vocabulary answer.\n\nThe sequence \"One.\" signals a pattern of short, emphatic standalone words describing the photo's content, building toward a concluding word.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single word completing the answer — likely \"Love,\" \"Family,\" or similar noun that fits the emotional/relational context.\n\"Answer:\" or \"Yes.\"\n\"Question:\"\n\"What is the next word?\"\n\"Answer:\"\n\"•:\"\nThe sequence \"One.\"\n\"Answer:\""
+ },
+ {
+  "sample_idx": 145,
+  "row": 92,
+  "gold": "Virginia",
+  "s": "Miriam",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Miriam and Virginia had a lot of fun at the river. Miriam gave a plum to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the final word?\" signals a single-word answer is expected.\n\nThe sentence \"She looked at them. Then:\" builds toward a specific emotional or relational noun describing the caretaker's response to the children's destruction.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the answer — likely \"Love,\" \"Yes,\" or a character name.\n\"The answer is:\" or \"Yes.\"\n\"One word:\"\n\"Answer:\"\n\"•:\"\nThe sequence \"She looked. Then.\"\n\"The final word is:\""
+ },
+ {
+  "sample_idx": 146,
+  "row": 158,
+  "gold": "Mildred",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The desert Mildred and Violet went to had a peach. Violet gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions and their outcome, typical of logic puzzles.\n\nThe sentence \"Who stole the cake?\" sets up a question-answer structure, with \"one word\" signaling a single-word solution is expected.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly completing the sentence \"The answer is:\" — the next token must be a word that names the person or concept completing the relationship \"after.\"\n\"after:\" is the final word, likely \"Mother\" or a character name completing the riddle's narrative arc.\n\"after.\"\n\"The sequence: mother, sister, brother. Answer:\"\n\"one word:\""
+ },
+ {
+  "sample_idx": 147,
+  "row": 87,
+  "gold": "Brian",
+  "s": "Kristi",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Brian and Kristi were working at the park. Kristi decided to give a raspberry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"What is the next word?\" signals a word-based answer is expected.\n\nThe sentence structure \"She...removed...and then...\" builds toward a single concluding word, likely a noun or verb describing the object/action completing the scene.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new line, directly preceding the answer word — \"one word\" constraint means the next token must be a single word, likely \"Love,\" \"Yes,\" or a thematic opposite.\n\"What is the reaction:\"\n\"Answer:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 148,
+  "row": 61,
+  "gold": "Paula",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Irma and Paula went to the desert. Irma gave a raspberry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative setup describing a sequence of actions, \"who\" signals a question about the solution word.\n\nThe sentence structure \"She saw...then...then...the answer is:\" demands a single word completing the pattern, likely a noun or verb describing a relationship/action contrasting with \"jealousy.\"\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the riddle's answer — likely \"Love,\" \"Yes,\" or a word referencing the object of the action.\n\"Her:\" is the final token, part of the answer sequence \"the answer is: \", requiring a single word.\n\"Jealousy.\"\n\"One.\""
+ },
+ {
+  "sample_idx": 149,
+  "row": 154,
+  "gold": "Juana",
+  "s": "Inez",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Inez and Juana were working at the river. Inez decided to give a coconut to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequential action story, \"who\" signals a question about the final word.\n\nThe sentence structure \"The answer is one word. The sequence is...\" builds toward a specific noun completing the action \"protecting the child.\"\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, likely the answer word starting with \"P\" or a character name, completing the riddle's final line \"the next word is:\".\n\"the next word is:\"\n\"the action is:\"\n\"the goal is:\"\n\"the answer is:\"\nThe sequence \"protect:\" demands a single noun or proper name as the answer.\n\"One.\"\n\"•:\""
+ },
+ {
+  "sample_idx": 150,
+  "row": 12,
+  "gold": "Leona",
+  "s": "Martha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Martha and Leona were working at the shop, Martha gave a cherry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the single action that follows a sequence of events?\" requiring a concise, specific answer word.\n\nThe sentence structure \"The answer is one word. The sequence is...\" builds toward a single-word solution, likely a noun or proper noun referring to a person/object related to the \"sibling\" context.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, \"Answer:\" or \"Yes.\" — the immediate next token must be a single word completing the answer, likely \"Sibling\" or a character name.\n\"Yes.\"\n\"The answer: \"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 151,
+  "row": 145,
+  "gold": "Diana",
+  "s": "Carol",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Carol and Diana were commuting to the beach, Carol gave a watermelon to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the answer to this riddle?\" signals a single-word solution is expected.\n\nThe sentence \"A person is holding a baby. The next action is:\" sets up a causal chain requiring a noun or word describing the relationship/object that completes the sequence.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, likely the solution word \"One\" or a related noun completing the riddle's answer \"the answer is:\".\n\"•\" is a separator or standalone word starting a new line, \"the answer is:\" demands a single word completing the relationship context.\n\"She:\"\n\"One.\"\n\"Family.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 152,
+  "row": 189,
+  "gold": "Virginia",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The gym Virginia and Lula went to had a cantaloupe. Lula gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative setup describing a sequence of actions (\"She stole...then...\"), requiring a single word answer.\n\nThe sentence \"Who gets the last thing?\" signals a classic logic puzzle conclusion, where the answer must name the recipient of the stolen object.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, part of the answer \"One.\" — the next token must be a capitalized word completing the answer, likely \"Her\" or a character name referring to the puzzle's solution.\n\"Answer: \"\n\"One word:\"\n\"The final word is:\"\n\"•:\"\n\"Answer:\"\n\"•\""
+ },
+ {
+  "sample_idx": 153,
+  "row": 110,
+  "gold": "William",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Jody and William got a cherry at the theater, Jody decided to give the cherry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word-based narrative question about a child's action after a specific event.\n\nThe sentence structure \"Who does she give it to?\" demands a single noun or proper name as the answer, completing the directional relationship \"her.\"\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, likely \"Mother\" or a character name completing the answer \"the recipient is:\".\n\"She\" is the pronoun referring to the child, and \"to:\" signals a direct object naming the recipient.\n\"The answer is:\" or \"Mother\" is expected.\n\"She\"\n\"One.\"\n\"The next word is:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 154,
+  "row": 45,
+  "gold": "Chelsea",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Chelsea and Pauline got a papaya at the store, Pauline decided to give it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word-based question about a sequence of actions, \"Who is the next person?\" demands a specific noun answer.\n\nThe sentence structure \"She gave it to him. Answer:\" signals a classic logic puzzle pattern requiring a single word solution, likely a gendered or relational noun.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, \"Answer: \", immediately constrained to a single capitalized word completing the solution — likely \"Her\" or a name referring to the recipient.\n\"The sequence ends with a boy. Answer:\"\n\"One.\"\n\"Her.\"\n\"The only option.\"\n\"•:\"\nThe final token \"•:\" is a newline/bullet introducing the answer word."
+ },
+ {
+  "sample_idx": 155,
+  "row": 95,
+  "gold": "Ginger",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Ginger and Lula got a apple at the library, Lula decided to give the apple to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the answer to this game?\" signals a Q&A structure about a specific game sequence.\n\nThe sentence \"She finds a baby. Who does she give it to?\" builds toward a single-word answer, likely a character name or relationship term completing the narrative context.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a capitalized noun or proper name completing the answer \"to:\" — likely \"Mom\" or a character name referencing the game's story.\n\"The sequence ends: 'to:'\"\n\"Answer:\"\n\"One.\"\n\"The next word is:\"\n\"•\""
+ },
+ {
+  "sample_idx": 156,
+  "row": 81,
+  "gold": "Jerry",
+  "s": "Teresa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jerry and Teresa were working at the gym. Teresa decided to give a watermelon to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the sequence of actions...?\" requiring a single-word answer.\n\nThe narrative context describes a specific sequence of actions (a person, a cat, a table), building toward a thematic word describing the final destination or relationship.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the answer — likely \"Love,\" \"Next,\" or a word referencing the game's narrative context.\n\"What is the next word?\"\n\"Answer:\"\n\"A:\"\n\"•\"\nThe sequence \"one word:\" signals a single-word answer is expected.\n\"The reaction:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 157,
+  "row": 86,
+  "gold": "Mark",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Estelle and Mark went to the cafe. Estelle gave a orange to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"What is the next word?\" signals a word-based answer is expected.\n\nThe sentence \"She looked at them. Then:\" builds toward a single concluding word, likely a noun or verb describing the relationship/object that completes the scene.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the answer — likely \"Love,\" \"Family,\" or similar thematic word.\n\"Answer:\" or \"Yes.\"\n\"The sequence ends with a single word:\"\n\"•:\"\n\"What is the next word?\"\n\"Answer:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 158,
+  "row": 89,
+  "gold": "Evelyn",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Melissa and Evelyn had a lot of fun at the home. Melissa gave a peach to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene with a clear question \"What is the next word?\" requiring a single capitalized word as the answer.\n\nThe sentence \"She looked at them. Answer:\" signals a Q&A riddle structure, where the scene describes a sequence of actions leading to a specific word.\n\nThe final token \"•:\" is a bullet/ellipsis beginning a new capitalized word, likely \"Love,\" \"Yes,\" or a similar thematic word completing the riddle's answer.\n\"What is the next word?\" demands a single word starting with \"A\" or a word that fits the scene context.\n\"She stopped. Answer:\"\n\"A:\"\n\"•:\"\nThe sequence \"Stop.\"\n\"•:\""
+ },
+ {
+  "sample_idx": 159,
+  "row": 129,
+  "gold": "Alicia",
+  "s": "Kristina",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Alicia and Kristina found a coconut at the lake. Kristina gave it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short word-based question-answer pattern requiring a single word solution. \"Who is caring for the children?\" demands a noun or proper noun answer.\n\nThe sequence \"One.\" signals a strict one-word response constraint, typical of IQ/logic puzzle answer formats.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new line, immediately preceding the solution word — likely \"Yes\" or a related word completing the \"Answer:\" line.\n\"Answer:\".\n\"The children.\"\n\"One.\"\n\"•:\"\nThe pattern \"One word.\"\n\"Yes.\"\n\"•:\"\n\"Yes.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 160,
+  "row": 114,
+  "gold": "Kathryn",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Richard and Kathryn got a raspberry at the museum, Richard decided to give it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word game question about a sequence of actions \"She stole a baby. Who?\" demands a specific noun answer.\n\nThe sentence structure \"The answer is one word. The sequence is:...\" builds toward a single-word solution, likely a gendered or relational noun referring to the person who receives the baby.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, \"Answer:\" or a word starting with \"A\" — likely \"Sister\" or \"Her\" completing the riddle's final line \"Who wins:\".\n\"Her reaction:\"\n\"Answer:\"\n\"•:\"\nThe sequence \"one word\" and \"the next word is:\" constrain the next token to a single capitalized noun."
+ },
+ {
+  "sample_idx": 161,
+  "row": 26,
+  "gold": "Ginger",
+  "s": "Sophia",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The forest Ginger and Sophia went to had a cantaloupe. Sophia gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describes a sequence of actions, \"who\" signals a question about the final word.\n\nThe sentence \"The answer is:\" sets up a direct answer to the riddle, requiring a single word completing the action chain \"water → her → him.\"\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, almost certainly \"Mother\" or a character name that completes the riddle's final relationship word.\n\"Who saves the child?\" demands a noun referring to the recipient of the final action.\n\"The final answer is:\"\n\"One.\"\n\"Answer:\"\n\"•\"\nThe sequence \"her\" is the final word, so the next token must be a capitalized noun completing the relationship."
+ },
+ {
+  "sample_idx": 162,
+  "row": 107,
+  "gold": "Paula",
+  "s": "Pat",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Pat and Paula got a coconut at the zoo, Pat decided to give it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word game question about a sequence of actions \"whoever...first...then...\".\n\nThe answer must be a single word beginning with \"H\" that names the gender opposite of \"he,\" completing the logical contrast \"his sister.\"\n\nFinal token \"•:\" is a bullet/separator mid-sentence \"Answer: \", immediately requiring a capitalized word — likely \"Her\" or a character name completing the riddle's solution.\n\"The answer is:\" signals a direct answer is being spelled out, \"one.\"\n\"Who wins?\"\n\"Answer:\"\n\"H:\"\nThe sequence \"he\" is the only word that fits the context of a gendered relationship or character name."
+ },
+ {
+  "sample_idx": 163,
+  "row": 40,
+  "gold": "Kim",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Kim and Erika were working at the library, Erika gave a pear to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the action in the sequence?\" followed by a scenario describing a person's behavior.\n\nThe sequence \"a person. Answer:\" signals a classic logic puzzle structure where a single word answer is expected, likely a noun or proper noun referring to a family member or object.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, part of the answer \"one word:\", immediately requiring a specific word completing the answer — likely \"Family\" or a word describing the object that absorbed the water.\n\"one word:\"\n\"Answer: \"\n\"one:\"\n\"•\"\nThe sequence \"Water.\"\n\"one word:\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 164,
+  "row": 111,
+  "gold": "Paula",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Jody and Paula got a strawberry at the market, Jody decided to give the strawberry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative question about a child's action and its recipient, typical of logic puzzles.\n\nThe sentence \"Who does she look at?\" sets up a direct answer about the recipient of the stolen toy, requiring a noun or proper name completing the relationship.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, almost certainly \"Mother\" or a character name that completes the answer \"the other direction.\"\n\"The answer is:\" signals a single-word solution is expected.\n\"She:\" is the final token of a completed word, \"one:\" — the next token must be a capitalized noun or proper name referring to the recipient.\n\"Direction:\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 165,
+  "row": 173,
+  "gold": "Mildred",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Violet and Mildred went to the forest, Violet gave a watermelon to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describes a sequence of actions, \"who\" signals a question about the final word.\n\nThe sentence structure \"The answer is:\" followed by \"who\" sets up a single-word answer, likely a character name or relationship term completing the \"who stole the doll?\" scenario.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a capitalized noun or proper name completing the riddle's answer — likely \"Mother\" or a character name referring to the person who received the doll.\n\"The sequence ends: one.\"\n\"Answer:\"\n\"•:\"\n\"•\"\n\"•:\"\n\"•\""
+ },
+ {
+  "sample_idx": 166,
+  "row": 143,
+  "gold": "David",
+  "s": "Gwen",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, David and Gwen went to the park. Gwen gave a honeydew to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene with a specific action sequence \"She saw...and then...\" demands a single concluding word.\n\nThe sentence structure \"Answer: One word.\" signals a classic riddle or word-association game, where the final word must be a noun or verb completing the thematic chain of \"love.\"\n\nThe final token \"•:\" is a bullet/ellipsis beginning a new line, directly preceding the answer word — \"Answer: \" has already started, so the next token must be a single word, likely \"Love\" or a related noun completing the scene's implied meaning.\n\"The sequence is:\"\n\"Answer:\"\n\"One word:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 167,
+  "row": 71,
+  "gold": "Virginia",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Virginia and Erika went to the museum, Erika gave a blueberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a sequence of actions describing a scenario, \"Who is left after the action?\" signals a single-word answer is expected.\n\nThe sentence structure \"The answer is one word. The sequence is:...\" demands a noun or pronoun completing the relationship/transfer word.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, almost certainly \"Mother\" or a related noun referring to the recipient of the transferred object.\n\"One.\" closes the sequence, \"one word:\" constraint, \"after:\" — the next token must be a single word completing the riddle's answer.\n\"Who is left: one.\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 168,
+  "row": 31,
+  "gold": "Heidi",
+  "s": "Rachel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Rachel and Heidi went to the bar. Rachel gave a coconut to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the sequence of actions?\" demands a single-word answer describing the relationship between the characters.\n\nThe sentence structure \"A woman...a man...a cat. Answer:\" signals a classic riddle pattern requiring a thematic, evocative noun completing the scene's meaning.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word that completes the answer — likely \"Love,\" \"Theirs,\" or similar thematic noun referencing the shared object.\n\"What is the next word?\"\n\"Answer:\"\n\"One:\"\n\"•:\"\nThe sequence \"one word:\" demands a single word answer.\n\"•:\""
+ },
+ {
+  "sample_idx": 169,
+  "row": 152,
+  "gold": "Ella",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Ella and Pauline were commuting to the zoo, Pauline gave a pear to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the action after 'She placed a baby in a box?'\" requiring a single-word answer.\n\nThe sentence structure \"The answer is one word. A:\" signals a direct answer is being built up through context clues about the sequence.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, almost certainly the answer word starting with \"One\" or a related noun completing the riddle's context (likely \"Parent\" or \"Her\").\n\"Her reaction:\" sets up a contrastive or parallel noun.\n\"Answer:\"\n\"One word:\"\n\"•:\"\nThe sequence \"one word:\" demands a single capitalized noun completing the word puzzle.\n\"Her reaction:\""
+ },
+ {
+  "sample_idx": 170,
+  "row": 80,
+  "gold": "Janet",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Janet and Megan had a lot of fun at the museum. Megan gave a grape to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the sequence of actions in this picture?\" demands a single concluding word as the answer.\n\nThe sentence structure \"The sequence ends with a single word. Answer:\" signals a classic riddle pattern where the final word begins with a letter completing a word related to the emotional context of \"comforting.\"\n\nThe final token \"•:\" is a bullet/ellipsis beginning a new word, \"Answer:\" already given, so the next token must be a single capitalized word — likely \"Love,\" \"Her,\" or a character name completing the emotional relationship implied by the scene.\n\"One.\"\n\"The answer is:\"\n\"•:\"\n\"•\"\n\"•\"\n\"•\""
+ },
+ {
+  "sample_idx": 171,
+  "row": 166,
+  "gold": "Theresa",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Theresa and Jody went to the cafe, Jody gave a coconut to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a sequence of actions \"A woman placed a box on a table. Then...\" demands a single concluding word naming the recipient of the transfer.\n\nThe riddle follows a strict Q&A structure, \"What is the next word?\" requiring a noun or proper noun completing the relationship.\n\nFinal token \"•:\" is a bullet/hyphen beginning a word, likely \"Mother\" or a character name completing the answer \"the next word is:\".\n\"One:\" is the final token of the answer, \"one\" — the word must be a noun referring to the person who received the box.\n\"The answer is:\"\n\"one word:\"\n\"•:\"\n\"Mother.\""
+ },
+ {
+  "sample_idx": 172,
+  "row": 141,
+  "gold": "Charlene",
+  "s": "Inez",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Inez and Charlene were thinking about going to the store. Inez wanted to give a pineapple to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a scene with a clear goal, \"who is the jealous one?\"\n\nThe word \"one.\" signals a single-word answer is expected, likely a noun or proper noun completing the sentence \"the answer is:\" — contextually referring to a person or object related to the family/sibling dynamic.\n\nFinal token \"•:\" is a truncated word beginning with \"•\", part of the answer \"Jealousy:\" — the next token must be a word starting with \"J\" or completing a capitalized noun/word that fits the context.\n\"Answer:\"\n\"Jealousy.\"\n\"one.\"\n\"Jealous:\"\n\"Jealousy.\"\n\"one.\"\n\"Family.\""
+ },
+ {
+  "sample_idx": 173,
+  "row": 70,
+  "gold": "Amanda",
+  "s": "Marilyn",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Marilyn and Amanda got a blueberry at the cave, Marilyn decided to give the blueberry to\nA:",
+  "explanation": "A riddle/puzzle format is established: a word game question about a sequence of actions \"She gave the baby to whom?\" requiring a specific noun answer.\n\nThe sentence structure \"The answer is:\" signals a direct answer is imminent, likely a character name or pronoun referring to the person who receives the baby.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, part of the answer \"Who:\" — the next token must be a capitalized noun or proper name completing the word, most likely \"Her\" or a character name.\n\"Who:\" is a wordplay setup, \"her\" referring to the antagonist.\n\"The sequence: baby, then.\"\n\"The answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 174,
+  "row": 52,
+  "gold": "Virginia",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The lake Virginia and Eleanor went to had a apple. Eleanor gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"who\" signals a question about the final word.\n\nThe sentence structure \"She gave them. Then she...\" demands a concluding word that names the recipient or action completing the relationship.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, likely the answer word starting with \"Yes\" or a common word like \"Yes\" or \"Care,\" completing the riddle's solution.\n\"One.\" is the final token of the sequence, \"Answer:\" or a direct word answer is expected.\n\"The sequence: water, then, then. Answer:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 175,
+  "row": 47,
+  "gold": "Diana",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Diana and Fannie went to the gym. Fannie gave a apple to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene is being analyzed, requiring a single word answer.\n\nThe sentence structure \"What is the relationship between the objects? Answer:\" signals a classic riddle or game-style prompt, where the answer must be a single capitalized word fitting the context of a child's reaction to spilled/stuck objects.\n\nThe final token \"•:\" is a placeholder for the answer word, beginning with \"A\" — likely \"Answer\" or a word like \"Yes\" or \"Love\" completing the capitalized single-word response.\n\"One.\" closes the scene, \"A.\" begins the answer word.\n\"The reaction:\"\n\"A:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 176,
+  "row": 146,
+  "gold": "Kathryn",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Kathryn and Violet went to the shop, Violet gave a pear to\nA:",
+  "explanation": "A logic puzzle/riddle format is established, requiring a concise, single-word answer to \"Who is left after the action?\"\n\nThe sentence structure \"A child gives a gift to a person. The answer is:\" signals a word puzzle where the solution word begins with \"one\" or a related noun referring to the recipient.\n\nFinal token \"•:\" is a bullet/line break mid-sentence, \"one word:\" constraint demands a single capitalized word completing the answer, likely \"Mother\" or \"Her\" referring to the person who receives the gift.\n\"The sequence: A child's action. The result: one word.\"\n\"one:\"\n\"Answer:\""
+ },
+ {
+  "sample_idx": 177,
+  "row": 91,
+  "gold": "Chelsea",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Pauline and Chelsea were working at the lake. Pauline decided to give a strawberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence \"She looked at them. Then:\" builds toward a specific relational word describing the object of the action — likely \"Love,\" \"Parent,\" or a noun completing the implied relationship.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new line, part of the answer sequence \"Answer:\", immediately requiring a single capitalized word that names the object or person completing the action \"she stole.\"\n\"The answer is:\"\n\"One.\"\n\"•:\"\nThe sequence \"stole. Then.\" demands a word that fits the context of a child's protective action."
+ },
+ {
+  "sample_idx": 178,
+  "row": 101,
+  "gold": "Stella",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Stella and Mona got a strawberry at the bar, Mona decided to give it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative question about a game's sequence \"She gave the ball to whom?\" demands a specific character name as the answer.\n\nThe sentence structure \"The answer is:\" signals a direct answer is expected, likely a single word referring to the recipient of the ball.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a word, immediately constrained to a capitalized noun or proper name completing the answer — likely \"Her\" or a character name referencing the game's narrative context.\n\"Who?\" is the final word of the riddle, \"her\" or a character name completing the sequence.\n\"The answer is:\"\n\"one.\"\n\"•:\""
+ },
+ {
+  "sample_idx": 179,
+  "row": 30,
+  "gold": "Rosa",
+  "s": "Robin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Robin and Rosa were working at the mountain, Robin gave a blackberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the action in this sequence?\" demands a single-word answer describing the relationship between the characters.\n\nThe sentence structure \"A girl...a boy...a child. Answer:\" signals a classic logic puzzle where the final word begins with \"H\" and likely names a person or concept completing the relationship.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the answer, most likely \"Her\" or a character name referring to the third party.\n\"The only way to stop the blood is:\"\n\"Answer:\"\n\"H:\"\nThe sequence \"one:\" demands a noun or proper name.\n\"•:\""
+ },
+ {
+  "sample_idx": 180,
+  "row": 64,
+  "gold": "Carmen",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jessica and Carmen were thinking about going to the river. Jessica wanted to give a grape to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"who\" signals a question about the final word.\n\nThe sentence \"She then looks at the baby. Answer:\" sets up a word puzzle requiring a single word completing the thought, likely \"Yes\" or a character name.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the sentence \"her reaction is:\" — likely \"Yes,\" \"Love,\" or a character name referencing the game's context.\n\"The sequence: she then...\" demands a concluding word that names the object of her protective action.\n\"Question:\"\n\"Answer:\"\n\"•\""
+ },
+ {
+  "sample_idx": 181,
+  "row": 2,
+  "gold": "Ginger",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Ginger and Mona were commuting to the market, Mona gave a blackberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"What is the answer?\" signals a single-word solution is expected.\n\nThe sentence structure \"She placed a child in a box. Answer:\" sets up a classic riddle pattern where the final word begins with \"R\" and likely names a related noun or person.\n\nThe final token \"•:\" is a placeholder/bullet beginning a new word, \"Answer: \", requiring a single capitalized word completing the riddle's solution — likely \"Rival\" or \"Roommate\" referring to the object/person who received the child.\n\"The sequence: one.\"\n\"Answer:\"\n\"•\""
+ },
+ {
+  "sample_idx": 182,
+  "row": 178,
+  "gold": "Marian",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Suzanne and Marian were thinking about going to the museum. Suzanne wanted to give a watermelon to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a scene with a specific action, \"Why?\" signals a wordplay or semantic answer is expected.\n\nThe sentence structure \"She...she...she...then:\" builds toward a single word answer, likely a noun or proper noun completing the relationship context.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, part of the answer \"one word:\", requiring a single capitalized word — likely \"Yes\" or a character name completing the implied relationship.\n\"Her:\" is the final token, part of the answer sequence \"one word: \", immediately constraining the next token to a single word.\n\"She tried to stop him. Response:\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 183,
+  "row": 109,
+  "gold": "Mattie",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Suzanne and Mattie had a lot of fun at the park. Suzanne gave a banana to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a sequence of actions, \"who\" signals a question about the final word.\n\nThe sentence \"The answer is:\" sets up a direct word answer, likely a noun or proper noun completing the emotional reaction \"love.\"\n\nThe final token \"•:\" is a bullet/ellipsis beginning a new word, directly constrained to be a single capitalized word completing the riddle's answer — likely \"Yes\" or a character name referring to the baby/child.\n\"What:\" is the final token of the sequence, \"Yes.\"\n\"She:\"\n\"•:\"\n\"Answer:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 184,
+  "row": 0,
+  "gold": "Jessie",
+  "s": "Rebecca",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Rebecca and Jessie went to the store. Rebecca gave a peach to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative question beginning \"What is the answer to this?\" requiring a single word solution.\n\nThe sentence structure \"She saw...then...\" builds toward a concluding word describing the relationship or object that completes the sequence. \"One.\" signals a transition to the final answer word.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, almost certainly \"Yes\" or a related noun completing the riddle's answer — \"What is the next word?\" demands a single standalone word.\n\"Answer:\" or \"Yes.\"\n\"She saw a child. Then:\"\n\"One.\"\nThe sequence \"one.\" is a wordplay setup, likely referencing a common word like \"Family\" or \"Yes.\""
+ },
+ {
+  "sample_idx": 185,
+  "row": 33,
+  "gold": "Nellie",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Nellie and Eleanor were thinking about going to the cafe. Eleanor wanted to give a coconut to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative describing a scene with a specific action, \"What is the answer?\" signals a word-based solution is expected.\n\nThe sentence builds toward a single word answer, \"the\" ending a sequence \"she\" → \"protect\" → \"her\" — a noun or proper name completing the relationship context.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, likely \"Yes\" or a character name, completing the final line \"the answer is:\" — the word must be a short, common noun or proper name fitting the protective relationship context.\n\"She:\" is the final token, part of the answer word, \"one.\"\n\"the:\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 186,
+  "row": 14,
+  "gold": "Jacqueline",
+  "s": "Miriam",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Miriam and Jacqueline were commuting to the bar, Miriam gave a watermelon to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a scenario is given, \"one word answer\" is promised, requiring a single word solution.\n\nThe sentence structure \"She placed a child in a box. Answer:\" signals a classic logic puzzle where the solution word relates to the action \"she.\"\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, likely the solution word starting with \"Yes\" or a related noun completing the riddle's context.\n\"The only thing she did was:\" — the word must be a noun or proper noun completing the relationship/action.\n\"Answer: \"\n\"Yes.\"\n\"•:\"\n\"Yes.\"\n\"Yes.\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 187,
+  "row": 83,
+  "gold": "Lorraine",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Lorraine and Richard were working at the desert. Richard decided to give a plum to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"one thing leading to another,\" requiring a single concluding word.\n\nThe sentence structure \"The answer is:\" signals a classic riddle or puzzle prompt, where the final word must be a noun or verb completing the thematic wordplay about the relationship between the characters.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word that fits the context — likely \"Love,\" \"Yes,\" or a word describing the next action in the sequence.\n\"What is the next action?\"\n\"Answer:\"\n\"One:\"\n\"•\"\nThe sequence \"She:\" demands a single word completing the scene.\n\"•:\""
+ },
+ {
+  "sample_idx": 188,
+  "row": 94,
+  "gold": "Melanie",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Estelle and Melanie went to the market. Estelle gave a mango to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative scene with a question beginning \"What is the next word?\" requiring a single word answer.\n\nThe sentence structure \"She saw...and then...\" builds toward a concluding word that names the relationship or object implied by the scene's context.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new line, part of the answer word \"Next:\", immediately requiring a single capitalized word — likely \"Love,\" \"Yes,\" or a noun completing the implied relationship.\n\"Answer:\" or \"Yes.\"\n\"One.\"\n\"Love.\"\n\"The.\"\n\"Next:\"\nThe scene describes a sequence of actions, \"She removed them.\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 189,
+  "row": 73,
+  "gold": "Susan",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The park Erika and Susan went to had a orange. Erika gave it to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions with a clear goal, typical of logic puzzles.\n\nThe sentence \"Who is the person who washes the dishes?\" sets up a directional word puzzle where the answer must be a single word completing the sequence \"her.\"\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, almost certainly the answer word \"Mother\" or similar, completing the riddle's solution \"her.\"\n\"her.\"\nThe sequence \"her\" is the final token, part of a word puzzle answer, \"one.\"\n\"Who wins: \"\n\"Answer:\"\n\"one.\"\n\"one:\"\n\"one.\""
+ },
+ {
+  "sample_idx": 190,
+  "row": 147,
+  "gold": "Wilma",
+  "s": "Yvette",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Wilma and Yvette went to the gym. Yvette gave a blackberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative sentence describing a sequence of actions, \"What is the answer?\" signals a single-word response is expected.\n\nThe sentence \"She saw a cat. Then she...\" builds toward a concluding word that names the relationship or object completing the action sequence.\n\nThe final token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the answer — likely \"Yes\" or a word related to the puzzle's theme.\n\"Answer:\" or \"Yes\"\n\"The answer is:\"\n\"Yes.\"\n\"•:\"\nThe sequence \"One word:\" and \"Answer:\" signals a single-word response is required.\n\"What is the reaction:\""
+ },
+ {
+  "sample_idx": 191,
+  "row": 75,
+  "gold": "Jessie",
+  "s": "Grace",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Jessie and Grace found a cherry at the forest. Grace gave it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative question beginning \"A girl is holding a baby. What is the answer?\" demands a single word response.\n\nThe sentence structure \"The answer is one word:\" signals a strict one-word constraint, likely a word describing a relationship or action completing the scenario.\n\nThe final token \"•:\" is a bullet/ellipsis mid-sentence, \"Answer:\" already given, \"one:\" completing \"one word\" — the next token must be a single capitalized word, most likely \"Yes\" or a word like \"Family.\"\n\"She:\" closes the pattern, \"one word:\" closes the pattern.\n\"Answer:\"\n\"Yes.\""
+ },
+ {
+  "sample_idx": 192,
+  "row": 175,
+  "gold": "Rosa",
+  "s": "Kari",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Kari and Rosa went to the store. Kari gave a blackberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene with a clear question \"What is the next word?\" requiring a single word answer.\n\nThe sentence structure \"She saw...then...\" builds toward a concluding word describing the relationship or object that completes the sequence. \"One.\" signals a transition to the answer word.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the riddle's answer, likely \"Love,\" \"Yes,\" or a noun related to the scene's implied object.\n\"What is the next word?\"\n\"Answer:\"\n\"•:\"\nThe sequence \"She saw...then...one.\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 193,
+  "row": 193,
+  "gold": "Mattie",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Mona and Mattie went to the gym. Mona gave a orange to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene describing sequential actions, \"What is the next word?\" signals a single-word answer is expected.\n\nThe sentence \"She then...\" sets up a causal chain requiring a noun completing \"the answer is:\" — likely a word related to the action of removing the cat.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, \"Answer:\" or a word starting with \"A\" — likely \"Away\" or \"Answer,\" completing the riddle's wordplay.\n\"She then:\" and \"one word:\" constrain the next token to a single capitalized word.\n\"The scene:\"\n\"one word:\"\n\"Answer:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 194,
+  "row": 82,
+  "gold": "Anne",
+  "s": "Martha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Anne and Martha were working at the shop, Martha gave a banana to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short narrative question about a sequence of actions (\"a child...a person...\"), requiring a single word answer.\n\nThe sentence structure \"The answer is:\" signals a direct answer is being spelled out, likely a word related to the game's context or a common noun.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, part of the answer \"one word:\", immediately requiring a specific word — likely \"Theft,\" \"Sibling,\" or similar noun completing the riddle's implied relationship.\n\"What is left after the child's action?\"\n\"Answer:\"\n\"•\"\nThe final token \"•:\" is a single capitalized word beginning, completing the sequence \"one word:\"."
+ },
+ {
+  "sample_idx": 195,
+  "row": 39,
+  "gold": "Wilma",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Wilma and Leigh went to the forest. Leigh gave a coconut to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative describing a sequence of actions, \"who\" signals a question about the final word.\n\nThe sentence \"She gave the baby a kiss. Answer:\" sets up a one-word answer, likely a noun or proper noun referring to the recipient of the kiss.\n\nFinal token \"•:\" is a bullet/ellipsis beginning a new word, directly completing the sentence \"The answer is:\" — the next token must be a single word, most likely \"Baby\" or a character name.\n\"One.\" closes the sequence, \"Answer:\" demands a noun completing the riddle's context.\n\"She gave the baby a kiss.\"\n\"One.\"\n\"•:\"\nThe final word must be a noun or character name."
+ },
+ {
+  "sample_idx": 196,
+  "row": 54,
+  "gold": "Jacqueline",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Eleanor and Jacqueline had a lot of fun at the cave. Eleanor gave a peach to\nA:",
+  "explanation": "A word puzzle/riddle format is established: \"What is the sequence of actions in this story?\" demands a single concluding word as the answer.\n\nThe narrative context describes a specific scene — a child's jealousy of a cat, \"she\" — constraining the answer to a noun or word completing the emotional/relational theme.\n\nFinal token \"•:\" is a bullet/line break mid-sentence \"Answer:\", immediately requiring a single capitalized word (likely \"Yes\" or a character name) to complete the answer.\n\"Answer: \"\n\"Jealousy.\"\n\"One.\"\n\"•:\"\nThe sequence \"Jealousy.\"\n\"Yes.\"\n\"•:\"\n\"•:\"\n\"•:\""
+ },
+ {
+  "sample_idx": 197,
+  "row": 58,
+  "gold": "Marian",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Leigh and Marian went to the forest. Leigh gave a strawberry to\nA:",
+  "explanation": "A word puzzle/riddle format is established: a short narrative scene is being described, requiring a single word answer.\n\nThe sentence structure \"What is the next word?\" signals a classic riddle or game-style prompt where the final word begins with \"A\" and relates to the scene's emotional content (protecting the child).\n\nThe final token \"•:\" is a bullet/ellipsis mid-sentence, \"Answer:\" or a word starting with \"A\" is expected immediately — likely \"Love,\" \"Yes,\" or a noun completing the scene's implied answer.\n\"She:\" closes the sequence, \"A single word:\" demands a specific word.\n\"The answer is:\"\n\"A:\"\n\"•:\"\n\"Answer:\""
+ },
+ {
+  "sample_idx": 198,
+  "row": 132,
+  "gold": "Amanda",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Alice and Amanda were working at the desert, Alice gave a grape to\nA:",
+  "explanation": "A logic puzzle/riddle format is established, requiring a concise, single-word answer to \"What is the relationship between the two?\"\n\nThe sentence structure \"A person is holding a baby. The next action is:\" sets up a specific scenario with a clear constraint — the answer must name a gendered or relational noun completing the word puzzle.\n\nFinal token \"•:\" is a truncated word beginning with \"•\", likely \"Male\" or \"Brother\" — a single capitalized word that names the unique recipient of the action, completing the riddle's answer.\n\"One:\" is the final token of a sequence \"Answer: One word.\"\n\"The only solution:\"\n\"•:\"\nThe next token must be a single word completing the relationship."
+ },
+ {
+  "sample_idx": 199,
+  "row": 185,
+  "gold": "Harriet",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The bar Pauline and Harriet went to had a peach. Pauline gave it to\nA:",
+  "explanation": "A riddle/puzzle format is established: a short word-based scenario describing a sequence of actions, \"who\" signals a question about the final outcome.\n\nThe sentence \"The answer is one word. The sequence is: girl, boy, then...\" demands a single word completing the narrative, likely \"Mother\" or a gendered noun referring to the person who took the doll.\n\nFinal token \"•:\" is a bullet/hyphen beginning a new word, directly constrained to be a single capitalized word completing the riddle's answer.\n\"Who wins?\" and \"one word\" setup: \"Answer:\" or \"Mother\"\n\"She:\"\n\"The answer is:\"\n\"one word:\"\n\"•:\""
+ }
+]

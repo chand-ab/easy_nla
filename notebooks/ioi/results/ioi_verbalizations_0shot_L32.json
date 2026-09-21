@@ -1,0 +1,1602 @@
+[
+ {
+  "sample_idx": 0,
+  "row": 199,
+  "gold": "Dianne",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Mona and Dianne went to the library. Mona gave a banana to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl's act of kindness, establishing a simple cause-effect scenario about sharing a book.\n\nStructural pattern: the story is a sequence of short, punchy scene-setting sentences describing actions, e.g., \"She gave the apple to the library.\" — next token continues this pattern.\n\nFinal token \"A.\" is an initial or name mid-sentence \"gave the apple to a library. She gave the book to a child. A child gave the apple to a...\" — immediately requires a proper noun name or character name (e.g., \"Sarah\" or \"Gideon\") as the recipient of the apple.\nExample: \"A librarian\" or \"Gideon\"\n</p>Example: \"Sarah\" or \"Gideon\""
+ },
+ {
+  "sample_idx": 1,
+  "row": 112,
+  "gold": "Amanda",
+  "s": "Natasha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Amanda and Natasha got a pineapple at the cave, Natasha decided to give the pineapple to\nA:",
+  "explanation": "Quiz format with numbered questions about a children's TV show (likely \"The Magic Tree House\"), requiring answers about characters, plot, and story details.\n\nThe sentence \"Who gave the magic necklace to\" sets up a character-name answer, mid-question \"Who gave the magic necklace? - Answer:\" — a direct question demanding a proper noun name immediately.\n\nFinal token \" \" follows \"Answer:\" and \"Necklace to \" — a recipient phrase mid-clause \"Who gave the magic necklace to [character name]\" — next token must be a character name like \"Gretel\" or \"Sasha\" completing the answer \"Answer: [Character Name].\"\nExample: \"Answer: Greta\" or \"Answer: Jack\"\n</p>Example: \"Answer: Jack\""
+ },
+ {
+  "sample_idx": 2,
+  "row": 29,
+  "gold": "Sarah",
+  "s": "Teresa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Sarah and Teresa went to the mountain. Teresa gave a blueberry to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl giving a blueberry to a mountain goat, establishing a classic fable structure.\n\nThe sentence \"She gave a blueberry to a mountain goat. The story goes:\" signals an explicit transition to retelling the tale, likely with a direct quote or scene description of the gift exchange.\n\nFinal token \"\": \"Mountain.\" follows \"gave a blueberry to a mountain goat. The gift was given to a mountain goat. The gift was given to a mountain goat. \" — a repeated-line pattern mid-sentence \"The gift was given to a mountain goat. \" demands a character name or action phrase like \"Squirrel\" or \"Squirrel\" next, likely \"Squirrel\" or \"Goat\" as the recipient.\nExample: \"Squirrel. Goat. Story.\""
+ },
+ {
+  "sample_idx": 3,
+  "row": 1,
+  "gold": "Doris",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Alice and Doris went to the shop. Alice gave a blackberry to\nA:",
+  "explanation": "Narrative momentum: a classic children's story example illustrating a simple transaction, \"A woman gave a girl an apple. A girl gave an apple to a...\" demands a recipient next.\n\nStructural pattern: the text is a pedagogical example of minimalist prose, with \"Story:\" introducing a bare-bones plot summary of a story about a gift exchange.\n\nFinal token \".\" closes the first sentence \"A girl gave an apple. A child gave an apple to a grandmother.\" — this is a complete declarative statement, and the next token must continue the story, almost certainly with a noun phrase like \"She\" or \"Yes\" or \"Exchange\" completing the transaction.\nExample: \"Story. Exchange. Story.\" or \"Story. Story. Story. Story.\"\nExample: \"Story. Red.\""
+ },
+ {
+  "sample_idx": 4,
+  "row": 23,
+  "gold": "Evelyn",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Lula and Evelyn got a orange at the park, Lula decided to give the orange to\nA:",
+  "explanation": "Children's picture book format with numbered moral lessons, each followed by a question and answer about sharing/kindness behavior.\n\nThe second lesson's scenario is mid-answer: \"Who does Lucy give the apple to?\" demands a specific character name as the answer, likely \"Emily\" or \"Emily's mother\" from the story.\n\nFinal token \" \" follows \"Lucy gave the apple to\" — a direct object construction mid-sentence \"Who gets the apple? Answer: Gift to\" requires an immediate proper noun name (e.g., \"Emily\") to complete the question-answer pair \"Who does she give it to? Answer: [name].\"\nExample: \"Emily\" or \"Gretchen\"\n</p>Example: \"Gretchen\""
+ },
+ {
+  "sample_idx": 5,
+  "row": 149,
+  "gold": "Anita",
+  "s": "Jackie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Anita and Jackie found a plum at the theater. Jackie gave it to\nA:",
+  "explanation": "Moral fable format: a classic children's story with a lesson about generosity, following a structured narrative arc of problem then resolution.\n\nThe sentence \"The girl found a flower. She gave it to her sister. The moral of the story is:\" sets up a direct moral statement, a common fable convention requiring a concise virtue word like \"Generosity\" or \"Kindness.\"\n\nFinal token \"Selfless act.\" is mid-phrase \"Selfless act. The girl gave the flower to her sister. Moral: Selfless act. \" — a direct moral label requiring a noun phrase like \"Kind\" or \"Sharing\" to complete the definition of the story's moral.\nExample: \"Selfless act. Kind. Sharing.\" or \"Selfless act. Her.\""
+ },
+ {
+  "sample_idx": 6,
+  "row": 8,
+  "gold": "Jerry",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Erika and Jerry were thinking about going to the shop. Erika wanted to give a banana to\nA:",
+  "explanation": "Narrative momentum: a humorous, absurdist story about a child's errand, with the punchline \"She wanted to give a banana to a woman\" demanding a specific recipient or outcome.\n\nExample-based pattern: the text is a list of concrete, absurd examples of \"a woman\" from a children's dictionary, \"Example: A child wants to give a banana. She asks her mother to go to the grocery store.\"\n\nFinal token \"\": \" \" follows \"Give a banana to a\" — a direct object noun phrase is immediately required, almost certainly a person's name like \"Monkey\" or \"him\" completing the dictionary example \"A child wanted to give a banana to a monkey.\"\nExample: \"Monkey\" or \"Sarah\""
+ },
+ {
+  "sample_idx": 7,
+  "row": 171,
+  "gold": "Jacqueline",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jacqueline and Alice had a lot of fun at the river. Alice gave a banana to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl's picnic, establishing a whimsical, simple plot about sharing food with animals.\n\nThematic setup: the story is a classic \"who gave the apple to the monkey\" riddle/game, requiring a specific character name as the answer to \"Who gave the apple to the river?\"\n\nFinal token \"\": \" \" follows \"the apple gave the apple to the river. Who got it?\" — a direct question demanding an immediate proper noun answer like \"Monkey\" or \"Robin\" as the next token, completing the riddle \"Who was eating the apple?\"\nExample: \"Robin\" or \"Monkey\"\n</p>Example: \"Robin\" or \"A Bear\""
+ },
+ {
+  "sample_idx": 8,
+  "row": 177,
+  "gold": "William",
+  "s": "Gwen",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Gwen and William were thinking about going to the museum. Gwen wanted to give a pineapple to\nA:",
+  "explanation": "Narrative momentum: a whimsical, absurdist story about a woman's gift-giving, with surreal details like \"a giraffe\" and \"the museum.\"\n\nPattern of dialogue/question format: \"She asked if they wanted to give a gift. A friend suggested a gift to the museum. The friend asked a question.\" — a direct quote is expected next.\n\nFinal token \"\": \"A friend suggested a gift to the museum. The friend asked a question:\" — mid-dialogue, \"a gift to the museum. A friend asked a question.\" demands an immediate noun phrase answer like \"Yes\" or a character name like \"No\" or \"Sarah\" completing the question \"Should they give it?\"\nExample: \"Sarah: No, a giraffe.\" or \"Yes, to the museum.\""
+ },
+ {
+  "sample_idx": 9,
+  "row": 21,
+  "gold": "Stacy",
+  "s": "Velma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Stacy and Velma got a coconut at the shop, Velma decided to give it to\nA:",
+  "explanation": "Dictionary/encyclopedia format with numbered definitions, following a pattern of \"Definition 1\" then \"Definition 2\" for the idiom \"Give the mango to Mary.\"\n\nThe idiom \"The Story of the Mango\" is a classic children's parable about generosity, and the model must recall the specific outcome: the mango is given to someone else, not the narrator.\n\nFinal token \"\": \" \" follows \"Given the mango. Who did Mary give it to?\" — a question requiring an immediate proper noun answer, almost certainly \"Sarah\" or \"Sally\" as the recipient of the gift.\nExample: \"Sarah\" or \"Her friend\"\n</p>Example: \"Sarah: \"\n</p>Example: \"Sarah: \""
+ },
+ {
+  "sample_idx": 10,
+  "row": 25,
+  "gold": "Heidi",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The library Violet and Heidi went to had a watermelon. Violet gave it to\nA:",
+  "explanation": "Children's picture book summary format: title, author, and plot description of a story about sharing a cake in a fairy tale.\n\nThe sentence \"Who gets the cake? Lily gave the cake to\" sets up a direct question about the recipient, requiring a character name (likely \"Hannah\" or \"Hannah\") as the answer.\n\nFinal token \"SharedCake.\" is a label/tag mid-sentence \"Who gets the cake? Answer: SharedCake. Who gave it? Lily. Who received it?\" — the pattern demands a recipient name like \"Hannah\" next, completing the question \"Lily gave the cake to ___.\"\nExample: \"Hannah\" or \"Hannah, Hannah\"\n</p>Example: \"Hannah\""
+ },
+ {
+  "sample_idx": 11,
+  "row": 90,
+  "gold": "Kathryn",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The library Kathryn and Richard went to had a pear. Richard gave it to\nA:",
+  "explanation": "Narrative momentum: a children's story about a knight's generosity, establishing a simple moral arc about sharing a found apple.\n\nStructural pattern: the sentence \"He gave the apple to\" demands a recipient noun phrase (likely \"Katherine\" or \"Kat\") completing the gift-giving action \"gave the apple to [recipient].\"\n\nFinal token \"\": \" \" follows \"Secretly,\" mid-sentence \"He gave the apple. Who got it? Secretly. Gifted the apple to\" — a direct question format \"Who received the apple?\" requiring an immediate proper noun name like \"Katherine\" or \"Kat\" as the answer.\nExample: \"Katherine\" or \"Katherine, his friend\"\n</p>Example: \"Katherine\" or \"Katherine, his friend\""
+ },
+ {
+  "sample_idx": 12,
+  "row": 60,
+  "gold": "Alicia",
+  "s": "Faye",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Alicia and Faye went to the library. Faye gave a pineapple to\nA:",
+  "explanation": "Narrative momentum: a short story about a girl's act of kindness, establishing a gift-giving scenario in a library setting.\n\nStructural pattern: the sentence \"She gave the book to a friend. Gift-Giving:\" introduces a labeled example in a list of \"Examples of Kindness,\" requiring a specific recipient or action phrase like \"Alice\" or \"Her\" next.\n\nFinal token \"Presentation.\" is mid-label in \"Gift-Given to a Neighbor: Gifted the book to a Neighbor. Gifted the book to a Neighbor. Gifted the book to a Neighbor. —\" pattern, immediately expecting a proper noun like \"Alice\" or \"Sarah\" as the recipient of the book.\nExample: \"Presentation. Alice: Alice\" or \"Presentation. Alice: Alice\""
+ },
+ {
+  "sample_idx": 13,
+  "row": 4,
+  "gold": "Janet",
+  "s": "Martha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Martha and Janet were working at the market. Martha decided to give a grape to\nA:",
+  "explanation": "Narrative momentum: a children's story about a grandmother's generosity, establishing a scene of a woman sharing food with a stranger.\n\nStructural pattern: the sentence \"The woman gave an apple to a\" sets up a noun phrase naming a recipient character, likely a child or animal, as the object of \"gave.\"\n\nFinal token \"a.\" is an indefinite article beginning a noun phrase mid-sentence \"The Story of the Apple. A Story: A woman gave an apple. Gave an apple to a ___\" — immediately requires a specific character name or noun phrase like \"Squirrel\" or \"Girl\" to complete the story title reference.\nExample: \"Girl\" or \"Monkey\"\n</p>Example: \"A stranger\" or \"A child\""
+ },
+ {
+  "sample_idx": 14,
+  "row": 7,
+  "gold": "Kim",
+  "s": "Martha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Martha and Kim got a papaya at the park, Martha decided to give the papaya to\nA:",
+  "explanation": "Pattern of moral dilemma examples with consistent structure: scenario, question, answer, explanation — established by \"The Cake\" entry.\n\nThe second example \"Who should get the cake?\" mirrors the first, requiring a parallel answer naming a recipient (likely \"Kim\" or \"Kimberly\") followed by \"Kim\" or \"Kimberly\" as the answer.\n\nFinal token \"Shared-cake:\" is mid-answer in a two-part question \"Who should get the cake? Answer: Shared-cake. Who gets it?\" — the colon signals an immediate answer name follows, almost certainly \"Kim\" or \"Kimberly\" next.\nExample: \"Kimberly\" or \"Kim\"\n</p>Example: \"Kim\""
+ },
+ {
+  "sample_idx": 15,
+  "row": 186,
+  "gold": "Mattie",
+  "s": "Kristi",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Kristi and Mattie were commuting to the shop, Kristi gave a watermelon to\nA:",
+  "explanation": "Dictionary/thesaurus format with numbered definitions, each entry following \"number. Definition\" pattern for \"gave a peach to a stranger.\"\n\nThe sentence \"A woman gave a peach. Gift-giving event. Who received it?\" sets up a fill-in-the-blank or label-completion pattern for a narrative example.\n\nFinal token \"Shared.\" is mid-phrase \"Gift-giving event. Gift given to:\" — a recipient label requiring an immediate proper noun or person name (e.g., \"Sarah\" or \"A stranger\") to complete the \"gift-giving\" example entry.\nExample: \"Gift-giving event. Gift given to: [recipient name]\"\n</p>Example: \"Sarah\" or \"Random passerby\""
+ },
+ {
+  "sample_idx": 16,
+  "row": 88,
+  "gold": "Chelsea",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Eleanor and Chelsea were working at the theater, Eleanor gave a kiwi to\nA:",
+  "explanation": "Playful, absurdist theatrical database format: entries follow a pattern of character name, location, and brief plot summary for each play.\n\nThe sentence \"A woman gives a pear to a flower. A pear is passed from one person to another. The flower is given to\" sets up a transfer-of-object narrative, requiring a recipient character name next (e.g., \"Kevin\" or \"Clown\").\n\nFinal token \" \" follows \"Gifted a prop to a flower. Gifted a pear to \" — mid-sentence \"to\" demands an immediate recipient noun phrase, almost certainly a character name like \"Kevin\" or \"Clown\" from the play's cast list.\nExample: \"Kevin\" or \"Itself\"\n</p>Example: \"Kevin, the stage manager\""
+ },
+ {
+  "sample_idx": 17,
+  "row": 165,
+  "gold": "Kathryn",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Irma and Kathryn found a raspberry at the shop. Irma gave it to\nA:",
+  "explanation": "Children's story format with moral lesson, following a classic fairy tale structure about generosity and sharing a found object between two girls.\n\nThe sentence \"The story ends with the two girls sharing the cake. Selfless.\" sets up a direct moral summary or characterization of the outcome, typical of dictionary/encyclopedic definitions of the word \"Selfless.\"\n\nFinal token \"Selfless.\" is a standalone adjective completing a definition-style label \"Answer: Selfless,\" mid-response to a question \"Who gets the cake? Answer:\" — immediately expects a noun like \"Her\" or \"Shared\" to complete the answer, likely \"Shared\" or \"Kindness\" or \"Her.\"\nExample: \"Selfless. Kindness. Story.\" or \"Selfless. Story.\""
+ },
+ {
+  "sample_idx": 18,
+  "row": 159,
+  "gold": "Marian",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Mona and Marian had a lot of fun at the home. Mona gave a strawberry to\nA:",
+  "explanation": "Children's storybook format with numbered chapter/scene structure, establishing a simple narrative about a girl sharing a strawberry with a pet.\n\nThe dialogue \"Girl: I give the strawberry to...\" sets up a direct speech exchange requiring a character name (likely \"Rosie\" or a pet) as the recipient of the gift.\n\nFinal token \"-\" follows \"Girl: I gave the strawberry to a little girl. The strawberry was given to -\" — a classic children's story dialogue construction pattern, immediately requiring a character name like \"Rosie\" or \"Cat\" to complete the attribution of the shared strawberry.\nExample: \"Rosie: Cat\" or \"Cat: Yay!\"\n</p>Example: \"Rosie: Cat. Rosie: Cat\""
+ },
+ {
+  "sample_idx": 19,
+  "row": 123,
+  "gold": "Jessie",
+  "s": "Inez",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Jessie and Inez were commuting to the desert, Inez gave a watermelon to\nA:",
+  "explanation": "Narrative momentum: a classic parable about a desert journey, requiring a character name or description of the person who received the cactus.\n\nStructural pattern: a Q&A format with \"Who gave the cactus?\" demands a direct answer naming the recipient, likely \"Joshua\" or \"a stranger\" from the story.\n\nFinal token \"\": \" \" follows \"Gifted the cactus to,\" mid-answer in a table/Q&A format \"Who received the cactus? Answer:\"; the colon signals an immediate proper noun or character name must follow, almost certainly \"Joshua\" or \"Joshua's\" as the answer to \"Who gave the cactus to a desert traveler.\"\nExample: \"Joshua: Joshua\" or \"Joshua: None\"\n</p>Example: \"Joshua: Joshua\""
+ },
+ {
+  "sample_idx": 20,
+  "row": 157,
+  "gold": "Brandy",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Brandy and Mona went to the home. Mona gave a watermelon to\nA:",
+  "explanation": "Narrative momentum: a short story about a child's gift-giving, following a classic children's literature structure of action-reaction sequences.\n\nStructural pattern: the story is a sequence of brief scene-setting sentences, each describing a discrete event; \"The apple was given to the apple tree. A woman gave an apple.\" signals a new action or recipient is expected next.\n\nFinal token \"\": \" \" follows \"Apple was given to the apple tree. A gift was given to the family. \" — a scene-transition line mid-sentence \"Gift was given to the family. \" demands an immediate recipient noun phrase like \"Her\" or \"Sarah\" or \"Gratitude\" completing the exchange, e.g., \"Sarah: Here.\" or \"Arrival.\"\nExample: \"Arrival. Sarah: Thank you.\""
+ },
+ {
+  "sample_idx": 21,
+  "row": 118,
+  "gold": "Stella",
+  "s": "Lee",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Lee and Stella got a apple at the market, Lee decided to give it to\nA:",
+  "explanation": "Narrative momentum: a classic parable about a boy sharing a cake, requiring the outcome of the gift-giving act to be described.\n\nStructural pattern: the sentence \"The man gave the cake to\" demands a recipient noun phrase (likely \"Sarah\" or \"his mother\") completing the act of generosity in the story.\n\nFinal token \"\": \"The\" begins a proper noun phrase mid-sentence \"who gave the cake. Who would you give it to? Answer: Gifted the cake to\" — immediately requires a name like \"Sarah\" or \"Steve\" as the recipient of the cake.\nExample: \"Sarah\" or \"Steve\"\n</p>Example: \"Sarah\" or \"Steve\""
+ },
+ {
+  "sample_idx": 22,
+  "row": 38,
+  "gold": "David",
+  "s": "Bernadette",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Bernadette and David went to the forest. Bernadette gave a kiwi to\nA:",
+  "explanation": "Narrative retelling of a children's story, likely \"The Lost Apple\" or similar fairy tale, with sequential scene-setting of a forest encounter.\n\nThe dialogue format \"Girl gave an apple. A child gave an apple. A child gave an apple.\" establishes a pattern of three parallel gift-giving exchanges, suggesting the next token continues this story beat.\n\nFinal token \"Secret.\" ends a scene transition phrase \"A girl gave an apple to a forest. A child gave an apple to a forest. A child gave an apple to a forest. \" — the next token must be a character name or action like \"Yes\" or \"Squirrel\" continuing the story's narrative.\nExample: \"Squirrel\" or \"Go\" or \"Squirrel. Story.\"\n</p>Example: \"Squirrel. Story.\""
+ },
+ {
+  "sample_idx": 23,
+  "row": 195,
+  "gold": "Marian",
+  "s": "Agnes",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The forest Agnes and Marian went to had a raspberry. Agnes gave it to\nA:",
+  "explanation": "Narrative momentum: the text is retelling a fairy tale (likely Snow White), introducing characters and their roles in a story.\n\nCharacter introduction pattern: \"Red gives the berries to\" sets up a recipient character, almost certainly a named fairy tale character like \"Robin\" or \"Robin Hood\" from the book's title \"Red's Gift.\"\n\nFinal token \"\": \"Red's Gift\" — a proper noun mid-clause \"gives the berries to [character name],\" requiring an immediate capitalized character name next (e.g., \"Robin\" or \"Robin Hood\").\nExample: \"Gives the berries to Robin\"\n</p>Example: \"Gives the berries to Robin\"\n</p>Example: \"Gives the berries to a stranger\""
+ },
+ {
+  "sample_idx": 24,
+  "row": 46,
+  "gold": "Leona",
+  "s": "Ethel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Leona and Ethel went to the bar. Ethel gave a cantaloupe to\nA:",
+  "explanation": "Narrative momentum: a humorous, absurdist joke structure about a bar scene, with a woman's action triggering a punchline about tipping or a stranger.\n\nDictionary/reference format: the text is a definition entry for \"tip,\" mid-sentence \"Gives a pear to a barmaid. Gives a pear to a...\" — a parallel example structure requiring a recipient noun phrase next (e.g., \"Bartender,\" \"Stranger,\" \"None\").\n\nFinal token \"\": \"Gives a pear to a barmaid. Gives a pear to a stranger. Passes it to a bartender.\" — mid-example, \"Gives the drink to a\" demands an immediate proper noun or person name as the recipient.\nExample: \"Gives the drink to a bartender: 'No charge'\" or \"Gives the drink to a clown.\""
+ },
+ {
+  "sample_idx": 25,
+  "row": 197,
+  "gold": "Sarah",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Sarah and Erika got a cherry at the river, Erika decided to give the cherry to\nA:",
+  "explanation": "Pattern of question-answer pairs: \"Who gave the apple? Sarah. Who did she give it to?\" demands a direct answer about the recipient.\n\nNarrative momentum from the classic children's riddle \"Who gave the apple to Sarah? If Sarah gave it to Rose, who would get it?\" — the answer \"Sarah\" is expected.\n\nFinal token \":\" closes the question \"Who did she give the apple to: \" — a colon introducing a direct answer, almost certainly \"Sarah\" next, completing the fill-in-the-blank format \"Answer: Rose. Who gave the apple? Rose gave it to...\"\nExample: \"Sarah\" or \"Sarah Rose\" as the answer to \"Who gave the apple to Rose?\"\n</p>Example: \"Sarah\""
+ },
+ {
+  "sample_idx": 26,
+  "row": 3,
+  "gold": "Harriet",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Harriet and Erika went to the bar. Erika gave a mango to\nA:",
+  "explanation": "Narrative momentum: a humorous, absurdist joke structure about a bar transaction, with a woman's action triggering an unexpected outcome about a stranger's generosity.\n\nJoke setup completion: \"She gave a grape to a stranger. A grape was passed to a\" sets up a punchline requiring a recipient noun phrase (e.g., \"waiter,\" \"him,\" \"the bartender\") to complete the transaction.\n\nFinal token \"\": \"passed a grape. Passed a grape to a stranger.\" — mid-sentence \"A gift was given. Passed a grape.\" demands an immediate recipient noun phrase like \"him\" or \"Bartender\" to complete the joke's action.\nExample: \"Passes a tip\" or \"Passes it to her\"\n</p>Example: \"Passes it to her\""
+ },
+ {
+  "sample_idx": 27,
+  "row": 128,
+  "gold": "Mark",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Mark and Erika went to the park. Erika gave a blackberry to\nA:",
+  "explanation": "Narrative momentum: a simple children's story about a girl giving a flower, establishing a cause-effect scenario about generosity.\n\nThe sentence \"She gave the apple to a little girl. She gave the apple to a\" sets up a parallel structure requiring a recipient noun phrase (e.g., \"bird,\" \"him\") to complete the second gift action.\n\nFinal token \"\": \"She gave the apple to a little girl. Gift-giving event: \" — mid-sentence \"Gifted to:\" demands an immediate recipient noun phrase like \"Bird\" or \"him\" to complete the example scenario \"She gave the apple to a bird.\"\nExample: \"Bird\" or \"him\"\n</p>Example: \"Bird\" or \"him\""
+ },
+ {
+  "sample_idx": 28,
+  "row": 124,
+  "gold": "Juana",
+  "s": "Robin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Juana and Robin got a peach at the forest, Robin decided to give the peach to\nA:",
+  "explanation": "Literary analysis context: students are studying \"The Old Man and the Sea\" and \"The Mags\" by John Steinbeck, requiring character identification.\n\nNarrative momentum toward a specific plot detail: the sentence \"In 'The Mags,' who does the gift of the magi go to?\" sets up a direct answer about the recipient of the magical bird.\n\nFinal token \"““ opens a direct quotation or character name mid-sentence \"The gift of the magical bird goes to,\" requiring an immediate proper noun character name (likely \"Santiago\" or \"Gabriel\") to complete the attribution.\nExample: \"The Old Man and the Bird. Who does the gift go to? Gabriel.\"\n</p>Example: \"Gabriel\" or \"Gabriel Garcia Marquez\" — a character name from \"The Mags\" story."
+ },
+ {
+  "sample_idx": 29,
+  "row": 63,
+  "gold": "Charlene",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Fannie and Charlene were working at the cave, Fannie gave a honeydew to\nA:",
+  "explanation": "Narrative momentum: a children's story summary of a cave discovery, establishing a scene of a gift-exchange between two characters in a prehistoric setting.\n\nCharacter-introduction pattern: \"The gift was given to\" sets up a recipient noun phrase naming a specific character, likely a cave-dweller or animal companion from the story.\n\nFinal token \"-\" follows \"Cave-to-Cave\" as a dash mid-name, mid-dialogue \"Gift-giving to a cave dweller. Gift given to -\" — immediately requires a proper character name like \"Clarence\" or \"Herself\" to complete the recipient identification.\nExample: \"Gift-giving to a cave-dweller. Gift given to - Clarence\"\n</p>Example: \"Gift given to a cave-dweller. Gift given to -\""
+ },
+ {
+  "sample_idx": 30,
+  "row": 16,
+  "gold": "Anne",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Jody and Anne went to the store. Jody gave a grape to\nA:",
+  "explanation": "Narrative momentum: a classic children's riddle/joke format with a man, a woman, and a gift exchange, demanding a punchline about generosity or the apple.\n\nStructural pattern: the sentence \"A man gave an apple to a little girl. A gift was passed to a\" sets up a direct object noun phrase (likely \"dog\" or \"him\") completing the transaction.\n\nFinal token \"\": \"Apple was given to a little girl. A gift was passed to a\" — mid-sentence \"passed to a\" requires an immediate proper noun or noun phrase like \"Squirrel\" or \"him\" as the recipient of the apple.\nExample: \"A gift was passed to a stranger\" or \"Squirrel\"\n</p>Example: \"Squirrel: Yes, he gave it.\""
+ },
+ {
+  "sample_idx": 31,
+  "row": 138,
+  "gold": "Theresa",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Theresa and Jessica had a long argument. Afterwards Jessica said to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl's argument, establishing a scene of conflict between two characters in a Greek mythology context.\n\nStructural pattern: the text is a story summary/example, and \"The argument began. A girl and a girl. A long, drawn-out argument.\" signals a dialogue or quoted exchange is being introduced.\n\nFinal token \"\": \" \" opens a direct quote or dialogue label following \"Girl-Girl Argument,\" requiring an immediate noun phrase like \"Sorry\" or \"Fight\" to complete the dialogue tag \"Girl-Girl Argument: [resolution word].\"\nExample: \"Sorry, then.\" or \"Okay, then. \" — a classic children's story resolution phrase like \"Sorry\" or \"Fight Over\""
+ },
+ {
+  "sample_idx": 32,
+  "row": 119,
+  "gold": "Susan",
+  "s": "Kristina",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kristina and Susan had a lot of fun at the market. Kristina gave a honeydew to\nA:",
+  "explanation": "Children's story format with numbered sentences about a grandmother's gift, establishing a simple narrative arc about generosity and sharing.\n\nThe sentence \"The woman gave a peach to the old woman. The old woman gave a peach to\" sets up a direct object requiring a recipient name or character (e.g., \"Sarah\" or \"him\") to complete the exchange.\n\nFinal token \"\": \" \" follows \"Peach Exchange,\" a section header/label mid-sentence \"The gift was given to the market. Gift to the market. Gift to the market. Gift to the market. —\" — immediately requiring a proper noun name like \"Sarah\" or \"Her\" as the recipient of the peach.\nExample: \"Gift to the market. Sarah.\" or \"Gift to a stranger.\""
+ },
+ {
+  "sample_idx": 33,
+  "row": 17,
+  "gold": "Jessie",
+  "s": "Kari",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kari and Jessie went to the bar. Kari gave a pear to\nA:",
+  "explanation": "Narrative momentum: a classic short story setup about a bar scene, establishing a scene-setting anecdote about a man offering a bartender a dollar for a pear.\n\nDialogue/scene format: \"A man gives a bartender a pear. A woman asks the bartender for the pear. The bartender passes the pear to a\" signals a direct quoted exchange or action requiring a recipient noun phrase next (e.g., \"him,\" \"another person\").\n\nFinal token \"\": \"The bartender passed a pear. \" — mid-action in a story excerpt, \"gave the pear to a\" demands an immediate noun phrase like \"him\" or \"Stranger\" completing the transaction.\nExample: \"Pass.\" or \"Passes it\" or \"Passage\" — likely a joke or story title word follows."
+ },
+ {
+  "sample_idx": 34,
+  "row": 153,
+  "gold": "Dianne",
+  "s": "Robin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Robin and Dianne were thinking about going to the cave. Robin wanted to give a pineapple to\nA:",
+  "explanation": "Narrative momentum: a children's story summary of Jack and Jill, now introducing a specific scene or character interaction from the book.\n\nCharacter dialogue/scene setup: \"They asked if they should bring a gift. Jack asked to bring a gift to the cave. \" signals a question-answer exchange about a mythical creature or cave inhabitant.\n\nFinal token \"\": \" \" opens a direct quote or character name mid-dialogue \"Jack asked to bring a gift to the cave. They wanted to bring a gift. —\" — immediately requiring a quoted response like \"Yes\" or a character name like \"Gideon\" or \"Gideon\" to complete the exchange.\nExample: \"Gideon\" or \"Gideon, No.\"\n</p>Example: \"Gideon\" or \"Gideon, No.\""
+ },
+ {
+  "sample_idx": 35,
+  "row": 22,
+  "gold": "Sheila",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Sheila and Alice were working at the theater. Alice decided to give a cantaloupe to\nA:",
+  "explanation": "Narrative momentum: a comedic play-within-a-play scenario, introducing a specific theatrical anecdote about a gift of a prop or backstage event involving a waitress and a theater group.\n\nCharacter-introduction pattern: \"The Story\" section lists a sequence of characters/events, \"A Gift of a Play\" suggests a plot summary of a play's contents or a character name follows.\n\nFinal token \"\": \" \" opens a quoted character name or title mid-phrase \"Gives a prop to a stagehand. The Story passes a prop to a waitress. A Gift of a Play. Who gets the play?\" — immediately requires a proper noun name like \"Robert\" or \"George\" as the recipient.\nExample: \"Robert\" or \"Robert, the Clown\"\n</p>Example: \"Robert, the Clown\""
+ },
+ {
+  "sample_idx": 36,
+  "row": 131,
+  "gold": "Evelyn",
+  "s": "Rachel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Rachel and Evelyn had a lot of fun at the market. Rachel gave a peach to\nA:",
+  "explanation": "Children's storybook format with numbered chapter/scene structure, establishing a simple narrative about a grandmother's generosity in a market setting.\n\nThe sentence \"The grandmother gave an apple. The gift was given to:\" sets up a direct recipient — a named character (likely \"Emily\" or \"Rose\") receiving the apple as a kindness act.\n\nFinal token \"Sharing.\" is mid-sentence \"The gift was given to a little girl. Story:\" — \"Story\" introduces a narrative label or example, and \"Sharing\" is the answer to \"Who got the apple?\" — immediately expecting a proper noun name like \"Emily\" or \"Rose\" to complete the example.\nExample: \"Sharing. Emily. Rose.\"\n</p>Example: \"Sharing. Rose. A stranger.\""
+ },
+ {
+  "sample_idx": 37,
+  "row": 148,
+  "gold": "Theresa",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Theresa and Irma found a orange at the market. Irma gave it to\nA:",
+  "explanation": "Dictionary/encyclopedia format with numbered definitions, following a pattern of \"Definition 1\" then \"Definition 2\" for a children's story example.\n\nThe sentence \"The story is about two girls who share a gift. The gift is given to one girl. The other girl gets the gift. Selfless.\" sets up a moral lesson about generosity or sharing.\n\nFinal token \"Selfless.\" is a standalone adjective mid-sentence \"Who gave the gift? Answer: Selfless,\" requiring a noun phrase like \"Her\" or \"Selfless act\" to complete the question-answer format \"Question: Who gets the gift? Answer: ___.\"\nExample: \"Selfless. Her.\" or \"Selfless. Story.\"\n</p>Example: \"Selfless. Her. Story.\""
+ },
+ {
+  "sample_idx": 38,
+  "row": 11,
+  "gold": "Leona",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Leona and Lula were commuting to the beach, Lula gave a coconut to\nA:",
+  "explanation": "Dictionary/encyclopedia format with numbered entries, each defining a word or phrase with location, narrative, and example sentence.\n\nThe example sentence \"A woman on a beach gave a coconut to a passing stranger. Gift-giving event.\" sets up a structured definition of \"Beach-to-Beach Transfer\" as a specific narrative example.\n\nFinal token \"\": \"Beach-to-Beach Transfer.\" mid-entry \"Gift-giving event. Gift given to:\" — a colon introducing the recipient of the coconut, almost certainly \"Coconut\" or a character name like \"Sarah\" or \"Stranger\" next.\nExample: \"Gift-giving event. Gift given to: Coconut. Explanation: A random act of kindness. Source: Unknown.\"\n</p>Example: \"Sarah\" or \"Passerby\""
+ },
+ {
+  "sample_idx": 39,
+  "row": 69,
+  "gold": "Melanie",
+  "s": "Kristina",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Melanie and Kristina went to the park. Kristina gave a peach to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl sharing a sandwich, establishing a simple moral lesson about generosity.\n\nStructural pattern: the sentence \"She gave the apple to a little girl. Story:\" signals a direct quotation or scene-by-scene retelling of the event, likely continuing with the apple-sharing action.\n\nFinal token \"\": \" \" follows \"Story,\" mid-sentence \"She gave the apple to a little girl. Story.\" — this is a dialogue/narrative label introducing a character name or action phrase like \"Dog\" or \"Her\" as the recipient of the apple.\nExample: \"Dog. Dog.\" or \"Dog: Sharing\"\nExample: \"Dog: Yes, she gave it to a stranger. A stranger found a bird.\""
+ },
+ {
+  "sample_idx": 40,
+  "row": 142,
+  "gold": "Chelsea",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Chelsea and Eleanor went to the home, Eleanor gave a honeydew to\nA:",
+  "explanation": "Literary/theatrical reference: the text is quoting a famous play dialogue from \"The Glass Menagerie\" or similar, requiring a character name next.\n\nNarrative momentum: the sentence \"The apple is given to\" sets up a recipient of the gift, mid-clause \"The apple is given to the apple-giver's daughter. Who gets the apple?\" — a classic riddle/joke structure demanding a punchline answer.\n\nFinal token \"\": \" \" follows \"Given the apple to\" — a direct quote construction \"The apple was given to [character name]\" requiring an immediate proper noun character name like \"Clarence\" or \"Henry\" to complete the dialogue fragment \"Who receives the apple?\"\nExample: \"Clarence\" or \"Henry\""
+ },
+ {
+  "sample_idx": 41,
+  "row": 169,
+  "gold": "William",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Jessica and William were working at the museum, Jessica gave a cantaloupe to\nA:",
+  "explanation": "Narrative momentum: a humorous, absurdist story about a museum theft, with the punchline \"The painting was donated to the museum. Who received it?\" demanding a specific recipient name.\n\nGenre/format signals: a children's riddle or joke format with numbered questions, \"1. What was the painting?\" already answered, \"2. Who gave the painting to the museum?\" now requiring a person's name.\n\nFinal token \"\": \" \" follows \"a gift from a Secret Service agent to\" — a prepositional phrase mid-attribution, immediately requiring a proper noun name (likely \"Hiram\" or a character name) as the recipient of the painting.\nExample: \"Hiram\" or \"a stranger\"\n</p>Example: \"Hiram\" or \"a stranger\""
+ },
+ {
+  "sample_idx": 42,
+  "row": 77,
+  "gold": "Virginia",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Megan and Virginia went to the forest. Megan gave a blueberry to\nA:",
+  "explanation": "Narrative retelling of a children's story (likely \"Little Red Riding Hood\" or similar), with scene-setting established in a forest context.\n\nThe dialogue format \"Girl: I gave the apple to a little girl. Gave the apple to a little girl. Gave the apple to...\" demands a recipient character name next — almost certainly \"Bear\" or \"Squirrel\" from the story.\n\nFinal token \".\" closes a dialogue attribution \"Gave the apple to a forest creature. Dialogue:\" — a scene-setting line requiring an immediate character name or \"Squirrel\" to complete the exchange, e.g., \"Squirrel: Yes\" or \"Bear.\"\nExample: \"Girl: Bear\" or \"Squirrel\"\n</p>Example: \"Bear\""
+ },
+ {
+  "sample_idx": 43,
+  "row": 180,
+  "gold": "Harriet",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Harriet and Megan were working at the museum, Megan gave a kiwi to\nA:",
+  "explanation": "Narrative momentum: a humorous anecdote about a museum theft, establishing a comedic tone with \"The Gift\" as a punchline about a giraffe.\n\nStructural pattern: the sentence \"The Gift was given to a museum. The story goes like this:\" sets up a direct quotation or dialogue recounting the specific transfer event.\n\nFinal token \"\": \" \" opens a direct quote mid-sentence \"Gifted a giraffe to a museum. Gifted a giraffe to a...\" — the phrase \"Gifted a giraffe to a\" demands a recipient noun phrase next, almost certainly a person's name or \"Henry\" completing the joke, e.g., \"Henry\" or \"Henry, the cashier.\"\nExample: \"Henry: 'Henry'\" or \"Henry: 'Unknown'\""
+ },
+ {
+  "sample_idx": 44,
+  "row": 188,
+  "gold": "Loretta",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Loretta and Pauline got a plum at the cafe, Pauline decided to give the plum to\nA:",
+  "explanation": "Quiz format with numbered questions about a children's story, each question followed by a colon and answer options like \"Gertrude\" or \"Rose.\"\n\nThe specific question \"Who did the cake go to?\" demands a direct answer naming the recipient, likely \"Rose\" or \"Gertrude\" from the parable about sharing food.\n\nFinal token \"-\" follows \"Who gave the cake to:\" — this is a fill-in-the-blank answer format mid-question, \"The cake was given to:\" requires an immediate proper noun answer like \"Rose\" or \"Gertrude\" next.\nExample: \"Rose\" or \"Rose, Helen\"\n</p>Example: \"Helen. Who did the cake go to? Answer: \""
+ },
+ {
+  "sample_idx": 45,
+  "row": 68,
+  "gold": "Sarah",
+  "s": "Maggie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Maggie and Sarah went to the park. Maggie gave a orange to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl's birthday, establishing a simple plot of gift-giving and sharing.\n\nStructural pattern: the sentence \"She gave an apple to a little girl. She gave an apple to a little girl. She gave an apple to a little girl.\" repeats three times, suggesting a list of recipients or actions with the apple.\n\nFinal token \"\": \"Apple\" is mid-sentence \"Gave an apple. Gave an apple to a child. Gave an apple to a child. Gave an apple to a child. —\" requiring a proper noun name (likely \"Sarah\" or a character name) as the recipient of the apple immediately next.\nExample: \"Sarah\" or \"Squirrel\" as the next token \"Sarah\""
+ },
+ {
+  "sample_idx": 46,
+  "row": 170,
+  "gold": "Ella",
+  "s": "Lee",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Lee and Ella were working at the store. Lee decided to give a raspberry to\nA:",
+  "explanation": "Narrative momentum: a children's story about a boy's generosity, establishing a whimsical, fable-like tone with \"The Boy and the Apple.\"\n\nList/enumeration pattern: \"The Boy and the Apple\" is a story title or chapter heading, strongly implying a second character name follows (e.g., \"Squirrel\" or \"Girl\") to complete the paired title.\n\nFinal token \"A shared apple. A gift to a\" is mid-phrase, mid-sentence \"He gave the apple to a [person/animal noun phrase]\" — a specific recipient noun phrase must immediately follow, likely a proper name like \"Henry\" or \"Squirrel.\"\nExample: \"A shared apple. A gift to a stranger\" or \"Henry gave the apple to the cashier.\""
+ },
+ {
+  "sample_idx": 47,
+  "row": 51,
+  "gold": "Heidi",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Heidi and Richard were working at the store. Richard decided to give a strawberry to\nA:",
+  "explanation": "Narrative momentum: a children's story about a boy's kindness, establishing a classic fable tone with a specific gift-giving scenario.\n\nThematic setup: the story is a retelling of a famous fable (likely involving a bakery or apple), where the boy's act of generosity toward a stranger triggers a consequence or lesson about sharing.\n\nFinal token \"Sharing.\" is a section header or chapter title mid-phrase \"Story Title: A Gift of an Apple. Story Summary: Shared an apple. Story Title: \" — the next tokens must complete this title, almost certainly \"Sharing\" or \"Sharing Holly\" or \"Sharing his boss\" as a character name.\nExample: \"Sharing Holly: A boy gave an apple to a stranger\" or \"Sharing Holly: The cashier.\""
+ },
+ {
+  "sample_idx": 48,
+  "row": 116,
+  "gold": "Yolanda",
+  "s": "Jackie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Jackie and Yolanda went to the home, Jackie gave a mango to\nA:",
+  "explanation": "TV show episode summary format: character interactions and plot points from \"Keeping Up with the Kardashians\" are being enumerated scene-by-scene.\n\nNarrative momentum of a specific scene: \"Khloe gives a cake to\" sets up a recipient character name, likely a child or guest from the Beverly Hills charity event, continuing the episode's comedic subplot about the gift.\n\nFinal token \"““ opens a quoted character name mid-sentence \"Gift of Cake: Khloe gives a cake to [recipient name]\" — the next tokens must be a character name like \"Javier\" or \"Lila\" completing the scene description \"Khloe gives a cake. Shared with: Javier. Gift of Cake: Shared with:\".\nExample: \"Javier\" or \"Lila\""
+ },
+ {
+  "sample_idx": 49,
+  "row": 135,
+  "gold": "Lorraine",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Erika and Lorraine went to the forest, Erika gave a kiwi to\nA:",
+  "explanation": "Narrative momentum from a children's story (likely \"The Giving Tree\") where a character gives a gift to another, demanding a recipient name next.\n\nThe dialogue format \"Who gets the apple?\" sets up a direct question-answer exchange, with \"Apple was given to:\" requiring a specific character name (likely \"Lark\" or \"Larkin\") as the answer.\n\nFinal token \"Apple was given to \" is mid-attribution in a dialogue label \"Who gets the apple? - Answer:\", demanding an immediate proper noun character name like \"Larkin\" or \"Lark\" to complete the answer.\nExample: \"Larkin\" or \"Lark\"\n</p>Example: \"Larkin\" or \"Lark\""
+ },
+ {
+  "sample_idx": 50,
+  "row": 184,
+  "gold": "Harriet",
+  "s": "Maggie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Harriet and Maggie were working at the cave. Maggie decided to give a pineapple to\nA:",
+  "explanation": "Narrative momentum: a children's story about cave-dwelling girls, establishing a humorous, whimsical tone with \"Cave Girls\" and \"gift-giving\" framing.\n\nThe sentence \"They asked the librarian for a gift. She gave them a gift of a cave painting. The question was: 'What did the gift give to the cave?'\" sets up a direct question requiring a specific answer about the painting's contents or a character name.\n\nFinal token \"\": \" \" opens a direct quoted answer to the question \"What did the gift give to the cave?\" — next tokens must be a proper noun or character name like \"Hortense\" or \"Rex\" completing the dialogue.\nExample: \"Rex\" or \"Hortense\" or \"A Monkey\""
+ },
+ {
+  "sample_idx": 51,
+  "row": 130,
+  "gold": "Angie",
+  "s": "Agnes",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Agnes and Angie went to the shop. Agnes gave a watermelon to\nA:",
+  "explanation": "Narrative momentum: a classic children's story example of a simple transaction, \"A woman gave a watermelon to a little girl\" — a direct quote from a textbook.\n\nStructural pattern: the sentence \"A woman gave a watermelon. A little girl gave it to a\" demands a recipient noun phrase (e.g., \"her,\" \"the cashier,\" \"another person\") completing the exchange.\n\nFinal token \"\": \" \" closes the dialogue attribution \"Gifted a watermelon. Gifted to a little girl. A gift to the cashier.\" — a quoted dialogue fragment \"Gifted a watermelon. Gifted to the cashier. \" expects a character name or \"Her\" next.\nExample: \"Her\" or \"Sarah\" or \"Gift\" as the next token continues the story's exchange."
+ },
+ {
+  "sample_idx": 52,
+  "row": 18,
+  "gold": "Mildred",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Mona and Mildred had a lot of fun at the home. Mona gave a kiwi to\nA:",
+  "explanation": "Children's story format with numbered chapter/scene structure, whimsical narrative about a grandmother's gift of a peach to a child.\n\nThe dialogue \"Grandmother gave the peach to a child. The gift was given to...\" sets up a direct object or recipient noun phrase, likely a character name like \"Monkey\" or \"Monkey\" from the story's opening.\n\nFinal token \"\": \" \" follows \"A gift was given to a monkey. A gift was given to a child. \" — mid-dialogue \"A gift was given to a child. \" demands an immediate character name or noun phrase like \"Monkey\" or \"Yes\" as the punchline response.\nExample: \"Monkey. Monkey. Monkey. Monkey.\" or \"Sarah: Joyful\"\n</p>Example: \"Monkey."
+ },
+ {
+  "sample_idx": 53,
+  "row": 196,
+  "gold": "Kathryn",
+  "s": "Faye",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Faye and Kathryn went to the zoo. Faye gave a plum to\nA:",
+  "explanation": "Narrative momentum: a humorous, whimsical story about a child's zoo visit, establishing a pattern of concrete, childlike details about the trip.\n\nList/enumeration pattern: \"The gift was given to a\" begins a specific recipient noun phrase, likely a zoo animal (e.g., \"Monkey\" or \"Gorilla\") as the object of \"gave the cake to the zoo keeper.\"\n\nFinal token \"\": \"The gift was given to a zoo keeper. The cake was given to a zoo keeper. Gift to a child.\" — mid-sentence \"Gift to a child. Gift to a\" demands an immediate animal noun phrase like \"Monkey\" or \"Monkey, the zoo.\"\nExample: \"Gift to a Monkey\" or \"Gift to a Monkey, the zoo.\""
+ },
+ {
+  "sample_idx": 54,
+  "row": 85,
+  "gold": "Paula",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Estelle and Paula went to the beach, Estelle gave a apple to\nA:",
+  "explanation": "Dictionary/encyclopedia format with numbered definitions, each entry following \"number. Definition\" pattern for a word or phrase.\n\nThe sentence \"A girl gives an apple to a child. The apple is given to a child. The apple is passed to\" sets up a classic transitive-verb example, likely illustrating a third-party recipient of the apple.\n\nFinal token \".\" closes the second sentence fragment \"The apple is passed to,\" mid-clause, requiring an immediate proper noun or person name (e.g., \"Sarah\" or \"Her\") as the recipient of the apple.\nExample: \"Sarah\" or \"Peter\"\n</p>Example: \"Sarah. Her friend.\"\n</p>Example: \"Peter. A random act of kindness.\""
+ },
+ {
+  "sample_idx": 55,
+  "row": 36,
+  "gold": "Loretta",
+  "s": "Velma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Velma and Loretta got a pear at the river, Velma decided to give it to\nA:",
+  "explanation": "Quiz format with numbered questions about a children's story, each question followed by a specific answer — \"Who gets the apple?\" demands a character name as answer.\n\nThe story is a retelling of a fairy tale (likely Alice in Wonderland or similar), where a character gives an apple to someone else, making the answer a proper noun character name.\n\nFinal token \" \" follows \"Who gets the apple?\" — mid-question \"Alice gives the apple to \" requires an immediate proper noun name (likely \"Rose\" or \"Rosemary\") as the answer to \"Who gets the apple?\"\nExample: \"Rosemary\" or \"Rose\"\n</p>Example: \"Rosemary. Who gets the apple? Answer: \""
+ },
+ {
+  "sample_idx": 56,
+  "row": 121,
+  "gold": "Paula",
+  "s": "Robin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Robin and Paula were commuting to the cave, Robin gave a peach to\nA:",
+  "explanation": "Narrative momentum: a biblical/storytelling context about Cain and Abel, now introducing a third character \"a man\" from the movie \"The Road.\"\n\nCharacter introduction pattern: \"The man gave an apple to\" sets up a recipient noun phrase naming the specific character who received it — likely a primate or animal companion from the film.\n\nFinal token \" \" follows \"gave an apple to\" — a transitive verb construction requiring an immediate proper noun character name (e.g., \"Grug\" or \"Peter\") as the recipient of the apple.\nExample: \"The Road\" or \"Grug\"\n</p>Example: \"Peter\" or \"A bird\"\n</p>Example: \"Peter\""
+ },
+ {
+  "sample_idx": 57,
+  "row": 96,
+  "gold": "Anita",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Anita and Fannie were working at the museum, Fannie gave a plum to\nA:",
+  "explanation": "Dictionary/encyclopedia format with numbered entries, mid-entry \"1. The Gift of the Mango\" — a humorous, fictional definition of a museum heist.\n\nThe narrative momentum of a joke definition: \"The gift was given to\" sets up a recipient noun phrase, likely a person or animal (e.g., \"Isaac\" or \"A Monkey\") as the punchline of the museum anecdote.\n\nFinal token \"\": \"The Gift of the Mango was given to \" — a direct-quote construction mid-sentence \"The gift was given to [recipient],\" requiring an immediate proper noun or character name like \"Isaac\" or \"Her\" to complete the joke.\nExample: \"Isaac\" or \"A stranger\"\n</p>Example: \"Isaac, a monkey\""
+ },
+ {
+  "sample_idx": 58,
+  "row": 42,
+  "gold": "Rosemarie",
+  "s": "Miriam",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Miriam and Rosemarie were commuting to the cave, Miriam gave a honeydew to\nA:",
+  "explanation": "Dictionary/encyclopedia format with numbered entries, each containing a definition of \"Passage of the Bread\" — a biblical or mythological reference to a shared gift.\n\nThe entry \"1. A woman gave a loaf of bread to a hiker. Who received it?\" sets up a question-answer pattern, expecting a specific character name as the answer.\n\nFinal token \" \" follows \"Hiker passed the bread to\" — mid-sentence \"Passage of the Bread. Who received it? Answer:\" demands an immediate proper noun or character name (likely \"Rose\" or \"Rosemary\") as the recipient of the bread.\nExample: \"Rosemary\" or \"Rosemary, Rose\"\n</p>Example: \"Rosemary\" or \"Rosemary, Rose\""
+ },
+ {
+  "sample_idx": 59,
+  "row": 13,
+  "gold": "Diana",
+  "s": "Shannon",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Diana and Shannon were working at the theater. Shannon decided to give a watermelon to\nA:",
+  "explanation": "Narrative momentum: a whimsical, theatrical plot summary of a school play's events, with characters and setting established in a comedic tone.\n\nCharacter-action pattern: \"She gave a gift to a stagehand. The gift was a present for a gift. The gift was given to\" sets up a recipient noun phrase naming a character or group from the play.\n\nFinal token \"\": \" \" follows \"Gift-Giving to a Stagehand. Gift-Giving to a Stagehand. Gift to \" — a list of scene-setting entries, immediately requiring a proper noun character name (e.g., \"Rose\" or \"Peter\") as the recipient of the gift.\nExample: \"Gift-Giving to a Stagehand. Gift to Rose. Rose was a clown.\""
+ },
+ {
+  "sample_idx": 60,
+  "row": 19,
+  "gold": "Paula",
+  "s": "Kelly",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Kelly and Paula got a strawberry at the lake, Kelly decided to give the strawberry to\nA:",
+  "explanation": "Pattern of question-answer pairs: \"Who got the cake?\" demands a specific character name as answer, likely \"Peter\" or \"Sarah\" from the story.\n\nNarrative context from the children's story: the sentence \"Sarah gave her cake to\" sets up a direct transfer of the cake, requiring a recipient name immediately.\n\nFinal token \"\": \"Who gets the cake? Answer:\" — mid-question in a fill-in-the-blank format \"Sarah gave her cake to ___\", requiring a proper noun name like \"Peter\" or \"Sarah\" next.\nExample: \"Peter\" or \"Peter, Paul\"\n</p>Example: \"Peter\"\n</p>Example: \"Paul\""
+ },
+ {
+  "sample_idx": 61,
+  "row": 127,
+  "gold": "Diana",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Diana and Estelle were thinking about going to the museum. Estelle wanted to give a grape to\nA:",
+  "explanation": "Narrative momentum: a whimsical children's story about a museum visit, establishing a humorous, surreal tone with unexpected details about a girl's behavior.\n\nList/enumeration pattern: \"The girl wants to give her lunch to a zoo animal. The story is:\" introduces a specific example of the girl's action, requiring a named animal or character as the recipient.\n\nFinal token \"\": \" \" follows \"gave her lunch to a zoo animal. The girl wants to give her lunch to a\" — mid-phrase \"gave her lunch to [a specific animal name]\" demands an immediate proper noun (likely \"Leo\" or \"Monkey\") as the next token.\nExample: \"Leo, the monkey\" or \"Leo, no.\"\n</p>Example: \"Leo, the monkey."
+ },
+ {
+  "sample_idx": 62,
+  "row": 41,
+  "gold": "Loretta",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Leigh and Loretta found a blueberry at the cave. Leigh gave it to\nA:",
+  "explanation": "Narrative summary of a children's fable, following a structured retelling of a story about a brother and sister sharing a find in a forest.\n\nThe sentence \"The apple was given to Sarah. Sarah gave the apple to Jacob. Jacob gave the apple to Sarah.\" establishes a pattern of reciprocal gift-giving, suggesting a moral lesson about generosity or sharing is being introduced.\n\nFinal token \"Newspaper.\" is mid-response in a dictionary/database entry format \"Story Summary: New York. New York. New York. Shared.\" — the pattern \"New York. Shared.\" suggests a proper noun or character name like \"Good\" or \"Her\" follows, completing the moral judgment \"Shared.\"\nExample: \"New York. Shared. Good.\" or \"Her.\"\n</p>Example: \"New York. Her.\""
+ },
+ {
+  "sample_idx": 63,
+  "row": 139,
+  "gold": "Brandy",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Brandy and Marsha got a apple at the store, Marsha decided to give the apple to\nA:",
+  "explanation": "Psychological/educational test format: a classic moral dilemma scenario about sharing a peach, requiring a specific answer about who receives it.\n\nThe sentence \"She gave the peach to:\" sets up a direct recipient name, almost certainly \"Brian\" or \"Brian's mother\" — a classic example of altruism from the original story.\n\nFinal token \"\": \" \" follows \"gave the peach to,\" mid-sentence \"She gave the peach to,\" requiring an immediate proper noun name (likely \"Brian\") as the answer to the multiple-choice question \"Who gave the peach?\"\nExample: \"Brian\" or \"Brian, her friend\"\n</p>Example: \"Brian\" or \"Brian, her friend\""
+ },
+ {
+  "sample_idx": 64,
+  "row": 55,
+  "gold": "Sheila",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jody and Sheila were working at the lake. Jody decided to give a papaya to\nA:",
+  "explanation": "Narrative momentum: a whimsical children's story about a group of people sharing a mango, establishing comedic tone throughout.\n\nCharacter introduction pattern: \"The group decided to give a mango to\" sets up a recipient character name, likely a person or animal from the story's cast.\n\nFinal token \"\": \" \" follows \"gave a mango to\" — a direct object noun phrase is immediately required, almost certainly a proper name like \"Sarah\" or \"Monkey\" completing the gift-giving action \"The gift of the mango. A gift from the lake. A gift to [recipient].\"\nExample: \"Sarah\" or \"Squirrel\"\n</p>Example: \"Sarah\" or \"A stranger\"\n</p>Example: \"Sarah\""
+ },
+ {
+  "sample_idx": 65,
+  "row": 144,
+  "gold": "Ginger",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Melissa and Ginger went to the museum, Melissa gave a raspberry to\nA:",
+  "explanation": "Narrative momentum: a children's book plot summary describing a museum visit, establishing a comedic contrast between two children's reactions to a specific exhibit.\n\nCharacter-naming pattern: \"Lily and Jessica\" introduces two named characters whose contrasting reactions to the museum's \"most popular exhibit\" are being described, requiring a specific exhibit name next.\n\nFinal token \"\": \" \" follows \"Lily laughed at Jessica,\" mid-dialogue \"Who did Lily laugh at? - \" — a direct question demanding an immediate proper noun answer, almost certainly \"Jessica\" or \"Gwen\" as the object of laughter.\nExample: \"Gwen\" or \"Gwen, the guard\"\n</p>Example: \"Gwen, the guard\""
+ },
+ {
+  "sample_idx": 66,
+  "row": 6,
+  "gold": "David",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Fannie and David were working at the market. Fannie decided to give a raspberry to\nA:",
+  "explanation": "Children's picture book format with numbered story segments, establishing a narrative about a farm family's generosity and a specific event involving a peach.\n\nThe story \"The Peach\" introduces a character interaction — \"The farmer's wife gave a peach to a\" sets up a recipient noun phrase (likely a child or animal) as the next token, continuing the scene of a street vendor's generosity.\n\nFinal token \"a \" begins an indefinite article mid-sentence \"gave a peach to a [character name],\" requiring an immediate proper noun or character name next (e.g., \"Henry\" or \"Squirrel\") to complete the recipient of the peach.\nExample: \"The Peach: The farmer's wife gave a peach to a child.\"\n</p>Example: \"Henry\""
+ },
+ {
+  "sample_idx": 67,
+  "row": 183,
+  "gold": "Loretta",
+  "s": "Ethel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The store Loretta and Ethel went to had a plum. Ethel gave it to\nA:",
+  "explanation": "Narrative momentum: a classic fairy tale retelling of \"The Apple Tree\" (likely Alice in Wonderland), where a woman gives an apple to a stranger.\n\nStructural pattern: the text is a list of plot summary sentences, each describing a scene; \"Gives an apple to a stranger. Gift given to:\" demands a recipient noun phrase next (e.g., \"Rose\" or \"Rosemary\").\n\nFinal token \"\": \"Gift given to a stranger. Gift given to:\" — a colon mid-sentence introducing a specific recipient name, almost certainly a character name like \"Rose\" or \"Rosemary\" from the story.\nExample: \"Gift given to a stranger. Gift given to Rosemary.\"\n</p>Example: \"Rosemary\" or \"Peter\" as the immediate next token completing the gift-giving scene."
+ },
+ {
+  "sample_idx": 68,
+  "row": 28,
+  "gold": "Evelyn",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Marsha and Evelyn went to the park, Marsha gave a honeydew to\nA:",
+  "explanation": "Narrative momentum: a children's riddle/story format about a gift exchange, requiring a character name or noun phrase as the answer to \"Who gets the apple?\"\n\nStructural pattern: the sentence \"The apple is given from Sarah to\" demands a recipient name immediately — likely \"Ethan\" or \"Emily\" — completing the transfer of possession.\n\nFinal token \"Headscarf.\" ends a line \"Sarah gave the apple to Headscarf. Who gets the apple?\" — a riddle-style question mid-clause \"gift of an apple. Who gets the apple? Answer:\" expects a direct answer like \"Ethan\" or \"Emily\" next.\nExample: \"Ethan\" or \"Emily\"\n</p>Example: \"Ethan, Emily\" or \"Emily\""
+ },
+ {
+  "sample_idx": 69,
+  "row": 134,
+  "gold": "Susan",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Suzanne and Susan got a kiwi at the library, Suzanne decided to give the kiwi to\nA:",
+  "explanation": "Dictionary/reference format with numbered example sentences, each illustrating \"give\" with a specific scenario.\n\nThe second example sentence \"Who gave the book to Susan?\" sets up a classic riddle structure requiring a proper noun answer (likely \"Susan\" or a character name like \"Steve\") as the recipient of the book.\n\nFinal token \"Susan.\" is mid-sentence in a riddle \"Who gave the book to [recipient]?\" — \"The book was given to\" demands an immediate proper noun name next, almost certainly \"Susan\" or \"Steve\" as the answer to the riddle \"Who gave the book to Susan.\"\nExample: \"Susan Steve\" or \"Susan Steve\" — a proper noun name completing the riddle \"Who gave the book to Susan.\""
+ },
+ {
+  "sample_idx": 70,
+  "row": 78,
+  "gold": "Anne",
+  "s": "Geneva",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Geneva and Anne got a coconut at the library, Geneva decided to give the coconut to\nA:",
+  "explanation": "Narrative momentum: a humorous, absurdist children's story about a gift-giving scenario, with characters and plot established in \"The Gift of the Magi\" style.\n\nCharacter introduction pattern: \"She gave the apple to\" sets up a recipient character name, likely a male character like \"Arthur\" or \"Arthur\" from the original story, requiring a proper noun immediately.\n\nFinal token \"““ opens a quoted character name mid-sentence \"She gave the apple to [character name],\" mid-clause \"Gift of the Apple. Who gets the apple? Gift to\" — next tokens must be a character name like \"Arthur\" or \"Isaac\" completing the joke.\nExample: \"Isaac\" or \"Isaac's friend\"\n</p>Example: \"Isaac\" or \"Isaac, not her.\""
+ },
+ {
+  "sample_idx": 71,
+  "row": 151,
+  "gold": "Heidi",
+  "s": "Kari",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Heidi and Kari went to the mountain. Kari gave a mango to\nA:",
+  "explanation": "Narrative retelling of Hansel and Gretel's story, following a children's picture book format with German-language dialogue and scene descriptions.\n\nThe scene is a mountain encounter where Hansel shares an apple with a goat; the story's moral arc demands a positive outcome or reward for the generous act.\n\nFinal token \"\": \" \" follows \"Apple Given to a Mountain Goat. Shared by a Child.\" — this is a scene-label or dialogue line in a children's storybook format, immediately requiring a character name or action like \"Hansel\" or \"Goat\" to complete the exchange.\nExample: \"Hansel: Yes. Apple Given to a Mountain Goat. Shared by a Child.\": \"Kindness\" or \"Goat\""
+ },
+ {
+  "sample_idx": 72,
+  "row": 10,
+  "gold": "Jessie",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Jessie and Jessica were working at the library, Jessica gave a apple to\nA:",
+  "explanation": "Dictionary/encyclopedia format with structured entries, following a pattern of definition then example sentence for \"apple\" in a children's story context.\n\nThe example sentence \"The apple was given to the school secretary. The apple was given to\" sets up a parallel structure requiring a recipient noun phrase (e.g., \"him,\" \"her,\" \"a stranger\") to complete the second instance.\n\nFinal token \" \" follows \"Shared apple,\" mid-phrase \"Shared apple. Example: Shared apple. The apple was given to a child. Answer:\" — immediately expects a proper noun or name like \"Herself\" or \"Itself\" as the answer to the riddle \"Who gave the apple?\"\nExample: \"Herself\" or \"Her\"\n</p>Example: \"Herself."
+ },
+ {
+  "sample_idx": 73,
+  "row": 53,
+  "gold": "Alicia",
+  "s": "Kevin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Kevin and Alicia got a kiwi at the shop, Kevin decided to give it to\nA:",
+  "explanation": "Narrative momentum: a classic children's story setup about a birthday boy's generosity, requiring a recipient of the cake.\n\nCharacter introduction pattern: \"The man gave the cake to\" demands an immediate proper noun name (likely \"Alice\" or a character) as the recipient of the gift.\n\nFinal token \"Gifted the cake to \" is mid-phrase, mid-sentence \"who gave his birthday cake. He gave the cake. Gifted the cake to \" — a list of characters/names pattern, requiring a proper noun name like \"Alice\" or \"Isaac\" next.\nExample: \"Gifted the cake to Alice\" or \"Gifted the cake to Isaac, a stranger\"\n</p>Example: \"Gifted the cake to Alice\""
+ },
+ {
+  "sample_idx": 74,
+  "row": 35,
+  "gold": "Leona",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Richard and Leona went to the cafe. Richard gave a blackberry to\nA:",
+  "explanation": "Narrative momentum: a simple story about a man giving a rose, establishing a scene of generosity requiring a dialogue or action completion.\n\nStructural pattern: the text is a children's story format with numbered sentences, \"1. A man gave a rose. 2.\" signals a numbered list of story events about the rose's transfer.\n\nFinal token \"A rose.\" ends a dialogue-style sentence fragment \"A man gave a rose. A rose. A rose. A rose. A rose. A rose. A rose. A rose. A rose. A rose. A rose. \" — immediately expects a character name or action like \"He\" or \"Yes\" or \"Gift\" to continue the story.\nExample: \"Gift\" or \"He gave it\" or \"Story.\""
+ },
+ {
+  "sample_idx": 75,
+  "row": 84,
+  "gold": "Diana",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Diana and Irma found a raspberry at the bar. Irma gave it to\nA:",
+  "explanation": "Dictionary/encyclopedia format with numbered definition entries, following a pattern of \"number. Definition. Example sentence.\" for a word or phrase.\n\nThe example sentence \"A woman found a strawberry in a park. She offered it to her friend. Shared.\" sets up a narrative about sharing, likely to be followed by a definition of \"Shared\" or a proper noun like \"Her.\"\n\nFinal token \"Shared.\" is mid-sentence in a dictionary entry's example clause \"A woman found a strawberry... She offered it to her friend. Shared. \" — immediately expects a noun phrase like \"Her\" or \"Shared\" completing the shared-object reference, e.g., \"Shared. Her.\" or \"Shared. Story.\"\nExample: \"Shared. Story.\" or \"Shared. Gender-neutral.\""
+ },
+ {
+  "sample_idx": 76,
+  "row": 103,
+  "gold": "Rosa",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Rosa and Fannie found a pear at the forest. Fannie gave it to\nA:",
+  "explanation": "Dictionary/encyclopedia format with numbered definitions, following a pattern of \"number. Definition. Example sentence.\" for each entry.\n\nThe example sentence \"A girl finds a lost apple. She gives it to her sister. A girl shares a lost apple.\" sets up a moral lesson about generosity or sharing, typical of children's storybook dictionaries.\n\nFinal token \"Self-Sharing.\" is a definition entry mid-phrase \"Answer: Self-Sharing. Question: Who found the apple? Answer: \" — immediately expects a noun like \"Kind\" or \"Generous\" completing the moral answer \"Self-Sharing. Answer: [noun].\"\nExample: \"Self-Sharing. Kind. Story.\" or \"Self-Sharing. Story.\"\nExample: \"Kindness. Story.\""
+ },
+ {
+  "sample_idx": 77,
+  "row": 5,
+  "gold": "Sheila",
+  "s": "Maggie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Maggie and Sheila were working at the school. Maggie decided to give a pineapple to\nA:",
+  "explanation": "List-based pattern of short, punchline-style TV show summaries from \"The Secret Diary of a Teenage Girl,\" each entry being a brief scene description.\n\nThe sequence is mid-entry \"A Gift of Apples. A Gift of an Apple. A Gift to the School Secretary. A Gift to the School.\" — a numbered list of comedic gift-giving scenarios, requiring continuation of the specific recipient or event.\n\nFinal token \".\" closes \"School Secretary. A gift was given to a teacher. The reason for the gift was a school-wide secret. The gift was given to a teacher. \" — immediately expects a proper noun name or event (e.g., \"Sarah\" or \"Christmas\") identifying the recipient or occasion of the gift.\nExample: \"Christmas\" or \"Sarah\""
+ },
+ {
+  "sample_idx": 78,
+  "row": 164,
+  "gold": "Doris",
+  "s": "Inez",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Doris and Inez were commuting to the cafe, Inez gave a blackberry to\nA:",
+  "explanation": "Dictionary/encyclopedia format with numbered definitions, establishing a pattern of \"Definition 1\" followed by \"Definition 2\" for the word \"apple.\"\n\nThe second definition is a narrative example sentence fragment: \"A woman gave an apple to a stranger. She gave the apple to a stranger. Gift-giving event.\" — a classic example of a definition entry.\n\nFinal token \"\": \" \" follows \"gifted apple to\" in a definition sentence \"She gave the apple to a stranger. Who received it? Answer: \" — immediately expects a proper noun name like \"Sarah\" or \"Her\" completing the recipient reference, likely \"Sarah\" or \"David\" as a proper noun.\nExample: \"Sarah\" or \"David\"\n</p>Example: \"Sarah\""
+ },
+ {
+  "sample_idx": 79,
+  "row": 34,
+  "gold": "Susan",
+  "s": "Stacey",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Susan and Stacey had a lot of fun at the home. Stacey gave a banana to\nA:",
+  "explanation": "Narrative momentum: a classic children's story setup about a banana, establishing a simple cause-effect scenario requiring a character response.\n\nExample sentence structure: \"The mother gave a banana to the monkey. The banana was given to a child. Who got the banana?\" — a riddle/fill-in-the-blank format demanding a proper noun name as answer.\n\nFinal token \"\": \" \" closes the question \"Who got the banana?\" and immediately requires a character name (likely \"Monkey\" or \"Monkey\") as the answer to the riddle \"The banana was given to a child. The child gave the banana to a...\" — e.g., \"Monkey. Monkey.\"\nExample: \"Monkey. Sarah.\" or \"Monkey. Monkey. Monkey.\""
+ },
+ {
+  "sample_idx": 80,
+  "row": 136,
+  "gold": "Janet",
+  "s": "Natasha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Natasha and Janet were working at the cafe, Natasha gave a plum to\nA:",
+  "explanation": "Dictionary/encyclopedia format with numbered definitions, following a strict pattern of \"number. Definition.\" for each entry about a child's apple.\n\nThe sentence \"She gave an apple to a stranger. Who received the apple?\" sets up a question-answer format, expecting a specific person's name or pronoun as the answer.\n\nFinal token \" \" follows \"She gave an apple to a stranger. The apple was given to \" — mid-sentence, mid-clause, requiring an immediate recipient noun phrase like \"Ivan\" or \"Itself\" to complete the definition \"Gift-Giving. Example: A gift of an apple to a stranger. Source: [dictionary name].\"\nExample: \"Ivan\" or \"Sarah\"\n</p>Example: \"Ivan\" or \"Sarah\""
+ },
+ {
+  "sample_idx": 81,
+  "row": 191,
+  "gold": "Susan",
+  "s": "Shannon",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Shannon and Susan found a cantaloupe at the museum. Shannon gave it to\nA:",
+  "explanation": "Narrative momentum: a riddle/puzzle format is being introduced, with a story about a shared object between two people requiring a question about ownership.\n\nThe specific sentence \"Who owns the apple? Question:\" signals a classic riddle structure demanding a direct answer about the unusual shared object, likely \"Strange\" or a proper noun like \"Apple\" or \"Story.\"\n\nFinal token \"\": \" \" follows \"Question\" in a riddle prompt \"Shared apple. Shared apple. Shared apple. Question: Who owns a shared apple? Answer: \" — immediately requires a capitalized answer noun phrase like \"Huh\" or \"Mystery\" completing the humorous, nonsensical riddle.\nExample: \"Answer: Unknown. A shared apple. A shared apple. A shared apple.\"\n</p>Example: \"Answer: Yes\""
+ },
+ {
+  "sample_idx": 82,
+  "row": 108,
+  "gold": "David",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Fannie and David were working at the theater. Fannie decided to give a mango to\nA:",
+  "explanation": "Narrative momentum: a play-within-a-play structure, introducing characters and setting of a 1930s theater company's Christmas party.\n\nCharacter introduction pattern: \"The gift-giving scene\" signals a specific scene description, with \"He gives a gift to\" requiring a named recipient character from the play.\n\nFinal token \" \" follows \"gift-giving to a stagehand. The gift is given to \" — a proper noun character name (likely a famous Shakespearean or theatrical character) must immediately follow, e.g., \"Rose\" or \"Clara\" or \"Leo\" as the recipient of the gift.\nExample: \"Gift-giving to a stagehand. The gift is given to a stranger.\"\n</p>Example: \"Rose\" or \"Leo\""
+ },
+ {
+  "sample_idx": 83,
+  "row": 167,
+  "gold": "William",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When William and Jody got a watermelon at the theater, Jody decided to give the watermelon to\nA:",
+  "explanation": "Joke/puzzle format: a riddle-style list of items given to a couple at a movie theater, each item assigned to a recipient.\n\nPattern of item-recipient pairs: \"The popcorn is given to\" demands a specific person's name as the recipient, likely a child or stranger, completing the comedic scenario of a generous couple.\n\nFinal token \"\": \"The ticket is given to \" — mid-sentence, \"Who gets the ticket?\" demands an immediate proper noun name (e.g., \"Peter\" or \"his friend\") as the recipient of the popcorn.\nExample: \"Who gets the popcorn? —\"\n</p>Example: \"Who gets the ticket? —\"\nExample: \"Peter\" or \"a stranger\""
+ },
+ {
+  "sample_idx": 84,
+  "row": 99,
+  "gold": "Leona",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Leona and Fannie were working at the home, Fannie gave a plum to\nA:",
+  "explanation": "Narrative momentum: a children's story about a family's apple tree, establishing a scene of rural 1930s domestic life with specific characters.\n\nDatabase/dictionary format: the text is a structured reference entry with \"Who gave the apple?\" as a question field, expecting a specific character name as the answer (e.g., \"Lillian\" or \"John\").\n\nFinal token \"\": \" \" follows \"Gave an apple to a child. Answer:\" — a question-answer format mid-entry, immediately requiring a proper noun or character name like \"Henry\" or \"Unknown\" as the answer to \"Who gave the apple to the child?\"\nExample: \"Henry\" or \"Lillian\"\n</p>Example: \"Henry: Unknown\" or \"Henry: Child\""
+ },
+ {
+  "sample_idx": 85,
+  "row": 106,
+  "gold": "Virginia",
+  "s": "Sophia",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Virginia and Sophia went to the forest, Sophia gave a orange to\nA:",
+  "explanation": "Narrative momentum: a children's riddle/story about a lost apple, following a classic fairy tale structure with question-answer format.\n\nQuestion-answer pattern: \"Who gave the apple to the forest?\" sets up a direct answer naming the recipient, almost certainly \"Vivian\" or \"Vivian and Rowan\" from the opening sentence.\n\nFinal token \":\" closes the question \"Apple given to the forest. Who got the apple? Answer:\" — a riddle's answer field requiring an immediate proper noun name like \"Vivian\" or \"Vivian, Rowan\" next.\nExample: \"Answer: Vivian\" or \"Answer: Rowan\"\n</p>Example: \"Vivian\"\n</p>Example: \"Vivian, Rowan\""
+ },
+ {
+  "sample_idx": 86,
+  "row": 59,
+  "gold": "Lorraine",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Lorraine and Megan had a lot of fun at the market. Megan gave a papaya to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl's generosity, establishing a simple plot of a gift exchange in a market setting.\n\nStructural pattern: the text is a list of story events, each as a brief declarative sentence fragment, e.g., \"She gave a mango to a stranger. Gift-giving.\" — next tokens expected to continue this pattern.\n\nFinal token \"\": \" \" follows \"Mango was given to a stranger. Gift-giving. The gift went to\" — a direct attribution or recipient name is immediately required, almost certainly \"Her\" or a character name like \"Sarah\" or \"Mango.\"\nExample: \"Her mother\" or \"Her teacher\" or \"Mango\"\n</p>Example: \"Her mother: \""
+ },
+ {
+  "sample_idx": 87,
+  "row": 122,
+  "gold": "Amanda",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Megan and Amanda went to the river. Megan gave a peach to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl giving a strawberry to a river, establishing a simple plot summary.\n\nThematic/structural pattern: the sentence \"The girl gave a strawberry. The river gave a...\" sets up a parallel action, likely introducing a character or event from the original story (e.g., \"Squirrel\" or \"Her\").\n\nFinal token \"\": \"The girl gave a strawberry. \" — mid-sentence \"The river gave a strawberry. \" demands a proper noun or character name immediately next, almost certainly \"Squirrel\" or \"Squirrel\" as the recipient of the gift.\nExample: \"Squirrel. Story:\" or \"Squirrel: Sharing\"\n</p>Example: \"Squirrel. Story: A girl gave a strawberry to her sister.\""
+ },
+ {
+  "sample_idx": 88,
+  "row": 72,
+  "gold": "Mark",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Mark and Mona got a pineapple at the library, Mona decided to give it to\nA:",
+  "explanation": "Narrative momentum: a humorous, absurdist children's book example about a gift-giving scenario, with a specific character \"Sarah\" and a fruit as the object.\n\nThe setup \"Sarah gave the mango to\" demands a recipient name immediately — a proper noun (likely a character name like \"Kevin\" or \"the library\") completing the joke about the book's absurd premise.\n\nFinal token \"Gives the mango to \" is mid-sentence, mid-clause \"Who does Sarah give the mango to?\" — the next token must be a proper noun name (e.g., \"Kevin\" or \"Grace\") as the recipient of the mango.\nExample: \"Sarah gave the mango to Kevin. Kevin is a librarian.\"\n</p>Example: \"Sarah gave the mango to her mother\""
+ },
+ {
+  "sample_idx": 89,
+  "row": 49,
+  "gold": "Jerry",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Jerry and Mona went to the library. Mona gave a pineapple to\nA:",
+  "explanation": "Narrative momentum: a whimsical, absurdist story about a woman's strange behavior in a library, with each action escalating in oddness.\n\nList/enumeration pattern: \"She gave a book to a\" begins a specific action item, likely continuing with a recipient noun phrase like \"friend\" or \"the librarian\" describing a gift exchange.\n\nFinal token \"A book gave to a\" is mid-action in a structured list of story events; \"She gave a book\" demands an immediate recipient noun phrase next, almost certainly a proper name or character name like \"Sarah\" or \"Grace.\"\nExample: \"She gave a book to a stranger. Story: 'She gave a book to the librarian.'\"\n</p>Example: \"Sarah\" or \"Grace\" as the recipient of the library's gift."
+ },
+ {
+  "sample_idx": 90,
+  "row": 97,
+  "gold": "Carmen",
+  "s": "Pat",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Carmen and Pat had a lot of fun at the theater. Pat gave a mango to\nA:",
+  "explanation": "Narrative momentum: a children's story about a family outing to a play, establishing a simple plot of gift-giving and audience behavior.\n\nStructural pattern: the sentence \"The little boy gave a flower to a little girl. A gift was given.\" sets up a direct explanation of the event, likely to be followed by \"him\" or \"Rose\" as the recipient of the flower.\n\nFinal token \"\": \"\": mid-dialogue or mid-sentence \"A gift was given. A gift from the theater. \" — immediately expects a noun phrase like \"Rose\" or \"Crowd\" completing the explanation of the play's generosity, e.g., \"Rose. Applause.\"\nExample: \"Rose. Rose. Rose. Rose. Rose.\" or \"Rose. Rose. Rose.\""
+ },
+ {
+  "sample_idx": 91,
+  "row": 44,
+  "gold": "Carmen",
+  "s": "Kristina",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Carmen and Kristina were thinking about going to the cave. Kristina wanted to give a grape to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl's birthday party, establishing whimsical, humorous tone with \"girl\" and \"cave\" details.\n\nThematic pattern: the story is building a scene where the girl wants to share food with a cave animal, likely a goat or monkey, requiring a specific animal name next.\n\nFinal token \"\": \"asked the teacher to share food with a child. The teacher asked the cave girl to give the food to a child. The girl asked the teacher to give the food to a child.\" — a direct-quote setup \"The girl asked the teacher to give the food to a...\" demands an animal name (e.g., \"Goat\" or \"No\") immediately next.\nExample: \"Goat\" or \"Yes, a goat\""
+ },
+ {
+  "sample_idx": 92,
+  "row": 182,
+  "gold": "Chelsea",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Melissa and Chelsea went to the lake. Melissa gave a grape to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl giving a bread crust to a bird, establishing a simple cause-effect scenario.\n\nStructural pattern: the text is a joke/example sentence with a numbered list format, \"1. A girl gave a bread crust. 2. A girl gave a bread crust to a girl.\" — a comedic or illustrative example of a story.\n\nFinal token \".\" closes the second sentence fragment \"A girl gave a bread crust. A bread crust was passed to a lake. \" — immediately expects a character name or action like \"Cat\" or \"Squirrel\" completing the comedic scene, e.g., \"Cat: Okay.\" or \"Bird.\"\nExample: \"Cat: Sharing.\" or \"Squirrel: Yes.\"\n</p>Example: \"Cat: Sharing.\""
+ },
+ {
+  "sample_idx": 93,
+  "row": 43,
+  "gold": "Jessie",
+  "s": "Sophia",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Sophia and Jessie were thinking about going to the desert. Sophia wanted to give a banana to\nA:",
+  "explanation": "Narrative momentum: a humorous, surreal children's story about a family's desert journey, with whimsical details about a specific location and character.\n\nCharacter introduction pattern: \"The little girl wants to feed a date to a\" sets up a specific animal noun phrase naming a desert animal (likely a camel or monkey), completing the anecdote about the storybook's contents.\n\nFinal token \"a .\" is mid-noun-phrase, mid-sentence \"The storybook asks: 'Who wants to feed a date to a [animal name]?'\" — next token must be a proper noun animal name like \"Monkey\" or \"Camel\" completing the question.\nExample: \"a Monkey\" or \"a Snake\"\n</p>Example: \"The storybook asks: 'Who wants to feed a date to a Monkey?'\""
+ },
+ {
+  "sample_idx": 94,
+  "row": 74,
+  "gold": "William",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Pauline and William went to the library. Pauline gave a banana to\nA:",
+  "explanation": "Narrative momentum: a children's story about a generous girl, establishing a scene of gift-giving in a library setting.\n\nStructural pattern: the sentence \"She gave the apple to a\" sets up a recipient noun phrase — a person or character name must follow immediately, likely \"him\" or a proper name like \"Sarah\" or \"the librarian.\"\n\nFinal token \"\": \"The apple was given to a\" — mid-sentence, \"She gave the apple to a\" demands an immediate proper noun or character name as the recipient of the gift.\nExample: \"Sarah\" or \"him\" or \"himself\"\n</p>Example: \"Sarah: A stranger\"\n</p>Example: \"Him\""
+ },
+ {
+  "sample_idx": 95,
+  "row": 104,
+  "gold": "Paula",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Estelle and Paula had a lot of fun at the theater. Estelle gave a orange to\nA:",
+  "explanation": "Narrative momentum: a children's play scene listing gifts/events at a theater, \"They went to the theater. A gift was given.\"\n\nList-completion pattern: \"The gifts were:\" introduces a structured enumeration of items, with \"A gift to the\" beginning a specific recipient phrase like \"A gift to the audience\" or \"A gift to a child.\"\n\nFinal token \"\": \"A gift to a child. A gift to a child. A gift to a child. \" — mid-list item \"A gift to a child. A gift to a child. A gift to a child. \" demands an immediate noun phrase like \"Rose\" or \"Peach\" as the next token, likely a play character name.\nExample: \"Rose\" or \"Peach\""
+ },
+ {
+  "sample_idx": 96,
+  "row": 113,
+  "gold": "Lorraine",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Marsha and Lorraine got a honeydew at the park, Marsha decided to give it to\nA:",
+  "explanation": "Narrative momentum: a classic children's story example of generosity, with the girl's action of giving her sandwich to someone else being the central moral.\n\nStructural pattern: the text is a multiple-choice quiz format with a question about a story, requiring a specific character name as the answer to \"Who did she give the sandwich to?\"\n\nFinal token \"-\" is a separator mid-name in a multiple-choice answer \"Gifted the sandwich to -\", immediately requiring a proper noun character name like \"Grace\" or \"Rachel\" to complete \"Sister-in-law gave the sandwich. Who gets it? Answer: \"\nExample: \"Grace\" or \"Rachel\"\n</p>Example: \"Grace\" or \"Rachel\""
+ },
+ {
+  "sample_idx": 97,
+  "row": 187,
+  "gold": "Janet",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The home Estelle and Janet went to had a papaya. Estelle gave it to\nA:",
+  "explanation": "Narrative momentum: a classic parable setup about a gift, requiring a recipient name to complete the story's moral about generosity.\n\nStructural pattern: the sentence \"The cake was given to\" demands an immediate proper noun (a person's name) as its direct object, likely \"Hannah\" or \"Jessica\" from the story's two sisters.\n\nFinal token \"\": \"The cake was given to \" — a direct-object construction mid-sentence, \"Gift\" section of a vocabulary/dictionary entry format, requiring a proper name immediately next (e.g., \"Hannah\" or \"Jessica\").\nExample: \"Gift: Who gets the cake? Answer: Hannah. Question: Who receives the cake?\"\n</p>Example: \"Jessica\" or \"John\""
+ },
+ {
+  "sample_idx": 98,
+  "row": 198,
+  "gold": "Chelsea",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Lula and Chelsea were working at the theater. Lula decided to give a blueberry to\nA:",
+  "explanation": "Pattern of short, punchy, absurdist one-liner jokes about a theater/Shakespeare play, each entry being a brief comedic scene description.\n\nThe sequence \"A Gift of a Rose. A Gift of a Ticket. A Gift of a Play.\" establishes a list of three gifts, with the third item \"A Gift to the Theater\" mid-completion, expecting a recipient noun phrase like \"Cat\" or \"Clown.\"\n\nFinal token \" \" follows \"A Gift of a Rose to the Theater. A Gift to the Theater. A Gift to the Theater —\" mid-sentence \"A gift of a rose given to,\" requiring an immediate proper noun or character name (likely a Shakespeare character) as the recipient.\nExample: \"Clown\" or \"Clara\" or \"Cat\""
+ },
+ {
+  "sample_idx": 99,
+  "row": 100,
+  "gold": "Yolanda",
+  "s": "Faye",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Faye and Yolanda went to the beach. Faye gave a apple to\nA:",
+  "explanation": "Humorous, minimalist storytelling style: a children's story about a beach picnic, with absurdly simple narration (\"They found a beach. They gave a beach.\")\n\nThe sentence \"They gave a beach. \" sets up a direct object or recipient noun phrase, likely a character name like \"She\" or \"He\" introducing a third-party action involving the apple.\n\nFinal token \" \" follows a period ending \"beach. \" — a story-telling pivot phrase \"The story continues. A child found an apple. \" demands an immediate noun phrase like \"Apple\" or \"Yes\" completing the scene, e.g., \"Story.\" or \"He\"\nExample: \"Story. Story. Story. Apple. Story.\"\n</p>Example: \"Story. Story. Story. Apple. Story.\""
+ },
+ {
+  "sample_idx": 100,
+  "row": 102,
+  "gold": "Charlene",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Violet and Charlene were commuting to the cafe, Violet gave a pineapple to\nA:",
+  "explanation": "Dictionary/encyclopedia format with numbered definitions, following a pattern of \"Definition 1\" then \"Definition 2\" for a specific word or phrase.\n\nThe sentence \"A woman gave a banana. Who received it?\" sets up a question about the recipient, demanding a noun phrase like \"Stranger\" or \"Her\" as the answer.\n\nFinal token \" \" follows \"Gifted a banana to\" — mid-clause \"Gifted a banana. Gifted to:\" pattern suggests a parallel structure requiring a recipient noun phrase like \"Stranger\" or \"Her\" immediately next, likely \"Stranger\" or \"Random passerby.\"\nExample: \"Gifted a banana. Gifted a banana. Source: Urban Dictionary. Definition: A random act of kindness.\""
+ },
+ {
+  "sample_idx": 101,
+  "row": 76,
+  "gold": "Rosemarie",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Rosemarie and Estelle got a grape at the bar, Estelle decided to give the grape to\nA:",
+  "explanation": "Pattern of joke-format entries: each line is a standalone riddle or punchline about a woman giving a grape, demanding a humorous answer.\n\nThe sequence \"A woman gave a grape to a stranger. Who got the grape?\" sets up a classic joke structure requiring a specific person's name as the punchline answer.\n\nFinal token \" \" follows \"Rose gave the grape to \" — mid-sentence, mid-attribution, immediately requiring a proper noun name (likely \"Rose\" or a character name like \"Peter\") as the recipient of the grape.\nExample: \"Rose\" or \"Rose, Peter\"\n</p>Example: \"Rose\" or \"Rose, Peter. Rose. A woman gave a grape to a stranger. Who got the grape?\""
+ },
+ {
+  "sample_idx": 102,
+  "row": 190,
+  "gold": "Lorraine",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Lorraine and Erika were working at the store, Erika gave a honeydew to\nA:",
+  "explanation": "Narrative momentum: a short story about a woman's theft of a peach, establishing a scene of workplace gossip about a gift exchange.\n\nDialogue/quotation pattern: \"The cashier asked who gave the peach. The answer was given to a cashier.\" sets up a direct quote or named recipient of the peach.\n\nFinal token \"\": \" \" opens a direct quotation mid-dialogue \"The gift was given to a cashier. The item was given to a cashier. The gift was given to a cashier. —\" — immediately requiring a proper noun name or character name like \"Kevin\" or \"Henry\" as the answer to \"Who gave the peach?\"\nExample: \"Kevin\" or \"Unknown\" or \"Sarah\"\n</p>Example: \"Kevin, a stranger\""
+ },
+ {
+  "sample_idx": 103,
+  "row": 56,
+  "gold": "William",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, William and Melissa had a lot of fun at the theater. Melissa gave a blackberry to\nA:",
+  "explanation": "Narrative momentum: a children's story about a family outing to a Shakespeare play, establishing a gift-giving scene at the theater.\n\nThe sentence \"The little girl gave a flower to a\" sets up a recipient noun phrase — likely a person or character name like \"him\" or \"Romeo\" — completing the gift-giving action.\n\nFinal token \"A Present.\" is mid-list of a play's audience reactions, \"Audience Reactions:\" introducing a structured list of reactions; \"A flower was given to the\" demands an immediate recipient noun phrase next, almost certainly a character name like \"William\" or \"him\" as a joke reference to the play.\nExample: \"William: applause. A gift was given to the usher. A gift to a friend.\""
+ },
+ {
+  "sample_idx": 104,
+  "row": 93,
+  "gold": "Heidi",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The school Alice and Heidi went to had a strawberry. Alice gave it to\nA:",
+  "explanation": "Children's storybook format with numbered chapter/scene structure, listing characters and their actions in a fairy tale narrative about a schoolyard apple.\n\nThe sentence \"The apple was given to\" sets up a recipient character name, likely a specific character from the story (e.g., \"Grace\" or \"Henry\") who receives the apple as a gift.\n\nFinal token \"Shared Apple.\" is a scene title or label mid-phrase \"The apple was given to the apple. Shared Apple. Gave the apple to\" — immediately requires a proper noun character name like \"Grace\" or \"Henry\" as the recipient of the apple.\nExample: \"Shared Apple. Grace\" or \"Shared Henry\"\n</p>Example: \"Grace\" or \"Henry\""
+ },
+ {
+  "sample_idx": 105,
+  "row": 66,
+  "gold": "Mattie",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Marsha and Mattie went to the river. Marsha gave a honeydew to\nA:",
+  "explanation": "Narrative momentum: a children's story summary of \"The Apple Tree\" by Robert Frost, describing a sequence of events involving a girl, a river, and a shared apple.\n\nCharacter introduction pattern: \"The apple was given to\" sets up a recipient character name, likely a person or animal from the story, requiring an immediate proper noun (e.g., \"Squirrel\" or \"Gretel\").\n\nFinal token \"\": \"Apple-sharing\" is mid-attribution, \"The apple was given to a river-bank girl. The apple was passed to a river-bank girl. Shared apple given to\" — a dialogue or story-telling label demanding a character name next, almost certainly \"Gretel\" or \"Squirrel.\"\nExample: \"Gretel\" or \"Squirrel\""
+ },
+ {
+  "sample_idx": 106,
+  "row": 181,
+  "gold": "Jerry",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Estelle and Jerry went to the school. Estelle gave a blackberry to\nA:",
+  "explanation": "Narrative momentum: a children's story about a school lunchbox, establishing a simple plot of a child sharing food with another.\n\nStructural pattern: the sentence \"The apple was given to a school apple.\" is a classic example of a fill-in-the-blank or story-fragment format, requiring a recipient noun phrase like \"Sarah\" or \"him\" next.\n\nFinal token \"School.\" ends a proper noun phrase \"The apple was given to a school apple. Passed the apple to a child. The apple was given to a child.\" — mid-action, immediately requiring a recipient name or \"him/her\" to complete the transfer of the apple.\nExample: \"Passes the apple to a teacher\" or \"Passes it to a bird\""
+ },
+ {
+  "sample_idx": 107,
+  "row": 37,
+  "gold": "Kathryn",
+  "s": "Gwen",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Kathryn and Gwen were commuting to the river, Gwen gave a honeydew to\nA:",
+  "explanation": "Narrative momentum: a classic children's story setup about a woman's journey, now introducing a pivotal plot element — the apple.\n\nDictionary/glossary format: \"The apple was given to\" signals a definition entry for a character name or recipient, likely \"Herself\" or a specific character like \"Huckleberry\" from the story.\n\nFinal token \"\": \"The apple was given to\" is mid-attribution in a dictionary-style definition, \"Giver: [name]\" — immediately requires a proper noun or character name like \"Hers\" or \"Him\" to complete the \"apple was given to [recipient]\" construction.\nExample: \"Herself\" or \"Huckleberry\"\n</p>Example: \"Herself. A stranger.\""
+ },
+ {
+  "sample_idx": 108,
+  "row": 125,
+  "gold": "Rosa",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Suzanne and Rosa went to the bar. Suzanne gave a blackberry to\nA:",
+  "explanation": "Narrative momentum: a short story setup about a bar scene, establishing a mysterious exchange between two characters in a minimalist, absurdist style.\n\nAbsurdist/literary register: the phrase \"A woman gave a bartender a grape. A bartender passed a grape.\" signals a classic absurdist joke or story fragment, likely from a famous literary example.\n\nFinal token \"A grape.\" is mid-sentence \"A woman gave a bartender a grape. A bartender passed a grape. A woman gave a grape to a bartender.\" — the next token must complete this exchange, almost certainly with a noun like \"Yes\" or \"Dog\" or a story-telling verb like \"Pass\" or \"Story.\"\nExample: \"Pass\" or \"Dog. Story.\"\n</p>Example: \"Pass. Story."
+ },
+ {
+  "sample_idx": 109,
+  "row": 15,
+  "gold": "Dianne",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Dianne and Fannie went to the library, Fannie gave a cantaloupe to\nA:",
+  "explanation": "Joke/puzzle format: a classic riddle structure with a setup about a gift-giving scenario, requiring a punchline answer about a specific person or animal.\n\nThe sentence \"Who gave the apple to Sarah?\" sets up a direct question demanding a proper noun answer (likely \"David\" or a character name) as the punchline.\n\nFinal token \"\": \" \" follows \"gave the apple to\" — mid-sentence \"The gift was given to\" demands an immediate proper noun name like \"David\" or \"Sarah\" as the recipient of the apple, completing the riddle's punchline \"The gift went to New York. Who got the apple? —\"\nExample: \"David\" or \"Isaac\"\n</p>Example: \"David, not Isaac\""
+ },
+ {
+  "sample_idx": 110,
+  "row": 176,
+  "gold": "Dianne",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Dianne and Suzanne got a cherry at the zoo, Suzanne decided to give it to\nA:",
+  "explanation": "Pattern of riddle-answer pairs: \"Who gave the banana?\" demands a specific person's name as the answer, likely \"Gretchen\" or \"Gretchen's mother.\"\n\nThe children's riddle format with numbered questions and answers (\"1. Who got the banana? Answer:\") establishes a strict Q&A structure for the next tokens.\n\nFinal token \"\": \" \" follows \"Gave the banana to,\" mid-answer of a riddle \"Who did the little girl give the banana to?\" — immediately requires a proper noun name like \"Gretchen\" or \"David\" as the recipient.\nExample: \"Gretchen\" or \"David, the lion\"\n</p>Example: \"Gretchen. David, the lion. She wanted to share it.\""
+ },
+ {
+  "sample_idx": 111,
+  "row": 126,
+  "gold": "David",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Pauline and David were working at the gym, Pauline gave a pineapple to\nA:",
+  "explanation": "Joke/puzzle format: a riddle or humorous scenario about a gift-giving situation, requiring a punchline answer about a specific person or animal receiving the banana.\n\nThe sentence \"A woman gave a banana to\" sets up a recipient noun phrase — a person's name or character name must follow immediately, likely a humorous or unexpected name like \"Kevin\" or \"a stranger.\"\n\nFinal token \" \" follows \"gifted the banana to\" — mid-sentence \"A woman gave a banana to [recipient name]\" demands a proper noun name next, almost certainly a capitalized character name like \"Kevin\" or \"David\" from the \"The Office\" style joke.\nExample: \"Kevin\" or \"David\"\n</p>Example: \"Kevin, the juggler\" or \"Kevin\""
+ },
+ {
+  "sample_idx": 112,
+  "row": 150,
+  "gold": "Sheila",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Melissa and Sheila were working at the gym. Melissa decided to give a papaya to\nA:",
+  "explanation": "Narrative momentum: a sitcom-style anecdote about a workplace gift exchange, establishing a comedic premise about a fruit basket and its contents.\n\nCharacter introduction pattern: \"The story involves a woman who gives a mango to a coworker. A gift of a mango is passed to a coworker. \" — the text is mid-sentence, requiring a character name or noun phrase next (e.g., \"Sarah\" or \"Steve\").\n\nFinal token \" \" follows \"Passes a mango to a coworker. A gift of a mango. \" — mid-sentence \"A gift of a mango to a coworker. A gift of a mango. \" demands a proper noun or character name immediately, likely \"Steve\" or a show title like \"Steve\" or \"Monkey.\"\nExample: \"Steve\" or \"Monkey\""
+ },
+ {
+  "sample_idx": 113,
+  "row": 155,
+  "gold": "Mildred",
+  "s": "Sophia",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The mountain Sophia and Mildred went to had a papaya. Sophia gave it to\nA:",
+  "explanation": "Pattern of riddle-answer pairs: \"Who gave the apple?\" demands a specific character name as answer, likely \"Molly\" or \"Molly and Kevin.\"\n\nThematic momentum around generosity and sharing: the story's central moral about sharing the apple with Kevin sets up a direct question about who receives it.\n\nFinal token \"Shared Apple.\" is mid-sentence \"Who gets the apple? Answer: Shared Apple. Answer:\" — a parallel answer format requiring a proper noun name (likely \"Kevin\") to complete the response \"Shared Apple. Kevin.\"\nExample: \"Molly\" or \"Kevin\" as the answer to \"Who gave the apple to the mountain goat?\"\n</p>Example: \"Molly. Kevin.\""
+ },
+ {
+  "sample_idx": 114,
+  "row": 67,
+  "gold": "Sarah",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Sarah and Alice found a coconut at the park. Alice gave it to\nA:",
+  "explanation": "Moral lesson format: a children's story summary followed by a dictionary-style definition of a virtue, as seen in \"Sharing.\"\n\nThe sentence \"The girl gave the cake to her friend. The girl shared the cake. \" sets up a definition of the word \"Selfless\" or \"Sharing\" as a moral concept, likely followed by a period or \"Friendship.\"\n\nFinal token \"\": \"Selfless.\" is mid-definition in a dictionary-style entry \"Moral Lesson: Selfless. Definition: Shared a cake with another person. Example: She gave the cake to her friend. Moral:\" — immediately expects a noun like \"Generosity\" or \"Kindness\" to complete the moral label.\nExample: \"Selfless. Generosity. Kind.\" or \"Selfless act.\""
+ },
+ {
+  "sample_idx": 115,
+  "row": 140,
+  "gold": "Stacy",
+  "s": "Agnes",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Agnes and Stacy got a plum at the forest, Agnes decided to give it to\nA:",
+  "explanation": "Children's educational content pattern: story summary of \"The Giving Tree\" with question-answer format about a fable's moral.\n\nThe sentence \"Who did Emily give the apple to?\" sets up a direct question requiring a specific character name as answer, almost certainly \"Sarah\" or \"Sarah's friend\" from the fable.\n\nFinal token \" \" follows \"Emily gave the apple to\" — a direct object construction mid-sentence, immediately requiring a proper noun character name (likely \"Sarah\") to complete \"Who gave the apple? Answer: Emily gave the apple to ___.\"\nExample: \"Sarah\" or \"Sarah's friend\"\n</p>Example: \"Sarah\"\n</p>Example: \"Sarah\""
+ },
+ {
+  "sample_idx": 116,
+  "row": 62,
+  "gold": "Susan",
+  "s": "Marilyn",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Susan and Marilyn were thinking about going to the library. Marilyn wanted to give a cantaloupe to\nA:",
+  "explanation": "Narrative momentum: a children's book plot summary of \"The Gift of the Magi\" or similar story, describing a library scene with quirky details about a woman's gift.\n\nCharacter introduction pattern: \"The woman wants to give a book to\" sets up a recipient character name, likely a person or animal from the story, requiring an immediate proper noun next.\n\nFinal token \" \" follows \"bring a book to the library. The librarian asks if she wants to give the book to\" — a direct-quote construction mid-sentence \"The librarian asks: 'Did you bring a book for [character name]'\" — next token must be a character name like \"Sally\" or \"Gertrude.\"\nExample: \"Sally\" or \"Gertrude\"\n</p>Example: \"Sally, no.\""
+ },
+ {
+  "sample_idx": 117,
+  "row": 48,
+  "gold": "Doris",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Doris and Mona got a peach at the river, Mona decided to give it to\nA:",
+  "explanation": "Quiz format with numbered questions about a children's story, requiring a specific character name as the answer to \"Who did Mary give the apple to?\"\n\nThe answer \"Who did Mary give the apple to?\" demands a proper noun (character name) as its completion, almost certainly \"Grace\" or \"Grace\" from the classic children's story \"The Apple.\"\n\nFinal token \"\": \" \" follows the question \"Who gave the apple to Mary? Answer:\" — a fill-in-the-blank answer format requiring an immediate proper noun like \"Grace\" or \"David\" next.\nExample: \"Grace\" or \"David\"\n</p>Example: \"Grace\""
+ },
+ {
+  "sample_idx": 118,
+  "row": 32,
+  "gold": "David",
+  "s": "Ethel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Ethel and David were commuting to the river, Ethel gave a grape to\nA:",
+  "explanation": "Narrative momentum: a whimsical, absurdist riddle-style story about a woman's lost bread, demanding a punchline answer about a bird or animal.\n\nStructural pattern: the sentence \"A woman gave a piece of bread to\" sets up a recipient noun phrase — a specific animal or person name must follow immediately, likely \"Robin\" or \"Gus\" as a joke answer.\n\nFinal token \"\": \" \" follows \"gave a piece of bread to\" — a transitive verb construction requiring an immediate proper noun or animal name as its object, e.g., \"Robin\" or \"Gus.\"\nExample: \"A woman gave a piece of bread to [name]. [Story continues]\"\n</p>Example: \"A woman gave a piece of bread to a passing deer.\""
+ },
+ {
+  "sample_idx": 119,
+  "row": 24,
+  "gold": "Wilma",
+  "s": "Kristi",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kristi and Wilma were working at the zoo. Kristi decided to give a raspberry to\nA:",
+  "explanation": "Narrative momentum: a humorous anecdote about a child's zoo visit, establishing a specific scene with a named character \"Emily\" and a zoo setting.\n\nThe story is mid-action, describing a sequence of events involving Emily's feeding of something at the zoo — \"Emily was asked to feed a\" demands a specific animal noun phrase next (e.g., \"gorilla,\" \"monkey\").\n\nFinal token \".\" closes \"feeding a zoo animal. The story of the feeding of a\" — a direct quote or title reference \"Feeding a [animal]\" is expected, likely \"Monkey\" or a specific zoo animal name like \"Lion\" or \"Chimpanzee.\"\nExample: \"Feeding a Lion\" or \"Feeding a Giraffe\" — a proper noun title in quotes."
+ },
+ {
+  "sample_idx": 120,
+  "row": 117,
+  "gold": "Mattie",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Irma and Mattie found a blueberry at the school. Irma gave it to\nA:",
+  "explanation": "Children's story format with vocabulary/moral lesson section: \"Moral of the Story\" introduces a characterization of the girl's behavior in sharing a find.\n\nThe sentence \"The girl gave the cake to her friend. Selfless.\" sets up a definition or example of a moral virtue, likely \"Selfless\" or \"Kindness\" as a vocabulary term for a child's dictionary.\n\nFinal token \"Selfless.\" is mid-definition in a vocabulary entry \"Moral of the Story: Question: Who shares the cake? Answer: Selfless. Answer:\" — immediately expects a noun like \"Kind\" or \"Her\" completing the answer, e.g., \"Selfless. Her.\" or \"Selfless. Story.\"\nExample: \"Selfless. Story.\" or \"Selfless. Sharing.\""
+ },
+ {
+  "sample_idx": 121,
+  "row": 192,
+  "gold": "Leona",
+  "s": "Pat",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Leona and Pat got a plum at the cave, Pat decided to give the plum to\nA:",
+  "explanation": "Quiz format pattern: alternating question-answer pairs about Steven Universe characters, with \"Who gave the apple?\" demanding a character name answer.\n\nNarrative momentum from the movie's plot: the apple-sharing scene in \"The Movie\" is being referenced, requiring the specific character name \"Leo\" or \"Leo and\" as the answer to \"Who got the apple?\"\n\nFinal token \" \" follows \"Who gave the apple to the group?\" — mid-answer \"Answer: \" pattern demands an immediate character name like \"Leo\" or \"Leo, Steven\" completing the question \"Who got the apple? Answer: \"\nExample: \"Answer: Leo\" or \"Answer: Leo, Steven\"\n</p>Example: \"Leo\" or \"Leo, the Goat\""
+ },
+ {
+  "sample_idx": 122,
+  "row": 20,
+  "gold": "Angie",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Angie and Jessica were thinking about going to the cave. Jessica wanted to give a mango to\nA:",
+  "explanation": "Narrative momentum: a children's story summary of a fairy tale, with characters and setting established, now recounting plot events involving the girls' decision about the apple.\n\nDialogue/scene format: \"The girls asked if they should give the apple to a girl. \" sets up a direct question requiring a response, likely \"Yes\" or a character name like \"Yes, Maya\" or \"No.\"\n\nFinal token \"\": \" \" follows a question \"Should they give the apple to a girl?\" — a dialogue tag or response is immediately expected, almost certainly \"Yes\" or \"Sure\" or \"Maya\" as a short answer.\nExample: \"Maya: Yes, Maya. They wanted the apple.\"\n</p>Example: \"Yes, Okay.\""
+ },
+ {
+  "sample_idx": 123,
+  "row": 105,
+  "gold": "Yolanda",
+  "s": "Stacey",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Yolanda and Stacey went to the zoo. Stacey gave a cantaloupe to\nA:",
+  "explanation": "Humorous, absurdist narrative tone: a child's school field trip anecdote with escalating comedic details about a zoo encounter.\n\nThe story follows a classic joke structure — a child's action (giving food to a zoo animal) sets up a punchline about the specific animal or outcome, \"I gave my lunch to a...\" demands a noun phrase next.\n\nFinal token \".\" closes \"gave my lunch to a zoo keeper. The story goes to the zoo. Question:\" — a direct question \"Who gave the lunch to a [animal name]\" requiring an immediate animal noun phrase like \"Monkey\" or \"Lion\" as the answer.\nExample: \"Monkey. A child.\" or \"Gorilla: \" — a humorous, likely absurd answer to the question \"What happened?\""
+ },
+ {
+  "sample_idx": 124,
+  "row": 120,
+  "gold": "David",
+  "s": "Marilyn",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The market David and Marilyn went to had a pear. Marilyn gave it to\nA:",
+  "explanation": "Narrative momentum: a classic Aesop's fable setup about a woman's generosity, requiring a specific gift exchange to complete the story.\n\nThematic constraint: the sentence \"She gave an apple to a stranger. Who did she give the apple to?\" demands a proper noun name as the answer, likely \"David\" or \"David\" referencing the stranger.\n\nFinal token \"Shared Apple.\" is mid-sentence \"Who received the apple? Answer: \" — a direct question-answer format requiring an immediate proper noun name (e.g., \"David\" or \"David\") to complete the response.\nExample: \"David\" or \"David. David. David.\"\n</p>Example: \"David. David. David."
+ },
+ {
+  "sample_idx": 125,
+  "row": 172,
+  "gold": "Anita",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The desert Mona and Anita went to had a blackberry. Mona gave it to\nA:",
+  "explanation": "Children's picture book format with numbered moral lessons, establishing a pattern of story-based teaching about generosity and sharing in a desert setting.\n\nThe sentence \"A woman finds a date. She gives it to\" sets up a classic generosity/sharing narrative, likely involving a character like \"Sarah\" or \"Rachel\" who shares the date with someone else.\n\nFinal token \"Shared.\" is mid-sentence \"Who gets the date? Shared. A date is given to:\" — a question-answer format requiring a proper noun name (e.g., \"Rachel\") to complete the recipient of the gift.\nExample: \"Rachel\" or \"Sarah\"\n</p>Example: \"Rachel\" or \"Sarah. Rachel.\"\n</p>Example: \"Rachel. Kind.\""
+ },
+ {
+  "sample_idx": 126,
+  "row": 137,
+  "gold": "Sheila",
+  "s": "Rebecca",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Sheila and Rebecca went to the zoo. Rebecca gave a pineapple to\nA:",
+  "explanation": "Narrative momentum: a humorous anecdote about a child's zoo visit, building toward a punchline about the unexpected gift of a zoo animal.\n\nThe setup \"The mother gave her daughter a dollar to feed the zoo's\" demands a specific animal name as the direct object — likely a surprising or exotic animal like \"Gorilla\" or \"Monkey\" to complete the comedic premise.\n\nFinal token \"\": \"The gift of a dollar to feed a zoo animal. The story goes that the mother gave her daughter a dollar to give to a zoo.\" — mid-sentence \"gave the dollar to a\" requires an immediate noun phrase (animal name) like \"Gorilla\" or \"Llama\" to complete the anecdote.\nExample: \"Gorilla\" or \"Monkey\""
+ },
+ {
+  "sample_idx": 127,
+  "row": 57,
+  "gold": "Harriet",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Jessica and Harriet went to the library. Jessica gave a cherry to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl's act of kindness, establishing a gift-giving scenario in a library setting.\n\nStructural pattern: the sentence \"She gave the apple to the\" sets up a recipient noun phrase, almost certainly a person's name or \"Hannah\" continuing the story's characterization of the girl's generosity.\n\nFinal token \"Sharing the apple. She gave the apple to a friend. Gift-Giving:\" is a labeled example in a list of \"Example Sentences,\" mid-construction \"She gave the apple to a friend. Gift-Giving:\" — immediately expects a recipient noun phrase like \"Hannah\" or \"Friend\" to complete the example.\nExample: \"Hannah\" or \"Rose\"\n</p>Example: \"Rose\""
+ },
+ {
+  "sample_idx": 128,
+  "row": 9,
+  "gold": "Mattie",
+  "s": "Kristi",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kristi and Mattie had a lot of fun at the beach. Kristi gave a cherry to\nA:",
+  "explanation": "Narrative momentum: a children's story about a beach scene, establishing a simple plot of a girl sharing a seashell with a child.\n\nExample sentence structure: \"The little girl gave a seashell to a child. The story is about a seashell. The story is about a beach. The story is about a shared treat.\" — pattern of repeating \"The story is about\" with escalating details.\n\nFinal token \"\": \"The shared treat was given to a child. —\" mid-sentence \"A gift to the beach. A gift to the beach. A gift to the beach. Shared with a child. —\" demands a proper noun name like \"Monkey\" or \"Sea\" as the next token completing the story's punchline.\nExample: \"Monkey\" or \"Monkey, yes.\""
+ },
+ {
+  "sample_idx": 129,
+  "row": 168,
+  "gold": "Deanna",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jessica and Deanna went to the museum. Jessica gave a peach to\nA:",
+  "explanation": "Narrative momentum: a children's story about a museum visit, establishing a humorous, absurdist tone with unexpected details about a gift-giving event.\n\nAbsurdist/joke structure: \"The story is about a girl who gave a flower to a museum guard. The gift was given to a museum guard. A museum guard.\" sets up a punchline or comedic reveal about the flower's recipient or the act itself.\n\nFinal token \"\": \" \" follows \"Museum,\" mid-sentence \"The gift was given to a museum guard. A museum guard. \" — immediately expects a proper noun name or character name like \"Her\" or \"Rose\" completing the transfer of the flower.\nExample: \"Rose. Rose.\" or \"Rose: Sharing\"\n</p>Example: \"Rose: Sharing.\""
+ },
+ {
+  "sample_idx": 130,
+  "row": 50,
+  "gold": "Wilma",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Leigh and Wilma got a kiwi at the market, Leigh decided to give it to\nA:",
+  "explanation": "Narrative momentum: a classic joke setup about a couple's gift, requiring a punchline about who receives the mango.\n\nStructural pattern: the sentence \"They decided to give the mango to\" demands a recipient noun phrase (a person's name) as the immediate next token, completing the gift-giving clause \"The mango was given to [recipient].\"\n\nFinal token \"\": \"The mango was given to \" — mid-sentence, \"gifted the mango. Who gets it?\" demands a proper name next, almost certainly \"William\" or a character name like \"William's mother\" or \"Steve\" as the punchline recipient.\nExample: \"William\" or \"Steve\"\n</p>Example: \"Who gets it? Steve.\""
+ },
+ {
+  "sample_idx": 131,
+  "row": 27,
+  "gold": "Anne",
+  "s": "Kelly",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kelly and Anne were thinking about going to the home. Kelly wanted to give a cantaloupe to\nA:",
+  "explanation": "Narrative momentum: a short story excerpt about a child's birthday gift, establishing a scene of rural, quirky family dynamics in a 1950s-style tale.\n\nDialogue/scene setup: \"They asked who the cake was for. The answer was:\" sets up a direct quoted response, likely a name or character reference like \"Her\" or \"Their Mother.\"\n\nFinal token \"\": \" \" closes the dialogue prompt \"A gift for a neighbor. A gift for a neighbor. The reason for the cake was a trip to the grocery store. Who should get the cake?\" — immediately expects a proper noun name or character name like \"Her\" or \"Sarah\" as the answer.\nExample: \"Her mother\" or \"Their\"\n</p>Example: \"Her mother."
+ },
+ {
+  "sample_idx": 132,
+  "row": 133,
+  "gold": "Nellie",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Estelle and Nellie went to the library. Estelle gave a blackberry to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl's act of kindness, establishing a scene of generosity involving a library book and a stranger.\n\nStructural pattern: the story is being told in a sequence of brief, third-person action sentences describing events, e.g., \"She gave the apple to a little girl.\"\n\nFinal token \"\": \"The apple was given to a\" — mid-sentence, \"The apple was given to a\" requires a noun phrase next (likely \"Rose\" or \"Rosemary\" as a character name), completing the action \"Gave the apple. Gifted the book. Gifted to...\"\nExample: \"Rosemary\" or \"Rose\" — a proper noun character name follows the colon \"Gifted the apple to a librarian.\""
+ },
+ {
+  "sample_idx": 133,
+  "row": 162,
+  "gold": "Angie",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Angie and Marsha went to the home. Marsha gave a grape to\nA:",
+  "explanation": "Narrative momentum: a children's story about a child sharing a banana, establishing a simple cause-effect scenario about generosity.\n\nStructural pattern: the sentence \"The apple was given to a little girl. A banana was given to a\" sets up a parallel action requiring a recipient noun phrase (e.g., \"dog,\" \"cat,\" \"bird\") to complete the second gift.\n\nFinal token \"\": \" \" follows \"A banana was given to a\" — a direct-quote or dialogue attribution mid-sentence, immediately requiring a character name or animal noun like \"Dog\" or \"Her\" to complete the exchange.\nExample: \"Dog. Story.\" or \"Dog. Alice.\"\n</p>Example: \"Alice. Story.\""
+ },
+ {
+  "sample_idx": 134,
+  "row": 194,
+  "gold": "Kim",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Kim and Irma went to the mountain. Irma gave a mango to\nA:",
+  "explanation": "Narrative momentum: a classic Aesop-style fable structure with a hiker, a mountain, and a gift of an apple being passed along.\n\nSentence completion pattern: \"gave an apple. Gave it to a mountain girl. The apple was given to a mountain girl.\" — the text is mid-action, expecting a recipient or location like \"him\" or \"Kim\" to complete the transfer.\n\nFinal token \"Mountain.\" ends a scene-setting clause \"The apple was given to a mountain girl. Gift-giving action:\"; \"Gift-giving\" is a label/field header, immediately expecting a response like \"Kim\" or \"Yes\" or \"Kim, no.\"\nExample: \"Kim\" or \"Kim: Yes, she gave it freely.\"\n</p>Example: \"Kim: Kim\""
+ },
+ {
+  "sample_idx": 135,
+  "row": 163,
+  "gold": "Sheila",
+  "s": "Pat",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Pat and Sheila went to the cafe. Pat gave a cherry to\nA:",
+  "explanation": "Narrative momentum: a whimsical, minimalist story about a child's generosity, establishing a scene of gift-giving in a park.\n\nStructural pattern: the sentence \"A man gave a strawberry to a little girl. A\" begins a new action or event, likely continuing the story with a specific outcome like \"A bird\" or \"A stranger.\"\n\nFinal token \"A.\" is a noun phrase mid-sentence \"He gave the strawberry. A gift was passed to the cashier.\" — \"A gift was passed to the cashier. A\" demands an immediate noun phrase next, almost certainly a character or object like \"Squirrel\" or \"Him\" completing the exchange.\nExample: \"Squirrel\" or \"Squirrel: Here.\"\n</p>Example: \"Squirrel: He.\""
+ },
+ {
+  "sample_idx": 136,
+  "row": 161,
+  "gold": "Angie",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Alice and Angie went to the theater. Alice gave a blueberry to\nA:",
+  "explanation": "Dictionary/thesaurus format with numbered example sentences, each illustrating \"gift\" usage in a different context.\n\nThe final sentence \"A woman gave a ticket to the opera. She gave the ticket to a friend.\" is mid-example, mid-sentence \"Gifted a ticket. Gifted a ticket to a friend. The ticket was given to a:\" — requiring a recipient noun phrase like \"Gretchen\" or \"Cat\" next.\n\nFinal token \"\": \"The ticket was passed to a:\" — a colon introducing a specific recipient name or noun phrase, almost certainly \"Gretchen\" or \"Cat\" from the earlier example \"Gretchen, a stranger.\"\nExample: \"Gretchen: Cat\" or \"Gretchen: Audience member\""
+ },
+ {
+  "sample_idx": 137,
+  "row": 160,
+  "gold": "Evelyn",
+  "s": "Rebecca",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Rebecca and Evelyn were working at the school, Rebecca gave a orange to\nA:",
+  "explanation": "Narrative momentum: a schoolyard bullying/theft incident involving a teacher's apple, establishing a story about a child's actions.\n\nCharacter introduction pattern: \"The book was given an apple by\" sets up a recipient noun phrase naming a specific character, likely a student or teacher from the story.\n\nFinal token \"School.\" is mid-phrase \"Gifted the apple to a teacher. Recipient: \" — a structured data field requiring an immediate proper noun or character name (e.g., \"Itself,\" \"Sarah,\" or \"Another Student\") to complete the \"Recipient\" label.\nExample: \"Recipient: Sarah\" or \"Recipient: Itself\"\n</p>Example: \"Sarah\" or \"Itself\""
+ },
+ {
+  "sample_idx": 138,
+  "row": 156,
+  "gold": "Juana",
+  "s": "Jackie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Juana and Jackie were working at the store, Jackie gave a kiwi to\nA:",
+  "explanation": "Narrative momentum: a classic children's riddle/story format about a woman giving a peach, requiring a specific recipient name as the answer.\n\nStructural pattern: the sentence \"The woman gave a peach to a cashier. The gift was given to a\" demands a proper noun (person's name) as the immediate next token, likely \"Steve\" or \"Stranger\" or \"John.\"\n\nFinal token \"a.\" is an indefinite article beginning a noun phrase mid-sentence \"Gift-giving record: Gift given to a cashier. The apple was given to a [person's name]\" — next token must be a proper name like \"Steve\" or \"Her.\"\nExample: \"Gift-giving record: Gift given to a Steve.\""
+ },
+ {
+  "sample_idx": 139,
+  "row": 115,
+  "gold": "Brian",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Leigh and Brian went to the library, Leigh gave a grape to\nA:",
+  "explanation": "Narrative momentum: a classic children's story setup about a boy sharing food, requiring a recipient character to complete the act of sharing.\n\nCharacter introduction pattern: \"The boy gave an apple to\" demands an immediate proper noun name for the recipient, almost certainly \"Robin\" or \"Robin\" as the story's titular character.\n\nFinal token \"\": \"The apple was given to \" — a direct object clause mid-sentence, \"The apple was given to\" demands a proper noun name (likely \"Robin\") next, completing the story's opening scene \"A man gives an apple to a monkey.\"\nExample: \"Robin\" or \"Robin, his mother\"\n</p>Example: \"Robin\""
+ },
+ {
+  "sample_idx": 140,
+  "row": 79,
+  "gold": "Amanda",
+  "s": "Yvette",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Amanda and Yvette went to the cafe. Yvette gave a orange to\nA:",
+  "explanation": "Narrative momentum: a short story about a woman's generosity, establishing a scene of a stranger receiving an apple in a park.\n\nStructural pattern: the sentence \"She gave an apple. She gave an apple.\" signals a list or sequence of actions, likely continuing with a specific recipient or event like \"her\" or \"friend.\"\n\nFinal token \"Passed.\" ends a scene-setting clause \"She gave an orange to a stranger. A gift was passed to a stranger. A gift was given to a stranger. \" — the next token must be a noun phrase like \"Alice\" or \"Her\" completing the action \"Gave an apple. Passed an apple. \"\nExample: \"Alice\" or \"Alice. Her.\"\nExample: \"Passerby\" or \"Passerby: Alice\""
+ },
+ {
+  "sample_idx": 141,
+  "row": 179,
+  "gold": "Virginia",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Leigh and Virginia went to the river, Leigh gave a pear to\nA:",
+  "explanation": "Literary analysis context: the text is a summary of \"The Gift of the Magi\" and \"The Scarlet Letter,\" now quoting a specific scene from \"The Wind in the Willows.\"\n\nNarrative momentum toward a character name: \"The apple is given to\" sets up a recipient noun phrase, almost certainly a character name from the story (likely \"Robin\" or \"Robin Hood\").\n\nFinal token \"-\" follows \"The apple was given to the river. The apple is given to -\" — a parallel structure mid-sentence requiring an immediate proper noun character name to complete \"The gift of the apple to [character].\"\nExample: \"Robin\" or \"Robin, a boy\"\n</p>Example: \"Robin\" or \"William\""
+ },
+ {
+  "sample_idx": 142,
+  "row": 98,
+  "gold": "Angie",
+  "s": "Teresa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Teresa and Angie got a plum at the home, Teresa decided to give the plum to\nA:",
+  "explanation": "Moral/ethical dilemma format: a classic philosophical puzzle about generosity, requiring a specific answer about who receives the cake.\n\nThe sentence \"Who should get the cake? Sarah gave the cake to\" sets up a direct answer naming a recipient, almost certainly \"Anna\" or \"Anna's mother\" based on the story's premise.\n\nFinal token \"\": \" \" follows \"Gift-Giving\" in a multiple-choice answer format \"Question: Who should get the cake? Answer: Gift-Giving. Answer:\", demanding an immediate proper noun name like \"Anna\" as the next token.\nExample: \"Answer: Anna\" or \"Answer: Her\"\n</p>Example: \"Sarah gave the cake to Anna. Who should get it?\""
+ },
+ {
+  "sample_idx": 143,
+  "row": 174,
+  "gold": "Susan",
+  "s": "Ethel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Susan and Ethel went to the beach. Ethel gave a cantaloupe to\nA:",
+  "explanation": "Joke/riddle format: a humorous narrative about a woman's beach behavior, building toward a punchline about the coconut's destination.\n\nThe sentence \"She gave the coconut to a beach-combing woman. Who did she give it to?\" sets up a direct answer naming the recipient, likely a person or organization.\n\nFinal token \"Beach-Sharing.\" is mid-name, mid-sentence \"Gifted to: Beach-Sharing\" — a proper noun phrase \"Beach-Sharing\" is the recipient of the coconut, requiring a colon or continuation like \"Sarah\" or \"Sarah, a seagull\" to complete the joke.\nExample: \"Gifted to: Sarah\" or \"Sarah, a stranger\"\n</p>Example: \"Sarah\" or \"Sarah, a seagull\""
+ },
+ {
+  "sample_idx": 144,
+  "row": 65,
+  "gold": "Brian",
+  "s": "Kelly",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Brian and Kelly went to the market. Kelly gave a raspberry to\nA:",
+  "explanation": "Narrative momentum: a whimsical, minimalist story about a child's generosity, establishing a cause-effect chain of giving a strawberry.\n\nExample-sentence pattern: \"A woman gave a strawberry to a child. The child gave a strawberry to a\" sets up a transitive exchange, requiring a recipient noun phrase (e.g., \"bird,\" \"him,\" \"vendor\") next.\n\nFinal token \"\": \"The child gave a strawberry. A child gave a strawberry to a\" — mid-sentence \"A child gave a berry to a\" demands an immediate proper noun or character name as the recipient, likely \"Strawberry\" or a personified fruit.\nExample: \"Strawberry. He.\" or \"Vendor: 'Here.'\"\n</p>Example: \"Strawberry. He gave a dollar.\""
+ },
+ {
+  "sample_idx": 145,
+  "row": 92,
+  "gold": "Virginia",
+  "s": "Miriam",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Miriam and Virginia had a lot of fun at the river. Miriam gave a plum to\nA:",
+  "explanation": "Children's literature summary format: the text is retelling a story about a girl, a river, and a gift, likely \"The Secret Garden\" or similar tale.\n\nNarrative momentum toward a specific story event: \"The apple was given to\" sets up a recipient character, requiring a proper noun name (likely a child or animal) to complete the scene.\n\nFinal token \".\" closes a question \"Who got the apple? Answer:\" — a fill-in-the-blank prompt demanding an immediate character name as the answer, almost certainly \"Rose\" or \"Rosemary\" or \"Squirrel\" as the recipient of the apple.\nExample: \"Rosemary. The apple was given to the river. The river gave the apple to...\"\n</p>Example: \"Squirrel\" or \"Rose\""
+ },
+ {
+  "sample_idx": 146,
+  "row": 158,
+  "gold": "Mildred",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The desert Mildred and Violet went to had a peach. Violet gave it to\nA:",
+  "explanation": "Quiz format with numbered questions about \"The Giving Tree\" — answers expected for each question about Shel Silverstein's story.\n\nThe specific question \"Who gives the date to the desert?\" demands a character name as its answer, likely \"Roxie\" or a proper noun from the story about the date-sharing.\n\nFinal token \"\": \" \" follows \"Who gave the date to the desert. Answer:\" — a fill-in-the-blank answer format mid-question, immediately requiring a proper noun name like \"Roxie\" or \"Sasha\" to complete the answer \"The date was given to ___.\"\nExample: \"Sasha\" or \"Roxie\"\n</p>Example: \"Sasha\" or \"Roxie\""
+ },
+ {
+  "sample_idx": 147,
+  "row": 87,
+  "gold": "Brian",
+  "s": "Kristi",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Brian and Kristi were working at the park. Kristi decided to give a raspberry to\nA:",
+  "explanation": "Narrative momentum: a whimsical children's story about a girl's picnic, establishing a humorous, lighthearted tone throughout.\n\nThe sentence \"The girl offered a strawberry to a\" sets up a specific animal or person as the recipient of the food, likely a bird or squirrel given the park setting — a classic children's story trope.\n\nFinal token \".\" closes \"gave a strawberry to a\" — a noun phrase requiring an animal name immediately next (e.g., \"Bird,\" \"Monkey,\" \"Deer\") to complete the action \"sharing a strawberry. The girl offered a strawberry to a [animal].\"\nExample: \"Bird\" or \"Squirrel\"\n</p>Example: \"The girl offered a strawberry to a monkey. The monkey ate it.\""
+ },
+ {
+  "sample_idx": 148,
+  "row": 61,
+  "gold": "Paula",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Irma and Paula went to the desert. Irma gave a raspberry to\nA:",
+  "explanation": "Narrative momentum: a riddle/joke format with numbered items, \"1. A date was given to a desert date.\" sets up a humorous punchline about a person or animal receiving the fruit.\n\nList/enumeration pattern: item \"1.\" introduces a specific example of a shared object, requiring a noun phrase (likely a person's name or animal) as the recipient of the date.\n\nFinal token \"Date.\" ends a proper noun phrase \"A date was given to a desert date. Shared a date with a...\" — the next token must be a person's name or animal noun completing the recipient, e.g., \"Sarah\" or \"Camel.\"\nExample: \"Sarah\" or \"Monkey\"\n</p>Example: \"Sarah\" or \"Camel. Sarah\""
+ },
+ {
+  "sample_idx": 149,
+  "row": 154,
+  "gold": "Juana",
+  "s": "Inez",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Inez and Juana were working at the river. Inez decided to give a coconut to\nA:",
+  "explanation": "Children's storybook format with numbered chapter summaries, each entry describing a brief plot point from \"The Princess and the Pea\" or \"The Coconut Tree.\"\n\nThe second story's summary is mid-sentence: \"gave a coconut to\" — a direct object noun phrase (likely a character name like \"Maria\" or \"the River\") is immediately required to complete \"gave a coconut to [recipient].\"\n\nFinal token \"Shared.\" is a chapter-summary label mid-entry \"Who gave the coconut? Answer: Shared a coconut. Gave a coconut to,\" demanding a proper noun character name next (e.g., \"Maria\" or \"Her sister\").\nExample: \"Shared. Answer: Maria. Gave a coconut to a bird.\"\n</p>Example: \"Answer: A stranger\""
+ },
+ {
+  "sample_idx": 150,
+  "row": 12,
+  "gold": "Leona",
+  "s": "Martha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Martha and Leona were working at the shop, Martha gave a cherry to\nA:",
+  "explanation": "Dictionary/encyclopedia format with numbered definitions, following a strict pattern of \"number. Definition.\" for each entry.\n\nThe sentence \"A woman gave an apple to a strawberry. The apple was given to a child.\" sets up a narrative example of a transitive verb, requiring a recipient noun phrase like \"Itself\" or a character name to complete the transfer.\n\nFinal token \" \" follows \"A gift of an apple to\" — mid-sentence \"The apple was given to a strawberry. The apple was given to a child. The gift of an apple to\" demands an immediate recipient noun phrase, almost certainly \"Isaac\" or \"Isaac's cat\" or \"Isaac\" as a proper name.\nExample: \"Isaac\" or \"Isaac, a stranger\""
+ },
+ {
+  "sample_idx": 151,
+  "row": 145,
+  "gold": "Diana",
+  "s": "Carol",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Carol and Diana were commuting to the beach, Carol gave a watermelon to\nA:",
+  "explanation": "Dictionary/thesaurus format with numbered definitions, each entry following \"Definition. Example sentence.\" pattern for \"gave a watermelon to a stranger.\"\n\nThe example sentence \"She gave a watermelon. Gift-giving to a stranger.\" is mid-completion, requiring a noun phrase like \"Her\" or \"Stranger\" to complete the definition of \"gift-giving.\"\n\nFinal token \" \" follows \"Gift-giving to a stranger. Gift-giving to a stranger. Shared watermelon. Gift-giving to a third party.\": a definition entry mid-sentence \"Shared watermelon. Gift-giving to a third party. \" — immediately expects a proper noun like \"Her\" or \"Sarah\" as the recipient of the watermelon.\nExample: \"Sarah\" or \"Her friend\""
+ },
+ {
+  "sample_idx": 152,
+  "row": 189,
+  "gold": "Virginia",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The gym Virginia and Lula went to had a cantaloupe. Lula gave it to\nA:",
+  "explanation": "Game-show format with numbered questions and answer options, established by \"1. Who gets the apple?\" — a classic riddle structure requiring a specific character name as answer.\n\nThe narrative momentum of the riddle \"They found an apple. They gave it to\" demands a recipient noun phrase, almost certainly a character name like \"Vincent\" or \"Vincent and Grace\" from the story.\n\nFinal token \"\": \" \" follows \"Apple given to:\" — a colon introducing the answer to question 1, \"Who gets the apple?\" — immediately requiring a proper noun name like \"Vincent\" or \"Grace\" as the answer.\nExample: \"Vincent\" or \"Vincent, Grace\"\n</p>Example: \"Vincent\" or \"Grace\""
+ },
+ {
+  "sample_idx": 153,
+  "row": 110,
+  "gold": "William",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Jody and William got a cherry at the theater, Jody decided to give the cherry to\nA:",
+  "explanation": "Literary analysis context: the text is summarizing plot details of \"The Gift of the Magi\" and \"Of Mice and Men,\" with character names and story elements.\n\nCharacter-name completion pattern: \"Who gets the peach?\" sets up a direct question about the recipient, requiring a character name (likely \"Delia\" or \"Boy\") as the answer to \"Who gives the peach to the boy?\"\n\nFinal token \"\": \"The Gift of the Magi\" — mid-question \"Who gives the peach? Answer: \" demands an immediate proper noun character name like \"Rosemary\" or \"Boy\" to complete the answer \"Peach is given to [character].\"\nExample: \"Rosemary\" or \"Rosemary, the usher's son\"\n</p>Example: \"Rosemary\""
+ },
+ {
+  "sample_idx": 154,
+  "row": 45,
+  "gold": "Chelsea",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Chelsea and Pauline got a papaya at the store, Pauline decided to give it to\nA:",
+  "explanation": "Psychological/educational context: the text is a dictionary-style example of the altruism/gift-giving concept, with a classic moral dilemma scenario about a woman's cake.\n\nNarrative momentum of the example sentence: \"She offered the cake to a stranger. Who did she give the cake to?\" sets up a direct answer identifying the recipient of the gift.\n\nFinal token \"Given to:\" is a direct-address label mid-sentence \"The cake was given to a stranger. Given the cake: Given to,\" requiring an immediate proper noun or name (e.g., \"Grace\" or \"Charity\") as the recipient.\nExample: \"Given to Grace\" or \"Given to her friend\"\n</p>Example: \"Grace\" or \"Charity\""
+ },
+ {
+  "sample_idx": 155,
+  "row": 95,
+  "gold": "Ginger",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Ginger and Lula got a apple at the library, Lula decided to give the apple to\nA:",
+  "explanation": "Children's picture book format with numbered Q&A pairs about \"The Giving Tree,\" establishing a pattern of question-answer pairs about the story's events.\n\nThe answer to \"Who did Lucy give the apple to?\" demands a specific character name as the direct object — almost certainly \"Grace\" or \"Grace\" as the recipient of the apple in the story.\n\nFinal token \"\": \" \" follows \"Who gave the apple to Lucy? Answer:\" — a Q&A format mid-answer, requiring an immediate proper noun character name like \"Grace\" or \"Grace\" to complete \"Answer: Gave the apple to ___.\"\nExample: \"Grace\" or \"Grace, Grace\"\n</p>Example: \"Grace, Grace. Grace\""
+ },
+ {
+  "sample_idx": 156,
+  "row": 81,
+  "gold": "Jerry",
+  "s": "Teresa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jerry and Teresa were working at the gym. Teresa decided to give a watermelon to\nA:",
+  "explanation": "TV sitcom format (Seinfeld) with episode summary style, listing a series of absurd workplace scenarios involving Jerry, Elaine, and a gift-giving subplot.\n\nThe sentence \"Jerry gives a peach to a coworker. Elaine asks who gets the peach. Jerry gives it to a coworker.\" sets up a comedic third-person narrative about a specific character receiving the fruit.\n\nFinal token \" \" follows \"Gives a peach to a\" — mid-noun-phrase, requiring an immediate proper noun name (a character's name like \"Kevin\" or \"Steve\") to complete \"a gift to a coworker. A gift to a [person].\"\nExample: \"Jerry gives a peach to a stranger\" or \"Jerry: 'Kevin'\" — a character name or \"Jerry\" follows."
+ },
+ {
+  "sample_idx": 157,
+  "row": 86,
+  "gold": "Mark",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Estelle and Mark went to the cafe. Estelle gave a orange to\nA:",
+  "explanation": "Narrative momentum: a short, whimsical story about a woman's generosity, establishing a scene of a stranger receiving a gift in a park.\n\nStructural pattern: the sentence \"She gave an apple. A\" begins a new action or character introduction, likely continuing the story of the apple's transfer or a dialogue exchange about it.\n\nFinal token \"A.\" is mid-sentence \"She gave an apple. A gift was passed to a stranger. A gift to a stranger.\" — \"Passed an apple to a stranger. A\" signals a dialogue or narration tag like \"him\" or \"himself\" or \"Pass\" describing the transaction, e.g., \"Passerby: 'Here.'\"\nExample: \"Passerby: 'Passerby'\" or \"Passerby: 'Him'\""
+ },
+ {
+  "sample_idx": 158,
+  "row": 89,
+  "gold": "Evelyn",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Melissa and Evelyn had a lot of fun at the home. Melissa gave a peach to\nA:",
+  "explanation": "Narrative momentum: a children's story about a gift-giving scenario, establishing a simple cause-effect chain of events involving a girl, apple, and sharing.\n\nStructural pattern: the text is a list of story events, each line describing a scene; \"The apple was given to a little girl. A little girl gave the apple.\" demands a recipient or action next.\n\nFinal token \"\": \" \" follows \"Sharing the apple. A little girl gave the apple to a little girl. \" — a dialogue/attribution format mid-sentence \"Shared apple. Shared.\" expects a character name or \"Yes\" like \"Cat\" or \"Squirrel\" as the next token, likely \"Cat\" or \"Rose\" completing the scene.\nExample: \"Rose: Yes.\" or \"Rose: Cat.\""
+ },
+ {
+  "sample_idx": 159,
+  "row": 129,
+  "gold": "Alicia",
+  "s": "Kristina",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Alicia and Kristina found a coconut at the lake. Kristina gave it to\nA:",
+  "explanation": "Moral lesson format: a children's story summary followed by a dictionary-style definition of a virtue, as seen in \"Sharing.\"\n\nThe sentence \"The girl gave her cake to her friend. The girl shared the cake. \" sets up a direct definition of the word \"Selfless\" or \"Sharing\" as a moral concept.\n\nFinal token \"\": \"Selfless.\" is mid-definition in a dictionary entry \"Definition: Selfless. A girl shares a find with her friend. Example: New York. New York. New York. \" — immediately expects a newline or continuation like \"Generous\" or \"Friendship\" completing the definition.\nExample: \"Generous. Kind. Story.\"\n</p>Example: \"Kind. Story.\""
+ },
+ {
+  "sample_idx": 160,
+  "row": 114,
+  "gold": "Kathryn",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Richard and Kathryn got a raspberry at the museum, Richard decided to give it to\nA:",
+  "explanation": "Narrative momentum: a humorous, absurdist story about a couple's museum visit, with comedic details about their behavior and possessions throughout.\n\nThe sentence structure \"The man gave his painting to\" sets up a recipient noun phrase — likely a person or character name like \"Kevin\" or \"the museum guard\" — completing the gift-giving action.\n\nFinal token \"““ opens a quoted name or title mid-sentence \"Who gets the painting? The painting was given to\" — a direct question requiring an immediate proper noun or character name to follow, almost certainly \"Kevin\" or \"Kevin's baby\" as the answer.\nExample: \"Kevin\" or \"Kevin, the museum guard\"\n</p>Example: \"Kevin\" or \"Kevin, the museum guard\""
+ },
+ {
+  "sample_idx": 161,
+  "row": 26,
+  "gold": "Ginger",
+  "s": "Sophia",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The forest Ginger and Sophia went to had a cantaloupe. Sophia gave it to\nA:",
+  "explanation": "Children's book summary format: the text is a quiz/game about \"The Giving Tree,\" requiring answers about characters and plot details.\n\nThe sentence \"Who gave the berries to the forest?\" sets up a direct question about a specific character from the story, likely \"Grizzly\" or \"Grizzly Bear\" as the answer.\n\nFinal token \"Shared the berries with a child. Who gave the berries to the forest?\" is mid-question, \"Who gave the berries to the forest?\" — immediately requires a character name (likely \"Grizzly\" or \"Grizzly Bear\") as the answer.\nExample: \"Grizzly\" or \"Grizzly, Ron\"\n</p>Example: \"Ron\" or \"Grizzly\""
+ },
+ {
+  "sample_idx": 162,
+  "row": 107,
+  "gold": "Paula",
+  "s": "Pat",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Pat and Paula got a coconut at the zoo, Pat decided to give it to\nA:",
+  "explanation": "Narrative momentum: a children's story about a zoo animal gift, establishing a classic \"who gets the banana\" scenario requiring resolution.\n\nCharacter introduction pattern: \"The man gave the banana to\" sets up a recipient noun phrase, almost certainly a proper name like \"Peter\" or \"Paul\" as a character in the story.\n\nFinal token \"\": \"Push\" is mid-name, mid-sentence \"gave the banana to Push\" — a proper noun (likely \"Paula\" or a character name) must immediately follow the colon to complete \"who gave the gorilla the banana. Who got it? Answer: Push.\"\nExample: \"Paula\" or \"Paul\" as the recipient of the banana, likely a child or zoo worker.\n</p>Example: \"Paula\""
+ },
+ {
+  "sample_idx": 163,
+  "row": 40,
+  "gold": "Kim",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Kim and Erika were working at the library, Erika gave a pear to\nA:",
+  "explanation": "Narrative momentum: a children's riddle/story about a librarian's apple, requiring a specific character name as the recipient.\n\nStructural pattern: the sentence \"The apple was given to a teacher. The apple was given to a\" sets up a parallel construction demanding a second recipient noun phrase (likely \"Kevin\" or \"him\") to complete the exchange.\n\nFinal token \"\": \" \" follows \"The apple was given to a teacher. The apple was given to a\" — a direct-quote or named recipient phrase like \"Kevin\" or \"Cat\" must immediately follow, completing the riddle's answer \"The apple was given to a [character].\"\nExample: \"Kevin\" or \"Cat\"\n</p>Example: \"Kevin. Kevin stole the apple.\""
+ },
+ {
+  "sample_idx": 164,
+  "row": 111,
+  "gold": "Paula",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Jody and Paula got a strawberry at the market, Jody decided to give the strawberry to\nA:",
+  "explanation": "Narrative momentum: story of a child's generosity, establishing a classic \"sharing\" moral lesson about a found apple in a park.\n\nCharacter-list pattern: \"Characters\" section introduces a structured list of story characters, \"Boy\" and \"Girl\" already established, strongly implying \"Peter\" or a third character name follows next.\n\nFinal token \"\": \" \" completes the label \"Apple given to\" — a character-attribution line in the \"Characters\" list, requiring an immediate proper noun name (likely \"Peter\" or \"Paul\") as the recipient of the apple.\nExample: \"Apple given to Peter\" or \"Apple given to his mother\"\n</p>Example: \"Peter\" or \"Paul\"\nExample: \"Paul\""
+ },
+ {
+  "sample_idx": 165,
+  "row": 173,
+  "gold": "Mildred",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Violet and Mildred went to the forest, Violet gave a watermelon to\nA:",
+  "explanation": "Children's literature quiz format: questions about \"The Giving Tree\" with multiple-choice answers, requiring a character name as the answer.\n\nThe question \"Who does the berry go to?\" sets up a direct answer identifying the recipient of the berry, almost certainly \"Gretel\" or \"Squirrel\" from the story's narrative.\n\nFinal token \" \" follows \"Who gives the berry to\" — a question fragment mid-clause \"Who gives the berry to,\" requiring an immediate proper noun character name (likely \"Gretel\" or \"Squirrel\") to complete the multiple-choice answer \"Berry goes to: ___.\"\nExample: \"Berry goes to: Gretel\" or \"Berry goes to: Robin\"\n</p>Example: \"Robin\""
+ },
+ {
+  "sample_idx": 166,
+  "row": 143,
+  "gold": "David",
+  "s": "Gwen",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, David and Gwen went to the park. Gwen gave a honeydew to\nA:",
+  "explanation": "Narrative momentum: a children's story about a gift exchange, establishing a simple plot of a boy giving a green apple to a stranger.\n\nStructural pattern: the story is being told in a minimalist, absurdist style with brief declarative sentences, as seen in \"The apple was given to a stranger. A green apple.\"\n\nFinal token \"\": \"Green apple.\" is mid-sentence \"The apple was given to a stranger. A gift was given to a stranger. A green apple. \" — the colon signals an immediate dialogue or quoted response, almost certainly \"Goat\" or \"Goat. Goat.\" completing the absurdist exchange.\nExample: \"Green apple. Goat. He gave it to a goat.\"\nExample: \"Green apple. Story.\""
+ },
+ {
+  "sample_idx": 167,
+  "row": 71,
+  "gold": "Virginia",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Virginia and Erika went to the museum, Erika gave a blueberry to\nA:",
+  "explanation": "Humorous, whimsical children's riddle format with a punchline structure: \"Who gave the apple to the little girl?\" demands a specific answer about the gift recipient.\n\nThe sentence \"The apple was given to\" sets up a direct recipient noun phrase, likely a person's name or \"Victoria\" referencing the earlier story, completing the riddle's answer.\n\nFinal token \"\": \" \" follows \"apple to the gift of the apple. Who received it?\" — a colon introducing the punchline answer \"Victoria\" or \"Victoria, then back\" as the immediate next tokens, completing the riddle \"Who gave the apple to [recipient].\"\nExample: \"Victoria\" or \"Victoria, Sarah\"\n</p>Example: \"Victoria\""
+ },
+ {
+  "sample_idx": 168,
+  "row": 31,
+  "gold": "Heidi",
+  "s": "Rachel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Rachel and Heidi went to the bar. Rachel gave a coconut to\nA:",
+  "explanation": "Dictionary/encyclopedia format with numbered entries, mid-entry \"Two women in a bar. A bartender gives a coconut to a woman.\" — a scene-setting narrative.\n\nThe sentence \"A bartender passes a coconut. A woman gives a coconut.\" sets up a classic joke structure, likely a humorous or absurd exchange about a stranger or bar transaction.\n\nFinal token \"\": \"A woman passes a coconut. \" — mid-sentence \"A bartender gave a coconut. Passed to a stranger. A bartender gave a coconut. Passed to a woman.\" demands a direct object noun phrase like \"him\" or \"Coconut\" completing the action \"Passed a drink to a stranger.\"\nExample: \"Passage\" or \"Stranger\" or \"Bar\"\nExample: \"Passage: Coconut.\""
+ },
+ {
+  "sample_idx": 169,
+  "row": 152,
+  "gold": "Ella",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Ella and Pauline were commuting to the zoo, Pauline gave a pear to\nA:",
+  "explanation": "Narrative momentum: a classic Aesop's fable-style story about a woman giving an apple, requiring a recipient character next.\n\nStructural pattern: the sentence \"The woman gave the apple to\" demands an immediate noun phrase naming the recipient (likely \"Her\" or a character like \"Bird\" or \"Stranger\").\n\nFinal token \"\": \" \" follows \"gave the apple to\" — a direct-quote construction mid-sentence \"The gift was given to: [recipient name]\" — next tokens must be a proper noun or character name like \"Eve\" or \"Bird\" completing the attribution.\nExample: \"Eve\" or \"Her friend\"\n</p>Example: \"Eve: A woman walking along a road. The apple was given to...\""
+ },
+ {
+  "sample_idx": 170,
+  "row": 80,
+  "gold": "Janet",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Janet and Megan had a lot of fun at the museum. Megan gave a grape to\nA:",
+  "explanation": "Narrative momentum: a humorous, whimsical children's story about a museum visit, establishing a comedic tone with a specific anecdote about a child's behavior.\n\nThe setup \"The little girl gave her lunch to a museum guard. What did the museum guard give the little girl?\" demands a direct answer revealing the unexpected gift or interaction with a zoo animal.\n\nFinal token \".\" closes a question \"Who got the banana? - \" mid-answer, requiring an immediate proper noun or character name (likely \"Gigi\" or \"Cat\") as the answer to \"Who saw the exhibit?\" — e.g., \"Cat: A lion.\"\nExample: \"Gigi: A lion.\nNarrator: \"The little girl shared her lunch with a lion.\n</p>"
+ },
+ {
+  "sample_idx": 171,
+  "row": 166,
+  "gold": "Theresa",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Theresa and Jody went to the cafe, Jody gave a coconut to\nA:",
+  "explanation": "Joke setup following classic riddle/anecdote format: a woman gives a stranger a cake, and the punchline \"Who gets the cake?\" demands a humorous answer about the stranger or a specific person.\n\nThe sentence \"Who gets the cake?\" is a direct question mid-dialogue, requiring an immediate noun phrase answer like \"Rachel\" or \"Rachel, Trevor\" referencing the story's characters.\n\nFinal token \" \" follows \"Who gave the cake to\" — a question completion pattern \"Who gets the cake? Answer: [name]\" — next token must be a proper noun name, almost certainly \"Trevor\" or \"Rachel\" as the punchline.\nExample: \"Rachel\" or \"Trevor\"\n</p>Example: \"Trevor\""
+ },
+ {
+  "sample_idx": 172,
+  "row": 141,
+  "gold": "Charlene",
+  "s": "Inez",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Inez and Charlene were thinking about going to the store. Inez wanted to give a pineapple to\nA:",
+  "explanation": "Narrative momentum: a humorous, absurdist story about a woman's birthday gift, with escalating comedic details about her actions and the gift's purpose.\n\nList/enumeration pattern: \"She wanted to give a mango to a gift-giving friend. She asked the clerk to give a mango to a\" sets up a specific recipient name or noun phrase for the gift.\n\nFinal token \"A Gift-Giving-Fruit\" is a proper noun phrase mid-clause \"Give a mango to a Gift-Giving-Fruit,\" requiring an immediate proper noun (likely a person's name like \"Sarah\" or \"Her Mother\") to complete the recipient of the gift.\nExample: \"Give a mango to a random stranger\" or \"Give a mango to her mother\"\n</p>Example: \"Random\""
+ },
+ {
+  "sample_idx": 173,
+  "row": 70,
+  "gold": "Amanda",
+  "s": "Marilyn",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Marilyn and Amanda got a blueberry at the cave, Marilyn decided to give the blueberry to\nA:",
+  "explanation": "Quiz format with numbered questions about \"The Glass Menagerie\" — answers expected for each question about characters, plot, and themes.\n\nThe specific question \"Who gives the moon rock to Tom?\" demands a character name as its answer, likely \"Tom\" or a named character from the play.\n\nFinal token \"-\" follows \"Moon Rock. Who gives the moon rock to -\" — a question mid-clause requiring an immediate proper noun character name (e.g., \"Stanley\" or \"Stanley's Mother\") to complete the recipient of the gift.\nExample: \"Who gives the moon rock to Tom?\"\n</p>Example: \"Who gives the moon rock to Stanley?\"\n</p>Example: \"Stanley\""
+ },
+ {
+  "sample_idx": 174,
+  "row": 52,
+  "gold": "Virginia",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The lake Virginia and Eleanor went to had a apple. Eleanor gave it to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl and a magical apple, establishing a classic fairy-tale scenario of sharing or generosity.\n\nStructural pattern: the sentence \"She offered the apple to\" sets up a recipient noun phrase — a person or character name like \"Rachel\" or \"the bird\" — completing the act of giving.\n\nFinal token \"Apple.\" ends a scene-setting clause \"She gave the apple to Apple. The apple was given to:\" — a direct-quote attribution pattern requiring a character name or \"Rachel\" next, likely \"Rachel\" or \"Isaac\" as the recipient of the apple.\nExample: \"Isaac\" or \"Rachel, Isaac\"\n</p>Example: \"Isaac. Rachel.\""
+ },
+ {
+  "sample_idx": 175,
+  "row": 47,
+  "gold": "Diana",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Diana and Fannie went to the gym. Fannie gave a apple to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl giving an apple, establishing a simple act of generosity as the central event.\n\nStructural pattern: the sentence \"The girl gave an apple. \" signals a story summary or retelling, with \"The\" beginning a new sentence fragment about the apple's transfer or recipient.\n\nFinal token \" \" follows \"The girl gave an apple. \" — a complete declarative sentence, and the next token must be a proper noun or action word like \"She\" or \"Apple\" continuing the story, likely \"He\" or \"Gift\" or \"Shared.\"\nExample: \"She\" or \"He\" or \"Apple. Story.\"\n</p>Example: \"Story: The girl gave an apple. Story: She gave it to a stranger.\""
+ },
+ {
+  "sample_idx": 176,
+  "row": 146,
+  "gold": "Kathryn",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Kathryn and Violet went to the shop, Violet gave a pear to\nA:",
+  "explanation": "Narrative momentum: a classic children's riddle/joke structure about sharing a strawberry, requiring a punchline answer about who receives it.\n\nStructural pattern: the sentence \"Who gets the strawberry?\" sets up a direct answer naming a character, likely \"Katherine\" or \"Katherine and Clara\" from the story's opening.\n\nFinal token \"\": \" \" follows \"Shared the strawberry. Who gets it?\" — a question-answer format mid-sentence \"Answer:\" demands an immediate proper noun or character name like \"Katherine\" or \"Clara\" as the punchline completion.\nExample: \"Katherine\" or \"Katherine, Clara\"\n</p>Example: \"Katherine. Clara gave the strawberry to her sister.\""
+ },
+ {
+  "sample_idx": 177,
+  "row": 91,
+  "gold": "Chelsea",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Pauline and Chelsea were working at the lake. Pauline decided to give a strawberry to\nA:",
+  "explanation": "Narrative momentum: a children's story about a grandmother's picnic, establishing whimsical, humorous tone with specific details about a found flower.\n\nThematic setup: the sentence \"She gave the bread to a bread-sharing\" introduces a character or animal receiving the bread, likely a bird or deer, as a classic children's story trope about generosity.\n\nFinal token \"Sharing.\" is mid-phrase \"gave the bread to a girl. She gave the bread to a bread-sharing,\" mid-noun-phrase \"Lake Michigan. Gifted bread to a Lake Michigan\" — immediately requires a proper noun name like \"Deer\" or \"Bird\" to complete the recipient.\nExample: \"Sharing Deer\" or \"Sharing Cat\"\n</p>Example: \"Lake\" or \"Sarah\""
+ },
+ {
+  "sample_idx": 178,
+  "row": 101,
+  "gold": "Stella",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Stella and Mona got a strawberry at the bar, Mona decided to give it to\nA:",
+  "explanation": "Quiz format with numbered questions about a specific movie (likely \"Cat on a Hot Tin Roof\"), requiring answers about characters and plot details.\n\nThe question \"Who does the strawberry get given to?\" sets up a direct character-name answer, following the pattern of the previous question \"Who gave the strawberry?\" — a classic movie trivia format.\n\nFinal token \"\": \" \" follows \"Strawberry given to,\" mid-answer \"Who gets the strawberry? Answer: \" — immediately requires a character name like \"Stella\" or \"Leo\" to complete the answer \"Gives the strawberry to Stella. Who gets it? \"\nExample: \"Stella\" or \"Leo\"\n</p>Example: \"Leo\"\n</p>Example: \"Leo, a stranger\""
+ },
+ {
+  "sample_idx": 179,
+  "row": 30,
+  "gold": "Rosa",
+  "s": "Robin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Robin and Rosa were working at the mountain, Robin gave a blackberry to\nA:",
+  "explanation": "Narrative momentum from a children's book summary: the text is recounting a scene where a blueberry is shared between two characters, likely Jack and Rose or a bear.\n\nCharacter-name pattern established: \"Jack gave a blueberry to\" sets up a recipient character name, almost certainly \"Rose\" or \"Rose\" from the movie *Into the Wild*, requiring a proper noun next.\n\nFinal token \" \" follows \"Blueberry-sharing,\" mid-dialogue \"Who gave the blueberry? - \" — a question-answer format demanding an immediate character name response like \"Rose\" or \"Rose\" to complete the exchange \"Mountain Goat gave the berry to Mountain Goat.\"\nExample: \"Rose\" or \"Rose\"\n</p>Example: \"Rose\" or \"Rose\""
+ },
+ {
+  "sample_idx": 180,
+  "row": 64,
+  "gold": "Carmen",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jessica and Carmen were thinking about going to the river. Jessica wanted to give a grape to\nA:",
+  "explanation": "Narrative momentum: a whimsical children's story about a girl's birthday, establishing a playful, imaginative tone throughout.\n\nList/enumeration pattern: \"The girl wants to give her sandwich to a\" sets up a specific animal recipient, likely a monkey or other zoo animal, as a concrete example of the story's imaginative premise.\n\nFinal token \"\": \"See the Story.\" introduces a parenthetical or quoted example mid-phrase \"The girl wants to give her sandwich to a child. Example: Give the sandwich to a [animal name]\" — next token must be a proper noun animal name like \"Monkey\" or \"Goat\" completing the example.\nExample: \"Goat\" or \"Monkey\"\n</p>Example: \"Goat."
+ },
+ {
+  "sample_idx": 181,
+  "row": 2,
+  "gold": "Ginger",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Ginger and Mona were commuting to the market, Mona gave a blackberry to\nA:",
+  "explanation": "Narrative momentum: a fable-style story about a woman giving a mango, now being recorded as a dictionary-style example sentence.\n\nExample sentence structure: \"The woman gave a mango to a stranger. Who received it?\" sets up a direct answer identifying the recipient, likely \"Stranger\" or \"Kindness\" as the answer.\n\nFinal token \"\": \" \" follows \"Gave a mango to a stranger. Gift-giving event. Recipient:\" — a labeled field in a dictionary entry format, immediately requiring a proper noun or name like \"Gideon\" or \"Stranger\" as the recipient's name.\nExample: \"Gideon\" or \"Gideon, passing by\"\n</p>Example: \"Gideon\""
+ },
+ {
+  "sample_idx": 182,
+  "row": 178,
+  "gold": "Marian",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Suzanne and Marian were thinking about going to the museum. Suzanne wanted to give a watermelon to\nA:",
+  "explanation": "Narrative momentum: a whimsical, absurdist story about a woman's gift-giving, with surreal details like \"a watermelon\" and \"the museum.\"\n\nPattern of incomplete, humorous details: \"She asked who gave the watermelon. Someone said,\" sets up a punchline or character name revealing the unexpected recipient or situation.\n\nFinal token \"\": \" \" follows \"a gift to give a watermelon to,\" mid-sentence \"The story was about a gift to give a watermelon. Who was the gift for?\" — a question requiring an immediate proper noun or character name (e.g., \"George\" or \"George, the monkey\") as the answer.\nExample: \"George\" or \"George, the monkey\"\n</p>Example: \"George, the monkey\""
+ },
+ {
+  "sample_idx": 183,
+  "row": 109,
+  "gold": "Mattie",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Suzanne and Mattie had a lot of fun at the park. Suzanne gave a banana to\nA:",
+  "explanation": "Narrative momentum: a children's story about a family outing, establishing a whimsical, simple plot about sharing food with a zoo animal.\n\nStructural pattern: the sentence \"The little girl shares her sandwich with\" demands a recipient noun phrase — likely a specific animal name like \"Monkey\" or \"Squirrel\" — completing the sharing action.\n\nFinal token \"\": \" \" follows \"shares her sandwich. Who gets the sandwich?\" — a classic children's riddle/story prompt format, requiring an immediate proper noun character name or animal name as the answer, e.g., \"Monkey\" or \"Gus.\"\nExample: \"The little girl shares her sandwich.\nNarrative: \"The little girl shares her sandwich with a monkey.\nAnswer: \""
+ },
+ {
+  "sample_idx": 184,
+  "row": 0,
+  "gold": "Jessie",
+  "s": "Rebecca",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Rebecca and Jessie went to the store. Rebecca gave a peach to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl's generosity, establishing a simple cause-effect scenario about sharing an apple.\n\nStructural pattern: the sentence \"The girl gave an apple to a stranger. A little girl gave an apple.\" follows a parallel format, suggesting a list of actions/events about the apple's transfer.\n\nFinal token \"\": \"The apple was given to a little girl. A gift to the cashier.\" — mid-sentence \"A gift to the cashier. A gift to a stranger. The apple was given to a little girl. \" demands an immediate recipient noun phrase like \"Her\" or \"Stranger\" completing the transaction, e.g., \"Her: She.\"\nExample: \"Her: Sharing\" or \"Her: Gift.\""
+ },
+ {
+  "sample_idx": 185,
+  "row": 33,
+  "gold": "Nellie",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Nellie and Eleanor were thinking about going to the cafe. Eleanor wanted to give a coconut to\nA:",
+  "explanation": "Narrative momentum: a whimsical, absurdist story about a woman's actions, with \"She wants to give a banana to\" setting up a recipient character.\n\nList/enumeration pattern: \"The story is a list of actions\" signals a structured sequence of short, punchline-style events, likely continuing with a specific character name or animal as the banana's recipient.\n\nFinal token \"\": \"Give a banana to \" — mid-clause, \"She wants to give a banana to\" demands an immediate proper noun or character name (e.g., \"Clara\" or \"Monkey\") as the recipient of the banana.\nExample: \"Give a banana to Clara\" or \"Give a banana to her friend\"\nExample: \"Monkey\" or \"No\""
+ },
+ {
+  "sample_idx": 186,
+  "row": 14,
+  "gold": "Jacqueline",
+  "s": "Miriam",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Miriam and Jacqueline were commuting to the bar, Miriam gave a watermelon to\nA:",
+  "explanation": "Legal/dictionary format: a definition of \"gift\" is being cited, with a specific scenario \"A woman gave a sandwich to a stranger\" as an example sentence.\n\nNarrative momentum toward a legal or moral judgment: the example sentence \"A woman gave a sandwich to a police officer. Question: Who gave the sandwich?\" demands a direct answer identifying the giver or recipient.\n\nFinal token \"\": \" \" follows \"Question:\" — a colon introducing a direct answer or quoted response to the legal scenario, almost certainly \"Her\" or \"Stranger\" or \"None\" as the answer to \"Who gave the sandwich.\"\nExample: \"Gift: A woman gave a sandwich to a police officer. Question: Who gave the sandwich? Answer:\"\n</p>Example: \"Gift: A woman gave a sandwich to a stranger.\""
+ },
+ {
+  "sample_idx": 187,
+  "row": 83,
+  "gold": "Lorraine",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Lorraine and Richard were working at the desert. Richard decided to give a plum to\nA:",
+  "explanation": "Narrative momentum: a humorous, absurdist story about a man's desert encounter, likely to be told in a children's book or joke format about sharing food with animals.\n\nStructural pattern: the text is a list of story elements/chapter titles, \"The Gift of the Date\" suggests a numbered sequence of events from the tale.\n\nFinal token \"\": \"The Gift of a Date. Story:\" introduces a specific scene or character name, mid-attribution — \"gifted a date to a desert animal. The story of the date-giving event. Story:\" demands an immediate proper noun or character name like \"Monkey\" or \"Sarah\" next.\nExample: \"Sarah\" or \"Monkey\"\n</p>Example: \"Sarah\" or \"Monkey\""
+ },
+ {
+  "sample_idx": 188,
+  "row": 94,
+  "gold": "Melanie",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Estelle and Melanie went to the market. Estelle gave a mango to\nA:",
+  "explanation": "Narrative momentum: a simple story about a woman giving an apple, establishing a scene of generosity in a rural setting.\n\nStructural pattern: the text is a children's story format with numbered scene-setting, now transitioning to dialogue or action \"She gave an apple. A woman gave an apple to a stranger.\"\n\nFinal token \"\": \" \" follows \"A gift to the grocery store cashier. \" — this is a dialogue attribution or scene label mid-sentence, immediately requiring a character name or action like \"Her\" or \"She\" to complete the exchange, e.g., \"Her: Sharing\" or \"Her: Yes.\"\nExample: \"Sharing. Her: Sharing.\"\n</p>Example: \"Sharing. Her: Sharing. Story.\""
+ },
+ {
+  "sample_idx": 189,
+  "row": 73,
+  "gold": "Susan",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The park Erika and Susan went to had a orange. Erika gave it to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl sharing an apple, establishing a simple moral lesson about generosity.\n\nThe sentence \"She gave the apple to a little girl. She gave the apple to\" sets up a parallel structure requiring a second recipient name, likely \"Sarah\" or a character name like \"Squirrel\" or \"Sun.\"\n\nFinal token \"Shared Apple.\" is a proper noun mid-sentence \"She gave the apple to [recipient name]\" — the next token must be a person's name or noun phrase completing the recipient of the gift.\nExample: \"Sarah\" or \"Sun\"\n</p>Example: \"Shared Apple. Sarah. Sun.\nExample: \"Sun\"\n</p>Example: \"Sun\""
+ },
+ {
+  "sample_idx": 190,
+  "row": 147,
+  "gold": "Wilma",
+  "s": "Yvette",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Wilma and Yvette went to the gym. Yvette gave a blackberry to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl giving a banana, establishing a simple gift-exchange scenario requiring completion.\n\nStructural pattern: the sentence \"The girl gave a banana. A banana was passed to a friend.\" follows a classic story-summary format, suggesting a dictionary or example-sentence entry with a specific action verb phrase next.\n\nFinal token \"\": \"A gift was given to a friend. Passed to a friend.\" — mid-sentence \"A gift was given to a friend. Passed a banana. \" demands an immediate noun phrase like \"Her\" or \"Dog\" or \"Banana\" completing the action \"Gave the banana to a friend.\"\nExample: \"Passage\" or \"Passage: Story\" or \"Passage: Giving\""
+ },
+ {
+  "sample_idx": 191,
+  "row": 75,
+  "gold": "Jessie",
+  "s": "Grace",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Jessie and Grace found a cherry at the forest. Grace gave it to\nA:",
+  "explanation": "Children's moral fable format: story teaches a lesson about sharing, with a structured vocabulary/dictionary entry style for key terms.\n\nThe sentence \"The girl gave the apple to her sister. Moral:\" sets up a direct moral statement, a classic fable convention requiring a concise lesson about generosity or kindness to follow.\n\nFinal token \"Selfless Act.\" is mid-definition in a vocabulary entry \"Definition: Selfless Act. Example: She gave the apple to her sister. Moral: Selfless Act.\": the word \"Selfless Act\" is a label/value pair mid-entry, immediately expecting a newline or continuation like \"Kindness\" or \"Selfless\" to complete the moral statement.\nExample: \"Kindness. Story.\" or \"Selfless act. Story.\""
+ },
+ {
+  "sample_idx": 192,
+  "row": 175,
+  "gold": "Rosa",
+  "s": "Kari",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Kari and Rosa went to the store. Kari gave a blackberry to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl's generosity, establishing a simple cause-effect scenario about giving a strawberry.\n\nStructural pattern: the text is a sequence of short declarative sentences describing a story event, \"The girl gave a strawberry. A woman gave an apple. A\" — next token continues this pattern of brief scene descriptions.\n\nFinal token \"\": \"A gift was given to a stranger. A strawberry was given to a little girl. Passed to a stranger.\" — mid-sentence \"Passed a strawberry. \" demands a recipient noun phrase like \"Rose\" or \"Her\" completing the transaction, e.g., \"Rose: Rose\" or \"Rose: Rose\"\nExample: \"Rose: Rose\" or \"Rose: Rose. Rose: Rose.\""
+ },
+ {
+  "sample_idx": 193,
+  "row": 193,
+  "gold": "Mattie",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Mona and Mattie went to the gym. Mona gave a orange to\nA:",
+  "explanation": "Narrative momentum: a children's story about a girl's generosity, establishing a scene of gift-giving in a schoolyard setting.\n\nStructural pattern: the sentence \"She gave an apple. She gave an apple.\" signals a list or sequence of actions, likely continuing with a character name or recipient of the apple.\n\nFinal token \"\": \"Apple.\" is mid-sentence \"She gave an apple. Passed it to a girl. Passed it to a\" — a transitive verb construction requiring an immediate noun phrase (likely a character name like \"Sarah\" or \"him\") as the recipient of the apple.\nExample: \"Pass\" or \"Passes\" continues the action \"She gave an apple. Passed it to a stranger. Story.\""
+ },
+ {
+  "sample_idx": 194,
+  "row": 82,
+  "gold": "Anne",
+  "s": "Martha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Anne and Martha were working at the shop, Martha gave a banana to\nA:",
+  "explanation": "Narrative momentum: a classic joke setup about a bakery's generosity, requiring a punchline about who received the apple.\n\nStructural pattern: the sentence \"The baker gave an apple to a woman. Who received the apple?\" is a riddle/joke format demanding a specific person's name as the answer.\n\nFinal token \".\" closes the setup clause \"A gift was given to a woman. The apple was given to a stranger. The apple was given to -\" — a parallel construction mid-sentence \"to a stranger. Gift-giving record:\" demands an immediate proper noun name (e.g., \"Isaac\" or \"Unknown\") as the recipient of the apple.\nExample: \"Isaac\" or \"A bird\"\n</p>Example: \"Isaac, a passerby\""
+ },
+ {
+  "sample_idx": 195,
+  "row": 39,
+  "gold": "Wilma",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Wilma and Leigh went to the forest. Leigh gave a coconut to\nA:",
+  "explanation": "Narrative momentum: a classic children's riddle/story about a man finding a banana, now being illustrated with a scene-by-scene breakdown.\n\nStructural pattern: the text is a numbered list of sequential events (\"1. Man finds banana. 2. Banana is given to...\"), requiring a recipient noun phrase like \"Squirrel\" or \"Monkey\" next.\n\nFinal token \"Presentation.\" is mid-scene in a numbered story sequence \"2. Banana is given to a forest-dweller. Gift-Giving to a Forest-Dweller: Gifted to a Banana.\" — \"Gifted to\" demands an immediate recipient noun phrase like \"Squirrel\" or \"Sarah\" to complete the action \"Banana was given to [recipient].\"\nExample: \"Gifted to Sarah\" or \"Monkey\""
+ },
+ {
+  "sample_idx": 196,
+  "row": 54,
+  "gold": "Jacqueline",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Eleanor and Jacqueline had a lot of fun at the cave. Eleanor gave a peach to\nA:",
+  "explanation": "Children's storybook format with numbered chapter/scene structure, establishing a narrative about a girl finding a cave and sharing food with a creature.\n\nThe dialogue exchange pattern: \"Girl: I gave the apple to...\" demands a recipient noun phrase next (e.g., \"Squirrel\" or \"Gretel\"), completing the direct-quote interaction about the cave discovery.\n\nFinal token \"-\" follows \"Girl: I gave the apple to the cave. Shared food with a child.\" — this is a dialogue attribution line mid-exchange, immediately requiring a character name or \"Squirrel\" as the response to \"Who was it?\"\nExample: \"Squirrel: Yes.\" or \"Gretel: Monkey\"\n</p>Example: \"Monkey\" or \"Gretel\""
+ },
+ {
+  "sample_idx": 197,
+  "row": 58,
+  "gold": "Marian",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Leigh and Marian went to the forest. Leigh gave a strawberry to\nA:",
+  "explanation": "Narrative retelling of Snow White's fairy tale, following a scene-by-scene story structure with dialogue and action descriptions from the original tale.\n\nThe scene is a forest encounter between Snow White and a stranger; the story has established a gift-exchange pattern, and the next tokens must describe what the stranger gave or what happened next in the forest.\n\nFinal token \" \" follows \"gave the apple to a\" — a direct object clause mid-action \"gave the apple to a stranger. The apple was given to the forest. \" — immediately requiring a character name or action phrase like \"Rabbit\" or \"Snow\" to complete the scene, e.g., \"Rabbit: Yes.\"\nExample: \"Snow White\" or \"Rabbit: He gave it.\"\n</p>Example: \"Rabbit: Later.\""
+ },
+ {
+  "sample_idx": 198,
+  "row": 132,
+  "gold": "Amanda",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Alice and Amanda were working at the desert, Alice gave a grape to\nA:",
+  "explanation": "Joke setup following classic riddle/pun format: \"A date in the desert. A date is given to a camel. Who gets the date?\" demands a punchline answer.\n\nThe narrative momentum of a wordplay riddle requires a specific character name as the answer, likely \"Adam\" or a camel-related pun, completing the joke about desert conditions.\n\nFinal token \".\" closes the setup clause \"A date is given to a camel. The date is passed from the desert to the desert.\" — a transitional phrase mid-sentence \"Date passed to\" demands an immediate recipient noun phrase like \"Adam\" or \"Snake\" as the punchline answer.\nExample: \"Adam\" or \"Adam, Snake\"\n</p>Example: \"Adam\" or \"Adam, a camel\""
+ },
+ {
+  "sample_idx": 199,
+  "row": 185,
+  "gold": "Harriet",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The bar Pauline and Harriet went to had a peach. Pauline gave it to\nA:",
+  "explanation": "Literary adaptation context: the text is a summary of a short story, likely \"The Apple\" by Kate Chopin, requiring character names and plot details about sharing an apple.\n\nCharacter-name pattern established: \"The waitress gives the apple to\" sets up a recipient character name, following the story's central act of generosity/sharing between two women.\n\nFinal token \"Shared Apple to \" is mid-phrase, mid-name-assignment — \"The waitress gives the apple to\" demands an immediate proper noun character name (e.g., \"Henry\" or \"Grace\") as the next token.\nExample: \"Shared Apple to Henry\" or \"Grace\"\n</p>Example: \"Grace\" or \"Henry\""
+ }
+]

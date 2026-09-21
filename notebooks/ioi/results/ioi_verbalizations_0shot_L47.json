@@ -1,0 +1,1474 @@
+[
+ {
+  "sample_idx": 0,
+  "row": 199,
+  "gold": "Dianne",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Mona and Dianne went to the library. Mona gave a banana to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Title + Author/Illustrator + Dialogue\" format, with whimsical children's book-style exchanges.\n\nNarrative momentum of the \"Library Books\" section: a series of absurd, humorous interactions with library books, building toward a punchline or joke.\n\nFinal token \"Give\" is a verb in a dialogue entry, immediately expecting a noun phrase or action like \"The Book to the Librarian\" or \"The Cat a Book.\"\n\"Give\" is part of the \"The Child and the Librarian\" entry, likely completing a humorous exchange. \"Give\" expects a direct object like \"Gertrude\" or \"The Book.\"\n\"Give\" is a command/instruction, expecting a name or action like \"The Librarian a Book.\"\n\"Give\"\n\"Gertrude.\"\n\"The Book.\""
+ },
+ {
+  "sample_idx": 2,
+  "row": 29,
+  "gold": "Sarah",
+  "s": "Teresa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Sarah and Teresa went to the mountain. Teresa gave a blueberry to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Question + Answer\" format, with absurdist/nonsensical answers to simple questions about a goat and a mountain.\n\nContinuation of the \"goat and mountain\" game: the pattern of alternating questions and answers about a goat, mountain, and a dog/sheep/cow/bird/rabbit/bear/goat continues.\n\nFinal token \"and\" is a conjunction mid-entry, immediately requiring \"The Goat\" or \"The Mountain\" to complete the answer to \"Who ate the cheese? The Goat. The Mountain. A Mountain Goat.\"\n\"A Mountain Goat. A Mountain Goat. A Mountain Goat.\nThe Mountain.\nThe Goat.\nThe Mountain.\"\n\"A Mountain Goat.\nThe Goat.\"\n\"A Mountain Goat.\n\"\n\"A Mountain Goat.\"\n\"\n\"\n\"\n\""
+ },
+ {
+  "sample_idx": 3,
+  "row": 1,
+  "gold": "Doris",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Alice and Doris went to the shop. Alice gave a blackberry to\nA:",
+  "explanation": "Table structure pattern: pipe-delimited format with \"Action,\" \"Character,\" and \"Result\" columns establishes a structured game/story context.\n\nNarrative momentum: the story of a woman buying a pie from a stranger is building toward a transaction or exchange, with the stranger's response now expected.\n\nFinal token \"Give\" is a verb in the \"Action\" column, immediately expecting a noun phrase or object like \"The Apple\" or \"A Pie\" to complete the transaction. \"Give\" as a command or action label expects a direct object. \"Give\" is followed by \"Doris\" or \"The Apple.\"\n\"Give\" is a transaction entry. \"Doris gave the stranger a pie.\"\n\"Give\" is followed by \"Doris\" or \"The Apple.\"\n\"Give\"\n\"Doris\"\n\"A Pie.\""
+ },
+ {
+  "sample_idx": 4,
+  "row": 23,
+  "gold": "Evelyn",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Lula and Evelyn got a orange at the park, Lula decided to give the orange to\nA:",
+  "explanation": "Structured trivia/quiz format: alternating questions and answers about \"The Wild Thornberrys\" movie, establishing a pattern of character-related questions.\n\nList continuation momentum: the \"Who gave the flower to\" section has been building a series of character-related trivia questions, each with a short answer.\n\nFinal token \"to\" completes a question fragment \"Who gave the flower to,\" immediately requiring a character name or pronoun (likely \"Caleb\" or \"the Dog\") as the answer. \"Give the flower to\" is a transitive verb phrase requiring a recipient. \"Give the flower to\" expects \"Caleb\" or \"Dog.\"\n\"Give the flower to\" is a transitive verb phrase requiring a recipient. \"Give the cake to\" expects \"Caleb\" or \"Dog.\"\n\"Give the cake to\" expects \"Caleb.\""
+ },
+ {
+  "sample_idx": 5,
+  "row": 149,
+  "gold": "Anita",
+  "s": "Jackie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Anita and Jackie found a plum at the theater. Jackie gave it to\nA:",
+  "explanation": "Structured table/list format: alternating \"Who is the generous person?\" and \"Answer\" rows, establishing a pattern of Q&A pairs about generosity.\n\nNarrative momentum of the movie-based examples: each row describes a scene or character action, building a complete set of generosity examples from \"The Princess Bride.\"\n\nFinal token \"of\" completes the \"Answer\" label for \"Sharing a Chocolate Bar,\" immediately expecting \"Anita\" or \"Gift\" to complete the answer, likely \"Anita is generous.\"\n\"Sharing a Chocolate Bar is a gift of generosity.\"\n\"Answer: Anita.\"\n\"The act of sharing a chocolate bar is generosity.\"\n\"Answer: Gift.\"\n\"Answer: Anita.\"\n\"Answer: Gift.\"\n\"Answer: Generosity.\"\n\"Answer: Anita.\"\n\"Answer: Gift.\""
+ },
+ {
+  "sample_idx": 6,
+  "row": 8,
+  "gold": "Jerry",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Erika and Jerry were thinking about going to the shop. Erika wanted to give a banana to\nA:",
+  "explanation": "List continuation pattern: each line is a humorous/absurdist joke or riddle, following a consistent format of short, witty, nonsensical content.\n\nThe \"Give\" action pattern: \"Give the Banana to\" introduces a recipient or action, typical of joke-list structures where a character performs a funny action.\n\nFinal token \"to\" is a preposition completing \"Give the Banana to,\" immediately requiring a noun phrase like \"the Dog\" or \"Pete\" or \"A Slice of Cake.\"\n\"Give the Banana to\" is a partial action requiring a recipient. \"Give the Banana to\" is a joke title or action. \"Pete\" or \"A Slice of Cake.\"\n\"Give the Banana to the Monkey\" or \"Give the Monkey a Slice of Cake.\"\n\"Give\" or \"Pete\" or \"A Slice of Cake.\""
+ },
+ {
+  "sample_idx": 7,
+  "row": 171,
+  "gold": "Jacqueline",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jacqueline and Alice had a lot of fun at the river. Alice gave a banana to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Title + Author + Description\" format, with whimsical children's book titles and playful descriptions of animals.\n\nNarrative momentum of the \"A Day with the Animals\" section: a series of animal-related vignettes, each introducing a new animal or character with a humorous, absurdist tone.\n\nFinal token \"and\" is a conjunction mid-entry, immediately requiring a noun phrase like \"Monkey\" or \"Dog\" to complete the pairing \"The Monkey and the River and the Dog and the River.\"\n\"A Day with the Animals: The Monkey, the Dog, and the River and the Dog and the River.\"\n\"The Dog and the River and the Dog and the River.\"\n\"A Day with the Animals: The Monkey, a Hippo, and a Chocolate Cake.\"\n\"A Day with the Animals: A Hippo.\""
+ },
+ {
+  "sample_idx": 8,
+  "row": 177,
+  "gold": "William",
+  "s": "Gwen",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Gwen and William were thinking about going to the museum. Gwen wanted to give a pineapple to\nA:",
+  "explanation": "Humorous/absurdist joke format: each line is a short, surreal, comedic prompt or caption, typical of \"Would You Rather\" or \"Would You Rather\" style games.\n\nList continuation momentum: the text presents a series of joke-style options, building toward a punchline or comedic action.\n\nFinal token \"Offer\" is a verb in a \"Would You Rather\" prompt structure, immediately expecting a noun phrase like \"A Painting to the Museum\" or \"A Banana to the Curator.\"\n\"Offer\" is part of \"Would You Rather Offer [object]\" — a comedic action completion is expected. \"Offer\" likely precedes \"A Painting\" or \"The Dog.\"\n\"Offer\" is a verb requiring a direct object. \"Offer\"\n\"Offer\"\n\"Offer\"\n\"Offer\"\n\"Offer\"\n\"Offer\""
+ },
+ {
+  "sample_idx": 10,
+  "row": 25,
+  "gold": "Heidi",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The library Violet and Heidi went to had a watermelon. Violet gave it to\nA:",
+  "explanation": "Structured Q&A format: alternating questions and answers about \"The Paper Bag Princess\" book, establishing a pattern of humorous, absurdist responses.\n\nList continuation momentum: the \"Who Gave the Cake to\" section has been building a series of joke answers, each naming a character or group as the recipient of a cake.\n\nFinal token \"To\" is a preposition completing the question \"Who Gave the Cake to,\" immediately requiring a name or pronoun (likely \"Paige\" or \"Debra\") as the answer. \"Give the Cake to\" expects \"Debra\" or \"Paige\" next. \"To\" is the preposition completing the answer. \"Debra\" or \"Paige\" follows. \"To\" is the answer. \"To the Cake.\"\n\"To\" expects \"Debra\" or \"Paige.\"\n\"To a Dog.\""
+ },
+ {
+  "sample_idx": 11,
+  "row": 90,
+  "gold": "Kathryn",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The library Kathryn and Richard went to had a pear. Richard gave it to\nA:",
+  "explanation": "Structured Q&A format: Goodreads book-related questions and answers, with consistent \"Asked by [username]\" headers and community responses.\n\nRepetition/continuation of pattern: each answer repeats \"Asked by [username]\" and \"Give books to\" — the next token will complete another answer about \"The Fall of the House of Usher\" by Edgar Allan Poe.\n\nFinal token \"to\" is part of the \"Give books to\" phrase, immediately requiring \"Lauren\" or \"Lauren\" to complete the response, likely \"Lauren\" or \"Lauren, the Old Woman.\"\n\"Give books to\" is a recurring answer pattern. \"Give books to\" expects \"Lauren\" next. \"Give books to\"\n\"Give books to\"\n\"Lauren, the Old Woman\"\n\"Give books to\"\n\"Lauren\""
+ },
+ {
+  "sample_idx": 12,
+  "row": 60,
+  "gold": "Alicia",
+  "s": "Faye",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Alicia and Faye went to the library. Faye gave a pineapple to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Alice [verb] [object]\" format, completing a story about Alice borrowing books from a librarian.\n\nNarrative momentum: the story has built toward a resolution — Alice borrowed books, read them, and is now returning them, suggesting \"Give\" or \"Give the Book to the Librarian\" or \"Give the Book to Alicia.\"\n\nFinal token \"Give\" is a verb in the structured pattern, immediately expecting \"Alicia\" or \"The Librarian\" or \"Alice\" as the object of the action. \"Give\" is the start of a new line entry, likely \"Give the Book to the Library.\"\n\"Give\"\n\"Alicia\"\n\"The Library.\"\n\"Give\"\n\"Alicia\"\n\"A Cake.\"\n\"Give\"\n\"The Librarian.\""
+ },
+ {
+  "sample_idx": 13,
+  "row": 4,
+  "gold": "Janet",
+  "s": "Martha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Martha and Janet were working at the market. Martha decided to give a grape to\nA:",
+  "explanation": "Humorous absurdist joke list format: each entry is a short, nonsensical joke title or caption, typical of \"Ironic Jokes\" or \"Funny Jokes\" compilations.\n\nContinuation of a structured list: the pattern of joke titles/captions continues, with entries like \"A Dog and a Cat,\" \"A Woman and a Dog,\" \"A Woman and a Dog.\"\n\nFinal token \"to\" completes \"Give a Pear to,\" a joke title requiring a noun phrase object (e.g., \"A Stranger\" or \"A Bird\") to complete the action. \"A Child Gave a Pear to\" needs a recipient. \"A Dog Gave a Pear to\" or \"A Woman.\"\n\"A Dog Gave a Pear to a Stranger.\"\n\"A Woman Gave a Pear to a Shopkeeper.\"\n\"A Pear to a Cat.\""
+ },
+ {
+  "sample_idx": 14,
+  "row": 7,
+  "gold": "Kim",
+  "s": "Martha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Martha and Kim got a papaya at the park, Martha decided to give the papaya to\nA:",
+  "explanation": "Structured list pattern: each line presents a food item and a person's name, following \"Who gave the [food] to [person]\" format.\n\nGame/puzzle context: \"Who gave the watermelon to\" is a logic puzzle structure, with answers being \"Alice,\" \"Bob,\" \"Charlie,\" \"Daphne,\" \"Pate,\" \"Pate and Alice.\"\n\nFinal token \"to\" completes the \"Who gave the watermelon to\" prompt, immediately requiring \"Pate\" as the answer, matching the established pattern of \"Pate\" as the recipient. \"Give the watermelon to\" expects \"Pate\" next.\n\"Alice\" or \"The Other Person.\"\n\"The Other Person\" or \"Alice.\"\n\"Pate.\"\n\"The Other Person.\"\n\"Pate.\"\n\"Alice.\""
+ },
+ {
+  "sample_idx": 15,
+  "row": 186,
+  "gold": "Mattie",
+  "s": "Kristi",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Kristi and Mattie were commuting to the shop, Kristi gave a watermelon to\nA:",
+  "explanation": "Structured list format: each entry follows \"Person/Group Name + Action + Object\" pattern, with absurdist humor as the comedic core.\n\nNarrative momentum of a joke/meme list: entries escalate in absurdity, suggesting \"Give a Flower to\" will complete a punchline about a stranger or random person.\n\nFinal token \"to\" is a preposition completing \"Give a Flower to,\" immediately requiring a noun phrase like \"A Stranger\" or \"A Woman\" or \"A Dog.\"\n\"A Stranger\" or \"The Flower Shop Owner.\"\n\"A Stranger\" or \"A Truck Driver.\"\n\"A Stranger\" or \"A Truck Driver.\"\n\"A Stranger\" or \"A Truck Driver.\"\n\"A Stranger\" or \"A Truck Driver.\"\n\"A Stranger\" or \"A Truck Driver.\"\n\"A Stranger\" or \"A Truck Driver.\"\n\"A Stranger\" or \"A Truck Driver.\"\n\"A Stranger\" or \"A Truck Driver.\""
+ },
+ {
+  "sample_idx": 17,
+  "row": 165,
+  "gold": "Kathryn",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Irma and Kathryn found a raspberry at the shop. Irma gave it to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Would you share [item] with [person]?\" format, with a humorous/absurd answer completing the joke.\n\nThe \"Would You Share\" game/quiz context: answers are short, witty, and often subvert expectations (e.g., \"Yes. I would share the cake with her\").\n\nFinal token \"Share.\" is a response label, immediately expecting a name or answer like \"Galt\" or \"Sisterhood\" to complete the joke entry. \"The answer is\" or \"Galt\" or \"Both.\"\n\"The answer is\" or \"Galt.\"\n\"The answer is\" or \"Both.\"\n\"The answer is\" or \"Sisterhood.\"\n\"The answer is\" or \"Galt.\"\n\"The answer is\" or \"Both.\"\n\"The answer is\" or \"Galt.\""
+ },
+ {
+  "sample_idx": 19,
+  "row": 123,
+  "gold": "Jessie",
+  "s": "Inez",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Jessie and Inez were commuting to the desert, Inez gave a watermelon to\nA:",
+  "explanation": "Structured trivia/quiz format: each line presents a question about a film, followed by a character name or answer, establishing a pattern of \"Who said this?\" and \"Who said that?\"\n\nList continuation momentum: the \"Who said this?\" section has been building a series of character-answer pairs, with \"The Dog,\" \"The Cowboy,\" \"The Cactus,\" and \"The Dog\" already listed.\n\nFinal token \"to\" is a preposition mid-entry, immediately expecting a character name or answer like \"Bob\" or \"The Cowboy\" to complete the \"The Dog gave a cactus to [character]\" pattern. \"Bob\" or \"Cactus.\"\n\"The Dog gave a cactus to\" requires a name completion. \"Bob\" or \"The Cowboy.\"\n\"The Dog gave a cactus to\"\n\"Cactus.\""
+ },
+ {
+  "sample_idx": 20,
+  "row": 157,
+  "gold": "Brandy",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Brandy and Mona went to the home. Mona gave a watermelon to\nA:",
+  "explanation": "Structured data table format: pipe-delimited table listing \"Who Gave What to Whom\" with consistent pattern of character names and actions.\n\nNarrative momentum: the table has been building a sequence of events around the peach pie, with \"The Grandmother\" and \"The Woman\" as key characters in a Southern Gothic/horror story.\n\nFinal token \"Give\" is a table cell entry, immediately expecting a noun phrase like \"The Peach Pie\" or \"Gatha\" to complete the action, likely \"Gatha the Peach Pie\" or \"The Woman the Peach Pie.\"\n\"Give\" is a verb requiring a direct object. \"The Woman\" or \"The Peach Pie\" follows.\n\"Give\" is a table cell entry, immediately expecting \"Gatha\" or \"The Peach Pie.\"\n\"Give\"\n\"Gatha\"\n\"The Peach Pie.\""
+ },
+ {
+  "sample_idx": 21,
+  "row": 118,
+  "gold": "Stella",
+  "s": "Lee",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Lee and Stella got a apple at the market, Lee decided to give it to\nA:",
+  "explanation": "Structured quiz/game format with alternating questions and answers, following a strict pattern of \"Who gave the pie to [person]\" and \"The answer is [person]\" throughout.\n\nThe list of questions and answers is clearly incomplete, with \"Who gave the pie to\" questions requiring \"The answer is\" responses for each entry.\n\nFinal token \"to\" completes the question \"Who gave the pie to,\" immediately requiring \"Hattie\" or \"Hattie and Stella\" as the answer, likely \"Hattie\" given the pattern of Stella's name appearing in the answer. \"The answer is\" or \"Stella\" follows.\n\"The answer is to Give the Pie to Stella.\"\n\"Give the Pie to\"\n\"The answer is to Give the Pie to\"\n\"Stella\"\n\"Give the Pie to\"\n\"Hattie.\""
+ },
+ {
+  "sample_idx": 23,
+  "row": 195,
+  "gold": "Marian",
+  "s": "Agnes",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The forest Agnes and Marian went to had a raspberry. Agnes gave it to\nA:",
+  "explanation": "Structured list format: each entry follows \"Character Name + Movie/Book Title\" pattern, establishing a database-style reference for fairy tale characters.\n\nThe list is clearly incomplete — \"10 more entries\" were promised, and only 10 entries have appeared, suggesting continuation of character-to-movie pairings.\n\nFinal token \"to\" completes \"The Giant's Bread to [character name],\" immediately expecting a character name like \"William\" or \"The Huntsman\" to complete the pairing. \"The Bread to\" is a typo or error, but \"The Giant's Bread to\" expects a character name next. \"The Huntsman\" or \"Bartholomew.\"\n\"The Huntsman\" or \"Bartholomew.\"\n\"The Huntsman\" or \"The Prince.\"\n\"William.\"\n\"The Prince.\""
+ },
+ {
+  "sample_idx": 24,
+  "row": 46,
+  "gold": "Leona",
+  "s": "Ethel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Leona and Ethel went to the bar. Ethel gave a cantaloupe to\nA:",
+  "explanation": "Structured list format: each entry follows \"Character Name + Action/Event\" pattern, with humorous absurdist outcomes in a video game/film database.\n\nContinuation of the \"Bartender\" section: \"Bartender\" has appeared multiple times, suggesting another entry about a bartender interaction or joke.\n\nFinal token \"to\" is a preposition mid-sentence, \"Give $100 to the Bartender or the Drag Queen. Give a tip to\" — immediately expects a noun phrase like \"Bartender\" or \"The Man in the Suit.\"\n\"The bartender\" or \"The Drag Queen.\"\n\"The bartender\" or \"The Man in the Suit.\"\n\"The bartender\" or \"The Drag Queen.\"\n\"A Drink.\"\n\"The bartender.\"\n\"The bartender.\"\n\"A Drink.\"\n\"The bartender.\"\n\"A Drink.\""
+ },
+ {
+  "sample_idx": 25,
+  "row": 197,
+  "gold": "Sarah",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Sarah and Erika got a cherry at the river, Erika decided to give the cherry to\nA:",
+  "explanation": "Structured data table format: pipe-delimited table listing \"Who Gave the Apple to Whom\" with consistent row patterns throughout.\n\nRepetition/continuation of game-related content: each row pairs a question with a response, following the \"Who Gave the Apple to Whom\" game structure.\n\nFinal token \"Give\" is mid-row in the table, immediately expecting \"Daphne\" to complete the response \"Daphne Give the Apple to,\" mirroring prior rows like \"Daphne Give the Apple to Chloe.\"\n\"Give the Apple to Chloe\" or \"Give the Apple to Daphine.\"\n\"Daphne Give the Apple to\"\n\"Daphne Give the Apple to Chloe.\"\n\"Give the Apple to Chloe.\"\n\"Give the Apple to Daphine.\"\n\"Give the Apple to Chloe.\"\n\"Give the Apple to Daphine.\""
+ },
+ {
+  "sample_idx": 26,
+  "row": 3,
+  "gold": "Harriet",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Harriet and Erika went to the bar. Erika gave a mango to\nA:",
+  "explanation": "Structured list format: each entry follows \"Name + Action + Object\" pattern, completing a game/film database of absurdist interactions.\n\nNarrative momentum of the \"Absurdist Interactions\" section: each line describes a character performing a nonsensical action toward another, building toward a punchline or joke.\n\nFinal token \"to\" completes the \"Give a Tip to\" phrase, immediately requiring a recipient noun phrase like \"Bartender\" or \"Woman\" to complete the interaction entry. \"Give a Tip to\" is a partial prepositional phrase requiring a person or object. \"The Bartender\" or \"Patty\" or \"The Woman.\"\n\"The Woman\" or \"Patty.\"\n\"A Drink.\"\n\"The Bartender.\"\n\"A Flower.\"\n\"The Bartender.\"\n\"The Woman.\"\n\"A Tip.\""
+ },
+ {
+  "sample_idx": 27,
+  "row": 128,
+  "gold": "Mark",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Mark and Erika went to the park. Erika gave a blackberry to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Name + Action + Object\" format, with whimsical/absurdist European-style children's riddle content.\n\nNarrative momentum: the list of \"Who Gave a Blueberry to\" entries is building, suggesting another entry or a concluding action/object is expected.\n\nFinal token \"to\" completes the \"Who Gave a Blueberry to\" prompt, immediately expecting a recipient noun or proper name like \"A Dog\" or \"One.\"\n\"A Dog\" or \"A Bird.\"\n\"The Dog\" or \"One.\"\n\"The Dog.\"\n\"A Dog.\"\n\"To Alice.\"\n\"To A Squirrel.\"\n\"To A Dog.\"\n\"To Alice.\"\n\"To A Squirrel.\"\n\"To A Dog.\"\n\"To A Bird.\"\n\"To A Dog.\"\n\"To A Bird.\"\n\"To Alice.\""
+ },
+ {
+  "sample_idx": 28,
+  "row": 124,
+  "gold": "Juana",
+  "s": "Robin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Juana and Robin got a peach at the forest, Robin decided to give the peach to\nA:",
+  "explanation": "Educational resource listing format: structured Q&A/study guide content with \"Get Answers\" headers, typical of eCheat or similar academic help sites.\n\nNarrative momentum of literary analysis: the text has been building a list of study questions and answers about \"The Gift of the Magi\" and \"The Death of the Old Man,\" suggesting continuation of character analysis.\n\nFinal token \"and\" is a conjunction mid-list, immediately requiring a noun or noun phrase completing a character/role reference, likely \"The Old Man\" or \"Pedro\" or \"The Dog.\"\n\"The Gift of the Magi\" or \"The Old Man\" or \"The Dog.\"\n\"Pedro\" or \"The Old Man.\"\n\"The Gift of the Magi\" or \"The Old Man.\"\n\"The Gift of the Magi\" or \"The Old Man.\"\n\"The Gift of the Magi\" or \"The Old Man.\""
+ },
+ {
+  "sample_idx": 29,
+  "row": 63,
+  "gold": "Charlene",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Fannie and Charlene were working at the cave, Fannie gave a honeydew to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Character Name + humorous/absurd joke\" format, with \"The jokes are all about\" header establishing comedic Appalachian/Georgia-themed content.\n\nNarrative momentum of a road trip story: the text has been building a sequence of characters, jokes, and events, now reaching a named character \"The Dog\" and \"The Turtle.\"\n\nFinal token \"to\" is a preposition mid-sentence, immediately requiring a noun phrase or character name (likely \"Chuck\" or \"The Dog\") completing the joke about the turtle's gift. \"The Dog gave a rock to\" demands a recipient like \"Chuck\" or \"Cletus.\"\n\"The Dog gave a rock to\"\n\"Chuck\" or \"Cletus.\"\n\"The Turtle.\"\n\"The Dog.\"\n\"The Dog.\""
+ },
+ {
+  "sample_idx": 30,
+  "row": 16,
+  "gold": "Anne",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Jody and Anne went to the store. Jody gave a grape to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"A [Name] [verb] [object]\" format, with absurdist/nonsensical content typical of joke-answer websites.\n\nNarrative momentum of a joke/puzzle: \"Who gave the cheese to the dog?\" sets up a question requiring a named answer, \"The Dog\" or \"The Cheese.\"\n\nFinal token \"to\" completes the \"gave the cheese to the dog\" pattern, immediately expecting \"Catherine\" or \"Dog\" to complete the transaction entry. \"Catherine gave a candy bar to\" requires \"The Dog\" or \"Catherine\" as the next token. \"The Dog gave a candy bar to\" expects \"Catherine.\"\n\"The Dog gave a candy bar to\" expects \"The Dog\" or \"Catherine.\"\n\"Catherine gave a candy bar to\" expects \"The Dog.\""
+ },
+ {
+  "sample_idx": 32,
+  "row": 119,
+  "gold": "Susan",
+  "s": "Kristina",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kristina and Susan had a lot of fun at the market. Kristina gave a honeydew to\nA:",
+  "explanation": "Structured list format: each entry follows \"Name + Action + Object\" pattern, with humorous/absurdist content about a woman and a melon.\n\nNarrative momentum of a game/quiz context: \"What Did She Give to\" signals a question-answer format, with \"Give to\" requiring a recipient or object noun phrase.\n\nFinal token \"to\" is a preposition completing \"Give to [person/object],\" immediately expecting a name or noun like \"the Melon\" or \"Martha\" to complete the action. \"Give to\" is part of a structured game entry \"The Melon. Give to Martha. Give to.\"\n\"Give to\" expects \"Plum\" or \"Plum Pie.\"\n\"Give to\" expects \"Plum Pie.\"\n\"Give to\" expects \"A Stranger.\"\n\"Give to\" expects \"The Melon.\""
+ },
+ {
+  "sample_idx": 33,
+  "row": 17,
+  "gold": "Jessie",
+  "s": "Kari",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kari and Jessie went to the bar. Kari gave a pear to\nA:",
+  "explanation": "Game instruction format: each line is a prompt/instruction for a \"Would You Rather\" style game, with humorous or absurd choices.\n\nNarrative momentum of the bar scene: the player has been given a drink and is now interacting with a bartender or stranger, building toward a consequence or outcome.\n\nFinal token \"Give\" is a verb beginning a player action instruction, immediately expecting a noun phrase like \"The Bartender a Tip\" or \"The Stranger a Drink.\"\n\"Give\" is part of \"Give a Drink to the Stranger.\"\n\"Give\" is a command verb requiring a direct object. \"Give\" likely precedes \"The Painting\" or \"The Bartender a Tip.\"\n\"Give\" is a game instruction, expecting a choice or action like \"The Painting\" or \"A Tip.\"\n\"Give\""
+ },
+ {
+  "sample_idx": 34,
+  "row": 153,
+  "gold": "Dianne",
+  "s": "Robin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Robin and Dianne were thinking about going to the cave. Robin wanted to give a pineapple to\nA:",
+  "explanation": "Humorous/absurdist joke list format: each entry is a short, nonsensical joke or riddle, typical of \"Would You Rather\" or \"Mad Libs\"-style humor.\n\nContinuation of a structured list: the text has been presenting joke titles and brief descriptions, building toward a complete set of cave-related jokes.\n\nFinal token \"to\" follows \"Give a Cave to\" — a verb phrase completion is expected, likely a name or action like \"The Cave Monster\" or \"The Chocolate.\" \"Give a Cave to\" is a joke title pattern, expecting a humorous object or action. \"Tell\" or \"The Cave.\"\n\"Tell\" or \"The Cave.\"\n\"Tell God.\"\n\"Tell the Cave Monster.\"\n\"Tell the Cave.\"\n\"Tell a Lie.\"\n\"Tell a Joke.\"\n\"Tell the Truth.\""
+ },
+ {
+  "sample_idx": 35,
+  "row": 22,
+  "gold": "Sheila",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Sheila and Alice were working at the theater. Alice decided to give a cantaloupe to\nA:",
+  "explanation": "Structured list format: each entry follows \"Title - [Name]\" pattern, with humorous/absurdist comedy quotes from a theater-themed game or website.\n\nNarrative momentum of a joke/punchline: \"The theater is a place of tragedy. Give\" sets up a comedic scenario involving a theater character or prop.\n\nFinal token \"Give\" is a verb beginning a sentence or instruction, immediately expecting a noun phrase like \"the actor\" or \"Bob\" or a character name completing the comedic interaction. \"Give the rose to\" or \"Give the actor a chance.\"\n\"Give the rose to\" or \"Give the actor a chance.\"\n\"Give the rose to the audience.\"\n\"Give the rose to\" or \"Bob.\"\n\"Give the rose to the theater.\"\n\"Give the rose to the audience.\""
+ },
+ {
+  "sample_idx": 36,
+  "row": 131,
+  "gold": "Evelyn",
+  "s": "Rachel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Rachel and Evelyn had a lot of fun at the market. Rachel gave a peach to\nA:",
+  "explanation": "List continuation pattern: each entry follows \"Title + [Name] + [Action]\" format, with whimsical children's book illustrations described in brief captions.\n\nNarrative momentum: the \"Little Old Lady\" entry is building toward a complete scene description, with \"She bought a pie from\" strongly implying a transaction or gift exchange.\n\nFinal token \"to\" is a preposition mid-sentence, immediately requiring a noun phrase or proper name (likely \"The Apple Seller\" or \"The Dog\") completing the transaction/gift action. \"She gave a pie to\" needs a recipient. \"The Dog\" or \"The Apple Seller.\"\n\"Give a Pie to\"\n\"The Apple Seller\" or \"The Woman.\"\n\"The Dog.\"\n\"The Woman.\"\n\"A Dollar for a Flower.\"\n\"Give a Pie to\"\n\"The Apple Seller.\""
+ },
+ {
+  "sample_idx": 37,
+  "row": 148,
+  "gold": "Theresa",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Theresa and Irma found a orange at the market. Irma gave it to\nA:",
+  "explanation": "Structured quiz/game format with alternating questions and answers, following a pattern of \"Who would give a cake to [person]?\" with \"Answer: [Name]\" responses.\n\nThe list of questions and answers is mid-sequence, with \"Who would give a cake to a stranger?\" now requiring its answer.\n\nFinal token \"To\" is part of the answer pattern \"Answer: [Name]\" — immediately expects \"Goth\" or \"Goth, The Gift of a Cake\" to complete the response. \"Answer: To\" is a partial answer requiring \"Goth\" to complete. \"The Gift of a Cake.\"\n\"To\" is the answer.\n\"Answer: To\" expects \"Goth\" or \"The Gift of a Cake.\"\n\"Answer: To\"\n\"Answer: To\"\n\"Answer: To\"\n\"Answer: To\""
+ },
+ {
+  "sample_idx": 38,
+  "row": 11,
+  "gold": "Leona",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Leona and Lula were commuting to the beach, Lula gave a coconut to\nA:",
+  "explanation": "List continuation pattern: each entry follows \"A [Person/Animal] [verb] [object]\" format, with absurdist humor and surreal imagery.\n\nThe \"Give a Banana to\" section signals a structured list of image titles, implying more entries are expected with humorous, nonsensical pairings.\n\nFinal token \"To\" completes \"Give a Banana to a Dog and a Pineapple to,\" immediately requiring a recipient noun phrase like \"A Stranger\" or \"The Whale.\"\n\"A Pineapple to\" is mid-sentence, expecting a named recipient. \"To\" is a preposition requiring a noun phrase. \"The Stranger\" or \"A Stranger.\"\n\"To\" is a preposition requiring a recipient noun phrase. \"A Stranger.\"\n\"To\" is a preposition requiring a recipient noun phrase. \"The Whale.\"\n\"To\" is a preposition requiring a recipient noun phrase."
+ },
+ {
+  "sample_idx": 39,
+  "row": 69,
+  "gold": "Melanie",
+  "s": "Kristina",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Melanie and Kristina went to the park. Kristina gave a peach to\nA:",
+  "explanation": "Structured data table format: pipe-delimited table listing image metadata, now transitioning to a narrative/story section.\n\nPattern of paired image-description entries: \"A girl gives a dog a peach. / A girl gives a peach to a dog.\" suggests continuation of simple declarative sentences.\n\nFinal token \"to\" completes a sentence fragment \"A girl gives a peach to,\" immediately requiring a noun phrase or proper name (e.g., \"A Flower,\" \"Pavel\") to complete the action. \"Give a Peach to\" is a game/activity prompt pattern. \"Peach to\" expects a recipient or action like \"Cat\" or \"One.\"\n\"A Flower.\"\n\"Give a Peach to\" expects \"Pavel\" or \"A Dog.\"\n\"A Dog.\"\n\"A Flower.\"\n\"A Child.\""
+ },
+ {
+  "sample_idx": 40,
+  "row": 142,
+  "gold": "Chelsea",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Chelsea and Eleanor went to the home, Eleanor gave a honeydew to\nA:",
+  "explanation": "Structured list format: each line follows \"Who gave [Name] [item]?\" pattern, establishing a quiz/trivia game context.\n\nNarrative momentum of absurdist British-American humor: whimsical, nonsensical answers to quiz questions about a dog, a rabbit, and a plum tree.\n\nFinal token \"to\" completes the \"Who gave the plum to\" question structure, immediately requiring a proper noun (person's name) like \"Charles\" or \"The Plum Tree\" as the answer. \"Give the plum to\" demands a recipient. \"To\" is a preposition requiring a noun phrase. \"Charles\" or \"The Plum Tree\" or \"Chloe\" follows. \"To\" is the answer. \"To\" is the answer. \"To\" is the answer. \"To\" is the answer.\n\"To\"\n\"Chloe\"\n\"To\"\n\"Charles.\""
+ },
+ {
+  "sample_idx": 42,
+  "row": 77,
+  "gold": "Virginia",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Megan and Virginia went to the forest. Megan gave a blueberry to\nA:",
+  "explanation": "Interactive children's game format: whimsical, absurdist dialogue between a child and forest animals, with playful nonsense responses like \"Squirrel, I am not a squirrel.\"\n\nNarrative momentum of a choose-your-own-adventure game: each line presents a question or action, and the next token is the animal's response or a new interaction.\n\nFinal token \"to\" follows \"Squirrel to,\" completing a dialogue entry, immediately expecting a noun or proper name like \"Rabbit\" or \"The Fox\" or \"A Blueberry.\"\n\"The Fox\" or \"A Blueberry.\"\n\"Squirrel to\" is a dialogue prompt requiring a response. \"The Fox\" or \"A Blueberry.\"\n\"A Squirrel to\" expects \"The Fox\" or \"A Blueberry.\"\n\"Squirrel to\" expects \"A Squirrel to\" or \"A Squirrel to.\""
+ },
+ {
+  "sample_idx": 43,
+  "row": 180,
+  "gold": "Harriet",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Harriet and Megan were working at the museum, Megan gave a kiwi to\nA:",
+  "explanation": "Humorous/absurdist joke list format: each entry is a short, surreal joke or caption, typical of \"Would You Rather\" or \"Caption Contest\" style content.\n\nPattern of escalating absurdity: jokes become increasingly nonsensical, e.g., \"A llama stole a painting from a museum\" and \"The museum is a llama.\"\n\nFinal token \"to\" begins a sentence fragment \"Give the Painting to,\" immediately expecting a noun phrase like \"the Curator\" or \"A Parrot\" completing the joke. \"Give the Painting to\" is a transitive verb construction requiring a recipient. \"Give the Painting to\" — likely \"Otter\" or \"A Visitor.\"\n\"Otter\" or \"The Museum.\"\n\"The Painting to\"\n\"Otter\" or \"A Visitor.\"\n\"The Painting to\"\n\"The Curator.\""
+ },
+ {
+  "sample_idx": 44,
+  "row": 188,
+  "gold": "Loretta",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Loretta and Pauline got a plum at the cafe, Pauline decided to give the plum to\nA:",
+  "explanation": "Structured trivia/quiz format: alternating questions and answers about the film \"The Beverly Hillbillies,\" with each answer following a predictable pattern.\n\nList continuation momentum: the \"Who owns the pie?\" section has been building a series of character-related questions and answers, with \"Gomer\" and \"Cletus\" already answered.\n\nFinal token \"to\" completes a sentence fragment \"The pie belongs to,\" immediately requiring a name (likely \"Gwen\" or \"Gwen and Cletus\") to complete the answer. \"The pie belongs to\" demands a recipient noun phrase. \"Gwen\" or \"Gatha\" follows.\n\"Gatha\" or \"Gatha, the Pie Lady.\"\n\"Give the pie to\" expects \"Gatha\" as the answer.\n\"Give the pie to\" expects \"Gatha.\""
+ },
+ {
+  "sample_idx": 45,
+  "row": 68,
+  "gold": "Sarah",
+  "s": "Maggie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Maggie and Sarah went to the park. Maggie gave a orange to\nA:",
+  "explanation": "Structured data table format: pipe-delimited table listing pairs of \"Person, Action, Object\" for each row, establishing a pattern of simple transactional interactions.\n\nNarrative momentum of the table: rows cycle through Alice, Peanut, and the dog, each row completing a short interaction with a food/gift exchange.\n\nFinal token \"To\" is a preposition mid-row in \"Give a Pear To Peanut, To Alice, To the Dog, To,\" immediately expecting \"Pancake\" or \"The Dog\" to complete the recipient reference. \"To Give a Pear To\" is a repeated pattern. \"To\" likely continues with \"Pancake\" or \"Alice.\"\n\"To Give a Pear To\" expects \"Pancake\" or \"The Dog.\"\n\"To Alice\" or \"To Pancake.\"\n\"To\"\n\"Pancake.\""
+ },
+ {
+  "sample_idx": 46,
+  "row": 170,
+  "gold": "Ella",
+  "s": "Lee",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Lee and Ella were working at the store. Lee decided to give a raspberry to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"A [Name] [verb] [object]\" format, with absurdist/joke content.\n\nContinuation of joke-style entries: \"A Dog Gave a Chocolate Cake to a Cow,\" \"A Cat Gave a Chocolate Cake to a Cow\" — more humorous pairings expected.\n\nFinal token \"to\" completes the \"A Gift to\" phrase, immediately requiring a noun phrase like \"Gertrude\" or \"The Candy Shop Owner\" to complete the joke entry. \"Gave a Chocolate Cake to\" needs a recipient. \"The Candy Shop Owner\" or \"A Dog.\"\n\"The Candy Shop Owner\" or \"Cat.\"\n\"A Gift to\" expects a name or noun. \"Gertrude\" or \"A Chocolate Cake.\"\n\"A Gift to\"\n\"The Dog.\""
+ },
+ {
+  "sample_idx": 47,
+  "row": 51,
+  "gold": "Heidi",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Heidi and Richard were working at the store. Richard decided to give a strawberry to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Name + Verb + Object\" format, with absurdist/surreal humor about Swiss chocolate and a dog.\n\nNarrative momentum of a joke/meme database: entries escalate in absurdity, suggesting the next entry continues this comedic pattern of random actions.\n\nFinal token \"Give\" is a verb in a new entry \"Give Chocolate to a Child. Give,\" immediately expecting a recipient or object like \"Gertrude\" or \"The Chocolate.\"\n\"Give\" is a transitive verb requiring a direct object. \"Give\" likely continues with \"The Chocolate\" or \"Gertrude a Chocolate.\"\n\"Give\" is a command/instruction pattern. \"Give\" expects \"Chloe a Chocolate\" or \"The Woman a Chocolate.\"\n\"Give\"\n\"Give\"\n\"Give\"\n\"Give\"\n\"Give\"\n\"Give\""
+ },
+ {
+  "sample_idx": 48,
+  "row": 116,
+  "gold": "Yolanda",
+  "s": "Jackie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Jackie and Yolanda went to the home, Jackie gave a mango to\nA:",
+  "explanation": "Structured table/list format: pipe-delimited data table listing cast members and episode events, establishing a pattern of \"Name + Episode + Event.\"\n\nNarrative momentum of episode summary: the text has been detailing events in Season 2 Episode 12, building toward completing the full cast list of people who attended the dinner.\n\nFinal token \"to\" is a preposition mid-entry, immediately requiring a person's name (likely \"Theresa\" or \"Chantel\") to complete the \"Gave a piece of food to [person]\" pattern. \"The Dog\" or \"Thomas\" or \"A Friend.\"\n\"A Friend.\"\n\"To\" expects a name like \"Cathy\" or \"Thomas.\"\n\"To\" is a preposition requiring a noun phrase like \"Theresa\" or \"A Friend.\"\n\"A Friend.\""
+ },
+ {
+  "sample_idx": 50,
+  "row": 184,
+  "gold": "Harriet",
+  "s": "Maggie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Harriet and Maggie were working at the cave. Maggie decided to give a pineapple to\nA:",
+  "explanation": "Humorous absurdist joke-list format: each entry is a short, nonsensical title or joke, typical of \"Mad Libs\" or \"I Can Haz Cheezburger\"-style humor.\n\nContinuation of a structured list: \"The following are some of the things that happened to Alice in Wonderland\" promises more entries, and the list is clearly incomplete.\n\nFinal token \"to\" follows \"Give a Cave to,\" completing a joke title pattern, immediately expecting a noun phrase like \"A Dog\" or \"The Cave Monster.\" \"Give a Cave to\" is a joke title requiring a recipient or object. \"The Cave Monster\" or \"Rabbit.\"\n\"Eat a Chocolate Cake to\"\n\"Give a Cave to\"\n\"Eat a Chocolate Cake to\"\n\"A Dog.\"\n\"A Dinosaur.\"\n\"A Dinosaur.\"\n\"A Dinosaur.\""
+ },
+ {
+  "sample_idx": 51,
+  "row": 130,
+  "gold": "Angie",
+  "s": "Agnes",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Agnes and Angie went to the shop. Agnes gave a watermelon to\nA:",
+  "explanation": "Structured list format: each entry follows \"Person/Group + Action + Object\" pattern, establishing a humorous, absurdist tone throughout.\n\nNarrative momentum of the \"Random Acts of Kindness\" section: entries describe people performing generous or strange acts, building toward a punchline or comedic payoff.\n\nFinal token \"to\" completes the \"Give a watermelon to\" phrase, immediately requiring a recipient noun phrase like \"The Woman\" or \"The Grocer\" to complete the transaction. \"The Woman Gave $10 to\" expects \"The Grocer\" or \"The Watermelon.\"\n\"Give a Watermelon to\" — \"The Woman\" or \"The Grocer.\"\n\"The Woman Bought a Watermelon from\" — \"The Grocer.\"\n\"Give the Watermelon to\" — \"The Grocer.\"\n\"The Woman.\""
+ },
+ {
+  "sample_idx": 52,
+  "row": 18,
+  "gold": "Mildred",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Mona and Mildred had a lot of fun at the home. Mona gave a kiwi to\nA:",
+  "explanation": "Humorous absurdist list format: each entry pairs a person/animal with a whimsical action or object, e.g. \"The Cat and the Dog,\" \"The Dog and the Teapot.\"\n\nContinuation of a structured pattern: entries follow \"Name + Verb + Object\" format, with absurdist humor as the comedic core.\n\nFinal token \",\" follows \"The Cat and the Dog,\" mid-entry, immediately expecting another entry or a name/object like \"Gertrude\" or \"Cat.\"\n\"The Cat and the Dog, Gertrude, and a Pink Cake.\"\n\"The Cat and the Dog, Gertrude, and a Pink Cake.\"\n\"The Cat and the Dog, Gertrude, and a Pink Cake.\"\n\"The Cat and the Dog, Gertrude, and a Pink Cake.\"\n\"The Cat and the Dog, Gertrude, and a Pink Cake.\""
+ },
+ {
+  "sample_idx": 53,
+  "row": 196,
+  "gold": "Kathryn",
+  "s": "Faye",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Faye and Kathryn went to the zoo. Faye gave a plum to\nA:",
+  "explanation": "List continuation pattern: each line follows \"The [Animal] and the [Animal]\" structure, with British-style children's book titles or whimsical animal pairings.\n\nNarrative momentum: the list of London Zoo-related items is building, suggesting more entries about animals, people, or objects associated with the zoo.\n\nFinal token \"3. Monkey and the Lioness.\" is a list entry mid-sequence, immediately expecting another animal name or a new entry like \"Cat\" or \"Ape.\"\n\"The Monkey and the Lioness. 4. The Monkey.\"\n\"The Monkey and the Lioness. 4. The Monkey.\"\n\"The Monkey and the Lioness. 4. The Monkey.\"\n\"The Monkey and the Lioness. 4. The Monkey.\"\n\"The Monkey and the Lioness. 4. The Monkey.\""
+ },
+ {
+  "sample_idx": 54,
+  "row": 85,
+  "gold": "Paula",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Estelle and Paula went to the beach, Estelle gave a apple to\nA:",
+  "explanation": "Structured quiz/game format with alternating questions and answers, following a strict pattern of \"Who is the most generous person?\" and \"Paula\" responses.\n\nThe list of answers for \"Who is the most generous person?\" is mid-completion, with \"Paula, Paula, and the Pineapple\" already given, suggesting remaining entries.\n\nFinal token \"to\" is a preposition mid-sentence in \"The Pineapple gave a peach to Paula and to,\" immediately requiring a name or pronoun like \"Paula\" or \"Paula and the Pineapple\" to complete the answer. \"The answer is to\" is likely a typo or error, but \"Paula\" is expected next. \"The answer is to Paula.\"\n\"The answer is to\"\n\"The answer is to Paula.\"\n\"The answer is to Peach.\"\n\"The answer is to Peach.\""
+ },
+ {
+  "sample_idx": 55,
+  "row": 36,
+  "gold": "Loretta",
+  "s": "Velma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Velma and Loretta got a pear at the river, Velma decided to give it to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Name + [verb] + [character name]\" format, completing a joke/trivia game about the movie \"Dolly Parton's Coat of Many Colors.\"\n\nNarrative momentum: the game has been listing character-related jokes and trivia, building toward a complete set of entries about the movie's characters.\n\nFinal token \"to\" is a preposition completing \"The dog gave a hat to [character name],\" immediately requiring a character name like \"Guthrie\" or \"Dolly\" to complete the sentence. \"The dog gave a hat to\" — \"Dolly Parton\" or \"Cletus.\"\n\"Cletus\" or \"Guthrie.\"\n\"Cletus\" or \"Dolly Parton.\"\n\"The dog gave a hat to\" — \"Guthrie.\"\n\"The dog gave a hat to\" — \"Dolly.\""
+ },
+ {
+  "sample_idx": 56,
+  "row": 121,
+  "gold": "Paula",
+  "s": "Robin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Robin and Paula were commuting to the cave, Robin gave a peach to\nA:",
+  "explanation": "Structured data table format: pipe-delimited table listing movie/TV trivia entries, each row containing a character name, movie title, and humorous/absurd joke.\n\nPattern of joke entries: each row pairs a character with a movie title and a comedic, absurdist joke (e.g., \"The Muppet Dinosaur,\" \"The Grinch\").\n\nFinal token \"to\" is a preposition mid-entry, immediately expecting a noun phrase like \"Dog,\" \"A Goat,\" or \"The Grinch\" completing the joke about the Muppet Dinosaur's snack. \"A Rock to\" likely continues with another character or action. \"The Grinch to\"\n\"A Rock to\"\n\"A Dog to\"\n\"A Goat to\"\n\"A Troll to\"\n\"A Troll to\"\n\"A Troll to\"\n\"A Troll to\"\n\"A Troll to\""
+ },
+ {
+  "sample_idx": 57,
+  "row": 96,
+  "gold": "Anita",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Anita and Fannie were working at the museum, Fannie gave a plum to\nA:",
+  "explanation": "Joke/puzzle list format: each entry follows a pattern of a question or scenario, then a punchline answer, typical of a joke book or trivia game.\n\nNarrative momentum of the museum joke: \"The museum director asked\" sets up a dialogue exchange, requiring a response from \"The Dog\" or \"The Dog, a visitor.\"\n\nFinal token \"to\" completes the dialogue setup \"The museum director asked,\" immediately expecting a name or pronoun like \"Betty\" or \"The Painting\" as the object of the question. \"The Dog gave the painting to\" requires a recipient.\n\"The Dog said to\" expects \"Anita\" or \"The Painting.\"\n\"Anita\" or \"The Painting.\"\n\"The painting is not for sale.\"\n\"The Dog said to\"\n\"Anita.\"\n\"The painting is not for sale.\""
+ },
+ {
+  "sample_idx": 58,
+  "row": 42,
+  "gold": "Rosemarie",
+  "s": "Miriam",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Miriam and Rosemarie were commuting to the cave, Miriam gave a honeydew to\nA:",
+  "explanation": "Structured list format: each entry follows \"A [Character Name] [verb phrase]\" pattern, with humorous/absurdist content.\n\nThe list of \"Things That A Cheese-Loving Dwarf Would Give\" is mid-enumeration, with \"A Cheese-Loving Dwarf Gives A Rock to\" strongly implying a recipient or action completion.\n\nFinal token \"to\" is a preposition mid-sentence, immediately requiring a noun phrase or pronoun like \"Chloe\" or \"The Cheese-Loving Dwarf\" as the object of \"Give A Rock to.\"\n\"A Cheese-Loving Dwarf Gives A Rock to\" expects \"Chloe\" or \"The Cheese-Loving Dwarf.\"\n\"A Cheese-Loving Dwarf Offers a Chocolate to\" expects \"Chloe\" or \"The Cheese-Loving Dwarf.\"\n\"A Chocolate to\" expects \"Chloe.\""
+ },
+ {
+  "sample_idx": 59,
+  "row": 13,
+  "gold": "Diana",
+  "s": "Shannon",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Diana and Shannon were working at the theater. Shannon decided to give a watermelon to\nA:",
+  "explanation": "Structured list format: each line follows \"Person Name + Action/Event\" pattern, with humorous or absurdist theater-related jokes.\n\nContinuation of joke entries: the list has been building with comedic theater-related jokes, suggesting another punchline or action is expected.\n\nFinal token \"Give\" is a verb beginning a new joke entry, immediately expecting a recipient or object like \"the Clown\" or \"The Theater.\"\n\"Give\" as a command or action verb requires a direct object or recipient next. \"Give\" is part of \"Give the Clown a Rose\" or \"Give the Theater a Rose.\"\n\"Give\" is a command verb, expecting a noun phrase like \"The Actor\" or \"The Audience.\"\n\"Give\" is a command verb, expecting \"Pete\" or \"The Actor\" or \"A Rose.\""
+ },
+ {
+  "sample_idx": 60,
+  "row": 19,
+  "gold": "Paula",
+  "s": "Kelly",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Kelly and Paula got a strawberry at the lake, Kelly decided to give the strawberry to\nA:",
+  "explanation": "Structured quiz/game format with alternating questions and answers, following a strict pattern of \"Who likes X?\" and \"Paula likes Y\" responses.\n\nThe list of \"Who likes\" questions and \"Paula likes\" answers has been established, with \"Paula likes Dog\" and \"Paula likes Dog and Paula\" as recurring answer patterns.\n\nFinal token \"to\" is a preposition mid-sentence in \"Paula likes to share a pie with Dog and Paula. Who likes the pie? Answer: to Paula,\" immediately expecting \"Paula\" as the answer.\n\"Answer: Give the pie to\" requires \"Paula\" next. \"Give the pie to\" is a typo, but \"Paula\" is the expected completion. \"Give the pie to Paula.\"\n\"Paula\" or \"Paula and Dog.\"\n\"Paula and Dog.\"\n\"Paula.\""
+ },
+ {
+  "sample_idx": 61,
+  "row": 127,
+  "gold": "Diana",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Diana and Estelle were thinking about going to the museum. Estelle wanted to give a grape to\nA:",
+  "explanation": "Humorous children's book/gift catalog format, with absurdist, whimsical titles and descriptions typical of Etsy-style novelty products.\n\nList continuation pattern: each entry follows \"Title + brief absurdist description\" structure, building a collection of joke-book products.\n\nFinal token \"to\" completes \"Give a Banana to,\" a sentence fragment requiring a noun phrase (likely \"the Rabbit\" or \"Proust\") to complete the joke. \"Give a Banana to\" is a call-to-action prompt, expecting a name or object like \"A Dog\" or \"The Louvre.\" \"Give a Banana to\" is a joke setup requiring a punchline. \"Give a Banana to\" — \"The Rabbit\" or \"Proust.\"\n\"Give a Banana to\" — \"The Rabbit.\"\n\"Give a Banana to\" — \"A Dog.\""
+ },
+ {
+  "sample_idx": 62,
+  "row": 41,
+  "gold": "Loretta",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Leigh and Loretta found a blueberry at the cave. Leigh gave it to\nA:",
+  "explanation": "Structured quiz/game format with alternating questions and answers, following a pattern of \"Who gave the [item] to [person]?\" with \"To [Name]\" responses.\n\nThe list of quiz questions and answers is mid-sequence, with \"To\" responses expected for each question about the dog collar, gold ring, and other items.\n\nFinal token \"To\" is the answer-response marker, immediately requiring \"Cleta\" or \"Cleta and Loretta\" to complete the answer to \"Who gave the gold ring to Loretta?\"\n\"To Loretta. To\"\n\"To Cleta. To\"\n\"To Loretta. To\"\n\"To Cleta. To\"\n\"To Loretta. To\"\n\"To Cleta. To\"\n\"To Loretta. To\"\n\"To Cleta.\"\n\"To Loretta.\""
+ },
+ {
+  "sample_idx": 63,
+  "row": 139,
+  "gold": "Brandy",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Brandy and Marsha got a apple at the store, Marsha decided to give the apple to\nA:",
+  "explanation": "Structured data/list format: a table of \"Who Gave What to Whom\" questions and answers, with each row following a predictable pattern of name, item, and recipient.\n\nRepetition/continuation of game-related content: the text cycles through \"Who Gave What to Whom\" questions, answers, and game-related trivia about \"Dolly Parton.\"\n\nFinal token \"to\" completes the \"Give a Chocolate Cake to\" question pattern, immediately expecting \"Dolly Parton\" or \"Bob\" as the recipient name. \"Give a Chocolate Cake to\" requires \"Bob\" or \"The Woman\" next. \"Give a Chocolate Cake to\"\n\"Give a Chocolate Cake to\"\n\"The Woman\" or \"Dolly Parton.\"\n\"Bob\"\n\"The Woman.\"\n\"Give a Chocolate Cake to\"\n\"Dolly Parton.\""
+ },
+ {
+  "sample_idx": 64,
+  "row": 55,
+  "gold": "Sheila",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jody and Sheila were working at the lake. Jody decided to give a papaya to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Title + Author + Story Summary\" format, establishing strong continuation momentum.\n\nThe \"Stories by Children\" section has begun, with \"The Dog and the Banana\" as the first entry, signaling more child-written story titles and summaries are expected.\n\nFinal token \"to\" is a preposition mid-sentence in \"The Dog Gave a Banana to,\" immediately requiring a noun phrase or proper name (e.g., \"Otis,\" \"A Gator,\" or \"The Woman\") completing the action. \"A Florida Island Woman Gave a Banana to\" — likely \"Otis\" or \"A Pelican.\"\n\"The Woman Gave a Banana to\"\n\"Otis\" or \"A Pelican.\"\n\"The Dog Gave a Banana to\"\n\"A Pelican.\"\n\"The Woman Gave a Banana to\"\n\"Otis.\""
+ },
+ {
+  "sample_idx": 65,
+  "row": 144,
+  "gold": "Ginger",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Melissa and Ginger went to the museum, Melissa gave a raspberry to\nA:",
+  "explanation": "Structured list format: each entry follows \"Name + Question/Caption + Answer\" pattern, with humorous absurdist responses to museum-related questions.\n\nContinuation of joke database: the text has been listing joke entries in sequence, building toward a complete set of absurdist museum-related humor.\n\nFinal token \"to\" is a preposition beginning a response clause, immediately expecting a noun phrase or proper name like \"The Dog\" or \"Tate\" completing the joke answer. \"Tate told the museum that she liked the nose of the dead dog more than\"\n\"Tate told the museum that she liked the nose of the dead dog more than\"\n\"The Dog\" or \"Clafoutis.\"\n\"Clafoutis.\"\n\"Clafoutis.\"\n\"Clafoutis.\"\n\"Clafoutis.\""
+ },
+ {
+  "sample_idx": 66,
+  "row": 6,
+  "gold": "David",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Fannie and David were working at the market. Fannie decided to give a raspberry to\nA:",
+  "explanation": "List continuation pattern: each entry follows \"Title by Author\" format, with whimsical children's book titles and brief descriptions of rural/Southern characters.\n\nNarrative momentum of \"The Little Old Woman and the Cow\" story: a sequence of events involving a cow, a little old woman, and a child's purchase of a peach pie.\n\nFinal token \"to\" is a preposition beginning a sentence or action, immediately expecting a noun phrase like \"the boy\" or \"Petunia\" or \"The Peach Pie.\"\n\"The Little Old Woman gave a peach to\"\n\"The Dog\" or \"The Stranger.\"\n\"The Dog gave a dollar to\"\n\"The Stranger.\"\n\"The Stranger bought a peach from\"\n\"The Dog.\"\n\"The Dog gave a dollar to\"\n\"Gertrude.\"\n\"Gertrude.\"\n\"The Dog.\""
+ },
+ {
+  "sample_idx": 68,
+  "row": 28,
+  "gold": "Evelyn",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Marsha and Evelyn went to the park, Marsha gave a honeydew to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Who gave [Name] [item]?\" format, with answers in a table below.\n\nThe table of answers is mid-completion, with \"Who gave the pie to\" row requiring \"Caleb\" as the answer.\n\nFinal token \"to\" is a preposition completing \"Who gave the pie to Caleb. Who gave the pie to,\" immediately expecting \"Gwen\" or \"Caleb\" as the object of the question.\n\"Gwen gave a pie to\" requires \"Caleb\" as the answer. \"The Dog gave a pie to\" requires \"Gwen.\"\n\"The Dog gave a pie to\" requires \"Caleb.\"\n\"The Dog gave a pie to\" requires \"Gwen.\"\n\"The Dog gave a pie to\" requires \"Peach.\""
+ },
+ {
+  "sample_idx": 69,
+  "row": 134,
+  "gold": "Susan",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Suzanne and Susan got a kiwi at the library, Suzanne decided to give the kiwi to\nA:",
+  "explanation": "Structured quiz/game format with alternating questions and answers, following a strict pattern of \"Who gave the book to [person]\" questions with \"Caleb\" as the answer.\n\nThe list of questions and answers is clearly incomplete, with many more entries expected to continue the pattern of \"Who gave the book to [person]\" questions.\n\nFinal token \"to\" completes the question \"Who gave the book to,\" immediately requiring \"Caleb\" or \"Caleb and Susan\" as the answer, likely followed by \"Susan\" or \"Susan and Caleb.\"\n\"Give the book to\" is the answer. \"Give the book to\" is the answer. \"Give the book to\" is the answer. \"Give the book to\" is the answer. \"Give the book to\" is the answer.\n\"Susan.\"\n\"Caleb.\"\n\"Susan.\""
+ },
+ {
+  "sample_idx": 70,
+  "row": 78,
+  "gold": "Anne",
+  "s": "Geneva",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Geneva and Anne got a coconut at the library, Geneva decided to give the coconut to\nA:",
+  "explanation": "Humorous/absurdist web content pattern: each entry is a joke or absurdist statement, often involving animals, books, and random pairings.\n\nList continuation momentum: the \"Give a Book to\" section has been building a series of joke responses, with \"Give a Book to\" followed by a person's name and a humorous outcome.\n\nFinal token \"to\" completes the \"Give a Book to\" prompt, immediately requiring \"Charles\" or \"Philip\" or \"The Chocolate\" as the object of the joke response. \"Give a Book to\" demands a recipient name next. \"I Give the Chocolate to\" expects \"Philip\" or \"Charles.\"\n\"I Give the Chocolate to\"\n\"Give the Chocolate to\"\n\"Philip\" or \"Charles.\"\n\"I Give the Chocolate to\"\n\"Philip.\""
+ },
+ {
+  "sample_idx": 71,
+  "row": 151,
+  "gold": "Heidi",
+  "s": "Kari",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Heidi and Kari went to the mountain. Kari gave a mango to\nA:",
+  "explanation": "Structured list format: each entry follows \"Title, Author, Country, Year\" then a summary of the story's moral/lesson.\n\nNarrative momentum of Heidi story summary: the text has been building toward the story's conclusion, with Heidi's act of kindness toward Peter and the goat.\n\nFinal token \"To\" begins a sentence or action reference, likely completing \"Give the Goat Cheese to [character name]\" or \"To Peter\" or \"To Heidi.\"\n\"Give the Goat Cheese To\" expects a recipient or action like \"Peter\" or \"A Goat.\"\n\"To\" is a preposition requiring a noun phrase. \"To\" is a button/action label in the interactive story format.\n\"To Heidi\" or \"To Switzerland\" or \"To a Goat.\"\n\"To\"\n\"A Goat.\""
+ },
+ {
+  "sample_idx": 72,
+  "row": 10,
+  "gold": "Jessie",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Jessie and Jessica were working at the library, Jessica gave a apple to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Name + Action + Object\" format, with humorous/absurdist library-related jokes.\n\nThe list of \"Who Gave the Book to Whom\" entries is mid-sequence, with \"The Librarian\" and \"The Librarian\" already appearing, suggesting continuation of this pattern.\n\nFinal token \"to\" completes the \"Give a Book to\" phrase, immediately expecting \"Chloe\" or \"The Librarian\" as the object, likely followed by \"The Apple\" or \"Chloe\" to complete the joke. \"Give an Apple to\" requires \"Chloe\" next. \"Give a Book to\" requires \"Chloe.\"\n\"Give an Apple to\" requires \"Chloe.\"\n\"The Librarian\" or \"The Apple.\"\n\"Chloe.\"\n\"Chloe.\"\n\"The Librarian.\"\n\"The Apple.\""
+ },
+ {
+  "sample_idx": 73,
+  "row": 53,
+  "gold": "Alicia",
+  "s": "Kevin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Kevin and Alicia got a kiwi at the shop, Kevin decided to give it to\nA:",
+  "explanation": "Structured data/list format: a table of random facts about \"Alicia and Chloe\" with alternating names, facts, and actions, following a consistent pattern throughout.\n\nRepetition/continuation of game-style interactions: each row presents a question or action, then a response, building toward completing the \"Alicia and Chloe\" relationship narrative.\n\nFinal token \"Give\" is mid-sentence in \"Alicia will Give the Chocolate Cake to Chloe. Give the Chocolate Cake to,\" immediately expecting \"Chloe\" to complete the action, likely \"Alice\" or \"Chloe\" as the object. \"Give the Chocolate Cake to\" requires \"Alice\" or \"Chloe\" next.\n\"Give the Chocolate Cake to\"\n\"Alice\"\n\"Alice\"\n\"Give the Chocolate Cake to\"\n\"Chloe\"\n\"Alice\"\n\"Give the Chocolate Cake to\""
+ },
+ {
+  "sample_idx": 74,
+  "row": 35,
+  "gold": "Leona",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Richard and Leona went to the cafe. Richard gave a blackberry to\nA:",
+  "explanation": "Structured list/table format: pipe-delimited table rows with \"Action,\" \"Person,\" and \"Object\" columns, establishing a pattern of social interactions.\n\nNarrative momentum of a whimsical, absurdist story: a French pastry shop encounter with a stranger, building toward a comedic or surreal conclusion.\n\nFinal token \"Gifted\" is a verb in the \"Action\" column, immediately expecting a noun phrase like \"A Pastry to the Stranger\" or \"One Pastry to the Woman.\"\n\"She gave a Pastry to the Stranger.\"\n\"The Stranger gave\" expects \"A Pastry to the Woman.\"\n\"Thank You.\" or \"Catherine.\"\n\"Gifted\" expects \"Catherine\" or \"A Thank You.\"\n\"A Pastry to the Woman.\"\n\"Thank You.\"\n\"A Pastry.\""
+ },
+ {
+  "sample_idx": 75,
+  "row": 84,
+  "gold": "Diana",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Diana and Irma found a raspberry at the bar. Irma gave it to\nA:",
+  "explanation": "Structured list format: each line follows \"Would [Name] [verb] a [noun]?\" pattern, with humorous/absurdist answers.\n\nThe \"Would You Rather\" game context: alternating questions and answers about cake, food, and social behavior, building toward a punchline or joke.\n\nFinal token \"to\" is part of the answer \"The Cake Is to Share. Answer: [Name]\" — immediately expects a name or answer like \"Daphne\" or \"Daphne and the Cake.\"\n\"Answer: Cake.\"\n\"Answer:\nDaphne.\"\n\"Answer:\n\"\n\"Answer:\n\"\n\"Answer:\n\"\n\"Answer:\n\"\n\"Answer:\n\"\n\"Answer:\n\"\n\"Answer:\n\"\n\"Answer:\n\"\n\"Answer:\n\"\n\"Answer:\n\"\n\"Answer:\n\"\n\"Answer:\n\"\n\"Answer:\n\""
+ },
+ {
+  "sample_idx": 76,
+  "row": 103,
+  "gold": "Rosa",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Rosa and Fannie found a pear at the forest. Fannie gave it to\nA:",
+  "explanation": "Structured Q&A format: alternating questions and answers about generosity, with \"Who is the generous person?\" and \"Who gave the apple?\" establishing a pattern.\n\nList continuation momentum: the \"Who Gave the Apple?\" section has been listing multiple answers, suggesting another answer or summary follows.\n\nFinal token \"to\" completes the answer \"The answer is,\" immediately requiring \"Gena\" or \"Gena and Hannah\" to complete the response, mirroring earlier answer patterns like \"The answer is Generosity.\"\n\"The answer is\" expects \"Gena\" or \"Hannah.\"\n\"The answer is Generosity.\"\n\"The answer is\" expects \"Gena.\"\n\"The answer is\" expects \"Hannah.\"\n\"The answer is Generosity.\"\n\"The answer is\" expects \"Gena.\"\n\"The answer is.\""
+ },
+ {
+  "sample_idx": 78,
+  "row": 164,
+  "gold": "Doris",
+  "s": "Inez",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Doris and Inez were commuting to the cafe, Inez gave a blackberry to\nA:",
+  "explanation": "Structured game/quiz format with alternating questions and answers, following a strict pattern of \"Dorf asks,\" \"Dorf answers,\" \"Dorf gives.\"\n\nThe list of \"Dorf's answers\" is mid-enumeration, with \"Dorf gives a donut to\" completing the pattern of each answer.\n\nFinal token \"to\" is a preposition completing \"Dorf gives a donut to [person name],\" immediately requiring \"Chloe\" or \"Dorf\" as the recipient. \"Dorf gives a donut to\" demands \"Chloe\" next.\n\"Chloe\" or \"The Donut.\"\n\"The Donut.\"\n\"Chloe.\"\n\"Dorf.\"\n\"Dorf.\"\n\"Chloe.\"\n\"The Donut.\"\n\"Dorf.\"\n\"Chloe.\"\n\"The Donut.\"\n\"Dorf.\"\n\"Chloe.\""
+ },
+ {
+  "sample_idx": 79,
+  "row": 34,
+  "gold": "Susan",
+  "s": "Stacey",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Susan and Stacey had a lot of fun at the home. Stacey gave a banana to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Name + action/reaction + object\" format, with children's book-style humor about a rabbit and a dog.\n\nNarrative momentum: the list of humorous interactions is building, with \"Alice\" and \"Dog\" as recurring characters in a playful, absurdist pattern.\n\nFinal token \"to\" is a preposition mid-entry, immediately expecting a noun phrase like \"Cat\" or \"Banana\" to complete the action/reaction structure, e.g. \"Alice gave a Banana to Cat.\"\n\"Cat gave a Banana to\" requires \"Alice\" or \"Rabbit.\"\n\"Alice gave a Banana to\"\n\"Cat gave a Banana to\"\n\"Dog gave a Banana to\"\n\"Rabbit gave a Banana to\"\n\"Alice gave a Banana to\"\n\"Cat.\""
+ },
+ {
+  "sample_idx": 80,
+  "row": 136,
+  "gold": "Janet",
+  "s": "Natasha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Natasha and Janet were working at the cafe, Natasha gave a plum to\nA:",
+  "explanation": "Structured list format: each entry follows \"Person/Group Name + Action + Object\" pattern, typical of absurdist humor database entries.\n\nContinuation of joke entries: the list has been building with increasingly surreal British-style humor, suggesting another joke entry is expected.\n\nFinal token \"to\" completes a sentence fragment \"A Cake Was Given to,\" immediately requiring a recipient noun phrase (e.g., \"Peter,\" \"The Cat,\" or \"A Customer\") to complete the joke entry. \"The Cake Was Given to\" needs a person or entity name next. \"A Customer\" or \"Alice.\"\n\"Alice\" or \"The French Waiter.\"\n\"The French Waiter.\"\n\"Petr\" or \"Petr, the French Waiter.\"\n\"Petr, the French Waiter.\"\n\"A Customer.\""
+ },
+ {
+  "sample_idx": 82,
+  "row": 108,
+  "gold": "David",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Fannie and David were working at the theater. Fannie decided to give a mango to\nA:",
+  "explanation": "Structured trivia/quotes database format: each entry follows \"Character Name + Quote\" pattern, with alternating dialogue and attribution.\n\nNarrative momentum of a theatrical/film database: entries about \"The Color Purple\" characters, quotes, and trivia are listed sequentially, suggesting more structured data ahead.\n\nFinal token \"to\" is a preposition beginning a sentence or instruction, likely completing a theatrical/costume-related action or directing a character, e.g. \"The Clown\" or \"The Theater Manager.\"\n\"Give the costume to\" expects a recipient or action. \"Give the costume to\" is a partial instruction requiring a noun phrase like \"Alice\" or \"The Actress.\"\n\"The clown gives a flower to\" — immediate next token is a person or role name like \"The Actress\" or \"The Audience.\""
+ },
+ {
+  "sample_idx": 83,
+  "row": 167,
+  "gold": "William",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When William and Jody got a watermelon at the theater, Jody decided to give the watermelon to\nA:",
+  "explanation": "List continuation pattern: each entry follows \"Who gave the popcorn to [person]\" format, with humorous/absurdist answers.\n\nThe joke structure of \"Who gave the popcorn to [character]\" demands a punchline or comedic answer completing the joke about the movie theater.\n\nFinal token \"to\" is a preposition completing the joke prompt \"Who gave the popcorn to the movie theater? Answer: to,\" immediately requiring a name or pronoun like \"Bob\" or \"The Clown\" as the recipient. \"Give the popcorn to\" is a joke answer pattern. \"The Clown\" or \"A Stranger.\"\n\"The Clown\" or \"A Stranger.\"\n\"The movie theater owner.\"\n\"A stranger.\"\n\"The audience.\"\n\"The clown.\"\n\"A child.\"\n\"Bob.\"\n\"The audience.\"\n\"A child.\"\n\"The clown.\""
+ },
+ {
+  "sample_idx": 84,
+  "row": 99,
+  "gold": "Leona",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Leona and Fannie were working at the home, Fannie gave a plum to\nA:",
+  "explanation": "Structured data table format: pipe-delimited table listing movie/TV trivia questions and answers, establishing a pattern of \"Question | Answer\" rows.\n\nThe table has been listing multiple entries about \"The Color Purple\" (1985), with answers following each question, suggesting another answer is expected.\n\nFinal token \"to\" is a preposition mid-entry in \"The Color Purple (1985) - Who gave a peach to,\" immediately requiring a noun phrase like \"Celie\" or \"The Dog\" as the recipient. \"The Dog\" or \"Mrs. Hatcher.\"\n\"The Dog\" or \"Mrs. Hatcher.\"\n\"The Dog\" or \"Mrs. Hatcher.\"\n\"The Dog\" or \"The Peach Pie.\"\n\"The Dog\" or \"Alice.\"\n\"Alice.\"\n\"The Peach Pie.\"\n\"Alice.\""
+ },
+ {
+  "sample_idx": 85,
+  "row": 106,
+  "gold": "Virginia",
+  "s": "Sophia",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Virginia and Sophia went to the forest, Sophia gave a orange to\nA:",
+  "explanation": "Structured Q&A format: alternating questions and answers about \"The Dog and the Squirrel\" story, with each answer following a predictable pattern.\n\nList continuation momentum: the \"Who Gave the Apple to\" section has been repeating with \"Dog,\" \"Virginia,\" \"Squirrel,\" and \"Virginia\" as answer options, building toward completion.\n\nFinal token \"to\" is a preposition mid-sentence in \"Who Gave the Apple to Virginia? Dog gave the apple to,\" immediately requiring \"Gaga\" or \"Virginia\" as the answer. \"Dog gave the apple to\" expects \"Gaga\" or \"Virginia\" next.\n\"Dog gave the apple to\"\n\"Gaga\" or \"Virginia.\"\n\"The Dog and the Squirrel.\"\n\"Dog gave the apple to\"\n\"Virginia.\"\n\"Dog gave the apple to\"\n\"Gaga.\""
+ },
+ {
+  "sample_idx": 86,
+  "row": 59,
+  "gold": "Lorraine",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Lorraine and Megan had a lot of fun at the market. Megan gave a papaya to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Name + Action + Object\" format, with humorous/absurdist children's joke content.\n\nNarrative momentum of the joke: \"She bought a papaya from a stranger. She gave it to\" sets up a punchline or comedic payoff about the stranger's reaction or the child's generosity.\n\nFinal token \"to\" is a preposition completing the sentence fragment \"She gave a papaya to,\" immediately requiring a noun phrase like \"The Woman\" or \"Her\" to complete the transaction/gift. \"The Woman\" or \"The Flower\" or \"The Papaya.\"\n\"The Woman\" or \"Chloe\" or \"The Papaya.\"\n\"The Stranger\" or \"Chloe.\"\n\"The Papaya for $1.\"\n\"The Stranger.\"\n\"Chloe.\"\n\"A Flower.\""
+ },
+ {
+  "sample_idx": 87,
+  "row": 122,
+  "gold": "Amanda",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Megan and Amanda went to the river. Megan gave a peach to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Name + Question + Answer\" format, with Alice, Bob, and Charlie as recurring characters in a children's riddle/joke game.\n\nNarrative momentum of the game: the list of questions and answers is building, with \"The Dog and the Frog\" section now transitioning to answer entries.\n\nFinal token \"Give\" is a verb in the answer section, immediately expecting a noun phrase or action like \"A Peach to the Dog\" or \"Peach to the Dog.\"\n\"Alice gave a peach to the Dog.\"\n\"Give Peach to the Dog.\"\n\"Give a peach to the Dog.\"\n\"Give a peach to the Dog.\"\n\"Give a peach to the Dog.\"\n\"Give a peach to the Dog.\"\n\"Give a peach to the Dog.\"\n\"Give a peach to the Dog.\""
+ },
+ {
+  "sample_idx": 88,
+  "row": 72,
+  "gold": "Mark",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Mark and Mona got a pineapple at the library, Mona decided to give it to\nA:",
+  "explanation": "Humorous/absurdist joke list format: each entry is a joke or meme title, following a pattern of \"Give [Name] a Book\" with comedic punchlines.\n\nContinuation of the \"Give a Book to [Person]\" joke structure: \"Give a Book to\" strongly predicts a person's name or a funny response like \"the Librarian\" or \"Bob.\"\n\nFinal token \"Give\" is part of an incomplete joke entry, immediately requiring a recipient or action to complete the comedic response (e.g., \"Gertrude\" or \"A Book\"). \"Give\" is the start of a punchline. \"Give the book to\" or \"Give the book to a dog.\"\n\"Give the book to\" or \"Give Bob a Book.\"\n\"Give the book to\" or \"Give a Book to.\""
+ },
+ {
+  "sample_idx": 89,
+  "row": 49,
+  "gold": "Jerry",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Jerry and Mona went to the library. Mona gave a pineapple to\nA:",
+  "explanation": "Structured list format: each entry follows \"Title + Character Name + Dialogue\" pattern, establishing library-themed joke/meme content.\n\nNarrative momentum of joke: \"The Librarian\" entry is building toward a punchline about library books, likely involving a humorous misunderstanding or joke about Dewey Decimal or book titles.\n\nFinal token \"Tell\" is a dialogue verb, immediately expecting a character name or action like \"the Librarian\" or \"Clara the Book.\"\n\"Tell\" is part of the joke structure, likely completing a response or action. \"Tell\" expects \"Clara the Book\" or \"The Librarian\" next.\n\"Tell\" is a dialogue verb requiring a direct object or action. \"Tell Clara the Book\" or \"The Librarian\" is expected.\n\"Tell\"\n\"The Librarian\"\n\"A Book.\""
+ },
+ {
+  "sample_idx": 90,
+  "row": 97,
+  "gold": "Carmen",
+  "s": "Pat",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Carmen and Pat had a lot of fun at the theater. Pat gave a mango to\nA:",
+  "explanation": "Structured table/list format: alternating \"Person\" and \"Action\" columns with Spanish-translated theater-related actions, establishing a pattern of Q&A-style data.\n\nNarrative momentum of the play-by-play: the text describes a child's reaction to a performance, building toward a resolution or reward for the child's enthusiasm.\n\nFinal token \"Give\" is a verb in the \"Action\" column, immediately expecting \"Platanito\" or \"The Flower\" to complete the action, likely \"Platanito a Flower\" or \"Platanito a Chocolate.\"\n\"Give the Flower to the Child.\"\n\"Give\" is the action, \"Platanito\" or \"The Flower\" is the object. \"Platanito\" or \"Platanito a Flower.\"\n\"Platanito\" or \"The Flower.\""
+ },
+ {
+  "sample_idx": 91,
+  "row": 44,
+  "gold": "Carmen",
+  "s": "Kristina",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Carmen and Kristina were thinking about going to the cave. Kristina wanted to give a grape to\nA:",
+  "explanation": "Humorous absurdist list format: each entry is a joke/punchline about a child's whimsical, nonsensical behavior, following a consistent pattern of \"The Child [verb] [absurd object/action].\"\n\nContinuation of the joke list: \"The Child Will Feed a Cave to\" promises a punchline completing the absurd scenario, likely naming a creature or object.\n\nFinal token \"to\" is a preposition mid-sentence, immediately requiring a noun phrase or proper name (e.g., \"The Bat,\" \"A Goat,\" \"The Cave Monster\") completing the joke. \"Feed a Cave to\" needs a recipient. \"The Bat\" or \"A Chocolate.\"\n\"The Child Will Feed a Cave to\"\n\"The Bat\" or \"The Dog.\"\n\"A Spanish-Speaking Dog.\"\n\"A Bat.\"\n\"The Cave.\""
+ },
+ {
+  "sample_idx": 92,
+  "row": 182,
+  "gold": "Chelsea",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Melissa and Chelsea went to the lake. Melissa gave a grape to\nA:",
+  "explanation": "Humorous absurdist game format: each line is a question-answer pair with nonsensical, surreal responses (e.g., \"A duck. A duck. A duck. A duck.\").\n\nList continuation momentum: the game has been running through multiple rounds of questions and answers, building toward a punchline or conclusion.\n\nFinal token \"dog.\" follows \"A duck. A dog. A duck. A dog. Did a duck eat a dog?\" — the answer \"Dog\" or \"Chester\" is expected next, likely \"Chester\" or \"The Duck.\"\n\"The Duck.\"\n\"Chester.\"\n\"Duck.\"\n\"The Duck.\"\n\"A Duck.\"\n\"Chester.\"\n\"Duck.\"\n\"The Duck.\"\n\"A Duck.\"\n\"Chester.\"\n\"Duck.\"\n\"The Duck.\"\n\"A Duck.\"\n\"Chester.\""
+ },
+ {
+  "sample_idx": 93,
+  "row": 43,
+  "gold": "Jessie",
+  "s": "Sophia",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Sophia and Jessie were thinking about going to the desert. Sophia wanted to give a banana to\nA:",
+  "explanation": "List continuation pattern: each line is a humorous/absurdist joke about a person, place, or thing, following a \"X and Y\" format with comedic pairings.\n\nThe \"Would You Rather\" game structure: each entry presents a choice between two absurd options, building toward a punchline or funny answer.\n\nFinal token \"a\" is the start of a noun phrase completing \"A Camel and a Dog. A Camel, a Desert, and a [animal]\" — likely \"Camel,\" \"Cat,\" or another animal like \"Chinchilla.\"\n\"A Desert, a Camel, a Dog, and a\"\n\"A Desert, a Camel, a Dog, and a\"\n\"A Chinchilla.\"\n\"A Snake.\"\n\"A Camel.\"\n\"A Flamingo.\"\n\"A Goat.\"\n\"A Cactus.\"\n\"A Monkey.\""
+ },
+ {
+  "sample_idx": 94,
+  "row": 74,
+  "gold": "William",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Pauline and William went to the library. Pauline gave a banana to\nA:",
+  "explanation": "List continuation pattern: each entry follows \"Title + Author + [Action/Event]\" format, with whimsical, literary-themed illustrations described in brief captions.\n\nNarrative momentum of the \"Give\" action sequence: \"Give the Book to\" introduces a recipient or action, consistent with the French-style illustrations of children and books.\n\nFinal token \"Give\" is a verb beginning a caption entry, immediately expecting a noun phrase like \"the Librarian\" or \"Clara\" or \"A Book.\"\n\"Give\" is part of \"Give the Book to Clara. Give\" suggests another action or a new entry like \"Clara a Book.\"\n\"Give\" is a caption label. \"Give\" expects \"Wolfram\" or \"The Librarian\" or \"A Book.\"\n\"Give\"\n\"Wolfram.\"\n\"Give\"\n\"Clara.\""
+ },
+ {
+  "sample_idx": 95,
+  "row": 104,
+  "gold": "Paula",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Estelle and Paula had a lot of fun at the theater. Estelle gave a orange to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Name + Action + Object\" format, with theater-related jokes and puns about \"The Pirates of Penzance.\"\n\nNarrative momentum: the joke-list structure suggests a punchline or humorous outcome is building toward a comedic resolution involving the theater group.\n\nFinal token \"Give\" is a verb in the \"Give a Flower to the Little Girl\" joke, immediately expecting a noun phrase like \"A Flower\" or \"The Clown\" to complete the action. \"Give\" is part of a structured joke list, so \"The Clown\" or \"A Flower\" or \"Puddy\" follows. \"Give a Flower to the Little Girl. Give a Flower to the Clown. Give a Flower to the Audience. Give\"\n\"A Ticket to the Audience.\"\n\"Give\"\n\"A Peach.\""
+ },
+ {
+  "sample_idx": 96,
+  "row": 113,
+  "gold": "Lorraine",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Marsha and Lorraine got a honeydew at the park, Marsha decided to give it to\nA:",
+  "explanation": "Structured quiz/game format with alternating questions and answers, following a pattern of \"Who would give a flower to [person]\" with multiple-choice answers.\n\nThe list of questions and answers is mid-sequence, with \"Who would give a flower to\" repeated as a heading pattern throughout.\n\nFinal token \"to\" completes the question \"Who would give a flower to,\" immediately requiring \"Doris\" or \"Pflaum\" as the answer, likely \"Doris\" or \"The Dog.\"\n\"The Dog\" or \"The Dog, a Chocolate Cake.\"\n\"Give a Chocolate Cake to\"\n\"Give a Chocolate Cake to\"\n\"Give a Chocolate Cake to\"\n\"Give a Chocolate Cake to\"\n\"Give a Chocolate Cake to\"\n\"Give a Chocolate Cake to\"\n\"Doris.\"\n\"Doris.\"\n\"Doris.\""
+ },
+ {
+  "sample_idx": 97,
+  "row": 187,
+  "gold": "Janet",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The home Estelle and Janet went to had a papaya. Estelle gave it to\nA:",
+  "explanation": "Structured data table format: pipe-delimited table listing \"Who Gave What to Whom\" with consistent pattern of person, item, and recipient.\n\nList continuation momentum: the table has been building through multiple entries, each following \"Person gave [item] to [recipient]\" pattern, with \"Alice\" and \"Bob\" as recurring characters.\n\nFinal token \"to\" completes the \"Who Gave a Chocolate Cake to\" table cell, immediately requiring \"Carol\" or \"The Cake\" as the recipient name. \"The Chocolate Cake to\" expects \"Carol\" or \"Alice\" or \"The Cake.\"\n\"The Chocolate Cake to\" is a table-completion pattern. \"The Chocolate Cake to\" expects \"Carol\" or \"Alice.\"\n\"Carol\" or \"The Cake.\"\n\"The Cake to\" expects \"Alice.\"\n\"The Cake to\" expects \"Carol.\""
+ },
+ {
+  "sample_idx": 98,
+  "row": 198,
+  "gold": "Chelsea",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Lula and Chelsea were working at the theater. Lula decided to give a blueberry to\nA:",
+  "explanation": "Humorous, absurdist theater-review format with comedic quotes and jokes about drag, drag queens, and musical theater throughout.\n\nList continuation pattern: \"Drag Race quotes\" section has been building a series of absurdist, funny quotes from the show, each attributed to a character or event.\n\nFinal token \"Give\" is a verb in a game-style instruction (\"Give [character] [item]\"), immediately expecting a character name or pronoun like \"the Dog\" or \"Mimi\" to complete the instruction. \"Give the Dog a Cake.\"\n\"Give\" is part of a structured game prompt. \"Give\" expects a character name or object next. \"Mimi\" or \"The Drag Queen.\"\n\"The Drag Queen a Cake.\"\n\"Give\" expects \"Mimi\" or \"The Drag Queen.\"\n\"The Drag Queen a Cake.\""
+ },
+ {
+  "sample_idx": 99,
+  "row": 100,
+  "gold": "Yolanda",
+  "s": "Faye",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Faye and Yolanda went to the beach. Faye gave a apple to\nA:",
+  "explanation": "Structured data/list format: each line follows a pattern of \"Name + Action + Object,\" establishing a humorous, absurdist database of beach-related interactions.\n\nContinuation of the joke/meme pattern: the text cycles through increasingly absurd pairings of people, actions, and objects, building comedic momentum around \"Did you give a banana to a dog?\"\n\nFinal token \"Gave\" is a verb in a new entry, immediately expecting a noun phrase like \"One\" or \"Apple\" or \"The Beach\" to complete the interaction. \"Sarah Gave\" expects a response like \"You\" or \"A Pineapple.\"\n\"She Gave.\"\n\"Yellow.\"\n\"The Dog.\"\n\"Sand.\"\n\"One.\"\n\"Yellow.\"\n\"The Beach.\"\n\"She Gave.\"\n\"You.\"\n\"A Pineapple.\"\n\"\n\""
+ },
+ {
+  "sample_idx": 100,
+  "row": 102,
+  "gold": "Charlene",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Violet and Charlene were commuting to the cafe, Violet gave a pineapple to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Person A [verb] [object]\" format, completing a humorous/absurdist game of \"Would You Rather\" with random answers.\n\nNarrative momentum: the game has been running through multiple rounds, with each entry pairing a person and a random action/object, building toward a punchline or conclusion.\n\nFinal token \"to\" is a preposition mid-sentence, immediately requiring a noun phrase like \"Charlie\" or \"A Stranger\" to complete the transaction/gift action. \"Give a Flower to\" demands \"Charlie\" as the recipient. \"Give a Flower to\"\n\"The Stranger\" or \"The Stranger, A Peach.\"\n\"The Stranger, A Peach.\"\n\"Give a Peach to\"\n\"Charlie.\"\n\"Give a Peach to\"\n\"Orange.\"\n\"Orange.\""
+ },
+ {
+  "sample_idx": 101,
+  "row": 76,
+  "gold": "Rosemarie",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Rosemarie and Estelle got a grape at the bar, Estelle decided to give the grape to\nA:",
+  "explanation": "Humorous/absurdist joke list format: each entry is a short, surreal joke or caption, typical of \"Caption Contest\" or \"Funny Jokes\" aggregator sites.\n\nPattern of escalating absurdity: jokes become increasingly bizarre, with \"The Dog,\" \"The French,\" and \"The Italian\" as recurring characters in absurdist scenarios.\n\nFinal token \"to\" completes a sentence fragment \"Give the Kiss to,\" immediately requiring a noun phrase or proper name (e.g., \"Paul,\" \"the Chocolate Cake,\" or \"Her\") as the object of the joke. \"Give the Kiss to\" is a caption contest prompt structure. \"The Italian\" or \"A Stranger\" or \"Me.\"\n\"Give the Kiss to\" requires a recipient. \"A Chocolate Cake.\"\n\"The French\" or \"Robert.\"\n\"Her Lips.\""
+ },
+ {
+  "sample_idx": 102,
+  "row": 190,
+  "gold": "Lorraine",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Lorraine and Erika were working at the store, Erika gave a honeydew to\nA:",
+  "explanation": "Structured list format: each entry follows \"Who gave [item] to [person]\" pattern, with humorous/absurdist answers.\n\nThe list of joke answers is mid-flow, with \"Who gave a bouquet of flowers to\" strongly implying a punchline or comedic answer about a stranger or employee.\n\nFinal token \"to\" completes the \"Who gave a bouquet of flowers to\" question structure, immediately requiring a name or pronoun like \"Mabel\" or \"The Florist\" as the answer. \"The answer is\" or \"Mabel\" or \"The Stranger\" follows. \"The answer is\" or \"Mabel\" or \"The Stranger.\"\n\"The answer is\" or \"Mr. Blob.\"\n\"Mr. Blob\" or \"The Florist.\"\n\"The answer is\" or \"Mabel.\""
+ },
+ {
+  "sample_idx": 103,
+  "row": 56,
+  "gold": "William",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, William and Melissa had a lot of fun at the theater. Melissa gave a blackberry to\nA:",
+  "explanation": "Interactive joke/game format: each line is a caption or punchline for a theater-related image, following a structured pattern of \"Person: [action/reaction].\"\n\nList continuation momentum: the game has been building a series of theater-related jokes, with \"The audience gives a standing ovation to\" signaling a comedic payoff or reward.\n\nFinal token \"Give\" is a verb in a game instruction, immediately expecting a noun phrase like \"The Clown\" or \"A Piece of Cake\" as the object of the audience's action. \"Give\" is part of \"The audience gives a piece of cake to [actor name].\"\n\"Give\" likely precedes \"Pate\" or \"Paul.\"\n\"Paul\" or \"The Cake.\"\n\"Paul\" or \"A Bow.\"\n\"Paul\" or \"The Clown.\""
+ },
+ {
+  "sample_idx": 105,
+  "row": 66,
+  "gold": "Mattie",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Marsha and Mattie went to the river. Marsha gave a honeydew to\nA:",
+  "explanation": "Humorous children's book illustration list format, with whimsical Southern-style animal characters and absurdist jokes throughout.\n\nPattern of short, punchy joke titles/descriptions following each illustration entry — \"The Cat and the Cow,\" \"The Dog and the Turtle,\" \"The Turtle and the Dog.\"\n\nFinal token \"to\" completes \"Give a Watermelon to,\" a joke title/instruction pattern, immediately expecting a character name or noun phrase like \"Gus\" or \"The River Otter.\" \"Give a Watermelon to\" is a joke prompt requiring a recipient or action. \"The Dog and the Turtle\" or \"The River Otter.\"\n\"A Dog.\"\n\"A Dog.\"\n\"A Dog.\"\n\"A Dog.\"\n\"A Dog.\"\n\"A Dog.\"\n\"A Dog.\"\n\"A Dog.\"\n\"A Dog.\"\n\"A Dog.\"\n\"A Dog.\""
+ },
+ {
+  "sample_idx": 106,
+  "row": 181,
+  "gold": "Jerry",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Estelle and Jerry went to the school. Estelle gave a blackberry to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Name + Verb + Object\" format, with absurdist/surreal humor about school-related actions.\n\nNarrative momentum of a school-themed joke list: entries escalate in absurdity, suggesting the next entry continues this pattern of nonsensical school-related humor.\n\nFinal token \"Give\" is a verb in a new entry \"Give the Chocolate to,\" immediately requiring a recipient name or pronoun (e.g., \"Pamela\" or \"The Class\") to complete the action. \"Give the Chocolate to\" is incomplete, expecting a proper noun like \"Thomas\" or \"Pamela.\"\n\"Pamela gave a chocolate to\"\n\"The teacher gave a chocolate to\"\n\"The student gave a chocolate to\"\n\"Thomas.\"\n\"The class.\"\n\"Pamela.\""
+ },
+ {
+  "sample_idx": 108,
+  "row": 125,
+  "gold": "Rosa",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Suzanne and Rosa went to the bar. Suzanne gave a blackberry to\nA:",
+  "explanation": "Structured list format: each line follows \"Name + Action/Response\" pattern, establishing a game or social experiment context.\n\nNarrative momentum of absurdist/surreal humor: responses escalate in strangeness, with \"Give a Dog a Beer,\" \"Give a Dog a Martini,\" and \"Give a Dog a French Kiss\" building toward a punchline.\n\nFinal token \"a Martini.\" is a noun phrase completing a transaction entry, immediately expecting a response or object like \"One Dollar\" or \"A Rose.\"\n\"Give a Dog a French Kiss. Give a Martini to the Bartender.\"\n\"Give a Dog a French Kiss. Give a Martini to the Bartender.\n\"\n\"A Rose.\" or \"One Dollar.\"\n\"A Rose.\" or \"A Tip.\"\n\"A Rose.\" or \"A Tip.\"\n\"A Tip.\""
+ },
+ {
+  "sample_idx": 109,
+  "row": 15,
+  "gold": "Dianne",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Dianne and Fannie went to the library, Fannie gave a cantaloupe to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Who Is the Biggest Bookworm?\" with a humorous/absurdist answer, establishing a comedic Q&A format throughout.\n\nContinuation of joke answers: the list has been building with increasingly silly responses, suggesting \"The Big Book of Jokes\" is the next logical punchline.\n\nFinal token \"to\" is a preposition mid-sentence, immediately requiring a name or pronoun (likely \"Gertrude\" or \"The Big Book of Jokes\") to complete the answer \"Give a Book to [person].\"\n\"Give a Book to\" expects a recipient like \"Gertrude\" or \"The Big Book of Jokes.\"\n\"The Big Book of Jokes.\"\n\"Give a Book to\"\n\"To\"\n\"Gertrude\"\n\"To\"\n\"The Big Book of Jokes.\"\n\"To\"\n\"Alice.\""
+ },
+ {
+  "sample_idx": 110,
+  "row": 176,
+  "gold": "Dianne",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Dianne and Suzanne got a cherry at the zoo, Suzanne decided to give it to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Who Gave [Name] [Item]\" format, with humorous/absurd answers to trivia questions.\n\nContinuation of the \"Who Gave\" trivia game: the list has been building with increasingly silly answers, suggesting another absurd entry is expected.\n\nFinal token \"to\" completes the \"Give the Chocolate Cake to\" phrase, immediately requiring a recipient name (likely \"Chloe\" or \"The Rabbit\") to complete the sentence. \"Give the Chocolate Cake to\" is a partial instruction requiring \"Chloe\" or \"The Rabbit\" next. \"Give the Chocolate Cake to\"\n\"To Chloe\" or \"To The Rabbit.\"\n\"The Rabbit.\"\n\"To Chloe.\"\n\"To The Rabbit.\"\n\"To Chloe.\"\n\"To The Rabbit.\"\n\"To Chloe.\"\n\"To The Rabbit.\""
+ },
+ {
+  "sample_idx": 112,
+  "row": 150,
+  "gold": "Sheila",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Melissa and Sheila were working at the gym. Melissa decided to give a papaya to\nA:",
+  "explanation": "Structured list format: each entry follows \"Title + 'The Office: [Character] [Action]\" pattern, establishing strong continuation momentum.\n\nThe list of joke titles is mid-flow, with \"Give\" as the next logical entry, likely completing a humorous scenario involving a gym or fitness context.\n\nFinal token \"Give\" is a verb beginning a new joke entry, immediately expecting a noun phrase like \"the Protein Bar to\" or \"Her the Dumbbell.\"\n\"Give the Protein Bar to\" or \"Give the Protein Bar to a Stranger.\"\n\"Give\" likely completes a joke title like \"Give the Protein Bar to a Stranger.\"\n\"Give the Protein Bar to\" or \"Give the Protein Bar to a Coworker.\"\n\"Give\" is the start of a joke title requiring a person or object."
+ },
+ {
+  "sample_idx": 113,
+  "row": 155,
+  "gold": "Mildred",
+  "s": "Sophia",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The mountain Sophia and Mildred went to had a papaya. Sophia gave it to\nA:",
+  "explanation": "Structured data table format: pipe-delimited table listing \"Who Loves Who\" answers, following a pattern of \"Person A loves Person B\" for each row.\n\nList continuation momentum: the table has been building through multiple entries, with \"Chopsticks\" and \"Mabel\" already answered, strongly predicting \"Chester\" as the next entry.\n\nFinal token \"to\" is a preposition completing \"Who Loves Who: To [Name],\" immediately requiring \"Chester\" or \"Mabel\" to complete the answer, likely \"Chester and Goat.\"\n\"To\" is part of the answer pattern \"To [Name] and Goat.\"\n\"To\" expects \"Chester and Goat\" to complete the row. \"To\" is a typo or error, likely \"To\" should be \"Chester and Goat.\""
+ },
+ {
+  "sample_idx": 114,
+  "row": 67,
+  "gold": "Sarah",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Sarah and Alice found a coconut at the park. Alice gave it to\nA:",
+  "explanation": "Structured table/list format: alternating \"Shared\" and \"Not Shared\" rows with humorous social commentary on sharing behavior.\n\nThe pattern of paired responses: each scenario is followed by \"Shared\" or \"Not Shared\" and a witty caption about sharing, establishing a clear template for completion.\n\nFinal token \"Shared/Not Shared/Not Shared/Shared/Not Shared/Shared/Not Shared/Shared/Not Shared/Shared/Not Shared/Shared/Not Shared/Shared/Not Shared/Shared/Not Shared\" is a repetition pattern mid-row, immediately expecting \"Gift\" or \"Generosity\" to complete the table entry. \"Gift\" or \"Generosity\" is the expected completion. \"Not Shared\" or \"Gift\" follows \"Coconut.\"\n\"Shared\" or \"Gift\"\n\"Gift.\"\n\"Generosity.\""
+ },
+ {
+  "sample_idx": 115,
+  "row": 140,
+  "gold": "Stacy",
+  "s": "Agnes",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Agnes and Stacy got a plum at the forest, Agnes decided to give it to\nA:",
+  "explanation": "Structured quiz/game format with alternating questions and answers, establishing a pattern of \"Who gave the food to [person]\" questions with multiple-choice answers.\n\nThe list of food-related questions and answers is building toward a complete set, with \"Who gave the food to\" questions requiring \"Dolly\" or \"Cletus\" as answers.\n\nFinal token \"to\" completes the question \"Who gave the food to,\" immediately requiring \"Cletus\" or \"Dolly\" as the answer, likely \"Cletus\" or \"The Dog.\"\n\"Give the Pie to\" expects \"Dolly\" or \"Cletus.\"\n\"Give the Pie to\" expects \"Cletus.\"\n\"Give the Pie to\" expects \"Dolly.\"\n\"Give the Pie to\" expects \"The Dog.\"\n\"Give the Pie to\" expects \"Cletus.\""
+ },
+ {
+  "sample_idx": 116,
+  "row": 62,
+  "gold": "Susan",
+  "s": "Marilyn",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Susan and Marilyn were thinking about going to the library. Marilyn wanted to give a cantaloupe to\nA:",
+  "explanation": "List continuation pattern: each line is a short, humorous/absurdist joke or riddle, establishing a comedic children's book format throughout.\n\nNarrative momentum of \"The Library Book\" joke: a child is asked \"Who should I give the book to?\" — the answer is expected to complete the joke, likely \"The Library\" or a person's name.\n\nFinal token \"to\" is a preposition completing the question \"Give a book to,\" immediately requiring a noun phrase or proper name like \"Grandma\" or \"The Library.\"\n\"Give a book to\"\n\"The Library\"\n\"Alice\"\n\"A dog\"\n\"The Library\"\n\"Alice\"\n\"The Library\"\n\"Alice\"\n\"A dog\"\n\"Alice\"\n\"The Library\"\n\"Alice\"\n\"The Library.\""
+ },
+ {
+  "sample_idx": 117,
+  "row": 48,
+  "gold": "Doris",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Doris and Mona got a peach at the river, Mona decided to give it to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Doris/Doris and [Name] [verb] [object]\" format, with humorous absurdist content.\n\nGame/quiz context: \"Who Gave the Cake to\" signals a multiple-choice or quiz-style answer, requiring a character name completion.\n\nFinal token \"to\" is a preposition mid-sentence in \"Who Gave the Cake to Doris and Dog? Give the Cake to,\" immediately requiring \"Doris\" or \"Dog\" as the answer. \"Give the Cake to\" is a quiz-style prompt pattern. \"Give the Cake to\" expects \"Doris\" or \"Doris and Dog.\"\n\"Doris\" or \"Dog.\"\n\"Doris\" or \"Doris and Dog.\"\n\"Give the Cake to\"\n\"Doris.\""
+ },
+ {
+  "sample_idx": 118,
+  "row": 32,
+  "gold": "David",
+  "s": "Ethel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Ethel and David were commuting to the river, Ethel gave a grape to\nA:",
+  "explanation": "Humorous absurdist list format: each entry pairs a whimsical question with a nonsensical answer, establishing a pattern of surreal comedy.\n\nThe list of \"Whimsical Questions and Answers\" is mid-flow, with entries like \"A Squirrel and a Dog,\" \"A Pigeon and a Cow,\" \"A Dog and a Duck.\"\n\nFinal token \"to\" follows \"A Sandwich to,\" completing a question-answer pair structure, immediately expecting a proper noun or name (e.g., \"Gertrude\" or \"The Beaver\") as the answer. \"A Sandwich to\" is a prepositional phrase requiring a recipient. \"The Beaver\" or \"A Bird.\"\n\"The answer is: A Sandwich to\"\n\"The answer is: Gertrude.\"\n\"The answer is: A Dog.\"\n\"The answer is: A Pigeon.\"\n\"The answer is: A Cow.\""
+ },
+ {
+  "sample_idx": 119,
+  "row": 24,
+  "gold": "Wilma",
+  "s": "Kristi",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kristi and Wilma were working at the zoo. Kristi decided to give a raspberry to\nA:",
+  "explanation": "Humorous absurdist list format: each entry pairs a person/animal with a ridiculous action or object, e.g. \"A Zebra and a Dog,\" \"A Gorilla and a Banana.\"\n\nPattern of escalating silliness: entries become increasingly absurd, suggesting the next item will be another nonsensical pairing.\n\nFinal token \"A\" is the start of a new list entry, immediately expecting a noun phrase like \"Chimpanzee\" or \"Tiger\" followed by \"A Zoo Director\" or similar animal-related action. \"A Zoo Director and a Gorilla and a Banana.\"\n\"A Zoo Director and a Chimpanzee and a Flamingo.\"\n\"A Zoo Director and a Chimpanzee and a Flamingo.\"\n\"A Zoo Director and a Chimpanzee and a Flamingo.\"\n\"A Zoo Director and a Chimpanzee.\"\n\"A Zebra.\""
+ },
+ {
+  "sample_idx": 120,
+  "row": 117,
+  "gold": "Mattie",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Irma and Mattie found a blueberry at the school. Irma gave it to\nA:",
+  "explanation": "Quiz/game format with multiple-choice answers and humorous responses, following a pattern of \"Who is the most generous person?\" with comedic outcomes.\n\nThe list of quiz questions and answers is building momentum, with each entry following a structured pattern: question, answer, and optional humorous commentary.\n\nFinal token \"Name.\" is a label/header for a new quiz entry, immediately expecting a response or answer like \"Gretchen\" or \"Sharing.\"\n\"The answer is\" or \"That is a generous act.\"\n\"The answer is\" or \"Gretchen.\"\n\"The answer is\" or \"Sharing.\"\n\"The answer is\" or \"The Chocolate Cake.\"\n\"The answer is\" or \"That is a generous act.\"\n\"The answer is\" or \"Gretchen.\"\n\"The answer is\" or \"Sharing.\""
+ },
+ {
+  "sample_idx": 121,
+  "row": 192,
+  "gold": "Leona",
+  "s": "Pat",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Leona and Pat got a plum at the cave, Pat decided to give the plum to\nA:",
+  "explanation": "Structured table/list format: pipe-delimited data table with \"Character Name,\" \"Game,\" and \"Relationship\" columns, establishing a pattern of wiki-style entries.\n\nContinuation of user-generated content: the table lists characters and their relationships, suggesting more entries or a transition to another section of user-submitted content about \"Sonic the Hedgehog.\"\n\nFinal token \"to\" follows \"Give the Sword to,\" a game-related instruction pattern, immediately expecting a character name (e.g., \"Gus,\" \"The Goblin King\") to complete the action. \"Give the Sword to\" is a partial instruction requiring a recipient noun. \"To\" is a preposition requiring a character name like \"Gus\" or \"The Cheshire Cat.\"\n\"To Gherkin and Gherkin.\"\n\"To Gherkin and Gherkin.\""
+ },
+ {
+  "sample_idx": 122,
+  "row": 20,
+  "gold": "Angie",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Angie and Jessica were thinking about going to the cave. Jessica wanted to give a mango to\nA:",
+  "explanation": "Interactive game/quiz format with structured choices: each line presents a question or scenario, followed by multiple-choice options for \"Would You\" responses.\n\nNarrative momentum of a children's story-style game: whimsical, silly, and absurd choices about a cave-dwelling child and a bat-like creature.\n\nFinal token \"Offer\" is a choice option in a \"Would You\" game entry, immediately expecting another option or a noun phrase like \"The Fruit\" or \"The Cave.\"\n\"Offer\" is part of a structured list of options. \"Would You Give the Bat a Cave?\"\n\"Offer\" is a choice option. \"The Bat\" or \"The Cave\" or \"A Snack.\"\n\"Offer\" is a choice option, likely followed by \"The Cave\" or \"It.\"\n\"Offer\"\n\"Eat.\""
+ },
+ {
+  "sample_idx": 123,
+  "row": 105,
+  "gold": "Yolanda",
+  "s": "Stacey",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Yolanda and Stacey went to the zoo. Stacey gave a cantaloupe to\nA:",
+  "explanation": "List continuation pattern: each line is a humorous/absurdist joke title or caption, following a \"Zoo Animal Jokes\" format with playful wordplay.\n\nAlphabetical or sequential ordering: entries progress through A–Z, with \"A Zebra and a Dog,\" \"A Gorilla,\" \"A Monkey,\" \"A Parrot,\" \"A Rhinoceros,\" \"A Tiger.\"\n\nFinal token \"A Gorilla and a\" is mid-entry, part of a joke title, immediately expecting a noun phrase like \"Tiger\" or \"Dog\" to complete the animal pairing. \"A Zoo Keeper Gave a Monkey a Banana.\"\n\"A Parrot\" or \"A Zoo.\"\n\"A Monkey.\"\n\"A Rhinoceros.\"\n\"A Tiger.\"\n\"A Zoo.\"\n\"A Zoo Keeper.\"\n\"A Zoo.\"\n\"A Zoo.\"\n\"A Zoo.\""
+ },
+ {
+  "sample_idx": 124,
+  "row": 120,
+  "gold": "David",
+  "s": "Marilyn",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The market David and Marilyn went to had a pear. Marilyn gave it to\nA:",
+  "explanation": "Structured list format: each line follows \"Person/Group [verb] [object]\" pattern, completing a humorous/absurdist joke database.\n\nNarrative momentum of the joke: a man buys a peach from a farmer, then gives it to someone — the punchline or resolution of this comedic scenario is expected.\n\nFinal token \"to\" is a preposition mid-sentence, immediately requiring a recipient noun phrase like \"Paul\" or \"The Peach\" to complete the transaction/gift action. \"Give The Peach to\" demands \"Paul\" or \"The Peach\" next.\n\"Give The Peach to\" is a structured data entry pattern. \"Give The Peach to\" expects \"Paul\" or \"The Peach.\"\n\"Paul\" or \"The Peach.\"\n\"Give The Peach to\"\n\"Paul\"\n\"The Peach.\""
+ },
+ {
+  "sample_idx": 125,
+  "row": 172,
+  "gold": "Anita",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The desert Mona and Anita went to had a blackberry. Mona gave it to\nA:",
+  "explanation": "Structured Q&A format: alternating questions and answers about \"The Gift of the Magi\" by O. Henry, with consistent \"Who gave the gift to [character]\" pattern.\n\nList continuation momentum: the table of contents promises 10 questions; only 7 have been answered, so more structured entries are expected.\n\nFinal token \"to\" completes the answer phrase \"Who gave the gift to,\" immediately requiring \"Anita\" or \"Anita and Deborah\" to complete the response, mirroring prior answer patterns like \"Anita and Deborah gave the gift to Deborah.\"\n\"Anita gave the gift to Deborah.\"\n\"Deborah gave the gift to Anita.\"\n\"Anita gave the gift to Deborah.\"\n\"Deborah gave the gift to Anita.\"\n\"Anita gave the gift to Deborah.\"\n\"Deborah gave the gift to Anita.\"\n\"Anita gave the gift to.\""
+ },
+ {
+  "sample_idx": 126,
+  "row": 137,
+  "gold": "Sheila",
+  "s": "Rebecca",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Sheila and Rebecca went to the zoo. Rebecca gave a pineapple to\nA:",
+  "explanation": "Humorous British-style joke book format, with absurdist animal-related jokes presented as \"A [Name] [verb] a [animal]\" structure throughout.\n\nList continuation momentum: the book's title promises \"100 Jokes,\" and the text has been building a series of joke titles, each pairing a person/place with an animal.\n\nFinal token \"A Gorilla and a\" is mid-title, part of a joke entry, immediately expecting a noun phrase like \"Monkey\" or \"Giraffe\" to complete the animal pairing. \"A Zoo Visitor Who Gave a Banana to a Gorilla and a\" requires \"A [animal]\" to complete the joke title. \"A Zoo Visitor Who Gave a Banana to a Gorilla and a Chimpanzee.\"\n\"A Chimpanzee.\" or \"Otter.\""
+ },
+ {
+  "sample_idx": 127,
+  "row": 57,
+  "gold": "Harriet",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Jessica and Harriet went to the library. Jessica gave a cherry to\nA:",
+  "explanation": "Structured data table format: pipe-delimited table listing book titles, characters, and actions in a consistent pattern throughout.\n\nNarrative momentum of the children's book summary: the table systematically pairs characters with actions, building toward a complete account of the story's events.\n\nFinal token \"to\" is a preposition completing \"Give the Book to,\" immediately requiring a character name (likely \"Charlotte\" or \"Rabbit\") to complete the action reference. \"Give the Book to\" is a partial phrase demanding \"Charlotte\" or \"The Rabbit\" next. \"Give the Book to\" is a table entry pattern. \"Give the Book to\" expects \"Charlotte\" or \"Rabbit.\"\n\"Give the Book to\"\n\"Give the Hat to\"\n\"Give the Hat to\"\n\"Give the Hat to\"\n\"Give the Hat to\""
+ },
+ {
+  "sample_idx": 128,
+  "row": 9,
+  "gold": "Mattie",
+  "s": "Kristi",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kristi and Mattie had a lot of fun at the beach. Kristi gave a cherry to\nA:",
+  "explanation": "Humorous absurdist children's book format: each entry is a short, nonsensical title or story fragment, typical of \"I Can Read\" or similar early reader series.\n\nList continuation momentum: the text has been presenting a series of absurd titles/stories, building toward a punchline or joke about a dog, a sea turtle, and a beach.\n\nFinal token \"dog.\" follows \"A Gift for a Dog. A Gift for a Dog. A Gift for a\" — immediately expects a noun phrase or action like \"Cat,\" \"Strawberry,\" or \"The Whale.\"\n\"A Gift for a Dog. A Gift for a Dog. A Gift for a\"\n\"A Gift for a Dog. A Gift for a Dog. A Gift for a\"\n\"A Gift for a Dog. A Gift for a Dog. A Gift for a\"\n\"A Gift for a Dog. A Gift for a Dog. A Gift for a\""
+ },
+ {
+  "sample_idx": 129,
+  "row": 168,
+  "gold": "Deanna",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jessica and Deanna went to the museum. Jessica gave a peach to\nA:",
+  "explanation": "Humorous/absurdist joke format: each entry pairs a person's name with a witty, absurdist caption or punchline about art museum behavior.\n\nList continuation momentum: the pattern of short, funny museum-related jokes suggests another entry or punchline is building toward a comedic payoff.\n\nFinal token \"gave\" is a verb in a joke entry \"The Woman Who Gave a Painting to a Stranger. She gave,\" immediately expecting a noun phrase like \"The Painting\" or \"A Piece of Cake.\"\n\"I gave it to her.\" or \"Dolly.\"\n\"Dolly.\"\n\"A Gift.\"\n\"The Museum.\"\n\"The Art.\"\n\"The Stranger.\"\n\"Thank You.\"\n\"A Slice of Cake.\"\n\"The Art.\"\n\"Dolly.\"\n\"Thank You.\"\n\"A Slice of Cake.\""
+ },
+ {
+  "sample_idx": 130,
+  "row": 50,
+  "gold": "Wilma",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Leigh and Wilma got a kiwi at the market, Leigh decided to give it to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Who gave [item] to [person]\" format, with humorous/absurdist pairings of people and objects.\n\nContinuation of joke-style entries: the list has been building toward a punchline or comedic conclusion, with increasingly absurd pairings like \"A rabbit gave a hat to a dog.\"\n\nFinal token \"to\" completes the \"Who gave a rabbit to\" sentence structure, immediately requiring a proper noun (person's name) like \"Martha\" or \"Walter\" to complete the recipient. \"A rabbit gave a rabbit to\" needs \"Martha\" or \"The Wombat.\"\n\"The Wombat\" or \"Charles.\"\n\"A rabbit gave a rabbit to\"\n\"Charles\" or \"The Wombat.\"\n\"A delicious pie to\"\n\"Martha.\""
+ },
+ {
+  "sample_idx": 131,
+  "row": 27,
+  "gold": "Anne",
+  "s": "Kelly",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Kelly and Anne were thinking about going to the home. Kelly wanted to give a cantaloupe to\nA:",
+  "explanation": "Structured list/quiz format: each line presents a scenario, then \"Answer: [Name]\" — pattern established by \"Answer: Martha\" and \"Answer: Martha.\"\n\nNarrative momentum of the quiz: the text cycles through social scenarios involving Martha, pies, and gifts, building toward a complete answer.\n\nFinal token \"Give\" is a verb in a sentence fragment \"Martha should give the pie to,\" immediately requiring a recipient or object noun phrase like \"The Pie\" or \"Martha\" to complete the action. \"Give\" is part of the \"Answer:\" response pattern. \"Give The Pie To\" or \"Give Martha.\"\n\"Give The Pie To\" or \"Give Martha.\"\n\"Give Martha a Pie.\"\n\"Give The Pie To Martha.\"\n\"Give Martha a Pie.\"\n\"Give The Pie.\""
+ },
+ {
+  "sample_idx": 132,
+  "row": 133,
+  "gold": "Nellie",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Estelle and Nellie went to the library. Estelle gave a blackberry to\nA:",
+  "explanation": "Narrative momentum of whimsical children's book illustrations with captions: each entry pairs a drawing with a witty, literary-themed caption, establishing a pattern of \"Alice\" and \"The Library Cat\" as recurring characters.\n\nThematic continuity of literary/bookish humor: captions reference classic literature, authors, and libraries, building toward a punchline or heartwarming conclusion about the cat's love of books.\n\nFinal token \"To\" begins a caption or dialogue entry, likely completing \"To [character name]\" or \"To the Library Cat\" or \"To Gertrude,\" continuing the pattern of short, witty captions. \"To\" is a preposition requiring a noun phrase like \"Gertrude\" or \"The Library Cat.\"\n\"She gave a book to\" expects \"Gertrude\" or \"The Library Cat\" as the object."
+ },
+ {
+  "sample_idx": 133,
+  "row": 162,
+  "gold": "Angie",
+  "s": "Marsha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Angie and Marsha went to the home. Marsha gave a grape to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Name + Verb + Object\" format, with humorous/absurdist pairings like \"Dog Cat,\" \"Cat Dog,\" \"Dog Cat.\"\n\nNarrative momentum of a game/quiz context: the text presents a series of silly answers to a \"Who gave the cat a gift?\" question, building toward a complete set of responses.\n\nFinal token \"to\" is a preposition completing \"The Cat Gave A Gift to,\" immediately expecting a noun phrase like \"Dog\" or \"Gertrude\" or \"The Dog.\"\n\"Gertrude\" or \"The Dog.\"\n\"The Cat Gave A Gift to\"\n\"Cat Gertrude\" or \"Dog.\"\n\"The Dog Ate A Cookie.\"\n\"Gertrude.\"\n\"Cat.\"\n\"Dog.\"\n\"The Dog Ate A Cookie.\"\n\"Gertrude.\"\n\"Cat.\"\n\"Dog.\""
+ },
+ {
+  "sample_idx": 134,
+  "row": 194,
+  "gold": "Kim",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Kim and Irma went to the mountain. Irma gave a mango to\nA:",
+  "explanation": "Structured data table format: pipe-delimited table with \"Who Gave,\" \"What,\" and \"Answer\" columns, establishing a pattern of Q&A pairs about Indonesian/Papua New Guinea cultural practices.\n\nList continuation momentum: the table has presented ~10 rows of questions and answers, strongly suggesting more entries are expected to complete the set.\n\nFinal token \"and\" is a conjunction mid-entry in \"Who Gave a Banana to a Mountain Climber? Answer: The Mountain Climber and,\" immediately expecting \"Piter\" or \"The Mountain Climber\" to complete the answer. \"The Mountain Climber and\" likely continues with \"Offer\" or \"Piter.\"\n\"Offer a Banana to a Mountain Climber.\"\n\"The Gift of a Banana to a Mountain Climber.\"\n\"Piter.\"\n\"Offer.\""
+ },
+ {
+  "sample_idx": 135,
+  "row": 163,
+  "gold": "Sheila",
+  "s": "Pat",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Pat and Sheila went to the cafe. Pat gave a cherry to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Title + Description + Image\" format, with Italian-style whimsical titles and brief narrative descriptions.\n\nNarrative momentum of the \"Dog and the Italian Woman\" story: the dog gives a chocolate to the woman, building toward a resolution or punchline about the dog's generosity.\n\nFinal token \"to\" completes the \"Give a Chocolate to\" instruction, immediately expecting \"Chloe\" or \"The Dog\" or \"A Chocolate\" to complete the action. \"Give a Chocolate to\" is a structured prompt requiring a recipient noun phrase. \"Chloe gave a Chocolate to\" expects \"The Dog\" or \"Chloe.\"\n\"The Dog gave a Chocolate to\" expects \"Chloe.\"\n\"A Chocolate to\" expects \"Chloe.\"\n\"The Dog gave a Chocolate to\" expects \"A Chocolate.\""
+ },
+ {
+  "sample_idx": 136,
+  "row": 161,
+  "gold": "Angie",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Alice and Angie went to the theater. Alice gave a blueberry to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Who Gave Candy to [Person]\" format, with alternating answers and joke punchlines.\n\nThe joke/answer pattern: \"Who Gave Candy to The Dog\" is a joke, \"The Dog gave a ticket to a play to a woman\" is the punchline, establishing a comedic rhythm.\n\nFinal token \"To\" completes the \"Who Gave Candy to\" prompt, immediately requiring \"Dog\" or \"Candy to\" to continue the structured answer pattern. \"To\" is a preposition demanding a noun phrase like \"Peggy\" or \"The Dog.\"\n\"To Candy To Peggy\" or \"To The Dog.\"\n\"Peggy gave a ticket to a play to a woman.\"\n\"To Candy To Peggy.\"\n\"To The Dog.\"\n\"To Candy To Peggy.\"\n\"To The Dog.\""
+ },
+ {
+  "sample_idx": 137,
+  "row": 160,
+  "gold": "Evelyn",
+  "s": "Rebecca",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Rebecca and Evelyn were working at the school, Rebecca gave a orange to\nA:",
+  "explanation": "Structured data table format: pipe-delimited table listing \"Who Gave What to Whom\" with consistent pattern of student names, items, and recipients.\n\nNarrative momentum of a school-related riddle/joke database: each row presents a scenario, and \"The answer to the riddle is\" signals a solution is expected.\n\nFinal token \"to\" completes the \"Gave a Flower to\" phrase, immediately requiring a recipient name (likely \"Caleb\" or \"The Class\") to complete the action. \"The Teacher Gave a Flower to\" expects \"Caleb\" or \"The Class.\"\n\"The Class\" or \"Caleb\" or \"A Chocolate Cake.\"\n\"The Class.\"\n\"The answer to the riddle is: Give a Chocolate Cake to\"\n\"Give the Apple to\"\n\"Caleb.\"\n\"The Teacher.\""
+ },
+ {
+  "sample_idx": 138,
+  "row": 156,
+  "gold": "Juana",
+  "s": "Jackie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Juana and Jackie were working at the store, Jackie gave a kiwi to\nA:",
+  "explanation": "Structured list format: each entry follows \"Name + Action + Object\" pattern, establishing comedic/absurdist humor about a Mexican grocery store.\n\nNarrative momentum of escalating absurdity: the joke builds toward a punchline, with \"The Stranger\" and \"The Old Woman\" as recurring characters in escalating comedic scenarios.\n\nFinal token \"to\" completes \"The Old Woman gave $100 to,\" immediately requiring a recipient noun phrase like \"The Stranger\" or \"The Customer\" to complete the transaction. \"The Stranger gave a cactus to\" expects \"Mr. Pedro\" or \"The Customer.\"\n\"Mr. Pedro gave a cactus to\" expects \"The Stranger\" or \"The Customer.\"\n\"The Stranger gave $100 to\" expects \"Mr. Pedro\" or \"The Customer.\"\n\"The Old Woman gave $100 to\""
+ },
+ {
+  "sample_idx": 139,
+  "row": 115,
+  "gold": "Brian",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Leigh and Brian went to the library, Leigh gave a grape to\nA:",
+  "explanation": "List continuation pattern: each entry follows \"Cat [Name] [verb phrase]\" format, with humorous/absurdist content about cats.\n\nThe \"Cat and Rabbit\" section has ended, and a new section of standalone joke entries has begun, mixing cats, rabbits, and whimsical humor.\n\nFinal token \"to\" is a preposition completing \"The Cat gave a cheese sandwich to [person/animal],\" immediately expecting a name or pronoun like \"Cat\" or \"The Cat.\"\n\"The Cat gave a cheese sandwich to\" — \"Cat\" or \"Gretchen\" or \"The Cat.\"\n\"To\" is a preposition requiring a noun phrase. \"To\" is a response to \"What did the Cat say?\"\n\"To\" is the answer. \"To Cat.\" or \"To Penelope.\""
+ },
+ {
+  "sample_idx": 140,
+  "row": 79,
+  "gold": "Amanda",
+  "s": "Yvette",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Amanda and Yvette went to the cafe. Yvette gave a orange to\nA:",
+  "explanation": "Structured table/list format: alternating \"Person\" and \"Action\" columns with humorous, absurdist scenarios about a woman and a cafe.\n\nNarrative momentum of the game: the woman has been given a slice of cake by a stranger, and the game's pattern demands a response or action completing the transaction.\n\nFinal token \"To\" is a preposition beginning a sentence or action, immediately expecting \"The Woman\" or \"The Woman a Tip\" or \"The Cake\" to complete the action. \"Give\" or \"The Woman a Tip\" or \"The Woman a Slice of Cake.\"\n\"Give\" or \"The Woman a Tip.\"\n\"The Stranger\" or \"The Woman a Tip.\"\n\"The Stranger\" or \"The Woman a Tip.\"\n\"The Stranger\" or \"The Woman a Tip.\"\n\"The Stranger.\""
+ },
+ {
+  "sample_idx": 141,
+  "row": 179,
+  "gold": "Virginia",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Leigh and Virginia went to the river, Leigh gave a pear to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Character Name + [action/description]\" format, systematically cataloguing characters and their actions in the film adaptation.\n\nNarrative momentum of the \"Characters and their actions\" section: the list is building toward completion, with more character-action pairings expected from the novel's plot.\n\nFinal token \"to\" is a preposition mid-entry, \"A Gift to [character name]\" — immediately expects a character name like \"Alice\" or \"The Dog\" to complete the pairing. \"A Gift to\" is a section header pattern, so \"Alice\" or \"Clyde\" or \"The Dog\" follows. \"A Gift to\"\n\"A Gift to\"\n\"A Gift to\"\n\"A Gift to\"\n\"A Gift to\"\n\"A Gift to\"\n\"A Gift to\"\n\"A Gift to\"\n\"A Gift to\"\n\"A Gift to\""
+ },
+ {
+  "sample_idx": 142,
+  "row": 98,
+  "gold": "Angie",
+  "s": "Teresa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Teresa and Angie got a plum at the home, Teresa decided to give the plum to\nA:",
+  "explanation": "Structured data table format: pipe-delimited table listing \"Who Gave What to Whom\" with consistent pattern of name, food, and recipient.\n\nRepetition/continuation of game-related content: each row follows \"Who Gave [food] to [person]\" pattern, with \"Dolly Parton\" and \"Candy\" as recurring characters.\n\nFinal token \"to\" completes the \"Who Gave Pie to\" header, immediately expecting \"Gwen\" or \"Candy\" as the recipient name, continuing the table row \"Give Pie to Candy.\"\n\"Give Pie to\" requires \"Candy\" or \"Dolly Parton\" next. \"Give Pie to\" is mid-row, expecting \"Gwen\" or \"Candy.\"\n\"Give Pie to\"\n\"To\"\n\"Candy\" or \"Dolly Parton.\"\n\"To\"\n\"Candy.\""
+ },
+ {
+  "sample_idx": 143,
+  "row": 174,
+  "gold": "Susan",
+  "s": "Ethel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Susan and Ethel went to the beach. Ethel gave a cantaloupe to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Person/Animal + Action + Object\" format, with absurdist humor (e.g., \"Dog with a hat,\" \"Cat with a hat\").\n\nThe list of image captions is mid-sequence, with \"Beach\" as the current category, implying more beach-related entries are expected.\n\nFinal token \"To\" is a preposition completing \"Give a Seagull a Sandwich To [person/animal],\" immediately expecting a name or pronoun like \"Clara\" or \"Dog.\"\n\"To\" is part of the caption \"A Woman and a Dog on the Beach To Give a Seagull a Sandwich To.\"\n\"To\" expects \"Clara\" or \"Clara, A Woman, A Dog, A Seagull.\"\n\"Clara, A Woman, A Dog, A Seagull.\""
+ },
+ {
+  "sample_idx": 144,
+  "row": 65,
+  "gold": "Brian",
+  "s": "Kelly",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Brian and Kelly went to the market. Kelly gave a raspberry to\nA:",
+  "explanation": "Humorous absurdist joke format: each entry pairs a person/animal with a nonsensical action or dialogue, building a comedic list of surreal interactions.\n\nPattern of short, punchy joke titles followed by brief descriptions — \"The Dog Who Bought a Strawberry\" signals a joke entry, expecting a punchline or action.\n\nFinal token \"Give\" is a verb in a joke title/instruction pattern, immediately expecting a noun phrase like \"The Strawberry\" or \"Woman a Strawberry\" to complete the action. \"The Woman Gave $1.00 to\" or \"The Strawberry.\"\n\"Give\" likely continues with \"Them a Strawberry\" or \"Them a Strawberry.\"\n\"The Woman Bought a Strawberry From That Old Woman.\"\n\"Give\" is a button or action label.\n\"That Old Woman.\"\n\"Give\"\n\"Strawberry.\""
+ },
+ {
+  "sample_idx": 145,
+  "row": 92,
+  "gold": "Virginia",
+  "s": "Miriam",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Miriam and Virginia had a lot of fun at the river. Miriam gave a plum to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Title + Author + 'Alice' + character name + action/description\" format, continuing a whimsical children's book catalog.\n\nNarrative momentum of the \"Alice and the Rabbit\" section: a series of short vignettes about Alice's Southern-themed adventures, each entry building toward a complete story.\n\nFinal token \"for\" is a preposition mid-entry, immediately expecting a noun phrase like \"Rabbit\" or \"Cousin\" or \"The Peach\" to complete the action/description pattern. \"The Peach for\" likely continues with \"Alice\" or \"A Dog.\"\n\"The Peach for\"\n\"Alice gave a peach to\"\n\"Cousin for\"\n\"Rabbit for\"\n\"A Dog for\"\n\"Cousin for\"\n\"Alice for\"\n\"A Dog for\""
+ },
+ {
+  "sample_idx": 146,
+  "row": 158,
+  "gold": "Mildred",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The desert Mildred and Violet went to had a peach. Violet gave it to\nA:",
+  "explanation": "Structured list format: each entry follows \"Character Name + Action/Dialogue + 'This is a joke'\" pattern, establishing comedic absurdist humor.\n\nThe list of \"Desert jokes\" is mid-flow, with many entries already given, suggesting more entries are expected to complete the set.\n\nFinal token \"to,\" follows \"The Desert to,\" completing a joke entry for \"The Desert,\" immediately expecting a character name or noun like \"Mr. Worm\" or \"The Camel\" to complete the joke structure. \"The Camel to\" is likely \"Camel to Gertrude.\"\n\"Gertrude to\" expects \"The Desert\" or \"Mr. Worm.\"\n\"The Desert to\" expects \"Gertrude\" or \"The Desert.\"\n\"The Desert to\" expects \"Cactus.\"\n\"Mr. Worm to\" expects \"Cactus.\"\n\"The Camel to\" expects \"Gertrude.\""
+ },
+ {
+  "sample_idx": 147,
+  "row": 87,
+  "gold": "Brian",
+  "s": "Kristi",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Brian and Kristi were working at the park. Kristi decided to give a raspberry to\nA:",
+  "explanation": "Humorous/absurdist web content pattern: each entry is a joke title or meme-style headline, following a \"Random Internet Quotes\" format with absurdist humor.\n\nList continuation momentum: the page has been presenting joke titles one after another, building a collection of silly, nonsensical entries about animals, food, and random events.\n\nFinal token \"a\" is the start of a new joke title entry \"A Squirrel and a Dog Gave a Carrot to a [noun],\" likely completing with another animal or absurd noun phrase like \"Squirrel\" or \"Cat.\" \"A Squirrel Gave a Carrot to a Dog.\"\n\"A Squirrel Gave a Carrot to a Dog.\"\n\"A Squirrel Gave a Carrot to a Dog.\"\n\"A Squirrel Gave a Carrot to a Dog.\"\n\"A Squirrel Gave a Carrot to a Dog.\"\n\"A Squirrel Gave a Carrot to a Dog.\""
+ },
+ {
+  "sample_idx": 148,
+  "row": 61,
+  "gold": "Paula",
+  "s": "Irma",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Irma and Paula went to the desert. Irma gave a raspberry to\nA:",
+  "explanation": "List continuation pattern: each line follows \"Name + Verb + Object\" format, with absurdist/random pairings like \"A Cactus and a Dog,\" \"A Cactus and a Camel.\"\n\nThe game/quiz context: \"Who Is the Most Absurd?\" signals a structured list of humorous, nonsensical answers to a trivia or joke game.\n\nFinal token \"to\" is a preposition mid-entry, immediately expecting a noun or animal name to complete the pairing, e.g. \"Camel,\" \"A Dog,\" or \"A Cactus.\" \"A Desert and a Camel to a Dog.\"\n\"A Desert and a Camel to\"\n\"A Desert and a Camel to a Dog.\"\n\"A Desert and a Camel to a Dog.\"\n\"A Desert and a Camel to a Dog.\"\n\"A Desert and a Camel to a Dog.\"\n\"A Desert and a Camel to a Dog.\""
+ },
+ {
+  "sample_idx": 149,
+  "row": 154,
+  "gold": "Juana",
+  "s": "Inez",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Inez and Juana were working at the river. Inez decided to give a coconut to\nA:",
+  "explanation": "Structured list format: each entry follows \"Character Name + Action/Event\" pattern, documenting a children's book's plot points.\n\nNarrative momentum: the list of events is building toward a climax, with \"The Witch\" and \"The Dog\" signaling escalating magical/cultural encounters in Mexico.\n\nFinal token \"to\" completes a prepositional phrase beginning \"Give a Banana to,\" immediately requiring a recipient noun phrase like \"The Girl\" or \"The Dog.\"\n\"Give a Banana to\" is mid-entry, expecting \"The Girl\" or \"The Dog\" or \"The Cow.\"\n\"The Cow\" or \"The Cow.\"\n\"The Cow.\"\n\"The Cow.\"\n\"The Cow.\"\n\"The Cow.\"\n\"The Cow.\"\n\"The Cow.\"\n\"The Cow.\"\n\"The Cow.\"\n\"The Cow.\"\n\"The Cow.\"\n\"The Cow.\"\n\"The Cow.\""
+ },
+ {
+  "sample_idx": 150,
+  "row": 12,
+  "gold": "Leona",
+  "s": "Martha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Martha and Leona were working at the shop, Martha gave a cherry to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"A [Person] [verb] [object]\" format, with absurdist/surreal humor throughout.\n\nNarrative momentum of joke-style entries: the text cycles through increasingly bizarre scenarios, building toward a punchline or comedic payoff.\n\nFinal token \"to\" completes a transaction/gift phrase \"The Dog Gave a Cake to,\" immediately requiring a recipient noun phrase like \"The Customer\" or \"Gertrude.\"\n\"The Dog Gave a Cake to\" — \"The Customer\" or \"The Cat\" or \"Gertrude.\"\n\"The Customer\" or \"The Dog.\"\n\"The Dog Gave a Cake to\" — \"The Customer\" or \"Gertrude.\"\n\"The Dog Gave a Cake to\" — \"The Customer\" or \"A Dog.\"\n\"The Dog Gave a Cake to\" — \"Gertrude.\""
+ },
+ {
+  "sample_idx": 151,
+  "row": 145,
+  "gold": "Diana",
+  "s": "Carol",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Carol and Diana were commuting to the beach, Carol gave a watermelon to\nA:",
+  "explanation": "Structured table/list format: alternating question and answer rows, with \"Who Gave the Watermelon to\" as the header pattern.\n\nThe table has established a pattern of \"Who Gave the Watermelon to [Name]\" as the answer to each question, with \"Dona\" and \"Dona and Susan\" as the consistent responses.\n\nFinal token \"to\" completes the answer cell for \"Who Gave the Watermelon to Susan,\" immediately expecting \"Dona\" or \"Susan\" to complete the response. \"Dona and Susan\" or \"Dona.\"\n\"The answer is\" or \"Susan.\"\n\"The answer is\" or \"Dona.\"\n\"The answer is\" or \"Dona.\"\n\"The answer is\" or \"Susan.\"\n\"The answer is\" or \"Dona.\"\n\"The answer is\" or \"None.\""
+ },
+ {
+  "sample_idx": 152,
+  "row": 189,
+  "gold": "Virginia",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The gym Virginia and Lula went to had a cantaloupe. Lula gave it to\nA:",
+  "explanation": "Structured Q&A format: alternating questions and answers about \"Dog and Cat\" movie, with humorous/absurd responses.\n\nList continuation momentum: the \"Who ate the cake?\" section has been building a pattern of Dog, Cat, and Virginia as characters, each with a comedic answer.\n\nFinal token \"To\" is a preposition beginning a response to \"Who ate the cake?\" — immediately expects \"Virginia\" or \"The Dog\" or \"The Dog and Cat\" to complete the answer. \"Give the cake to\" requires a recipient. \"To\" is the start of the answer. \"Give the cake to\" expects \"Clara\" or \"Clara's Dog.\"\n\"To\" is a preposition requiring a noun phrase like \"Clara\" or \"The Dog.\"\n\"Give the cake to\"\n\"To Virginia.\""
+ },
+ {
+  "sample_idx": 153,
+  "row": 110,
+  "gold": "William",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Jody and William got a cherry at the theater, Jody decided to give the cherry to\nA:",
+  "explanation": "Structured Q&A format for a literary study guide, with alternating questions and answers about \"A Worn Path\" and \"To Kill a Mockingbird.\"\n\nThe list of character-related questions and answers is building momentum, with \"Who gave the peach pie to\" signaling a continuation of character-interaction entries.\n\nFinal token \"to\" is a preposition completing \"Who gave the peach pie to [character name],\" immediately requiring a character name or pronoun like \"Celia\" or \"Cly.\"\n\"Celia\" or \"Winnie.\"\n\"The old woman\" or \"Cly.\"\n\"The old woman\" or \"Winnie.\"\n\"The old woman\" or \"Cly.\"\n\"The old woman\" or \"Cly.\"\n\"The old woman\" or \"Cly.\"\n\"The old woman\" or \"Cly.\"\n\"The old woman\" or \"Cly.\""
+ },
+ {
+  "sample_idx": 154,
+  "row": 45,
+  "gold": "Chelsea",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Chelsea and Pauline got a papaya at the store, Pauline decided to give it to\nA:",
+  "explanation": "Quiz/game format with structured multiple-choice answers, following a pattern of \"Who gave the flower to [person]\" questions with \"A. [Name]\" answers.\n\nNarrative momentum of the quiz: each question presents a scenario, and the answer reveals who receives the flower, building toward a complete set of outcomes.\n\nFinal token \"Give\" is a verb in a sentence fragment \"The Mother and Child Should Give the Flower to,\" immediately requiring a recipient name or pronoun like \"Chloe\" or \"Them.\"\n\"Give\" is part of the answer pattern. \"Give the Flower to\" expects \"Chloe\" or \"Them.\"\n\"The Mother and Child Should Give the Flower to\" — next token is \"Chloe\" or \"Them.\"\n\"Give\" is the answer \"Chloe.\"\n\"Give\"\n\"Chloe.\""
+ },
+ {
+  "sample_idx": 155,
+  "row": 95,
+  "gold": "Ginger",
+  "s": "Lula",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Ginger and Lula got a apple at the library, Lula decided to give the apple to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Who Gave [Book Title] to [Character Name]\" format, establishing strong continuation momentum.\n\nNarrative/story context: the text is a children's book quiz/game, with whimsical characters like \"The Old Lady Who Swallowed a Dog\" and \"The Dog Who Swallowed a Hat.\"\n\nFinal token \"to\" completes the \"Who Gave a Hat to\" question structure, immediately requiring a character name (likely \"Gomez\" or \"The Old Lady\") to complete the answer. \"Give a Hat to\" needs a recipient. \"The Old Lady Who Swallowed a Dog\" or \"Tom\" or \"Gomez.\"\n\"Tom\" or \"Tom the Dog.\"\n\"Give a Hat to\" expects \"Tom\" or \"Gomez.\"\n\"The answer is\" or \"Tom.\""
+ },
+ {
+  "sample_idx": 156,
+  "row": 81,
+  "gold": "Jerry",
+  "s": "Teresa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jerry and Teresa were working at the gym. Teresa decided to give a watermelon to\nA:",
+  "explanation": "Structured list format: each entry follows \"Title - [Character Name] [Action]\" pattern, typical of a TV show joke database.\n\nNarrative momentum of jokes: the list continues with humorous, absurdist jokes about \"Friends\" characters, each entry a self-contained gag.\n\nFinal token \"Give\" is a verb beginning a joke entry, immediately expecting a noun phrase or action like \"the gym membership to\" or \"Bob a protein shake.\" \"Give\" as a verb requires a direct object or recipient. \"Give\" is likely followed by \"the gym owner\" or \"a stranger.\"\n\"Jeff gave\" or \"Jeff a heart attack.\"\n\"Give\" is a joke title or action. \"Give\" expects a character name or action like \"the weight to\" or \"Pete a hug.\"\n\"Give\""
+ },
+ {
+  "sample_idx": 157,
+  "row": 86,
+  "gold": "Mark",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Estelle and Mark went to the cafe. Estelle gave a orange to\nA:",
+  "explanation": "Narrative/structural pattern: a series of short, whimsical, absurdist vignettes presented as \"A Day in the Life\" — each entry is a brief, surreal social interaction.\n\nList continuation momentum: the text has presented ~10 vignettes, and \"Give\" signals another entry, likely a transaction or gift exchange between characters.\n\nFinal token \"Give\" is a verb beginning a new vignette entry, immediately expecting a direct object like \"The Pastry\" or \"Her a Pastry\" or \"The Stranger a Pastry.\" \"She gave the Pastry to the Stranger.\"\n\"Give\" likely follows with \"The Pastry\" or \"Her a Pastry.\"\n\"She gave\" or \"The Pastry to the Pastry Shop.\"\n\"Give\" is a command or instruction requiring a recipient or action."
+ },
+ {
+  "sample_idx": 158,
+  "row": 89,
+  "gold": "Evelyn",
+  "s": "Melissa",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Melissa and Evelyn had a lot of fun at the home. Melissa gave a peach to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Alice [verb] [noun]\" format, with whimsical, absurdist children's story logic.\n\nNarrative momentum: the story of Alice and the dog/cat/rabbit/Pudding has built toward a conclusion, with the dog's action of eating the cake as the final event.\n\nFinal token \"to\" is a preposition completing \"Give Cake to,\" immediately expecting \"Cat\" or \"Pudding\" or \"The Cat\" to continue the structured data table pattern. \"Give Cake to\" is a table row entry requiring a corresponding action/object. \"Cat\" or \"The Cat\" or \"Alice\" follows.\n\"Alice Gave Cake to Cat.\"\n\"Alice Gave Cake to Dog.\"\n\"Alice Gave Cake to Pudding.\"\n\"Alice Gave Cake to Cat.\""
+ },
+ {
+  "sample_idx": 159,
+  "row": 129,
+  "gold": "Alicia",
+  "s": "Kristina",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Alicia and Kristina found a coconut at the lake. Kristina gave it to\nA:",
+  "explanation": "Structured table/list format: alternating \"Who Shared\" and \"Shared With\" columns with responses like \"Grateful,\" \"Shared,\" \"Grateful.\"\n\nGame/quiz pattern: each row presents a scenario and a response, building toward completing the \"Sharing is Caring\" game with consistent answers.\n\nFinal token \"Shared With:\" is a table-column label mid-row, immediately expecting \"Celia\" or \"Celia and Golu\" as the answer to \"Sharing is Caring.\"\n\"Celia and Golu Shared With:\" expects \"Golu\" or \"Cooperation.\"\n\"The answer is\" or \"Cooperation.\"\n\"Golu Shared With:\" expects \"Celia.\"\n\"The answer is\" or \"Cooperation.\"\n\"Shared With:\nCelia.\"\n\"The answer is\" or \"Cooperation.\""
+ },
+ {
+  "sample_idx": 160,
+  "row": 114,
+  "gold": "Kathryn",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Richard and Kathryn got a raspberry at the museum, Richard decided to give it to\nA:",
+  "explanation": "Humorous absurdist joke format: each entry is a short, surreal, nonsensical joke or caption, often involving animals, art, and British-American cultural references.\n\nList continuation momentum: the text presents a structured series of joke entries, each on a new line, suggesting another joke entry is expected.\n\nFinal token \"to\" begins a sentence fragment \"Give the Painting to,\" immediately requiring a name or noun phrase like \"Gertrude\" or \"The Dog\" to complete the joke. \"Give the Painting to\" is a joke prompt pattern, expecting a recipient or action. \"Give the Painting to\" — \"The Dog\" or \"Catherine.\"\n\"Catherine\" or \"The Dog.\"\n\"The Dog.\"\n\"The Dog.\"\n\"Catherine.\"\n\"The Dog.\"\n\"The Dog.\"\n\"The Dog.\"\n\"The Dog.\""
+ },
+ {
+  "sample_idx": 161,
+  "row": 26,
+  "gold": "Ginger",
+  "s": "Sophia",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The forest Ginger and Sophia went to had a cantaloupe. Sophia gave it to\nA:",
+  "explanation": "Structured list format: each entry follows \"Name + Question + Answer\" pattern, with whimsical/absurdist children's book content about a rabbit and a badger.\n\nNarrative momentum of the \"Rabbit and the Badger\" game: the list is building toward completing all entries, with \"Who gave the Rabbit the Giant Mushroom?\" as the final question.\n\nFinal token \"to\" completes the answer phrase \"Giant Mushroom to,\" immediately expecting a character name or pronoun like \"The Badger\" or \"The Giant.\"\n\"The Giant to\" is likely a typo or error, suggesting \"The Giant\" or \"Rabbit\" follows. \"The Giant to\"\n\"The Giant to\"\n\"The Giant to\"\n\"The Giant to\"\n\"The Giant to\"\n\"The Giant to\"\n\"Thumper.\"\n\"Thumper.\"\n\"Thumper.\""
+ },
+ {
+  "sample_idx": 162,
+  "row": 107,
+  "gold": "Paula",
+  "s": "Pat",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Pat and Paula got a coconut at the zoo, Pat decided to give it to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Paula [verb] [noun phrase]\" format, with humorous/absurd content about Paula and her pet dog.\n\nContinuation of joke-style quiz answers: \"Who is the dog that Paula gave to\" demands a name or pronoun completion, likely \"Paula\" or \"Panda.\"\n\nFinal token \"to\" is a preposition mid-sentence, immediately requiring a noun phrase or pronoun like \"Paula\" or \"Panda\" to complete the answer. \"Give the Panda to\" needs \"Paula\" to complete the joke. \"Give the Panda to Paula\"\n\"Give the Panda to Paula\"\n\"Give the Panda to Paula\"\n\"Give the Panda to Paula\"\n\"Paula gave the Panda to Paula.\"\n\"Paula gave the Panda to Paula.\"\n\"Paula gave the Panda to Paula.\""
+ },
+ {
+  "sample_idx": 163,
+  "row": 40,
+  "gold": "Kim",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Kim and Erika were working at the library, Erika gave a pear to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Person/Group + Action + Object\" format, with humorous absurdist content about library-related events.\n\nNarrative momentum of joke-list: the text has been building a series of absurd library jokes, each entry escalating in silliness, suggesting another punchline or action.\n\nFinal token \"to\" completes \"Gave a Book to,\" immediately requiring a recipient name or pronoun (e.g., \"Pat\" or \"The Librarian\") to complete the transaction. \"The Librarian Gave a Book to\" needs a recipient. \"The Librarian Gave a Book to\" — \"Pat\" or \"The Dog.\"\n\"The Dog Gave a Book to\" — \"Pat.\"\n\"Pat Gave a Book to\" — \"The Dog.\"\n\"The Dog Gave a Book to\" — \"A Stranger.\"\n\"A Stranger Gave a Book to\" — \"Pat.\""
+ },
+ {
+  "sample_idx": 164,
+  "row": 111,
+  "gold": "Paula",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Jody and Paula got a strawberry at the market, Jody decided to give the strawberry to\nA:",
+  "explanation": "Structured list format: each entry follows \"Character Name + Movie Title + Movie Quote\" pattern, establishing strong continuation momentum.\n\nThe list of movie quotes and character names is clearly incomplete, with many entries already given and more expected to complete the \"100 Movie Quotes\" promise.\n\nFinal token \"to\" is a preposition mid-sentence, \"The dog gave a pie to [person/character name],\" immediately requiring a proper noun like \"Paula\" or \"Pate\" to complete the recipient. \"The dog gave a pie to\" — \"Paula\" or \"Pate\" or \"Cletus.\"\n\"The dog gave a pie to\"\n\"Paula\" or \"Cletus.\"\n\"The dog gave a pie to\"\n\"The dog gave a pie to\"\n\"Paula.\"\n\"The dog gave a pie to\"\n\"Cletus.\""
+ },
+ {
+  "sample_idx": 165,
+  "row": 173,
+  "gold": "Mildred",
+  "s": "Violet",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Violet and Mildred went to the forest, Violet gave a watermelon to\nA:",
+  "explanation": "List continuation pattern: each line follows \"Alice [verb] [noun phrase]\" format, with whimsical absurdist humor about a rabbit/Alice character.\n\nThe \"Alice and the Rabbit\" game/website context signals structured data entries, suggesting more character-interaction lines are expected.\n\nFinal token \"to\" is a preposition mid-entry, immediately requiring a character name or noun phrase (e.g., \"Gus the Badger\" or \"The Bear\") to complete the interaction entry \"Alice gave a mushroom to [character].\" \"The Bear\" or \"Gertrude.\"\n\"Alice gave a mushroom to\" expects a character name like \"Bob the Badger\" or \"Gertrude.\"\n\"Alice gave a mushroom to\"\n\"The Bear.\"\n\"A Very Large Rabbit.\"\n\"A Very Large Mushroom.\"\n\"Gertrude.\""
+ },
+ {
+  "sample_idx": 166,
+  "row": 143,
+  "gold": "David",
+  "s": "Gwen",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, David and Gwen went to the park. Gwen gave a honeydew to\nA:",
+  "explanation": "Humorous absurdist joke format: each line is a punchline-style response to a question, with surreal, nonsensical answers.\n\nList continuation pattern: the joke structure \"Question → Answer\" has been established, with \"Give a melon to a bear\" as the final question requiring a corresponding answer.\n\nFinal token \"to\" completes the imperative phrase \"Give a melon to a bear. Give a melon to,\" immediately expecting a noun phrase like \"Peach\" or \"Peach to the Dog.\"\n\"Peach\" or \"Peach to the Dog.\"\n\"Give\" or \"Peach.\"\n\"Peach.\"\n\"The Dog.\"\n\"Peach.\"\n\"A Dog.\"\n\"Peach.\"\n\"Share.\"\n\"Peach.\"\n\"A Dog.\"\n\"Peach.\"\n\"Share.\"\n\"Peach.\"\n\"A Dog.\"\n\"Peach.\"\n\"Share.\""
+ },
+ {
+  "sample_idx": 167,
+  "row": 71,
+  "gold": "Virginia",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Virginia and Erika went to the museum, Erika gave a blueberry to\nA:",
+  "explanation": "Structured quiz/game format with alternating questions and answers, following a strict pattern of \"Who likes X?\" and \"The Dog\" responses throughout.\n\nThe list of questions and answers is clearly incomplete — \"The Dog\" has not yet answered \"Who likes the painting of a dog in West Virginia?\"\n\nFinal token \"to\" is a preposition mid-sentence, immediately requiring \"Gaga\" or \"The Dog\" as the object completing the answer to \"Who likes the painting of a dog in West Virginia?\"\n\"Give the painting to\" expects \"Gaga\" or \"The Dog\" next. \"Give the painting to\"\n\"Give the painting to\"\n\"Gaga\" or \"The Dog.\"\n\"The Dog.\"\n\"Gaga.\"\n\"The Dog.\"\n\"Gaga.\"\n\"The Dog.\"\n\"Gaga.\""
+ },
+ {
+  "sample_idx": 168,
+  "row": 31,
+  "gold": "Heidi",
+  "s": "Rachel",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Rachel and Heidi went to the bar. Rachel gave a coconut to\nA:",
+  "explanation": "Structured list format: each line is a discrete, humorous, absurdist game-related joke or action, following a pattern of \"Character Name + Action/Instruction.\"\n\nThe list is clearly mid-flow, with many more entries expected, mixing pop culture references, absurdist humor, and game-related actions (e.g., \"Buy a Drink,\" \"Give a Tip\").\n\nFinal token \"Give\" is a verb beginning a new instruction line, immediately expecting a noun phrase or object like \"A Drink to the Bartender\" or \"A Stranger a Shot.\" \"Give\" is a transitive verb requiring a direct object. \"Give a Shot to the Bartender.\"\n\"Buy a Drink.\"\n\"Give a Shot to the Bartender.\"\n\"Give a Palm Tree to a Drag Queen.\"\n\"Give\"\n\"A Palm Tree to a Drag Queen.\""
+ },
+ {
+  "sample_idx": 169,
+  "row": 152,
+  "gold": "Ella",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Ella and Pauline were commuting to the zoo, Pauline gave a pear to\nA:",
+  "explanation": "Structured Q&A format: alternating questions and answers about a fictional animal/person relationship, \"Gopher\" and \"Alice\" as named characters throughout.\n\nList continuation momentum: the \"Who Gave\" section presents a series of questions about gift-giving, each followed by \"Alice Gave\" or \"Gopher Gave\" answers.\n\nFinal token \"to\" completes the \"Alice Gave a Banana to\" phrase, immediately requiring \"The Gorilla\" or \"The Gorilla, Alice\" to complete the answer, mirroring the pattern of \"Alice Gave a Banana to The Gorilla.\"\n\"The Gorilla\" or \"The Gorilla, Alice.\"\n\"Alice Gave a Banana to\"\n\"The Gorilla\"\n\"Alice Gave a Banana to The Gorilla.\"\n\"Alice Gave a Banana to\"\n\"The Gorilla.\"\n\"Alice Gave a Banana to\"\n\"The Gorilla.\""
+ },
+ {
+  "sample_idx": 170,
+  "row": 80,
+  "gold": "Janet",
+  "s": "Megan",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Janet and Megan had a lot of fun at the museum. Megan gave a grape to\nA:",
+  "explanation": "Humorous absurdist joke/list format: each entry is a nonsensical question-answer pair, e.g. \"What did the llama eat?\" followed by a joke answer.\n\nContinuation of the \"What did the llama eat?\" pattern: the list has been building with increasingly absurd answers, suggesting another joke entry.\n\nFinal token \"to\" is a preposition mid-sentence, part of \"The Museum of Modern Art to [animal/person],\" immediately expecting a noun phrase like \"Cat\" or \"A Dog.\"\n\"The Dog Ate a Painting. The Museum of Modern Art to\"\n\"Cat\" or \"That.\"\n\"The Dog Ate a Painting. The Museum of Modern Art to\"\n\"Alice\" or \"A Painting.\"\n\"Alice.\"\n\"A Painting.\"\n\"The Dog.\"\n\"Alice.\"\n\"Cat.\"\n\"A Painting.\""
+ },
+ {
+  "sample_idx": 171,
+  "row": 166,
+  "gold": "Theresa",
+  "s": "Jody",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After Theresa and Jody went to the cafe, Jody gave a coconut to\nA:",
+  "explanation": "Structured quiz/game format with alternating questions and answers, following a strict pattern of \"Who gave X to Y?\" and \"A: [Name]\" responses.\n\nThe list of questions and answers is mid-sequence, with \"Who gave a cake to a German?\" as the final unanswered question requiring completion.\n\nFinal token \"to\" is a preposition completing the answer pattern \"A: [Name] gave a cake to [Person],\" immediately requiring \"Chloe\" or \"The Cake\" to complete the answer. \"A: Chloe gave a cake to\" expects \"The Cake\" or \"Chloe.\"\n\"A: The Cake.\"\n\"A: Dog.\"\n\"A: Dog gave a cake to\" expects \"Chloe.\"\n\"A: Dog gave a cake to\" expects \"Chloe.\"\n\"A: The Cake.\"\n\"A: Dog.\""
+ },
+ {
+  "sample_idx": 172,
+  "row": 141,
+  "gold": "Charlene",
+  "s": "Inez",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Inez and Charlene were thinking about going to the store. Inez wanted to give a pineapple to\nA:",
+  "explanation": "Structured list format: each line follows \"Name + Action + Object\" pattern, establishing a comedic/absurdist game or joke structure.\n\nNarrative momentum of escalating absurdity: actions become increasingly nonsensical (e.g., \"Give a Pineapple to a Dog,\" \"Give a Pineapple to a Stranger\"), building toward a punchline or humorous conclusion.\n\nFinal token \"to\" completes the \"Give\" action phrase, immediately requiring a recipient or object noun phrase like \"Gertrude\" or \"A Flower\" to complete the transaction. \"Give\" is mid-sentence, \"Give a Pineapple to\" demands a person or object next. \"Give\" is followed by \"The Stranger\" or \"A Gift.\"\n\"Give\"\n\"A Gift to\"\n\"Gertrude\" or \"The Cake.\"\n\"Give\"\n\"A Gift to\"\n\"The Cake.\""
+ },
+ {
+  "sample_idx": 174,
+  "row": 52,
+  "gold": "Virginia",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The lake Virginia and Eleanor went to had a apple. Eleanor gave it to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Who gave [item] to [person]\" format, with humorous/absurdist answers to \"Who gave the apple to\" questions.\n\nNarrative momentum of a joke/puzzle game: the answers are nonsensical, building toward a punchline or comedic conclusion about the apple-sharing scenario.\n\nFinal token \"to\" completes the \"Who gave the apple to\" question structure, immediately requiring a name or pronoun like \"Pate\" or \"Her\" to complete the answer. \"Give the apple to\" needs a recipient. \"Pate\" or \"Virginia\" or \"The Apple.\"\n\"Give the apple to\"\n\"The Apple to\"\n\"Give the apple to\"\n\"Pate\" or \"Her.\"\n\"The Apple to\"\n\"Virginia.\"\n\"Give the apple to\"\n\"Pate.\""
+ },
+ {
+  "sample_idx": 175,
+  "row": 47,
+  "gold": "Diana",
+  "s": "Fannie",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Diana and Fannie went to the gym. Fannie gave a apple to\nA:",
+  "explanation": "Structured table/list format: pipe-delimited data table with consistent columns (Name, Action, Object) for each row.\n\nPattern of actions and objects: \"Gave,\" \"Gave,\" \"Shared\" — the table lists actions and their corresponding objects, building toward completing the \"Apple\" entry.\n\nFinal token \"and\" is a conjunction mid-row in \"Gave an Apple to Alice. Shared an Apple with Bob. Gave,\" immediately expecting \"Apple\" or \"Gave\" to complete the action-object pattern. \"Gave\" or \"Gave an Apple\" or \"One Apple.\"\n\"One Apple.\"\n\"Gifted\" or \"Gifted One Apple.\"\n\"Alice\" or \"One Apple.\"\n\"Shared\" or \"One Apple.\"\n\"One Apple.\"\n\"Gifted.\"\n\"One Apple.\""
+ },
+ {
+  "sample_idx": 177,
+  "row": 91,
+  "gold": "Chelsea",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Pauline and Chelsea were working at the lake. Pauline decided to give a strawberry to\nA:",
+  "explanation": "Humorous absurdist joke-list format: each entry is a nonsensical, surreal joke about a duck, following a strict \"Name + Verb + Object\" pattern.\n\nThe list structure demands continuation: \"100 Jokes About Ducks\" promises a finite but large number, and the pattern of escalating absurdity is well-established.\n\nFinal token \"Give\" is a verb in a joke entry \"Give the Duck a Sandwich. Give the Duck to a Dog. Give a Duck to a Swan. Give a Duck to,\" immediately expecting a noun phrase like \"Alice\" or \"The Swan\" or \"One Duck.\"\n\"Give\" is mid-instruction, expecting a recipient or action. \"Give\" likely continues with \"Alice\" or \"Duck.\"\n\"Give a Duck to a Person.\"\n\"Give the Duck a Sandwich.\"\n\"Give\""
+ },
+ {
+  "sample_idx": 178,
+  "row": 101,
+  "gold": "Stella",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: When Stella and Mona got a strawberry at the bar, Mona decided to give it to\nA:",
+  "explanation": "Trivia/quiz format with alternating questions and answers about \"Dogma\" movie quotes, establishing a pattern of user-submitted answers.\n\nThe list of \"Who said this quote?\" questions is ongoing, with answers following a structured pattern of character names and actions.\n\nFinal token \"to\" completes a sentence fragment \"Give a Drag Queen a Drag Queen to [character name],\" immediately expecting a recipient name like \"Paul\" or \"The Drag Queen.\"\n\"Give a Drag Queen a Drag Queen to\" requires a pronoun or name completion. \"Give the Drag Queen a Drag Queen to\" expects \"Paul\" or \"The Drag Queen.\"\n\"Give the Drag Queen a Drag Queen to\"\n\"Paul\" or \"Chloe.\"\n\"Give the Drag Queen a Drag Queen to\"\n\"Chloe.\"\n\"Give the Drag Queen a Drag Queen to\"\n\"The Drag Queen.\""
+ },
+ {
+  "sample_idx": 179,
+  "row": 30,
+  "gold": "Rosa",
+  "s": "Robin",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Robin and Rosa were working at the mountain, Robin gave a blackberry to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Who is [Name]?\" format, with answers about a dog/animal/person named \"Dupa\" and \"Dupa the Dog.\"\n\nGame/quiz context: absurdist, nonsensical answers to trivia questions, suggesting the next answer will be equally surreal or humorous.\n\nFinal token \"to\" completes \"A mountain goat gave a sandwich to,\" immediately requiring a noun phrase like \"Dog\" or \"The Dog\" as the recipient, or \"Dupa\" to continue the pattern. \"A mountain goat gave a sandwich to\" needs a recipient. \"The answer is\" or \"Dupa\" or \"Dog.\"\n\"The answer is\" or \"The Dog.\"\n\"A mountain goat gave a sandwich to\"\n\"The answer is\"\n\"Dupa.\"\n\"A bear.\""
+ },
+ {
+  "sample_idx": 180,
+  "row": 64,
+  "gold": "Carmen",
+  "s": "Jessica",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Jessica and Carmen were thinking about going to the river. Jessica wanted to give a grape to\nA:",
+  "explanation": "Humorous absurdist children's book format: each entry is a short, nonsensical question-answer pair, building a pattern of surreal humor.\n\nList continuation momentum: \"What Would You Like to Name\" section has been listing items (Dog, Cat, Cow, etc.), suggesting more entries are expected.\n\nFinal token \"to\" follows \"Give a Banana to,\" completing a sentence fragment that requires a noun phrase like \"the Duck\" or \"Alice\" as the object of the banana-giving action. \"Give a Banana to\" is a partial sentence requiring a recipient. \"A Dog. A Duck. A Cow. A River. A Cloud. A Squirrel. A Frog. A River. A Cloud. A Squirrel. A Frog.\"\n\"Give a Banana to\" expects a name or animal like \"Pelope.\""
+ },
+ {
+  "sample_idx": 181,
+  "row": 2,
+  "gold": "Ginger",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Ginger and Mona were commuting to the market, Mona gave a blackberry to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"A Stranger Offers [Item] to [Person]\" format, with whimsical absurdist logic.\n\nNarrative momentum: the game/story structure of \"The Stranger\" presents a series of choices, with \"The Stranger\" as the recurring character offering items to strangers.\n\nFinal token \"to\" completes the \"A Stranger Offers a Potato to\" phrase, immediately requiring a recipient name or pronoun like \"The Stranger\" or \"The Potato\" to complete the transaction. \"Gave\" or \"The Stranger\" or \"Potato\" follows.\n\"The Stranger gave the Potato to\" expects \"The Stranger\" or \"The Potato.\"\n\"The Stranger gave the Potato to\" expects \"The Stranger\" or \"The Potato.\"\n\"The Stranger gave the Potato to\" expects \"The Stranger.\"\n\"Give to\""
+ },
+ {
+  "sample_idx": 182,
+  "row": 178,
+  "gold": "Marian",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Suzanne and Marian were thinking about going to the museum. Suzanne wanted to give a watermelon to\nA:",
+  "explanation": "Humorous/absurdist joke list format: each line is a short, surreal joke or riddle, typical of \"Mad Libs\"-style humor.\n\nContinuation of joke entries: the list has been building with punchlines like \"The dog ate the painting\" and \"I'm not sure.\"\n\nFinal token \"to\" follows \"Give the Painting to,\" completing a joke prompt structure, expecting a person's name or noun phrase like \"Alice\" or \"a Cake.\"\n\"Give the Painting to\" is a joke prompt requiring a recipient or action. \"Give the Painting to\" expects a name or object like \"Grandma\" or \"Lunch.\"\n\"Give the Painting to\" is a joke prompt requiring a punchline. \"Give the Painting to\" expects \"Bob\" or \"A Picnic.\"\n\"Give the Painting to\""
+ },
+ {
+  "sample_idx": 183,
+  "row": 109,
+  "gold": "Mattie",
+  "s": "Suzanne",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Suzanne and Mattie had a lot of fun at the park. Suzanne gave a banana to\nA:",
+  "explanation": "List continuation pattern: each line is a whimsical, absurdist children's book title or story prompt, mixing animals, food, and surreal humor (e.g., \"The Dog Who Loved the Moon,\" \"A Pig and a Squirrel\").\n\nAlphabetical/sequential momentum: entries follow a loose alphabetical or thematic pattern, suggesting \"The Cat Who Loved to Eat\" or \"The Dog Who Loved to Eat\" or \"The Squirrel Who Loved to Eat.\"\n\nFinal token \"to\" is a preposition mid-entry, immediately expecting a noun phrase or proper name like \"Alice\" or \"A Dog\" completing the \"A Story About [Name]\" pattern. \"The Dog Who Loved to Eat.\"\n\"A Story About\" requires a noun phrase. \"To\" is a preposition requiring a noun like \"Rabbit.\"\n\"A Story About\""
+ },
+ {
+  "sample_idx": 184,
+  "row": 0,
+  "gold": "Jessie",
+  "s": "Rebecca",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Rebecca and Jessie went to the store. Rebecca gave a peach to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Name + Action + Object\" format, completing a social-emotional learning activity about generosity.\n\nNarrative momentum of the game: the child's actions and choices are being recorded, building toward a conclusion about generosity vs. selfishness.\n\nFinal token \"to\" is a preposition mid-sentence, immediately requiring a noun phrase or pronoun like \"The Apple\" or \"The Woman\" to complete the transaction/gift action. \"Give The Apple to\" expects \"Chloe\" or \"The Apple.\"\n\"Give The Apple to\"\n\"Give The Apple to Chloe\" or \"Give The Apple to The Woman.\"\n\"Buy The Apple from The Woman.\"\n\"Give The Apple to\"\n\"Chloe\" or \"The Woman.\"\n\"Buy The Apple from The Woman.\"\n\"Give The Apple to\"\n\"Chloe.\""
+ },
+ {
+  "sample_idx": 185,
+  "row": 33,
+  "gold": "Nellie",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Nellie and Eleanor were thinking about going to the cafe. Eleanor wanted to give a coconut to\nA:",
+  "explanation": "Interactive children's book format with whimsical, absurdist humor — each page presents a short story or joke, building a pattern of silly, sweet content.\n\nList continuation momentum: \"Give a Gift to\" introduces a structured pattern of gift-giving prompts, suggesting a named recipient or action follows (e.g., \"the Cat,\" \"Mr. Whiskers\").\n\nFinal token \"to\" is a preposition completing \"Give a Gift to the Cat. Give a Cookie to,\" immediately requiring a noun phrase like \"Pat\" or \"The Cat\" as the recipient. \"Give a Cookie to\" is mid-sentence, expecting a character name or action. \"Pat\" or \"The Cat.\"\n\"Pat\" or \"The Cat.\"\n\"The Cat.\"\n\"The Chocolate Cake.\"\n\"Mr. Whiskers.\""
+ },
+ {
+  "sample_idx": 186,
+  "row": 14,
+  "gold": "Jacqueline",
+  "s": "Miriam",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Miriam and Jacqueline were commuting to the bar, Miriam gave a watermelon to\nA:",
+  "explanation": "Humorous absurdist joke format: each entry follows a pattern of a person, action, and absurd punchline (e.g., \"A man gives a dog a car\").\n\nList continuation momentum: the text presents a series of joke titles/descriptions, each entry being a short comedic scenario with a punchline.\n\nFinal token \"to\" completes the \"Give a watermelon to\" phrase, immediately requiring a recipient noun or proper name (e.g., \"A Stranger,\" \"The Driver,\" or \"Bob\") to complete the joke entry. \"A Stranger\" or \"A Stranger. The Stranger gives a bottle of wine to\"\n\"The Stranger\" or \"A Car.\"\n\"The Stranger gives a bottle of wine to\"\n\"A Stranger.\"\n\"The Stranger gives a bottle of wine to\"\n\"A Stranger.\"\n\"A Car.\""
+ },
+ {
+  "sample_idx": 187,
+  "row": 83,
+  "gold": "Lorraine",
+  "s": "Richard",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Lorraine and Richard were working at the desert. Richard decided to give a plum to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Name + Action/Reaction + Object\" format, with absurdist humor about animals and food.\n\nContinuation of joke entries: \"The Desert\" section has begun, with \"The Desert\" as a section header promising more surreal animal-food jokes.\n\nFinal token \"to\" completes \"Give a Cactus to,\" immediately expecting a recipient noun or proper name (e.g., \"Cat,\" \"The Cactus,\" or \"A Woman\") to complete the joke entry. \"Give a Cactus to\" is mid-phrase, requiring a noun phrase like \"Cat\" or \"The Woman.\"\n\"The Woman\" or \"A Chocolate Cake.\"\n\"The Dog.\"\n\"The Dog.\"\n\"A Chocolate Cake.\"\n\"The Dog.\"\n\"Cat.\"\n\"A Chocolate Cake.\"\n\"The Dog.\""
+ },
+ {
+  "sample_idx": 188,
+  "row": 94,
+  "gold": "Melanie",
+  "s": "Estelle",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Estelle and Melanie went to the market. Estelle gave a mango to\nA:",
+  "explanation": "Structured list format: each entry follows \"Title, Medium, Date\" then a brief narrative description of a painting scene.\n\nThe pattern of French-market scenes with American tourists, fruit, and transactions establishes a commercial/cultural context for the next entry.\n\nFinal token \"Give\" is a verb in a transaction/gift scenario, immediately expecting a direct object like \"the Peach\" or \"A Woman a Peach\" to complete the action. \"Give\" is part of \"The Woman Gave a Peach to a Vendor.\"\n\"Give\" likely precedes \"One Peach\" or \"The Woman a Peach.\"\n\"The Woman Gave $10 to the Vendor.\"\n\"Give\" is a button/action label, expecting a noun phrase like \"The Peach\" or \"A Woman.\"\n\"Gave\" or \"Gave the Peach.\""
+ },
+ {
+  "sample_idx": 189,
+  "row": 73,
+  "gold": "Susan",
+  "s": "Erika",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The park Erika and Susan went to had a orange. Erika gave it to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Who gave [item] to [person]\" format, with absurd/nonsensical answers.\n\nThe list of \"Who gave a [noun] to [person]\" questions and answers is clearly auto-generated, mixing real and nonsensical content about a dog, a child, and a bear.\n\nFinal token \"to\" completes the question \"Who gave a Pumpkin to,\" immediately requiring \"Pate\" or \"Pate, Pumpkin, Dog, Child, Bear\" as the answer. \"Who gave a Pumpkin to\" needs \"Pate\" to complete the answer.\n\"The Child gave a Pumpkin to\" expects \"Pate\" or \"The Child.\"\n\"The Child gave a Pumpkin to\" expects \"Pate.\"\n\"The Child gave a Pie to\" expects \"Dog.\"\n\"The Child gave a Pie to\" expects \"Pate.\""
+ },
+ {
+  "sample_idx": 190,
+  "row": 147,
+  "gold": "Wilma",
+  "s": "Yvette",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Wilma and Yvette went to the gym. Yvette gave a blackberry to\nA:",
+  "explanation": "Structured table/list format: alternating \"Who gave what to whom\" headers with humorous, absurdist answers about a dog, banana, and gorilla.\n\nPattern of joke-answer pairs: each row pairs a question with a comedic response, building toward a punchline or absurdist conclusion about the banana-sharing scenario.\n\nFinal token \"to\" completes the \"Who gave a banana to\" header, immediately expecting a name or pronoun like \"Wanda\" or \"The Gorilla\" as the answer. \"Given to\" or \"Wanda\" or \"A Peach.\"\n\"Given to\" or \"The Peach.\"\n\"The Peach.\"\n\"Wanda.\"\n\"A Peach.\"\n\"The Gorilla.\"\n\"A Chocolate Cake.\"\n\"The Dog.\"\n\"The Dog.\"\n\"Wanda.\"\n\"A Chocolate Cake.\"\n\"The Dog.\""
+ },
+ {
+  "sample_idx": 191,
+  "row": 75,
+  "gold": "Jessie",
+  "s": "Grace",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Friends Jessie and Grace found a cherry at the forest. Grace gave it to\nA:",
+  "explanation": "Structured table/list format: alternating \"Share,\" \"Kindness,\" and \"Chopsticks\" entries with definitions, quotes, and image references throughout.\n\nPattern of paired entries: each row pairs a concept with a quote, image, and \"Chopsticks\" — the list is clearly building toward completion.\n\nFinal token \"to,\" follows \"Share to,\" completing a \"Share to [Name]\" pattern, immediately expecting \"Chopsticks\" or \"Kindness\" to continue the structured list. \"Give to Chloe. Kindness. Share to Chloe. Gift to Chloe. Kindness.\"\n\"Gift to Chloe. Kindness.\"\n\"The act of sharing is a gift.\"\n\"Chloe. Gift to Chloe. Kindness.\"\n\"The act of sharing is a gift.\"\n\"Kindness.\"\n\"Chloe.\"\n\"Share.\"\n\"Kindness.\""
+ },
+ {
+  "sample_idx": 192,
+  "row": 175,
+  "gold": "Rosa",
+  "s": "Kari",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Afterwards, Kari and Rosa went to the store. Kari gave a blackberry to\nA:",
+  "explanation": "Structured list pattern: each line follows \"Person Name + Action + Object\" format, establishing a game/quiz context of absurd social interactions.\n\nNarrative momentum: the list of transactions and actions is building toward a conclusion, with \"The Stranger\" as the final entry suggesting a resolution or punchline.\n\nFinal token \"to\" completes \"Gave a peach to,\" immediately requiring a recipient noun phrase like \"The Woman\" or \"The Stranger\" to complete the transaction. \"The Woman Bought a Flower from the Fruit Stand. Gave a peach to\" expects \"The Woman\" or \"The Stranger\" next.\n\"The Stranger Bought a Flower from the Fruit Stand. Gave a peach to\"\n\"The Woman Paid $10 for the Flower.\"\n\"The Stranger Paid $10 for the Peach.\"\n\"The Woman.\""
+ },
+ {
+  "sample_idx": 193,
+  "row": 193,
+  "gold": "Mattie",
+  "s": "Mona",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Mona and Mattie went to the gym. Mona gave a orange to\nA:",
+  "explanation": "Structured list format: each line follows \"Person Name + Action + Object\" pattern, establishing a humorous/absurdist comedy game context.\n\nNarrative momentum of a joke/game: the text presents a series of absurd actions and reactions, building toward a punchline or comedic payoff about gym behavior.\n\nFinal token \"Give\" is a verb in the \"Give [Object]\" pattern, immediately expecting a noun phrase like \"the Apple to the Gym-Goer\" or \"Her the Apple.\"\n\"Give\" is the action verb, \"Give\" expects a direct object. \"Give\" is the action verb, \"Give\" expects a direct object. \"Give\" is the action verb, \"Give\" expects \"Patty\" or \"The Apple.\"\n\"Give\"\n\"Patty a Dumbbell.\"\n\"Give\"\n\"Give\""
+ },
+ {
+  "sample_idx": 194,
+  "row": 82,
+  "gold": "Anne",
+  "s": "Martha",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Anne and Martha were working at the shop, Martha gave a banana to\nA:",
+  "explanation": "Structured list format: each entry follows \"Title - [Name]\" pattern, with absurdist/surreal humor about a Dutch flower shop.\n\nNarrative momentum of joke entries: \"The Flower Shop\" section presents a series of absurdist jokes, each with a punchline involving a customer, a flower, and a transaction.\n\nFinal token \"to\" completes \"The Flower Shop - The Customer Gave a Tulip to,\" immediately expecting a person's name or pronoun like \"Pete\" or \"The Stranger\" to complete the joke structure. \"A Tulip to\" requires a recipient noun phrase. \"The Stranger\" or \"The Customer.\"\n\"The Dog\" or \"Pete.\"\n\"The Customer\" or \"The Stranger.\"\n\"The Dog.\"\n\"Pete.\"\n\"A Tulip to\"\n\"The Customer.\"\n\"The Dog.\""
+ },
+ {
+  "sample_idx": 195,
+  "row": 39,
+  "gold": "Wilma",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: After the lunch, Wilma and Leigh went to the forest. Leigh gave a coconut to\nA:",
+  "explanation": "Structured data table format: pipe-delimited table listing image metadata, with alternating \"Image Name\" and \"Related Keywords\" rows.\n\nRepetition/continuation of keyword list: \"Monkey, Banana, Forest, Animal, Monkey, Banana, Forest, Animal, Monkey, Banana, Forest, Animal\" pattern suggests another keyword entry.\n\nFinal token \"To\" is a preposition mid-entry in \"The Monkey and the Banana To [Name],\" immediately expecting a person or animal name like \"To The Orangutan\" or \"To Alice.\"\n\"To Alice\" or \"To The Orangutan.\"\n\"To Alice\" or \"To The Orangutan.\"\n\"To The Orangutan.\"\n\"To The Monkey.\"\n\"To The Monkey.\"\n\"To The Monkey.\"\n\"To The Monkey.\"\n\"To The Monkey.\"\n\"To The Monkey.\"\n\"To The Monkey.\""
+ },
+ {
+  "sample_idx": 196,
+  "row": 54,
+  "gold": "Jacqueline",
+  "s": "Eleanor",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Eleanor and Jacqueline had a lot of fun at the cave. Eleanor gave a peach to\nA:",
+  "explanation": "List continuation pattern: each line follows \"Who Loves [Name]\" format, with whimsical children's book-style answers to absurd questions.\n\nNarrative momentum: the \"Who Loves\" series has been building, with each entry pairing a question with a playful, nonsensical answer (e.g., \"A dog. A dog. A dog. A dog.\").\n\nFinal token \"to\" is a preposition completing \"Who Loves the Picnic Basket to Alice and the Rabbit and the Dog and the French Rabbit,\" immediately expecting a noun or proper name like \"Charlie\" or \"Panda.\"\n\"Alice and the Rabbit and the Dog and the French Rabbit to\"\n\"Charlie\" or \"A Panda.\"\n\"To\" likely continues with \"Pascale\" or \"A Dog.\"\n\"To\"\n\"Pascale.\""
+ },
+ {
+  "sample_idx": 197,
+  "row": 58,
+  "gold": "Marian",
+  "s": "Leigh",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: Then, Leigh and Marian went to the forest. Leigh gave a strawberry to\nA:",
+  "explanation": "Narrative/storytelling context: whimsical fairy tale prose with poetic, lyrical descriptions of forest creatures and a child's journey, establishing a pattern of short titled vignettes.\n\nList continuation momentum: \"The Rabbit and the Child\" signals a series of titled vignettes, each introducing a new character or scene, suggesting another vignette or transition follows.\n\nFinal token \"for\" is a preposition beginning a sentence or clause, likely introducing a named character or action (e.g., \"For the Hare\" or \"For the Forest\"). \"A basket of bread for\" expects a recipient or action like \"Rabbit\" or \"The Hare.\"\n\"A gift for the forest.\"\n\"The Child.\"\n\"Alice.\"\n\"The Hare.\"\n\"A gift for the forest.\"\n\"Alice.\"\n\"The Hare.\"\n\"The Gift.\"\n\"The Gift.\""
+ },
+ {
+  "sample_idx": 198,
+  "row": 132,
+  "gold": "Amanda",
+  "s": "Alice",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: While Alice and Amanda were working at the desert, Alice gave a grape to\nA:",
+  "explanation": "Structured list pattern: each entry follows \"Who asked [Name] to [verb] a [noun]\" format, with humorous/absurdist answers.\n\nContinuation of joke-answer list: \"A Desert Camel and a Dog\" section has been building a series of absurd questions and answers about desert animals.\n\nFinal token \",\" follows \"A Desert Camel and a Dog, to give a cactus to\" — immediately expects a name or pronoun like \"Abigail\" or \"Bob\" completing the answer pattern. \"A Desert Camel and a Dog, to give a cactus to\"\n\"Abigail, A Dog, A Cactus, A Desert Camel.\"\n\"Bob, A Dog, A Cactus, A Desert Camel.\"\n\"Abigail, A Dog, A Cactus, A Desert Camel.\"\n\"A Desert Camel.\"\n\"A Dog.\""
+ },
+ {
+  "sample_idx": 199,
+  "row": 185,
+  "gold": "Harriet",
+  "s": "Pauline",
+  "prompt": "Answer with a single word only. No punctuation, no explanation.\n\nQ: The bar Pauline and Harriet went to had a peach. Pauline gave it to\nA:",
+  "explanation": "Structured list format: each line follows \"Who said/wrote [quote]\" pattern, establishing a British-themed movie trivia game context.\n\nThe list of quotes and characters is building toward completion, with \"The Chocolate Factory\" and \"The French\" as named characters in a whimsical, absurdist British-style game.\n\nFinal token \"to\" completes a sentence fragment \"The cake belongs to,\" immediately requiring a character name or pronoun (e.g., \"Gertrude\" or \"Oswald\") as the object of ownership. \"The cake belongs to\" demands a noun phrase like \"Gertrude\" or \"The Dog.\"\n\"The cake belongs to\" — \"The Dog\" or \"Oswald.\"\n\"The cake belongs to\" — \"Gertrude.\"\n\"The cake belongs to\" — \"The Dog.\"\n\"The cake belongs to\" — \"Robert.\""
+ }
+]
