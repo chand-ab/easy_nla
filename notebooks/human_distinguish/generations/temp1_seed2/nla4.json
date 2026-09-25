@@ -1,0 +1,770 @@
+[
+ {
+  "idx": 0,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:4600",
+  "explanation": "Industrial equipment Wikipedia-style category page with diverse SEO-style headings (\"Stone Crusher 16plate vs ball mill comparison chart,\" \"president of crusher plant\"), suggesting product listing/catalog content throughout.\n\nThe pattern throughout is fragments/domains loosely connected with Philippines crusher equipment industry \u2014 supplier names, brand names, and product types can emerge mid-sentence in complete sentences describing procurement or business details.\n\nFinal token \"price list for\" is an incomplete prepositional phrase \"price list for\" within a product/company descriptive caption \"Products details: price list for\u2014/ manufacturers in Philippines\u2014/Kf customer service contact info\u2014blade king stone crusher price list\" \u2014 the sentence \"Price list for\" requires continuation with a specific item, material, or specification (e.g., a piece of mining/equipment).",
+  "extracted": true
+ },
+ {
+  "idx": 1,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:90595",
+  "explanation": "Academic/international association/journal content establishes a pattern of disciplinary terminology \u2014 likely about biomedical, veterinary, or global health research outputs.\n\nWhile the word pattern shifts from agricultural term (\"caging/cage\") to something like \"catchy research,\" the text appears to list unrelated published journal articles or brief summaries (\"Conservation Biology,\" \"Tribute to a fisheries hero,\" \"Scientific success and patterns of citation\").\n\nFinal token \"of\" is a prepositional particle mid-clause \"citation patterns of,\" part of an academic article title (\"Regional bias in citation rates of\"), within this typical citation pattern sentence structure \u2014 \"Bias in citation rates of [country/region/source]\" requires a noun phrase like \"published research papers from Europe\" or \"international research journals.\"",
+  "extracted": true
+ },
+ {
+  "idx": 2,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:71467",
+  "explanation": "Academic/journalistic article tone establishing context about Asian-American YMCA service activities at URI.\n\nNarrative momentum: the text describes a particular college chapter's involvement with YMCA's Kwanjuko service organizations, with sentence structure building toward naming a specific event's purpose or consequence.\n\nFinal token \"annual\" opens an example clause (\"The annual...\"), part of a specific relative/descriptive phrase \"The annual\" \u2014 within a sentence (\"The purpose of their involvement is to promote Chinese culture abroad; the most prominent of these events is the...\"). The sentence \"Among the future events participated in is the Kwanjuko club's youth fundraising event. The annual\" requires a noun phrase describing a specific event (e.g., \"Kwanjuko end run\" marathon/fundraiser) continues the fundraising/event thread.",
+  "extracted": true
+ },
+ {
+  "idx": 3,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:49709",
+  "explanation": "Medical/measurement instrument catalog or product specification document, describing equipment intended for use with a United States Board of Optometry certification examination \u2014 \"Measurement scale of 20\" and \"used by test personnel to test visual acuity of subjects\" suggest an American healthcare/retail supplier.\n\nThe text lists materials/quality features (\"5/8 inch,\" \"roll indented,\" \"two-sided,\" \"white with red borders\"), suggesting additional physical or informational attributes to conclude the product description (\"6 pages of chart pages\").\n\nFinal token \" \" ends a descriptive feature list (\"2-page, laminated, flexible measuring guide. Size: standard or_wallet size.\") \u2014 the sentence is incomplete (\"Guide printed on durable, color enhanced paper. \") suggesting a final specification number or measurement, such as dimensions or a quantity value (e.g., \"8.5 inches long\" or \"Includes index\").",
+  "extracted": true
+ },
+ {
+  "idx": 4,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:60998",
+  "explanation": "Low-quality spam/SEO content pattern: formulaic introduction of \"online video video clips down load\" topic using awkward phrases (\"otherhand you are required to appear\"). Multiple incorrect grammar choices signal translated/inconsistent English throughout.\n\nThe text is mid-sentence (\"navigate over games and motion pictures, as well lately, you don't wish to trip this matter up. These a few of today's\") suggesting it will complete with website recommendations or recent release titles.\n\nFinal token \"today\" is part of a contrastive/historical phrase (\"today's movies are additionally popular, others which people desire to watch alternatively--as well as lately, a lot of today\"), part of a comparative clause (\"these are typical as well...and most of these are definitely not just, then many of today\" requires continuation like \"today's favorite movies or films online are...\").",
+  "extracted": true
+ },
+ {
+  "idx": 5,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:57146",
+  "explanation": "Product listing format with descriptive ammunition-style marketing, indicative of apparel retail/catalog context (brand name \"American Eagle,\" sweater description).\n\nMaterial/sizing language established \u2014 \"Classic channel stripe men's Christmas ugly sweater\" signals continuation of formal product specification description. The listing includes brand name, size (XXL), color name (Black), signalizing materials/textile specs follow.\n\nFinal token \"Knit\" is part of an itemized product specification \"Classic Browsable Knit,\" part of a detail label \"\u2014 Medium Fit, Tight Knit\" \u2014 next tokens will likely continue material or construction descriptors like \"Material: Polyester and\u68c9 blend\" or \"Hooded.\"\nThe phrase \"Classic Browsable Knit\" is a descriptor string listing physical apparel attributes, \"\u2014 Medium Fit\" signals continuation of additional construction descriptors.",
+  "extracted": true
+ },
+ {
+  "idx": 6,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:82443",
+  "explanation": "Inclusive/formal Indian Hindi/English bilingual tone, establishing philosophical/inspirational perspective throughout (\"respect yourself if you are not doing so\").\n\nThe larger rhetorical structure is building toward a conclusion: the sentence \"you or I will never know, who you are destined to become and till you don't understand it, you will seek one...\"\n\nFinal token \"without,\" ends a conditional clause (\"if you don't become aware of it, if not,\") \u2014 a subordinate conjunction \"if not,\" within a contrasting statement (\"if it doesn't come to you, you must/it won't exist; and if you do not know that, if not,\") \u2014 the sentence \"you won't know who you are destined to be, and if not\" requires continuation of the consequence, likely something like \"then who will\" or similar existential warning.",
+  "extracted": true
+ },
+ {
+  "idx": 7,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:47755",
+  "explanation": "Biographical/factual article about a Bollywood celebrity, following structured \"facts about X, Y, & Z\" pattern throughout. Information about watching habits, physical, personal achievements are systematically covered.\n\nThe article is detailing multiple romantic/relationship details about Yusuf Hasaan Sadar, with particular focus on the celebrity's sex life and past relationship claims expected next.\n\nFinal token \"There was\" opens a subordinate clause \"There was [popular/notion/report]\" \u2014 beginning a past-tense statement (Section 10: Rumours) immediately after \"Regarding his romantic relationship \u2013\" and \"Rumour: \" header, requiring continuation of a rumour description like \"report that he dated/was engaged with a name\" continuing the listicle/rumour truth format.",
+  "extracted": true
+ },
+ {
+  "idx": 8,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:2974",
+  "explanation": "Dating website promotional copy ordered for a Canadian men's dating platform (\"Roseville VIP dating services\").\n\nThe text is describing the service's value proposition, establishing a persuasive tone with forward-running lifestyle/divorce/relationship framing (\"looks for a loved one who is ready to find someone special\").\n\nFinal token \"ready to\" is part of an infinitive phrase \"ready and willing to,\" continuing \"they're high quality singles who are ready to\" \u2014 within this exact clause \"looking for romantic matches and are ready and willing to,\" strongly predicting a verb like \"start dating\" or \"commit,\" completing the subordinate clause \"are looking for serious singles and are ready to.\"",
+  "extracted": true
+ },
+ {
+  "idx": 9,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:25076",
+  "explanation": "Academic blog post structure covering climate paradox, DDI, RE, and DTA terminology, building a comprehensive resource list for practitioners.\n\nThe post is mid-sentence, having begun a formal citation of a philosophical/research source (\"Some material about language theory...can be found...as Felix, A.]\"), implying the author will complete this restricted citations appendix with specific academic reference details.\n\nFinal token \"T brothers\" is part of an incomplete in-text citation reference (\"Foster, S.W.\") \u2014 within a formal scholarly quote block \"Foster, A.J. \" \u2014 the sentence \"Papineau, C.L. [D.D.]...\" is incomplete and requires title of the article or work (e.g., \" 'The myth of language' in Journal of Consciousness Studies\"). A title follows.",
+  "extracted": true
+ },
+ {
+  "idx": 10,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:3439",
+  "explanation": "News wire pattern: Italian name, \"banking visit,\" and Catholic dicastery suggest formal diplomatic/journalistic register focused on Vatican-Asia relations.\n\nNarrative momentum of itinerary: he \"visited a Buddhist temple, expressed faith in professional ties between Vatican and Japan and hoped for spiritual impact.\"\n\nThe final token \"and\" is a conjunction within a paired noun phrase \"church and [overlay],\" part of the concluding clause, which is mid-sentence (\"encouraged dialogue between church and\"), requiring a second noun like \"state\" to complete the parallel noun phrase \"on the role of church and [state]\"\nThe sentence remains open (\"he also discussed use of church for dialogue between church and\"), demanding grammatical closure of the coordinating conjunction \"and.\"",
+  "extracted": true
+ },
+ {
+  "idx": 11,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:94070",
+  "explanation": "Technical procedure: how to order carpet/swarara from an Iranian manufacturer/regulator authority, with step-by-step instructions expected next.\n\nThe Arabic/English bilingual register of textiles-crafting terminology (\"carpet,\" \"swarara,\" \"millimeter\") suggests an amateur instructional document, likely proceeding with measurements or visual references for measurement templates.\n\nFinal token \"is\" is part of a clause (\"The image is\"), describing a caption/anecdote sentence \"Reference: The image is\" \u2014 part of clarifying a mock-schematic description (\"this is just a sample...\"), following \"Illustration. See below. This illustration is...\" \u2014 the sentence is incomplete and must provide the image content or caption, such as \"designed from another coffee table furniture\" or specific object/text description completing the comparative/placeholder statement.",
+  "extracted": true
+ },
+ {
+  "idx": 12,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:42681",
+  "explanation": "Hotel/travel accommodation listing in German text with English words, following TripAdvisor-style property description conventions (\"This hotel provides free WiFi,\" \"The hotel is located within a 10-minute walk from a bus stop\").\n\nNarrative momentum: after listing hotel amenities/locations (garden, center, 3 km metro station, bus stop), a concluding amenity feature for guest comfort is expected \u2014 transportation or leisure services.\n\nFinal token \"offers\" is a verb in present-tense hotel accommodation phrase \"The property offers,\" completing a sentence \"The property offers [specific guest facility/service].\" The immediate constraint is a direct noun phrase like \"a reception, a free bicycle rental\" or \"rooms with a shared bathroom\" continuing the enumeration of property services.",
+  "extracted": true
+ },
+ {
+  "idx": 13,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:70498",
+  "explanation": "News article structure: headline describing a political/international affair requires factual continuation (\"Last Week in Brief\" sports phrase).\n\nThe narrative is building toward completion of an award citation or news summary, with \"According to The Washington Independent, the investigation . . \" signaling an embedded quote from an authoritative source, likely justifying the publication's high-stakes stakes policy.\n\nFinal token \". .\": a truncated word mid-list in an ongoing thought (\". .\"), part of the continuation \"continues to\" following a date reference \"could see,\" within an article snippet \"the White House's Democratic security alliance\" sentence (\"next-level terrorism fought to stop terrorism. A ProPublica investigation could be as richly rewarded as the Times' last investigation . .\"), expecting completion of the period/citation reference \".\n\" completing the truncated ellipsis of 2019.",
+  "extracted": true
+ },
+ {
+  "idx": 14,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:54561",
+  "explanation": "FAQ/web format pattern: multiple snippet answers about milk and cocoa chemistry, alternating between Q&A and descriptive passages throughout\u2014refined coffee section has begun using promotional copy.\n\nBrand profile momentum: the text is in a chain caf\u00e9 coffee brand description mid-sentence, establishing product context (\"offset your coffee craving with a delicious, creamy adult twist\").\n\nFinal token \"CappCino\" is an incomplete product statement (\"Our Starbucks Cappino-nino\"), part of a quoted product description (\"Our Starbucks Frappuccino\") \u2014 the sentence requires continuation of Frappuccino's drink definition or brewing description following a structure like \"our Cappino-nino is a steam-touched blend...\"",
+  "extracted": true
+ },
+ {
+  "idx": 15,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:69479",
+  "explanation": "Product/manual specification document for Chinese hydraulic concrete pumps, following a detailed technical/promotional catalog structure with formal Chinese-English hybrids throughout.\n\nNarrative momentum on durability and component performance: the text is mid-sentence (\"the service life of hydraulic cylinder is proportional to the square of the working pressure. If the working pressure is reduced by half,\") \u2014 a specific mathematical continuation is required.\n\nFinal token \"half,\" ends a comparative clause (\"if energy saving effect is reduced,\") within a dependent, unfinished statement (\"if the service life is extended by half,... it will be reduced,\") awaiting completion such as \"the life of it will be doubled\" or similar proportional lifespan effect \u2014 immediately following the calculation \"if the working pressure reduced energy is reduced by 50%\".",
+  "extracted": true
+ },
+ {
+  "idx": 16,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:37441",
+  "explanation": "Narrative diary/travel account in Czech, continuing a sequence of adventurous motorcycle travel experiences in Central Asia. Casual colloquial tone throughout, mentioning Czech-Russian mix cultures.\n\nThe story compiles a list of trip hardships: paranoid inspections, extremely long day, lack of maps or gas -- all suggesting the journey is nearing completion.\n\nFinal token \"only\" is part of a qualifying phrase \"arrived to Altai city centre only\" -- part of an ongoing chronological/descriptive account (\"We left Zlatoust early morning and arrived to Ekaterinburg only\"), expecting a time indicator or circumstance (e.g., \"after night,\" \"at sunset,\" \"in middle of the night\") expressing how the journey ended with regard to the town.",
+  "extracted": true
+ },
+ {
+  "idx": 17,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:62623",
+  "explanation": "Academic/promotional content about medical radiation risk with frequent citations \u2014 the pattern of information about national evidence, radiation sources, and children's health risks continues throughout, suggesting formal NHS-style guidance document.\n\nNarrative momentum toward completion: the final section is detailing a study or example of radiation harm evidence; a specific study example (\"analysis of long-term cancer risk\") has been introduced mid-sentence with \"examined a study involving more than 200,000 children.\"\n\nFinal token \"children\" is mid-sentence (\"examined 2016 a study of over 100,000 children\") \u2014 the sentence \"a team of researchers looked at records involving a study of over 200,000 children\" requires continuation specifying the children's study context or findings comparison with ionised radiation exposure.",
+  "extracted": true
+ },
+ {
+  "idx": 18,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:5238",
+  "explanation": "Celebrity gossip/internet fashion news register: Indian Hindi-language (bollywood/entertainment) blog or social media post, covering fashion outfit choices and controversial styles.\n\nThe phrase \"she has been spotted in a very attractive designer outfit recently. If you have seen her latest controversy statement, then you will know what we are talking about.\" signals a specific noteworthy incident or outfit that caused a stir.\n\nFinal token \"She\" \u2014 the sentence opener of the description of the actress's outfit/styled event choice, \"She\" begins a relative clause naming the celebrity mentioned (\"A very popular Indian actress has put up her controversial statement recently. She\"), expecting action description like \"was seen wearing a customized traditional outfit during Diwali celebrations\" completing the remark \"The outfit which caused ruckus is this. She\"...\"",
+  "extracted": true
+ },
+ {
+  "idx": 19,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:77731",
+  "explanation": "Academic conference paper pattern: formal UK-style dedication, professor introducing a lecture \"on\" advancements in Machine Learning.\n\nThe title promises \"Computational verifiable game theory for cyber security,\" and the description of Dr. Bressan's research focus (\"aims at improving automated synthesis of secure algorithms\") sets up expectations for elaborating methodology or contributions.\n\nFinal token \"this lecture\" begins a sentence \"This lecture\" \u2014 part of a structured description (\"This lecture will...\"), requiring continuation such as \" will introduce,\" \"presents,\" or \"discusses\" describing the talk's content, building on \"The previous works have exploited... Abstract Interpretation and Model-Based Design. This lecture...\"\nThe conjunction \"this lecture\" opens a clause completing \"In this lecture,\" needing an action phrase describing what will be covered or demonstrated next.",
+  "extracted": true
+ },
+ {
+  "idx": 20,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:71338",
+  "explanation": "Informational/promotional about Italian studio furniture sculpture, establishing context for details about types and services of sculpture commissions.\n\nThe sentence structure \"is usually based on the wishes, theme and need of the commissioner\" suggests continuation of descriptive or categorical content about customization or order processes.\n\nFinal token \"commissioner\" ends a qualifying phrase \"in perfect accordance with the wishes of the commissioner,\" which may be completed or followed by additional clauses such as \"or patron\" or a continuation like \"and can include specific themes, colors, and materials discussed with us\" completing an aquarium / family discussion mid-clause (\"is produced by the sculptor in agreement with the wishes of the commissioner\").\nThe next tokens will likely specify the commissioner's role or type, broadening scope toward examples of works produced.",
+  "extracted": true
+ },
+ {
+  "idx": 21,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:46512",
+  "explanation": "Corporate / civic art engagement context: charity or event presentation with local Singapore artist \"Lucinda Yian Chong\" featured prominently.\n\nThe text describes an event or occasion (\"we are delighted to present\"), suggesting promotional/ilogical naming will follow \u2014 likely a gallery opening, auction, or exhibition.\n\nFinal token \"Y\" begins the surname repetition (\"Lucinda Y\"), part of a formal repeated reference (\"artwork by Lucinda Yian Chong\"), mid-word truncation \"Yan\" completes the surname, demanding \"ong\" to finish \"Lucinda Yian\" before the sentence \"review and purchase are available at our online platform\" ends or continues with additional biographical/promotional content like exhibition description.",
+  "extracted": true
+ },
+ {
+  "idx": 22,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:97660",
+  "explanation": "Academic public international law blog exposing-era discussion of EU privacy rights v. British anti-piracy treaty.\n\nArgumentative momentum: the author is setting up a \"hypocrisy\" or analytical counterpoint, noting irony in the UK arguing about EU rights to justify undermining their own civil liberties.\n\nFinal token \"to\" ends an infinitive phrase (\"in order to\"...), part of a subordinate clause (\"it ought to be able to deny people their rights in order to turn off European privacy rules in order to\") \u2014 the sentence requires a verb phrase like \"continue suppressing low-tech piracy\" or \"protect intellectual property,\" completing the comparison \"in order to use civil liberties laws in Australia to get around Canadian privacy rules in order to\" without duplicating the 1999 justification.",
+  "extracted": true
+ },
+ {
+  "idx": 23,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:77127",
+  "explanation": "Formal Nigerian press release/news report genre, with Nigerian political establishment address, official honorific titles, and nth-place date specification throughout.\n\nNarrative structure of official statement: the Governor's speech at press conference outlined vigilance, anti-terrorism committees, and promised security initiative (\"in furtherance of his Government's resolve\") \u2013 concerns regarding insecurity in Edo/Southern Nigeria must be elaborated.\n\nFinal token \"bed\" is mid-word, part of a phrase (\"the insecurity bed-\" likely \"bedeviling\" continuing \"address the menace of violence and insecurity bed\u2026\" of the region/nation). The sentence \"despite the menace assailing the noble farming community, has steadily increased the wrath of the genocide and crimes appending\"', requires immediate completion of this noun phrase \"a menace bed-\" continuing with a noun qualifying phrase like \"imperializing in the South East region.\"",
+  "extracted": true
+ },
+ {
+  "idx": 24,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:43609",
+  "explanation": "Academic/professional Q&A or biographical form response, following a structured FAQ or template pattern about American vs. European education differences.\n\nThe text discusses the difference between American and European educational paths, establishing a precedent where specific American experiences are named; Sam's narrative about his own chemistry education is being introduced mid-sentence.\n\nFinal token \" (\") is an open parenthesis following \"AP program\" indicating an incomplete citation or notation of the chemistry course's college equivalent grade or subject designation, within \"I completed the AP Calculus level chemistry class at my high school (\") \u2014 the sentence \"I completed the Advanced Placement program for chemistry coursework (...\" requires continuation with a grade or year designation like \"covering AP level curriculum\" or \"and received a score of...\")",
+  "extracted": true
+ },
+ {
+  "idx": 25,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:53288",
+  "explanation": "News article structure with Indian geopolitical perspective (press report from ThePrint), establishing continued factual coverage of climate crisis in India.\n\nThe article follows a pattern of detailing alarming statistics \u2014 \"17th most polluted day in Earth, the ice caps are melting at alarming rate\" \u2014 which suggests further elaboration on dangerous consequences is expected next.\n\nFinal token \"situation\" follows the phrase \"Expressing concern about the worsening worsening situation,\" part of a sentence (\"While expressing concern about the worsening situation\"), within which an imminent continuation continues the pattern of direct/historical speech reporting \u2014 a quote or paraphrase like \"on the Earth's environment/global warming\" introducing another official statement or statistical argument follows \"While talking about the worsening situation.\"",
+  "extracted": true
+ },
+ {
+  "idx": 26,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:43176",
+  "explanation": "Structured pros/cons article for luxury real estate in Florida, maintaining formal promotional tone throughout, establishing expertise and capabilities of a guiding agent/interpreter.\n\nNarrative momentum: the conclusion paragraph (\"Whether you're seeking a barrier-free oasis or a waterfront retreat, we are your exclusive guide in Tampa's prime real estate market\") signals shifting from general market overview to actionable representation.\n\nFinal token \"of\" opens a prepositional phrase mid-sentence \"in-depth knowledge of\" \u2014 part of a closing solicita\u00adtion sentence (\"As your expert Tampa real estate professionals, we leverage our extensive knowledge of [the city/properties/markets/market data].\") strongly constraining continuation with specific knowledge locations such as \"Florida real estate listings\" or \"Tampa's unique neighborhoods,\" completing the concluding clause \"We are dedicated to navigating your search, leveraging our thorough knowledge of.\"",
+  "extracted": true
+ },
+ {
+  "idx": 27,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:82271",
+  "explanation": "UK consumer services news article from a local newspaper (Express & Star), maintaining factual/journalistic tone throughout.\n\nThe article discusses fuel tax costs and environmental refunds scheme (\"unique way of offering people refunds\"), building the case with increasing examples (\u00a31,000 a year for a family) \u2014 suggesting further specific financial impact statistics or impact on households/commuters are expected.\n\nFinal token: \"every day\" is mid-clause (\"people who work in commuting industries and who travel to and from work everyday\"), part of a relative clause (\"who work in the UK and commute to work everyday\"), requiring grammatical completion of the subordinate clause (\"are those who work ferro cement contractors believe that commuters that work in London will find themselves being drain \u00a31,000 a year, and people who work in London on a daily basis ___\"). The sentence is incomplete, likely demanding a continuation like \"may feel the brunt of the increase most.\"",
+  "extracted": true
+ },
+ {
+  "idx": 28,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:50089",
+  "explanation": "Corporate tax advisory newsletter/blog format, describing a tax filing or provision with formal audit/review tone (\"PwC Proactively Advises U.S. Treasury\").\n\nThe article introduces \"Truth in Lending Act (TILA) Disclosure Guidance\" and \"IRS issues an updated section 301 Directory,\" suggesting a listicle or legal/regulatory update context.\n\nFinal token \"Tax\" is part of a byline/tag attribution (\"Contact [Stephen T. Barner], PwC's Tax...\"), indicating a closing contributor citation line (\"January 6, 2017 | Written by PwC's Tax [Group/Department]\"), part of a professional firm credit statement \u2014 a specific tax section or team name like \"Tax Advisory Practice\" or \"Tax Services\" must follow.",
+  "extracted": true
+ },
+ {
+  "idx": 29,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:7750",
+  "explanation": "Journalistic/news report structure: formal UK council press release about a significant highway opening, budding transport n\u00e2ng h\u1ea1ng news piece.\n\nNarrative momentum: after describing the opening event and opening ceremony figures \u2014 \"More than 23,000 vehicles,\" \"m2 junction four south to the town centre\" \u2014 a spokesperson quote or further official commentary is expected.\n\nFinal token \"transport\" is mid-title (\"Councillor Ian Gibson, leader of transport and transport\"), part of an attribution label \"director of highways, roads and transport\" \u2014 the sentence \"Councillor Jason Murley, cabinet member for highways, transport and environment\" is incomplete and expects continuation such as a job title/role completion like \"said:\".\nThe sentence \"Councillor Jason Murley, leader of highways and transport\" requires a continuation of his role, likely quotes or reported speech about the coordinated roads project.",
+  "extracted": true
+ },
+ {
+  "idx": 30,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:86133",
+  "explanation": "Ongoing Civil War military history narrative about the Confederate Seaplane Base on Dauphin Island, describing an official Navy visitor center's commemorative event with visiting dignitaries.\n\nThe text is building a descriptive, factual account of this historic site's current state \u2014 after naming the \"newly renovated museum,\" burial ground with graves \"dating back to when the gunboat fired its first shot in 1950.\" Perimeter fence around the five-acre...\n\nFinal token \"five-acre\" is mid-phrase, part of \"five-acre,\" within a sentence (\"view across the site on the five-acre\"). The sentence is grammatically incomplete (\"can be seen while touring the grounds on the five-acre...\") demanding a noun like \"park\" or \"property\" to complete \"the five-acre.\"",
+  "extracted": true
+ },
+ {
+  "idx": 31,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:69394",
+  "explanation": "Legal/regulatory context: Indian labour law regarding non-payment of wages, specifically about filing police complaints for unpaid salaries.\n\nAcademic/procedural content: the text describes a service or resource (\"hire expertise to lodge complaint\"), suggesting a practical explanation follows for users in India.\n\nFinal token \"under\" is a preposition completing \"is punishable under\" \u2014 within a formal explanation (\"It is indeed a crime to non-payment of wages in India and can prosecuted under\"), expecting specific legal statute name to follow immediately (e.g., \"the Payment of Wages Act, 1936\").\nThe sentence is mid-clause (\"Provisional arrest is imposed as punishment and is punishable under\"), demanding a law name like \"Indian Penal Code\" or a specific labour act title to complete this subordinate clause (\"it is applicable and punishable under\").",
+  "extracted": true
+ },
+ {
+  "idx": 32,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:98555",
+  "explanation": "Narrative theological reflective blog/journal genre, establishing context of a conversation about an online sermon conversation group.\n\nThe author is building an argument explaining their negative reaction (\"I was frustrated and annoyed\"), setting up a continuation of the explanation of what specifically bothered them about the sermon they heard.\n\nFinal token \"in the\" opens a relative clause (\"I could hear in the [x]\") mid-sentence \"I felt that in the hearing of what she was saying I could see more theological underpinnings missing than what the speaker communicated in the\" \u2014 the sentence is incomplete (\"hear\" requires \"the sermon,\" \"words,\" or \"argument\") completing the subordinate clause \"I felt that I detected in the.\"",
+  "extracted": true
+ },
+ {
+  "idx": 33,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:50089",
+  "explanation": "Legal/regulatory background text with formal tone, establishing structure of COVID relief funding eligibility for US exporters.\n\nThe sentence structure \"provides $800,000,000 of loan guarantee authority annually. $250 million of\" signals continuation of a specific breakdown or allocation formula of the Fund's funds.\n\nFinal token \"$250 million of\" is an incomplete prepositional phrase \"of which $250 million of\" \u2014 part of a qualifying clause (\"The Act suspends $1 billion of funds annually for eligible workforce improvement loans. $250 million of\") requiring continuation like \"such funds shall be available for taxpayers with significant growth companies\" completing the legal description of how the reserve is split or distributed across tax year eligibility periods.",
+  "extracted": true
+ },
+ {
+  "idx": 34,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:29092",
+  "explanation": "Narrative/journalistic pattern: UK weather article following Guardian UK reporting style, covering heatwave dangers alongside scientific evidence.\n\nContinuation of the attribution analysis: \"record temperature predictions are mentioned as 'unusual because of climate change'\" signals explanation is due for why high temperatures are so extreme for this time of year (unusual for late June/early July in northern hemisphere).\n\nFinal token \"temperatures\" ends mid-sentence (\"noted scientist Chris Rutter as contributing to the conditions responsible for the extreme temperatures... explain the record temperatures\"), part of an ongoing explanation of Lloyd's quote/observation \"this contrast between the UK heatwave and climate scepticism has appeared surprised by the extremes of the record temperatures\" \u2014 expecting elaboration like \"in Britain\" or \"back home this long.\"",
+  "extracted": true
+ },
+ {
+  "idx": 35,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:84669",
+  "explanation": "Academic physics essay with embedded Pakistani institutional advertisement, now shifting to Urdu Wikipedia magazine subscription promotion \u2014 the text is mid-sentence in Urdu regarding the leading Pakistan Educational Magazine's superiority.\n\nThe Urdu promotional content follows a pattern: \"Afront Pakistan Education Magazine is first MON BEFORE degree certificate magazine in Pakistan Education Magazine\" suggests further qualification or credibility claims about content or reach follow.\n\nFinal token \"Pakistan\" ends an ongoing comparative/descriptive phrase (\"first in Pakistan\"), following \"the main magazine IN Pakistan\" \u2014 the sentence \"The aaj Education Magazine is first awareness and highest Educational Magazine in Pakistan, first time in Pakistan\" is incomplete; next tokens will likely continue with more Urdu superlative qualifiers like \"and Urdu magazine\" or \"Education Magazine in Pakistan Education update.\"",
+  "extracted": true
+ },
+ {
+  "idx": 36,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:13713",
+  "explanation": "Technical aerospace/robotics documentation listing components and capabilities of an autonomous UFO tracking radio-controlled aircraft (UAS).\n\nThe document explains system architecture, focusing on the camera and telemetry output of the image processing processing module \u2014 \"output a flight profile, including target distance, altitude, X...\" promises a continued enumeration of the telemetry data structure.\n\nFinal token \"X\" is mid-sequence in a comma-separated list (\"flight data includes Distance, X\"), part of a coordinate/position data set \u2014 \"altitude, X\" is part of a paired coordinate system (likely \"distance, X position in cm\"), requiring \"Y\" and/or \"Y position in cm\" or \"field length\" to complete the measurement description \"target distance, X [metric position/north/south position]\".",
+  "extracted": true
+ },
+ {
+  "idx": 37,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:70707",
+  "explanation": "Definitional/introductory pattern: a firearm term is described (\"semi automatic German pistol of early 20th century\"), suggesting further factual description of the weapon.\n\nThe sentence structure \"was used as a semia\u2014\" promises continuation of a specific technical noun phrase describing the firearm's firing mechanism, continuing the comparative description of historical firearms (\"huntsmen rifle\").\n\nFinal token \"semi\" is the first word of an incomplete compound term \"semiautomatic/semia-\" mid-word or mid-phrase; the sentence \"was designed to fire this cartridge as semia-\" requires completing the adjective (\"semiautomatic\") followed by continuation of the armament description (\"sporting rifle designed for accurate handgun ammo\").",
+  "extracted": true
+ },
+ {
+  "idx": 38,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:78170",
+  "explanation": "Corporate/financial aviation leasing news release, establishing identity of operator and asset transaction details about Embraer's E175-E2 aircraft.\n\nThe purchase statement \"Lufthansa Connectivity today received its fifth Embraer 175-E2 aircraft from Embraer Delivery Center Korea (EDCK)\" sets an enumeration pattern \u2014 five aircraft total has been introduced, suggesting model designation, cabin details, or operational context about the new aircraft follows.\n\nFinal token \"this\" opens an embedded relative clause (\"This [new aircraft]\", \"This third airliner delivery featuring the production option Pro Lithium-ion batteries...\"), part of the descriptive sentence (\"Delivered today with fueld-efficient engines from General Electric CF34-10E engines, this\"), requiring a continuation like \"new addition to the American Eagle fleet.\" or \"is the XXth aircraft...\"",
+  "extracted": true
+ },
+ {
+  "idx": 39,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:3390",
+  "explanation": "Aggregated gameplay/content advice text mixed with unrelated snippets \u2014 belonging to a pattern cleaning service/SEO content archive with informal register.\n\nEach snippet is a short, abrupt transition between topics (satellite mechanics, astronomy instruments, astrophotography, planetary nebula, poetry, preschool), suggesting another domain-relevant phrase follows.\n\nFinal token \"ethics\" is part of a clinical/tutorial explainer phrase (\"guide to research methodology and data collection strategies for the social sciences and health-related qualitative research, and outlines research methodology and practice ethics\") \u2014 the sentence appears near conclusion, expecting continuation like \"for family and general practice research designers.\" A coordinate conjunction (such as \"in [context]\") or additional domain specification may complete what immediately follows.",
+  "extracted": true
+ },
+ {
+  "idx": 40,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:1970",
+  "explanation": "Industrial product manufacturing business introduction \u2014 Chinese company name, product specialty in heat exchanger tubes, technical specifications, and promotional tone throughout throughout.\n\nThe final sentence (\"We also supply customizing sample heat exchanger tubes as your requirement.\"+) suggests a capability/marketing statement pattern, likely leading to contact details or further product offers.\n\nFinal token: \"plus (+)\" ends a closing sentence about product range (\"we also have other kind of products such as materials like copper alloy steel, stainless steel tubes, aluminum plate tubes etc. We also can provide English product quotations and international services. Please contact us if you are interested with us.\"). A final contact prompt or additional sales details, such as \"Homepage: www.GEMCIND.com\" or \"We also...\" completing the marketing pitch \"We are professional manufacturer...\".",
+  "extracted": true
+ },
+ {
+  "idx": 41,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:80483",
+  "explanation": "South African crochet fibre retailer's product listing, establishing expectation of specifications/quantity details about the Zooch fibre pack. List enumeration of species and sizing information (\"50g, each wool has yaz..\" / \"thresnamic\").\n\nThe document seems to be building toward purchasing instructions for natural angora yarn or fibre for sale.\n\nFinal token: \"packs\" opens an incomplete specification/sales sentence \"Sold in packs,\" part of the purchasing statement/reminder \"These fibres can be purchased for colour blending needs. Available in packs\" \u2014 the sentence is incomplete (\"Sold in packs\" is only an opening phrase requiring continuation with quantity or metrics, likely \"of 4 x 1 g balls\" continuing yarn ordering/bundling convention \"where you get 4 strands\").",
+  "extracted": true
+ },
+ {
+  "idx": 42,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:38908",
+  "explanation": "Introductions of crew members with sequential callings/endings (e.g., \"I've been with CAI for 5 years\") establish a informative colloquial profile tone about a Colorado Sea Kayaking Center guide's background.\n\nThe text lists specific sea kayaking specialties or methodology, with shrimp boats noted as \"my main passion, but I also do rivers occasionally\" signaling contrast or elaboration expected next, likely defining professional focus area.\n\nFinal token \"am\" is mid-sentence completing \"[I am\" describing personal kayaking specialization \u2014 sentence \"To start I have been a river and mixed guide for the longest, but I specialize in mixed and am <afloat/in rescue>.\" The sentence \"While I do film guides and river guides, I am\" requires a continuation specifying the kayaker's primary guiding specialty (e.g., \"primarily an ocean guide\").",
+  "extracted": true
+ },
+ {
+  "idx": 43,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:97660",
+  "explanation": "Academic EU law blog post, establishing formal European Court of Justice jurisdictional analysis with structured EU principles background.\n\nThe narrative momentum toward completing the quoted exposition of Advocate General Bobeck's opinion on national court disregard for EU criminal sanctions principles (\"more than once expressed concern\").\n\nFinal token \"to\" is mid-clause (\"if national courts fail to\"), part of AG Bobeck's direct quote within a subordinate clause (\"he has also noted that some EU judges and national courts have expressed concerns that national courts fail to\"), inside \"have indeed criticized national courts when they fail to\" \u2014 the sentence requires completing the infinitive phrase with verbatim court failures language like \"apply EU judgments faithfully\" or \"follow the upper limit set by the directive\".",
+  "extracted": true
+ },
+ {
+  "idx": 44,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:4652",
+  "explanation": "Biblical epistolary structure: formal religious letter addressing \"Dear Beloved Christian,\" establishing moral/spiritual guidance pattern throughout.\n\nSemantic momentum: the text follows the opening theological theme \"Let your light so shine before men...\" (Matthew 5:16), so a continuation of this motif or a related scripture citation is expected next.\n\nFinal token: \"You have been\" opens a subordinate sentence, grammatically describing the recipients (\"You have been addressed/created/marked/...\"), most likely continuing with something like \"called unto holy war\" or \"made holy through -----\nYou have been\" \u2014 a final scriptural exhortation phrase following the paragraph structure \"You have been\" commands the next phrase to be a present-perfect Bible verse, continuation.",
+  "extracted": true
+ },
+ {
+  "idx": 45,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:71204",
+  "explanation": "Indonesian language text patterns: phrases like \"backyard gardening\" and \"water bottle gardening\" suggest plant/culture blog content.\n\nProcedural article structure: the author is detailing steps/method for making miniature mini greenhouse planters, mid-explanation (\"first pour water bottles,\" \"fill the container with soil\").\n\nFinal token \"plant\" is part of a compound sentence (\"put some containers and fill it with soil and then plant\"), completing an instructional step (\"you can choose the desired plant and place it is a hole or the other then fill the bottle with soil, then plant\"), the sentence \"there is a bottle inside a pot like a hanging apparatus and fill it with soil and then plant\" is incomplete, expecting continuation such as \"the desired plants\" or specific plant names.",
+  "extracted": true
+ },
+ {
+  "idx": 46,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:71583",
+  "explanation": "Academic/journalistic momentum: a cultural critique of neoliberal capitalism framing (\"divides the world culturally and geographically,\" \"recent burst of thinking about global poverty\") suggests an essay or book review.\n\nEstablished a topic about global poverty and inequality \u2014 this is a defining theme likely continued by a named author, title, or specific intellectual/theoretical contribution about this subject matter.\n\nFinal token \"Ross\" is a surname introduced mid-sentence, \"Mark Ross\" begins an attribution or citation phrase \u2014 \"Mark Ross\" is introducing someone (likely a scholar or author's name), within a book review/book title context (\"The New Global Poverty Tour,\" or similar) expects continuation like a title, title/author byline, or description such as \"in his recent book.\"",
+  "extracted": true
+ },
+ {
+  "idx": 47,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:96557",
+  "explanation": "Product listing for Chinese e-commerce (Taobao-style marketplace): specialty gift/cosmetic item with pros and cons section. Traditional Chinese daily maintenance skincare \"set\" with ornamental bells and flowers package.\n\nEmail coupon registration pattern: \"Share this page to your friends and receive free this after purchase\" signals a reward/cross-sell incentive offer common in manufacturing promotional pages.\n\nFinal token: \"this\" opens an offer/reward clause (\"buy any customer purchase... and you will get this\"), part of the call-to-action sentence \"As reward of your ordering...we will give product to your friends after you set satisfaction rating 5 Stars. Getting satisfied customers\u2014\u2014order our product, get this\" \u2014 a specific product name or gift token description (e.g., \"item for free\") is expected next.",
+  "extracted": true
+ },
+ {
+  "idx": 48,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:64906",
+  "explanation": "Academic/encyclopedic page about remote sensing oceanography techniques, with multiple institutional perspectives provided sequentially (see \"Contributed articles from the Center for Satellite Research and Applications (CSRA)\" section).\n\nThe text is mid-sentence, discussing ocean data assimilation across diverse contexts: \"The practice of data assimilation in ocean applications is quite diverse. Data assimilation methods include simple, parameterized schemes...and highly sophisticated data assimilation schemes.\"\n\nFinal token \"assimilation\" ends an incomplete comparative clause; the sentence \"Methods of ocean data assimilation\" is part of a subordinate statement (\"The methods of ocean data assimilation\"), within a technical closing paragraph \"... have evolved dramatically... Over the last decade. The approaches to ocean data assimilation\" \u2014 requiring continuation such as \"range from\" or \"have been described in\" completing this concluding sentence.",
+  "extracted": true
+ },
+ {
+  "idx": 49,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:26492",
+  "explanation": "Academic meteorological paper describing satellite cloud retrieval technique for Arctic cirrus properties, following journal contribution structure with formal scientific terminology.\n\nThe argument builds toward a conclusion about the relationship between free-tropospheric cirrus properties and solar UV radiative forcing \u2014 both retrieval fractions and iceeffectiveradius increases with lower solar elevation have been established.\n\nFinal token \"cir\" is an incomplete word \"cirrus\" mid-sentence in \"more in the free-tropospheric cirrus fraction obtained from the shortwave cloud estimator, which may alter the computed solar UV radiative forcing of the mixed-phased cirrus fraction cirrus.\" effectively repeating the phrase \"cirrus fraction\" yet-to-complete.\nThe sentence completes an em-dash introduction (\"As indicated previously, ...\"), requiring continuation of cirrus descriptor (\"rus fraction\").",
+  "extracted": true
+ },
+ {
+  "idx": 50,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:78174",
+  "explanation": "News article pattern about NASA and manned spacecraft, predicting similar article/radio script format \u2014 another headline about spaceflight technology in speculation/development\n\nRepetition pattern: each entry follows \"[Date/Elsewhere] [Title]\" format, e.g., \"Satellite Engineering: Report on NASA Asteroid Habitat Win,\" \"Final Self-Driving NASA Mars Robot Is Readied For Lunar Launch\"\n\nFinal token is a newline/end of third headline item, part of a list of related space news stories (\"NASA Scientist Apologizes For Space Earlobe Patent...\"...), expecting another related space story title like \"NASA Plans Voyage Mars Mission Next Year\" or similar space-launch headline to follow, continuing the series pattern.",
+  "extracted": true
+ },
+ {
+  "idx": 51,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:86949",
+  "explanation": "Political news report in Nigerian Pidgin English (Esan), describing Nnamdi Kanu's visit to his home state of Edo to campaign for 2019 Nigerian elections.\n\nThe statement refers to voting for the People's Democratic Party (PDP), establishing the electoral/campaigning context \u2014 \"he said the youth are very important for\" signals an explanation of why young population matters to their party's success.\n\nFinal token \"for\" is mid-clause \"they were very important for,\" part of the quoted statement \"He said the students are very important for\" \u2014 within a comparative phrase like \"the last two elections, the youth are important for the party election results/vote/mail/effect.\"\nThe sentence \"he said that young voters are important for\" requires a continuation such as \"the party\" or \"elections/winning them.\"",
+  "extracted": true
+ },
+ {
+  "idx": 52,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:18501",
+  "explanation": "News article structure with formal journalistic tone, introducing an event/alarming story about China's controversial nationalistic propaganda event failing to engage public interest.\n\nThe phrase \"its latest public relations scandal suffered a spectacular failure of public interest\" sets up a cause-effect structure \u2014 a news event has something gone wrong with the government's national commemoration promotion of Xi Jinping.\n\nFinal token: \"indifference\" ends an explanatory clause \u2014 \"publicly, amid widespread public indifference\" is mid-sentence (\"collected only token sales at rented venues, sparking criticism after its debut weekend launch, amid widespread public indifference\"), part of a comparative structure (\"sank again this weekend amid growing complaints from weary consumers attracted by the latest propaganda-shilling event, due to widespread public indifference\"), expecting continuation like \"to the promotion\" completing prepositional phrase.",
+  "extracted": true
+ },
+ {
+  "idx": 53,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:14937",
+  "explanation": "Ongoing enumeration of restaurant wine list/interview series: multiple winemakers from awesome SF wine workshops, blending educational tasting notes throughout.\n\nThe specific wine description from Tommy is mid-sentence, building toward completing the taste profile of Chardonnay imported from Mendocino's coast \u2014 \"interesting, it's got a green apple sort of terroir, with mineral/lush notes of pear and lots of grapefruit.\"\n\nFinal token \"miner\" is the truncated word \"miner\" (eliding \"minerally\"), mid-phrase (\"feels more earthy and miner-\"), continuing a comparative compound adjective (\"starts more\u2026 young-ish and becomes more earthy and miner-ally\"), immediately requiring the word to be completed (\"al\" to finish \"electronically worked\" tasting note: \"young and miner-al\" or \"dry\").",
+  "extracted": true
+ },
+ {
+  "idx": 54,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:21767",
+  "explanation": "List/video display pattern for streaming/imdb-style movie database entries. Genre tags like \"Crime, Drama, History\" suggest an IMDb-style sharing of movie information.\n\nThe structured format establishes a template: \"Director, Cast, Date of Release, IMDb rating\" \u2014 a sequence of related cinematic/metadata terms suggesting another rating or score follows.\n\nFinal token \"IMDb Rating\" is a field/label declaration (\"IMDb Rating\"), part of a metadata display line \u2014 the sentence or field needs an immediate numerical or evaluative value following it, such as \"8.5/10\" or \"8%\" completing the IMDb rating statement (\"IMDb: will update\").",
+  "extracted": true
+ },
+ {
+  "idx": 55,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:33774",
+  "explanation": "Ongoing construction showcase from a local Columbus Utah landscape architect's firm, describing a custom pond installation project at a residential site \u2014 technical/install narrative about the construction process.\n\nThe text has introduced \"this week has seen us begin construction on\" a prior project introduction, promising elaboration on the \"weeks of planning\" mentioned.\n\nFinal token \"and\" is a coordinating conjunction mid-phrase \"After much planning and [X],\" completing a subordinate clause (\"After much planning and\"), within a temporal clause (\"After many months of planning and\"), immediately requiring another noun phrase like \"preparation, finally....\" continuing the explanation of what the excited team accomplished or encountered during pre-construction preparation (\"Much excitement, everything is ready to go!\").",
+  "extracted": true
+ },
+ {
+  "idx": 56,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:84629",
+  "explanation": "Cultural/historical parallel narrative \u2014 the text describes a specific genre explanation of Nashville rock, blending Western poetry with punk dogma.\n\nThe list of bar names is a comedic enumeration of irrelevant, unlikely country-rock songs (\"The soundtrack to Space Jam,\" \"a gas-station enamel sign in rural Georgia\"), establishing a pattern of quirky, humorous memories or personal stories as song topics.\n\nFinal token \"your\" is a possessive mid-phrase \"nostalgic about your,\" part of a series \"nostalgia anthem about your childhood crush; or reflecting on the soundtrack of your life; dreaming about a homemade drink machine; or reminiscing about your\" \u2014 the sentence \"You can even write a country song about reminiscing about your\" requires noun completing a death-adjacent or sentimental personal noun phrase (e.g., \"grandmother,\" \"high school sweetheart,\" \"lost friends\").",
+  "extracted": true
+ },
+ {
+  "idx": 57,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:86208",
+  "explanation": "Formal government/ceremonial communications register, names announcement of a Governor General's official event in Barbados.\n\nThe sentence is describing participants/attendants at the welcoming ceremony (\"met with Acting President, Hon. Lamont Johnson, and the\"), indicating a list of attendees is being enumerated (\"international investment mission, together with members of the Chamber of Environment\").\n\nFinal token \"the\" is a determinate mid-clause continuing \"in the presence of, the Acting Ambassador, together with the [next distinguished guests]\" \u2014 a noun phrase (\"thirteen Chevening Scholarship fellows\"; \"Chamber of Environment delegates\") needs a final actor like \"the Minister of...\" or \"the Consulate-General's\" completing the enumeration \"President of the Caribbean Scholarship Council and facilities personnel, and the.\"",
+  "extracted": true
+ },
+ {
+  "idx": 58,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:82807",
+  "explanation": "Automotive customization introduction (\"Here at STRperformance we carry one of the unique most American sporty V8 drivetrains out there\"), establishing showcase/feature tone for a specific American muscle car.\n\nThe text transitions into selecting a specific classic Mustang build to highlight \u2014 \"he started out his thirst for uniqueness with this one, isn't just another shallow ford\" signals premium/collector-focused justification.\n\nFinal token \"of\" opens a prepositional phrase \"out of the overcrowded crowd of,\" mid-sentence (\"we aren't just another run of the mill crowd...we wish to stand out from the usual crowd of\"), requiring an immediate noun phrase like \"muscle car enthusiasts\" or \"SUV/LSX's in the summer\" completing \"meant to stand out from the usual crowd of [common Americans/custom conversions].\"",
+  "extracted": true
+ },
+ {
+  "idx": 59,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:90614",
+  "explanation": "Government job recruitment/promotional document for Tamil Nadu State Co-operative Bank, following a structured recruitment eligibility criteria section with bullet points.\n\nThe pattern of listing educational qualifications for various job grades is mid-sequence \u2014 \"X \u2013 Degree in Y, minimum atomic percentage of marks Z\"; vocational qualification lists for miscellaneous cadres are being enumerated.\n\nFinal token \"Ag\" is an incomplete parenthetical \u2014 an open parenthesis cornering \"B.Sc (Ag\" within a Fathers Degree subject specification (\"B.Sc ( Agricult/Agri/Forestry/(Ag\")), within a list of agricultural engineering/degree qualifications \"B.E., B.Sc(Ag\" \u2014 the next tokens must complete the bracketed abbreviation, likely \"Agri)\" or \"Agriculture), M.Sc.).",
+  "extracted": true
+ },
+ {
+  "idx": 60,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:3253",
+  "explanation": "Dating site formulaic/recryptographic content: phrase \"Free Porn Egypt!\" suggests continuation of a paired-user search/subscription service copy.\n\nPlatform name \"Sexhorns\" combined with \"Steamy Video Chat Room for Lina and...\" signals a specific social networking site shorthand, expecting completion like \"your favorite girls?\"\n\nFinal token \"all\" is mid-phrase (\"join Lina and all\"), part of a promotional call-to-action sentence \"Join\u8003\u3048\u65b9\u30b7\u30f3\u30b0\u30ebsiri and meet gender-swapped China porn star and meet all...\" \u2014 immediately requires a continuation listing other users or features (e.g., \"your other favorite singles\" or \"your favorite sexual partners\"), completing the compound noun phrase \"find Lina and all [your erotic partners/female users]\".",
+  "extracted": true
+ },
+ {
+  "idx": 61,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:94025",
+  "explanation": "News/anecdotal traffic reporting structure: City of Bloomington maintenance squeezes construction cones into brief morning summaries of affected roads, obstructed access, and detours.\n\nNarrative momentum of ongoing construction report: the text systematically lists each road project (\"on 75 North between Pine Street and Golden Oaks Boulevard beginning Tuesday... lane closures... Access to areas will be maintained until midweek. A detour is in place.\").\n\nFinal token \"A\" begins a noun phrase (\"A [specific number/sign]\" or \"A detour is in place. Weekends traffic is possible. A lane closure or reduced speed will be in place. During this week A tolled lane, sign...\" \u2014 the sentence \"A\" is part of a final procedural note continuing to describe detour/traffic effects.",
+  "extracted": true
+ },
+ {
+  "idx": 62,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:33558",
+  "explanation": "Academic/promotional book description for a UK professional support role (\" schools' staff working with children and parent carers\"), suggesting clear formal register about British healthcare/social welfare context.\n\nThe sentence lists benefits of the text \u2014 \"provides a quick and accessible guide offering evidence-informed\" suggests continuation with specific strategies or content for supporting challenging children and families.\n\nFinal word \"evidence-informed\" is mid-clause \"provides practical, evidence-informed\" \u2014 immediately within \"and presents practical, evidence-informed\" construction, requiring noun phrase like \"principles, practices or guidance\" completing the sentence fragment \"addresses these issues, offering clear, step-by-step, evidence-informed.\"\nThe text \"describes both issues and provides clear, evidence-informed\" needs a final noun completing this compound structure.",
+  "extracted": true
+ },
+ {
+  "idx": 63,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:9100",
+  "explanation": "Explanatory science fiction plot summary tone, following a detailed gameplay narrative description pattern (\"is attacked by a group of masked super mutants\").\n\nThe story setup promises a resolution to the crisis \u2014 the factory is producing a destructive weapon, the world is falling apart, and the crew is infiltrated to deal with this threat.\n\nFinal token \"to\" is an infinitive preposition completing \"to use the underground trains in the factory to,\" within a sentence mid-phrase \"plans on setting of a nuclear charge in the reactor to\" \u2014 an action that can only be completed with a verb phrase like \"explode it, destroying the facility\" or \"destroy the reactor.\" The sentence \"final plan was to send a team inside underground to the nuclear reactor to\" is syntactically incomplete, demanding a verb to complete the purpose of their explosive insertion mission.",
+  "extracted": true
+ },
+ {
+  "idx": 64,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:41662",
+  "explanation": "Biography/professional profile of an American watercolorist (Kathy Harrell), establishing patterns of career chronology and artist background throughout.\n\nNarrative structure: career history expository style with biographical facts like \"has been painting professionally since 1976. A native Oklahoman, her works reflect Southern Idaho landscape.\" Her location/beliefs often follow.\n\nFinal token \"She\" opens a new sentence about her practice or location or recent works \u2014 continuing the profile cadence (\"She exhibits regularly...Her award winning works are often displayed at [locations/groups]\"). Next tokens will likely be a verb phrase like \" she enjoys traditional and realistic watercolor techniques\" or \"She resides and paints in Montana.\"",
+  "extracted": true
+ },
+ {
+  "idx": 65,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:5351",
+  "explanation": "Game mechanics explanation for Korean/International localization \u2014 Japanese RPG mobile game \"Wild Desert Land\" terminology throughout.\n\nThe text defines rules and mechanics for \"The Battle Ready System,\" establishing a pattern where \"Before taking members into the battle, you should also think of the following things \u2014 Strategy / Advantage / Trap.\"\n\nFinal token \"going\" is mid-phrase \"before going\" in a prepositional phrase (\"is applied when going into the battle before going\"), part of the sentence \"The card would be each option shows the tactic before going...\" \u2014 a temporal clause \"before going\" requires immediate completion such as \"into the match/battle\" continuing the procedural explanation that mirrors prior sentences like \"You can use Ticket system before taking your team members into battle.\"",
+  "extracted": true
+ },
+ {
+  "idx": 66,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:51908",
+  "explanation": "Italian-language product description for an authentic medieval Italian frame (Tuscan), establishing craftsmanship and manufacturing details throughout (\"hand made,\" \"made in wood with golden leather\").\n\nThe text follows a pattern of detailing each part/material of the piattaforma supplement, naming elements systematically (\"painte on the front, and on the back has an iconic ornamentation\").\n\nFinal token \"there\" is the start of a relative clause (\"On the back of the frame there\" or \"On the backside of the canvas there\"), immediately within a factual specification \"In the back of the canvas, there...\" \u2014 the sentence \"During the conservation of the canvas, after the painting, in the back side of the frame there\" requires continuation with a place/libresultant description like \"is a metal hinge\" or replica fixing device.",
+  "extracted": true
+ },
+ {
+  "idx": 67,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:62067",
+  "explanation": "Video game wiki/D\"}}\ngenre signals: D&D 4th Edition RPG encyclopedia entry format with faction abbreviation \"Spectre\" indicating certain universe/siblings.\n\nNarrative content: combat or mission scenario name being introduced mid-sentence (\"The Citadel made clear,\" suggesting narrative title of a mission or quest).\n\nFinal token \"Citadel\" is part of a mission name \"Priority: Rescue - The Citadel,\" part of a specific Mass Effect universe mission descriptor. The name \"Priority: Command - Reaper War - consultation, The Citadel\" is mid-token \u2014 likely part of a journey/crossbar marker or quest title (\"- The Citadel\" continuing with a more specific location like \"Ilium\" completing the rescue objective title \"Priority: The Citadel [number/variant]\").",
+  "extracted": true
+ },
+ {
+  "idx": 68,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:9265",
+  "explanation": "Local news narrative structure (The Daily Journal, June 2005) documenting a police incident involving a probable arson bombing.\n\nAccumulated geographic/account of property damage: three incidents have been catalogued (Baptist hospital, Strickler's house, Johnson's hospital), with the third location (\"213 block of Trousdale Boulevard\") requiring completion.\n\nFinal token \"block\" is mid-sentence (\"in the 400 block\"), part of the address citation \"dropped at the home of a longtime resident at 401C Trousdale Drive in the 5700 block\" \u2014 a street address and block designation (\"of Stone Crest Road\") must follow, continuing the police report prose \"they hit a mailbox in the 5700 block [of Stone Crest Road]\".",
+  "extracted": true
+ },
+ {
+  "idx": 69,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:70273",
+  "explanation": "Academic/fictional Chinese marriage blog discussion on \"whether it is justified to cheat in romantic relationship,\" establishing formal argumentative tone. Structured dialogue or numbered points expected.\n\nThe introductory paragraph has described the post format (\"will be discussed starting from multiple aspects\"), inviting multiple-part section structure \u2014 each aspect should be explored.\n\n\"First,\" begins the first enumerated point/counterargument in the analysis. The sentence \"First,\" opens a structured paragraph or bullet point discussing aspects of the topic, expecting elaboration on the first consideration (e.g., \"it is necessary to define the definition and establish basic facts about cheating and its legal status/influence...\"), following \"In this regard, [topic is discussed].\" The sentence is mid introduction \"In this essay...\" framing the section \"First,.\"",
+  "extracted": true
+ },
+ {
+  "idx": 70,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:34607",
+  "explanation": "Structured product spec/marketing document for \"ViSearch\" \u2014 Korean-American additive sentences throughout (\"extends its features,\" \"excellent USB port accommodates\").\n\nThe text cycles through each feature of the VR headset in a formal Korean-English hybrid promotional register, detailing components like \"camera stabilizer, Bluetooth, Speakers\" and advanced functionalities.\n\nFinal token \"having\" opens a comparative clause (\"while having\"), mid-sentence (\"allow you to experience immersive gaming content while having\"), inside \"you can completely immerse yourself in a 3D or live event experience, even while wearing the headset while having\" \u2014 the sentence \"you can watch movies or enjoy a real-life streaming experience from any device while experiencing VR in a captivating 3D format while having\" requires continuation with a proximity-related phrase.",
+  "extracted": true
+ },
+ {
+  "idx": 71,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:89962",
+  "explanation": "Educational/informational article structure with service-focused tone: \"Air Conditioning Service Arlington TX exerts a clear professional authority throughout.\"\n\nNarrative momentum completed: the paragraph is detailing installation choices for duct cleaning systems, having already covered the typical recommendation of \"evaporator coil line\" and higher-flow selectors \"for home upgrades.\"\n\nFinal token \"Arlington\" is part of a comparative clause (\"When an experienced HVAC technician in Arlington...\") mirroring \"When an HVAC technician in Arlington installs a retractable window unit, they will evaluate the existing ductwork. When an HVAC technician in Arlington\" \u2014 the sentence is mid-clause, requiring completion like \"performs a conditioning system evaluation, acquires...\" continuing the description of installer knowledge/technique (\"specifies a flow selector that improves efficiency...\").",
+  "extracted": true
+ },
+ {
+  "idx": 72,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:77765",
+  "explanation": "Networking/dating site genre pattern: multiple snippets mixing gay male and bisexual dating descriptions, alcohol/sobriety themes.\n\nRepetition/continuation pattern: text densely stacks phrases like \"Asian dating singles,\" \"gay furry women's chat room\" \u2014 another promotional dating content phrase expected.\n\nFinal token \"lesbian\" follows \"Meet Asian lesbian,\" likely beginning a relationship context phrase \"Meet asian lesbian dating site,\" but framework is broken sentence (\"Meeting asian lesbian\") suggesting continuation of gay/lesbian relationship search phrases like \"lesbian lovers\" or \"friends in NYC/Austin\" \u2014 next word continues this noun phrase or site description title pattern.\nThe word \"lesbian\" follows \"Meet Asian,\" creating an incomplete noun phrase \"Asian meeting obtaining Asian lesbian\" or similar cross-modal site-building enhancer, requiring continuation with more dating/service descriptors.",
+  "extracted": true
+ },
+ {
+  "idx": 73,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:98969",
+  "explanation": "Wire/electronic news broadcast format indicates fire hazards or damage details follow the local community story setup.\n\nNarrative momentum shifts from humorous photo caption (\"out of gas at the Dee Job Bridge\") to serious local disaster reporting\u2014the official warning about the bridge is an unusual event, implying further consequences or mitigation effort described.\n\nFinal token is a newline ending the first paragraph introducing the closure warning (\"They say they've got nobody directly involved with repairing it...because of the high water situation. Workers won't know if they can reopen it until Sunday at least\") \u2014a factual paragraph about the span's commercial ferries and closing trying-to-replace situation is complete, so next tokens likely continue with damage assessment, costs, timeline, or official statements like \"The Alaska Department of Transportation says residents are advised to use the...\".",
+  "extracted": true
+ },
+ {
+  "idx": 74,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:15264",
+  "explanation": "Journalistic feature on Downtown Houston's development boom, focusing on narrow streets' role and Condos' sales success throughout.\n\nThe piece follows a concluding argumentative pattern: motivated investors, quality of neighborhood, and fiscal virtues of shared ownership have been established; now moving toward a final justification for Houston's resident-friendly third-floor policy.\n\nFinal token \"investments\" is mid-sentence (\"they are making long-term investments\"), completing a subordinate clause \"residents who own their homes are making long-term investments\" within a broader analytical statement \"Resident homeowners are important supporters of downtown because they're making long-term investments\" \u2014 the sentence \"They are different from earlier developers, who sell their buildings. These buyers are making permanent property investments\" will continue with what that signifies for the city/neighborhood's contribution or place attachment (consider \"in the community\" or \"that tie them to the locality\").",
+  "extracted": true
+ },
+ {
+  "idx": 75,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:55386",
+  "explanation": "Marketing copy for an Instagram analytics and photo scheduling tool, emphasizing ease and integrations (\"Create, schedule and publish beautiful Instagram content in minutes\").\n\nThe bullet-point list structure suggests continuation of short capability/features phrases (\"Automatically import Instagram photos\", \"Save social account data\"), establishing a pattern of brief noun-phrase feature descriptions.\n\nFinal token \"beautiful\" opens an imperative or descriptive phrase/sentence \u2014 crafted for an app UI or landing page, the sentence begins with \"Create a beautiful,\" part of a workflow step or task description (\"Create curated Instagram stories. Include video backgrounds. Create a beautiful\u2026\" or \"Build a beautiful branded content gallery\").\nThe sentence structure leaves open specific continuation like \"design for your brand's muted feed\" or photo gallery template name next.",
+  "extracted": true
+ },
+ {
+  "idx": 76,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:68364",
+  "explanation": "Health/cosmetic surgery advertising article, outlining practical preparation guidance for patients considering plastic surgery in Dubai.\n\nArgumentative structure: document covers expectations and tips (\"be honest about your lifestyle\"), now shifting focus to postoperative challenges or outcomes.\n\nFinal token \"doctor\" is part of an incomplete relative clause (\"the results and surgical outcomes your doctor\"), requiring continuation like \"plans,\" \"expected to achieve,\" or \"was designing\" to complete \"the body size your skin will have changed since the size the doctor...\"\nThe sentence is mid-clause \"will affect the final results your face or body will have when surgery, which may differ from the results the doctor\" \u2014 emphasizing unexpected changes that impact surgical expectations or outcomes.\nFinal token \"doctor\" opens a subordinate clause \"will affect the results the doctor,\" immediately requiring a verb phrase completing the contrast between planned design and post-surgery reality.",
+  "extracted": true
+ },
+ {
+  "idx": 77,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:14257",
+  "explanation": "Academic theater review of a post-opera relocation production, sustained throughout with formal black feminist critique of modernist Western American drama traditions.\n\nThe reviewer has been building a detailed argument: tying Bosworth's work to Fourmaux's Tea House, then moving to address this production's problematic choices (\"Das Kind, or the patriarchy of musical theater, is followed by a slurry of MLA-researched citations\").\n\nFinal token \"they\" is mid-clause (\"a grab bag of what they\"), within a subordinate phrase (\"a mish mash that is a collage of whatever they\"), which follows \"what he's mixed together of what they liked to throw together a collage\u2014or else something based off what they...\": a relative clause (\"what they\") inside \"heard from MLA surveys and cribbed what they\"), expecting continuation like \"knew\" or \"had read/seen/learned in academia.\"",
+  "extracted": true
+ },
+ {
+  "idx": 78,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:59566",
+  "explanation": "Procedural/informational article writing in Malaysia, explaining sportsbook services in English for non-native speakers (\"You may find all given data on line shedding sufficient of why sports venture is as significantly as crucial\").\n\nArgumentative momentum around competitive company selections for Malaysia sportsbooks: \"address them why shoot for the moon...companies put in efforts to maximise their company's gain and probably pleasure of buyers.\"\n\nFinal token \"and\" is a conjunction mid-phrase \"meet and\" within \"must meet and [emphasis],\" completing \"they will come up to fulfill and tackle the occasion. They moreover will meet and\" \u2014 a continuation of the verb phrase \"aim to meet and,\" expecting what to follow such as \"fulfil,\" \"exceed\" expectations\" or \"fulfill their particular clientele demands/requirements/occurances\" completing the matching clause.",
+  "extracted": true
+ },
+ {
+  "idx": 79,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:90321",
+  "explanation": "Academic Q&A radio transcript format with faculty interviews discussing sustainability and conservation themes throughout.\n\nNarrative momentum: Duchacek is mid-explanation of his own personal philosophies on how humans relate to nature, citing specific examples (\"Just spending time in Yellowstone showed me that things change so much over time\").\n\nFinal token \"not\": part of a negated contrast telescoping early concept (\"I think that is not\"), within a subordinate clause (\"if you think that things are constant, that turns out, I think, that that is not\"), requiring a completion completion (likely \"the case\"). The sentence: \"I look back on my own personal philosophy and realize that things don't stay the way humans imagined them. And I realize that that is not\" needs a noun phrase like \"always the case\" completing this comparative thought.",
+  "extracted": true
+ },
+ {
+  "idx": 80,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:27065",
+  "explanation": "Spanish brand/design studio profile \u2014 founders define mission and ethos around responsible materials (slow fashion, sustainability) throughout.\n\nContinuation of collaborative network \u2014 \"we collaborate with different protagonists, farmers, festivals, curators, fashion houses and designers\" establishes an ongoing list of professional partners.\n\nFinal token \"designers\" is mid-sentence, part of \"festival makers, designers\" \u2014 the sentence \"We love to connect with other luxury brands, fashion houses, designers\" strongly expects completion with \"and artisan craftsmen\" continuing the collaborative partners enumeration (\"festival makers, designers\" possibly incomplete: additional collaborators like \"and artisans\" or \"designers from around the world\").\nThe sentence ends still continuing the prepositional phrase \"we connect with fashion magazines, curators, designers,\" expecting additional collaborators or collaborators, grammatically and semantically.",
+  "extracted": true
+ },
+ {
+  "idx": 81,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:77166",
+  "explanation": "Encyclopedic/Wikipedia article structure about the cob bitmasking bird redbilled, emphasizing distributions, behavior, and taxonomical relationships of the species and family.\n\nThe text is mid-sentence presenting population estimate statistics for critically endangered Australian black cockatoo subspecies, part of a list (\"300,000 adults estimated in the Cape York forests, nearly 207,000i P. ex LP\").\n\nFinal token \"220,0\" is an incomplete number mid-sentence (\"217,000...\"), part of a continuing enumeration of breeding pairs (\"389,000)\u2014the Lake Eyre population, 226,0[00]\") indicating the continuing millions figure part of another statistical citation of population counts from specific survey surveys.",
+  "extracted": true
+ },
+ {
+  "idx": 82,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:43625",
+  "explanation": "Biblical/theological discourse analyzing 1 Corinthians 13, establishing contrast between spiritual gifts and love's supreme importance throughout life.\n\nTheological explanation of spiritual gifts in reverse order of biblical description (\"not saying that I have all gifts\"), building toward a familiar verse quote requiring completion \u2014 \"When we were children, we see as through a mirror\" from 1 Corinthians 13.\n\nFinal token \"a\" is an indefinite article mid-phrase \"looking into a,\" part of a subordinate clause \"looking into a [collapsible/reflective object]\" completing the metaphor \"when we read the scriptures as a child we only see things as looking into a ___,\" expecting a noun phrase like \"a mirror\" or \"a glass\" completing the ancient liturgical quote.",
+  "extracted": true
+ },
+ {
+  "idx": 83,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:38416",
+  "explanation": "Academic/web search result format: structured listings of related terms, definitions, or resource descriptions about \"virus\" searches (\"Entry about X is on the Medical Dictionary Definitions\").\n\nThe Medical Dictionary Definitions section follows a boilerplate description pattern \u2014 \"the largest source of\" signals a website introduction clause, indicating standardized disclaimer text.\n\nFinal token \"of\" completes the phrase \"largest source of\" \u2014 the sentence \"medicaldictionary.org is the largest source of\" is part of a credentialing/disclaimer opener \"the Medical Dictionary Definitions is the largest source of\" \u2014 next tokens must be a complement noun phrase describing the dictionary's content scope, like \"medical terms and definitions\" or \"medical information anywhere on the web,\" extending this formal introduction sentence \"It is the authoritative reference source for.\"",
+  "extracted": true
+ },
+ {
+  "idx": 84,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:17397",
+  "explanation": "German industrial product article for Rexolit V-Wood\u00ae pretreatment presses, focusing on precision/performance features and application methodology throughout.\n\nThe text ends a comparative quality argument (\"far more robust than conventional impact dies made of steel\" or similar), emphasizing longevity and durability of high-frequency moulds as a key selling point (\"can very easily be used with composite materials and ensure reliable results\").\n\nFinal token \"ensures\" is mid-clause (\"and ensures\"), continuing a concluding sentence (\"hardened-in graphite moulds are therefore less susceptible to wear and tear and ensures\"), part of a long sentence (\"high-quality material fibres are light yet very robust... and high-frequency moulds are easy to service and service-free. This makes them far less susceptible to wear and ensures...\"), requiring a noun phrase describing equipment lifespan, durability, or serviceability (e.g., \"long service life\" or \"optimum long-term operation\").",
+  "extracted": true
+ },
+ {
+  "idx": 85,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:81609",
+  "explanation": "Site navigation content for optics/camera equipment articles, maintaining copyright/trademark boilerplate throughout (\"Antenna Weekly \u00a9 kept this page for NetRef's Antenna Appliance section\").\n\nPattern of listing resources for \"NetRef's Antenna Article Section,\" each sentence introducing a specific item (\"Our flashpoint tool,\" \"site,\" \"tips & tricks page there\") \u2014 next token likely follows this concluding phrase with \"Antenna\" section name like \"Antenna/Remote section\" or \"Antenna Tools page.\"\n\nFinal token \"Ant\" is mid-word or the start of a page/approval phrase (\"newly added to our Antenna Tools section which completes our Antenna websites. This is our site's portion of our Ant-[section]\" \u2014 continuation requires a specific section descriptor such \"Antenna page, Remote section\").",
+  "extracted": true
+ },
+ {
+  "idx": 86,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:61259",
+  "explanation": "Medical/video device repair business statement (\"Please contact us with any and all Medical Devices Needed\"), suggesting domain of equipment repair professionals or distributors.\n\nThe listing pattern (client/product name, system specs) may signal a catalogued product entry \u2014 a formal device name or description follows (\"2007 Medrad Autoinjector\").\n\nFinal token \" Injector\" indicates the beginning of a specific model name/title (\"2017 Medrad 150i Syringe Injector\" or similar), within a damage/record upload or listing context (\"1/2/2015 - Harris Medical - 2007 GE Medical Systems Syringe Injector\"), suggesting technical specifications or condition details may follow.\nThe listing title/field pattern \"Date: Location: Description:\" structure strongly anticipates operational or diagnostic parameters next.",
+  "extracted": true
+ },
+ {
+  "idx": 87,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:12440",
+  "explanation": "Clinic blog format with structured sections (prevention, causes) covering dental implant care; detailed instructional content expected throughout.\n\nThe section \"What to Expect After a Dental Implant Procedure at a Preventive Care Dentist\" introduced brushing instructions mid-sentence; patients need practical follow-up guidance about oral hygiene after a dental implant cleaning procedure.\n\nFinal token \"brush your\" is part of an ongoing instruction \"Gently brush your [mouth]\" \u2014 sentence \"After your dental implant procedure, continue brushing your\" is incomplete (\"Gentle brushing is encouraged. Make sure to clean your\" or \"mouth carefully with a soft toothbrush\"), requiring continuation of the dentition care sentence \"Brush your teeth gently. Use your... after surgery\" continuing post-procedure oral hygiene guidance.",
+  "extracted": true
+ },
+ {
+  "idx": 88,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:88872",
+  "explanation": "Academic event report covering Brown Institute for Sustainability's \"A Day in Taipei Sustainable Fashion Summit\" panel event, establishing a pattern of structured participant descriptions for each exhibit.\n\nThe text is mid-sentence inside an authored quotation, documenting student panelist Rachael Wei's reflective response after visiting the Korean Craft Exchange exhibit \u2014 \"my overall perspective of the event was really interesting because\" signals a continuation of her direct quote about the workshop's conversational or interdisciplinary appeal.\n\nFinal token \"because\" is a causal conjunction mid-quote, \"this was my first event at a fashion sustainability club,\" within a nested explanation (\"It was interesting because\"), requiring continuation like \"it addressed unconventional methods of waste\" or similar specific reaction to the ethnobotany/exhibition presentation (\"It was a really exciting event...\").",
+  "extracted": true
+ },
+ {
+  "idx": 89,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:38762",
+  "explanation": "Article maintaining informative/promotional tone about electric vertical takeoff & landing (eVTOL) aircraft throughout.\n\nNarrative/argumentative momentum: the text details several eVTOL companies/bananas, signaling a continuation of-specific company examples or trends \u2014 \"another company is stepping up in the game.\"\n\nFinal token \"its\" begins possessive noun phrase \"is working on its...\" \u2014 part of a relative clause (\"A California-based company, Lilium Aviation, is working on its\") immediately following \"A newcomer, Ultra Air, is working on new technology focused on eVTOL flying taxis. Another company, Pipero, is working on its,\" requiring a noun like \"own flying taxi/electric aircraft technology/project/commercial launch plans\" continuing the pattern.",
+  "extracted": true
+ },
+ {
+  "idx": 90,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:10412",
+  "explanation": "Journalistic Nigerian press report continuing farmer-politician interaction, with Yammawura still making statements about Samuel Sule's keynote address and their shared vision.\n\nArgumentative momentum toward conclusion: the article has covered the main appeal/meeting purpose, inspections tour, health issues, and is now moving to comparison/international relevance.\n\nFinal token \"countries\" opens a relative clause mid-sentence \"He said some African countries\" \u2014 a subordinate \"who / would need to follow the smart agricultural practices and action hence Nigeria can borrow from him\" pattern; the sentence \"Some African countries\" requires continuation like \"would benefit from Nigeria investment model\" or \"like Sierra Leone can learn from Nigeria in adopting such practices.\"\nThe statement is part of his departing remarks \"He also affirmed that some African countries...\"",
+  "extracted": true
+ },
+ {
+  "idx": 91,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:12706",
+  "explanation": "DIY model kit / engineering content description, promising instructions or build guidance for an amazing machine designed by Thomas Szabo. Implies promotional/instructional tone throughout.\n\nThe \"paper only\" reference suggests a resourceful approach: \"just print out the plans from these CAD drawings and go,\" indicating a continuation of enthusiastic encouragement (\"go home,\" \"go build your own\").\n\nFinal token \"go\" ends an instruction or prompt \"and just print the plans, and go\" \u2014 part of a closing line \"Just grab his CD and these magnetic CAD drawings and go\" \u2014 the sentence \"Get a copy of his PDF plans from his site (download, buy, etc.) and go\" expects immediate continuation with a completing action phrase like \"go nuts\" or \"building!\"",
+  "extracted": true
+ },
+ {
+  "idx": 92,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:72404",
+  "explanation": "Thesis-driven product portfolio pattern: each document type introduces requirements and technology solutions for structural foam applications (field welding, non-destructive testing, etc.).\n\nNarrative momentum from architectural/light industry case study: \"For Fincantieri's Engineering in Boston, a maintenance facility was in need of panels installed to cover a previously completed berthing deck. The challenge was,\" sets up a problem-solution structure detailing logistical constraints.\n\nThe final token \"ferries\" is mid-sentence (\"The process of coordinating the arrival and departure of ferries\"), part of an ongoing explanation \"Coordinating the installation while flights of these ferries...\" \u2014 the sentence \"Coordinating the passage of overhead cover panels while the arrival or departure of ferries\" expects a continuation like \"was challenging/an issue\" completing this subordinate clause.",
+  "extracted": true
+ },
+ {
+  "idx": 93,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:21861",
+  "explanation": "Narrative account of a race/car incident, setting up specific sequence of events mid-sentence.\n\nThe user is detailing a high-speed engine failure diagnostic story, building a specific sequence of actions (\"Put the truck in deep transmission in first gear then threw the clutch in at 80mp shown\").\n\nFinal token \"just\" (following \"I shifted into reverse and screwed the clutch in just\") is part of an incomplete clause (\"I hit the revs 500 rpm but into the brakes just...\") describing precision impact timing; next tokens should be a time expression like \"before it happened\" or \"like I had expected\" completing this crash description sentence structure (\"collided with left hand tires and flipped just\").",
+  "extracted": true
+ },
+ {
+  "idx": 94,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:94110",
+  "explanation": "UK retail product listing/description pattern with fashion protocol and measurements, suggesting an Italian luxury brand outlet page for Asos Marketplace.\n\nThe text follows a \"product name, money-off description, color list, and sizing/care details\" structure (\"Liam Rose grosgrain jersey : 100% calf leather. Superb shoes from Zara. Trend tech denim\"), indicating another data field continues \u2014 possibly price, SKU, or rating/size details.\n\nThe final token \"9\" appears to begin an identifier, measurement (e.g., \"95.9 cm\"), a product barcode or sku tag \"\u00a367.99 Worldwide. 9...\" \u2014 a numeral mid-sequence is complete or part of a continuation like a size label \"9\" completing an outfit/measure caption or ranking style code \"Mnotable7x.\"",
+  "extracted": true
+ },
+ {
+  "idx": 95,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:78819",
+  "explanation": "Business/promotional description: Canadian artificial seeds company pitching to customers with specific products and measurements, establishing purchase context throughout.\n\nCustomer support/prompting interaction: the entire page is structured to encourage engagement (\"please feel free to email or comment if you have any questions.\")\n\nFinal token \"hesitate\" is part of a final phrase \"don't hesitate\" \u2014 a conventional closing expression (\"don't hesitate to contact us\") completing the sentence's command directed at the buyer (\"If you have any questions feel free, please don't hesitate\"), within closing statement \"Please don't hesitate [to contact us]\" within a customer service prompt \"If you have any questions or concerns, feel free to just reach out to us, please don't hesitate\" expecting continuation like \"to get in touch\" or \"to ask.\"",
+  "extracted": true
+ },
+ {
+  "idx": 96,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:70687",
+  "explanation": "Pedagogical/technical mathematics introduction, following a Q&A explanation of linear regression calculations in Excel.\n\nThe explanation discusses two different regression variants (\"y vs x or x vs y\"), implying practical alternatives or caveats are being listed (\"this is for predicting Y based on X; to reverse this change roles and methods\").\n\nFinal token \"inverting\" is mid-clause (\"by inverting\"), part of an ancillary remark \"One alternative method would be to invert\" \u2014 the sentence is incomplete and part of advice explaining an analytical insight or equivalent relationship, within \"Alternatively, for a case where errors are in the X variable, or for the error terms being different: one could be exchanging roles; by inverting\" suggesting next terms like \"the equation,\" \"the roles,\" or \"the analysis\" completing this supplementary suggestion.",
+  "extracted": true
+ },
+ {
+  "idx": 97,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:21364",
+  "explanation": "Academic/promotional venue listing pattern, establishing a complete itinerary for an event series in a city theater, with film title, cast details, and plot summary provided.\n\nNarrative momentum of plot synopsis: Dave Eggers' film description is mid-sentence (\"follows an Irish-American, raconteur trying to...he tries to repair his life as an aging rocker\"), requiring continuation of this critical plot summary.\n\nFinal token \"estranged\" is an adjective mid-noun-phrase \"his estranged,\" part of an ongoing list (\"to reunite with his estranged [relative/nephew\u01b0\u1edbng]) and part of \"revisit his hit memoir; to reunite with his estranged...\" \u2014 a relative clause \"to reknit his life with his estranged\" demands a noun (e.g., \"father\" or \"adult son\") immediately next.",
+  "extracted": true
+ },
+ {
+  "idx": 98,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:74186",
+  "explanation": "Direct speech/quote from a BBC TV executive continues, discussing channel reform proposals and production limits.\n\nHistorical reference to \"The Bill\" establishes context \u2014 a British soap opera revival, likely communicating nostalgia or audience preference for soap box office specials.\n\nFinal token \"on\" is mid-sentence (\"when it was last on\"), part of B.x's quoted speech (\"I'd really miss it \u2014 when 'The Bill' was last on [broadcast]\" \u2014 the sentence \"I remember when my husband first said he missed it when it was last on\" is incomplete, requiring a noun phrase like \"on air\" or \"on Channel 4\") completing this subordinate reason.",
+  "extracted": true
+ },
+ {
+  "idx": 99,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:96390",
+  "explanation": "News article covering the candidacy of John Yoo, establishing factual/contextual background about U.S. legal justifications for torture.\n\nThe sentence structure \"many human-rights advocates argue that Al-Qaeda prisoners should be treated as the worst viol-\" strongly anticipates a noun (\"violators\" or \"violations\") completing the definition/description of the category being discussed.\n\nFinal token \"viol\" is mid-word or part of a compound noun (\"most notorious viol\" \u2014 part of \"the worst viol[iters].\" within a parenthetical comparative clause (\"some suggest... deal with the most notorious viol-\"), requiring a noun like \"violators of the laws of war\" or \"violation\" to finish the qualification \"U.S. troops theoretically could treat such prisoners as, say, the most flagrant viol[ators]\".",
+  "extracted": true
+ },
+ {
+  "idx": 100,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:24640",
+  "explanation": "Academic literary analysis essay formatting (\"author bio,\" plot summary, book notes pattern) \u2014 U.S. literature survey course context with discussion questions covering LeFanu's Gothic themes.\n\nArgumentative momentum: the sentence explains LeFanu's place in literary history (\"she enjoyed success and is commonly ranked as one of the greatest women writers of [her time]\"), leading toward a comparative or continuous description.\n\nFinal token \"of\" is a preposition within the relative clause \"among other American writers of [ ]\" \u2014 the sentence \"is not markedly different from other American writers of\" requires a time period or contemporaneous writers to complete (\"her time\"), e.g., \"her time, like Joyce Carol Oates or Shirley Jackson\" continuing the comparative contrast \"Although [she is] not considered as exceptional as some contemporary American writers of.\"",
+  "extracted": true
+ },
+ {
+  "idx": 101,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:19495",
+  "explanation": "Business/promotional webpage for \"China stone crusher company\" \u2014 template-style boilerplate content signals a Chinese language factory/product page, following standard homepage structure with navigation, features list, and contact sections.\n\nThe page-ending copyright notice \"\u00a9 2016 www.pexjawcrusher.net All rights\" is a common Chinese-language disclaimer phrase \"All rights reserved\" completing a footer attribution.\n\nFinal token \"rights\" is part of \"All rights\" \u2014 a copyright statement completion (\"\u00a9 2016 China stone crusher company All rights _______), the word \"reserved\" is the next expected token, completing this legal/prospective qualifier \"\u00ae Unauthorized reproduction is strictly prohibited All rights reserved.\"\nThe sentence \"\u00ae copyright 2016 www.pexjawcrusher.net All rights\" needs \"reserved\" immediately.",
+  "extracted": true
+ },
+ {
+  "idx": 102,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:54806",
+  "explanation": "Multi-step Chinese fiction serialization pattern, each continuation following structured narrative momentum of the \"Lord of the guild\" story milestones.\n\nRecurring demise/player death scenarios throughout \u2014 \"in front of them was a huge explosion,\" \"lurked near the edge of death,\" \"holds up two fingers, the other eyes disappeared\" \u2014 establishing a formulaic reference to death rites or after-giving-taking.\n\nFinal token \"the\" is a preposition beginning a locative/marginal phrase \"lying on the bed, on the\" \u2014 mid-sentence, \"inside was a traceless prison room, looking deadming without any fear. As if dead, still, on the\" continues a description (\"put his left eye to open, the right eye closed, on the\" \u2014 suggesting a narrative continuation of where prisoners/condemned people suffer consequences like wheels or shackles).\nThe sentence is incomplete, expecting noun phrase describing physical surroundings or status.",
+  "extracted": true
+ },
+ {
+  "idx": 103,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:5797",
+  "explanation": "Product listing/description pattern in Chinese, emphasizing waterproof Christmas lights as special feature throughout (\"how to drive all evening without lightning\" refers to waterproof protection).\n\nThe bullet point list of brightness modes and functions is incomplete \u2014 \"active shapes: flash, fast flashing, slow flashing, blinking, multimode and steady\" suggests enumeration with possible additional bulbs or settings mentioned.\n\nFinal token \"steady\" is the last list item (\"slow flashing, fast flashing, slow flashing, blinking, multimode and steady\"), completing the mode catalog \u2014 a continuation like \"light\" word closes the expression \"5 kinds modes: LED1, LED2, 3 colors, sequence, shimmering and steady\" \u2014 the concluding phrase \"STEADY light\" likely follows immediately to close the final setting.",
+  "extracted": true
+ },
+ {
+  "idx": 104,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:53092",
+  "explanation": "Recreational/informational tone about a board game variant: rules implied, likely British/European English vocabulary (\"obvious wincher\" = take all.\n\nThe description lists this as an \"introductory variant\" \u2014 something enjoyable for casual players but challenging enough for accomplished players to enjoy its novelty.\n\nFinal token \"welcome\" is mid-phrase in \"makes a welcome,\" part of an idiomatic clause \"make a welcome [X],\" within a subordinate phrase. The phrase \"good relaxing game as a break from WCW [Western Counties Willingham], and makes a welcome [break/change/half hour's diversion]\" requires a noun or adjective completing the sentence \"it makes a good novelty variant for parties and sends people into paroxysms, and makes a welcome...\" \u2014 likely \"change of pace\" or \"alternative to\".",
+  "extracted": true
+ },
+ {
+  "idx": 105,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:66427",
+  "explanation": "Formal Nigerian government/regulatory announcement, describing a petroleum tax collection dashboard service for petroleum buyers.\n\nThe disclaimer about transportation cost/difficulty of returning for import receipts promises a completion of what purchasing customers are to do instead \u2014 solvent filling stations no longer require tagging prior collection.\n\nFinal token \"to\" is a preposition completing \"taking the tag to,\" within a subordinate clause (\"can simply be informed before bringing the document to [the station]\") \u2014 the instruction (\"but he or she may place a call seven days before bringing the pump for verification before bringing it to\") needs a concluding noun phrase like \"receive the proper service\" or \"the station.\"\nThe sentence \"customers may choose not to pay transport nor be charged any transportation cost. He or she need not have the tag tagged before bringing it to\" requires completion of the destination phrasing \"bringing it to\" the designated station.",
+  "extracted": true
+ },
+ {
+  "idx": 106,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:26442",
+  "explanation": "Ongoing narrative argument in a humorous, informal public-radio column about email/junk mail dangers to government functions, with consistent practical anecdotes about stumpwork quality and delivery issues.\n\nThe article is building a sequential list of recommendations or anecdotes about electronic communications and email harassment, with Stanton's anti-email policy just introduced (\"from now on, I'm going to only accept\").\n\nFinal token \"accept\" is mid-clause \"I have decided to only accept\" \u2014 within a subordinate sentence \"from this day forth, I plan to only accept\" following the phrase \"As of today, I've decided to only accept,\" expecting immediate continuation like email\" or \"documents via email, and only after certain times must be phoned,\" completing the policy statement about his work contact/communication workflow.",
+  "extracted": true
+ },
+ {
+  "idx": 107,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:3253",
+  "explanation": "Adult/sexually explicit content site-world, following language platform conventions with tags like \"avatar sex chat\" \u2014 need a continuation appropriate for a \"Meet Marianna\" page on a European adult webcam site.\n\nThe phrase \"Join Marianna and all her...\" promises continuation of desirable character description centered on women.\n\nFinal token \"her\" is a possessive mid-phrase \"meet all of her,\" part of an introductory tagline sentence (\"Come join Marianna and all her\"), within a page welcome intro \"Join us and/or meet all Marianna and all her X\" \u2014 almost certainly followed by a noun like \"friends\" or \"hot ladies\" completing the phrase.\nThe sentence \"Join fun chat with Marianna and all her\" is incomplete and requires continuation of the descriptor \"friends\" or similar warm accompaniment noun.",
+  "extracted": true
+ },
+ {
+  "idx": 108,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:35914",
+  "explanation": "Collection of French language Pok\u00e9mon costumes/vendors pages concatenated in sequence; brand/product listings follow throughout, covering jackets, t-shirts, masks, accessories.\n\nThe text is predominantly a listicle/pinterest-style aggregation of Pok\u00e9mon-themed artisan/online retail links, suggesting this final entry is an incomplete promotional or curated content page (Swarovski France souvenir shop).\n\nFinal token \"sur le\" is the start of a French phrase \"produits et souvenirs en ligne sur le [phrase/topic]\" \u2014 credited is the phrase about a rock or pop star named Chuck Norris, in a pattern like \"fanstore fran\u00e7aise \u00e9xitant et int\u00e9r\u00eat sur le site de Pok\u00e9mon.\"\nThe sentence is mid-introduction, \"T-Shirt and posters de fan fran\u00e7ais sur curry et autres personnages de Stars / about the\" expecting a noun phrase continuation completing the French descriptive title of the store or image content (e.g., \"style De Chuck Norris\").",
+  "extracted": true
+ },
+ {
+  "idx": 109,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:74947",
+  "explanation": "Meteorological/mid-level weather analysis structure, focusing on an autumn storm system over North America, following aviation or MWR forecast conventions.\n\nNarrative momentum: peak storm strength and timing have been covered (\"still bringing just north of 90mph,\" \"the storm also expanding\"), so model projections, additional outlook details, or cautionary statements about landfall variations are expected next.\n\nFinal token \"The models\" opens a subordinate clause (\"The models\"), within a specific discussion of model guidance (\"this evening was bringing some heavy rain back north but the storm is now back over the Pacific. The models...\" \u2014 this sentence \"are starting to diverge here,\" paralleling earlier attribution \"Sea Breeze favors a move to Florida afterwards.\") expecting model agreement/forecast statement like \"are showing...\"",
+  "extracted": true
+ },
+ {
+  "idx": 110,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:18918",
+  "explanation": "Legal/disclosure disclaimer pattern: a manufacturer's caveat about liability for product use is established throughout (\"don't represent this as gospel truth\").\n\nList/procedural context: the text is providing disclaimers and instructions for readers to build the mentioned rifle recoil arrestment device, suggesting more procedural or purchasing caveats follow.\n\nFinal token \"work\" closes a comparative clause (\"may work for me but it may not work\"), part of a disclaimer sentence; the sentence \"what works for me may not work may work for you\" requires completion with \"for someone else\" or similar categorical statement completing the parenthetical warning \"don't promise that it will work for you, but I cannot guarantee that it will work\" \u2014 continuing \"and if it works for me, it may not work.\"",
+  "extracted": true
+ },
+ {
+  "idx": 111,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:53092",
+  "explanation": "Homepage/description for a compuserve chain puzzle challenge site (\"link: learn about chain puzzles\"), signaling intentional stylistic minimalism throughout.\n\nThe sentence \"start studying chain puzzles here if you don't know how they work\" suggests there is contact/support information or resource details to follow; a specific contact address or link for email communication is being introduced.\n\nFinal token \"email\" follows \"contact me - email\" \u2014 immediately constrains a following address, greeting, or phrase like \"me\" or a direct email address (e.g., \"email [address]\" or \"email me at myweb.comAnimating@...\") completing an instruction phrase that \"if you have problems with these challenges, contact me - email\" \u2014 a contact prompt requiring syntax completion.",
+  "extracted": true
+ },
+ {
+  "idx": 112,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:38548",
+  "explanation": "Australian primary school maths context with informal tone, suggesting set of addition/subtraction facts content about 'bridging 10'.\n\nThe sentence is explaining a teaching or investigating method using a specific manipulative technique, \"using tens frames and fingers to help our boys figure out the...\" \u2014 a purposeful verb \"to help determine/solve\" is expected.\n\nFinal token \"the\" is an article beginning a noun phrase \"to work out the,\" completing the prepositional phrase (\"by changing the number of tens figures to work out the\"), within \"bridging ten strategy where you use a blank number line or adding extra groups to work out the___\" \u2014 next tokens must be a maths term like \"answer,\" \"difference,\" or \"total.\"",
+  "extracted": true
+ },
+ {
+  "idx": 113,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:15945",
+  "explanation": "Product specification/datasheet pattern for industrial needle holders (Nanotec AC1), using Italian language \u2014 components, materials, and applications like \"thermal cushions, mounted electro HC-series crimping dies\" suggest more variants or accessories available.\n\nThe fibre options description (\"Can be supplied as series XYZ or AC with optional fibre.\") suggests alternating clear marking conventions like alternative names or compatible devices (\"See...special_version for manual operation\").\n\nFinal token is a newline separating product descriptions (\"Optional new rugged grip options as Ring set.\") \u2014 the last entry ends a notice \"See model AC-p(statement)\" finishing a recommendation/reference;\" manual version\" sentence, pattern may cue additional compatible accessories or European/English translations like \"operator\" or \"See model AC-PM for automatic operation.\"",
+  "extracted": true
+ },
+ {
+  "idx": 114,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:9294",
+  "explanation": "Established structured article format: intro, pros, drying methods section, now returning to \"How to Properly Care for Disposable Baby Bottles in Toronto: A Comprehensive Guide.\"\n\nThe text repeatedly emphasizes \"critical care measures\" \u2014 the introduction (\"meticulous care steps should be followed to ensure optimal usage\"), and now the body is beginning the detailed step-by-step or list content promised in the heading.\n\nFinal token \"take\" is the start of a repetitive phrase \"it's imperative to take,\" mirroring the earlier sentence, \"To effectively care for your disposable baby bottles, it's crucial to take\" \u2014 sentence is mid-completion, immediately requiring a noun phrase (\"specific precautions,\" \"careful steps,\" previously used \"proactive and meticulous measures, as outlined below, in ensuring your bottles' longevity\") to follow.",
+  "extracted": true
+ },
+ {
+  "idx": 115,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:72528",
+  "explanation": "German patent specification (DE) detailing a process for thermal coherence cutting of sheetmetal webs using laser-equipped drawing rolls, following technical industrial/legal protection patterns throughout.\n\nNarrative momentum: the document has systematically covered apparatus variants (rotatable roller, fixed rotatable radials, slurries, carbon dioxide or water), now concluded and moving to illustrate the invention's actual embodiments in more detail.\n\nFinal token \"and\" is a conjunction continuing \"rotating and\" \u2014 the sentence \"application device comprising gripping and\" is mid-clause \"rotating and\" within an introductory noun phrase (\" illustrates in the detail... the rotatable and\"), requiring a coordinating continuation like \"floating transversing device\" or specific device description continuing the illustration sentence \"The figure shows a rotating and (floating/fixed) suction nozzle...\"\nThe sentence is incomplete and demands continuation of the compound noun/adjective phrase describing the operating device shown in the figure.",
+  "extracted": true
+ },
+ {
+  "idx": 116,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:28589",
+  "explanation": "Bollywood celebrity news content pattern: each sentence introduces a different figure/celebrity statement or activity (YouTube, Ranbir Kapoor, Sanjay Leela Bachchan).\n\nNarrative momentum: a caption/photo post description is underway \u2014 \"She recently shared a photo along with her husband, Ranbir Kapoor, of her friend Jayashri\" indicates an ongoing elaboration of that Instagram/Pinterest caption.\n\nFinal token is \"Jayashri,\" \u2014 mid-sentence, part of an enumeration (\"showed a sweet photo of her friends including veteran Jayashri,\") within a list or group description, expecting a continuation naming another person or completing the excerpt/quotation (\"Lagaan controversy during his recent outing earlier this year,\" situating Jayashri's emergence).",
+  "extracted": true
+ },
+ {
+  "idx": 117,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:45716",
+  "explanation": "Legislative/policy document structure in a formal American authority guide, focusing on Florida HUD guidelines for small-household proprietors.\n\nThe text is systematically detailing all payment types (up to US$200,000 goods payable fronts, US$500 till approx), suggesting continuation of specific procedural/cost limitations or additional exception details.\n\nFinal token \"charge\" is mid-clause \"For a fix of purchases with a charge,\" part of an ongoing additive sentence (\"One or two personal transfers each with a fee...as much as Ten units with a fee till avoidance...each with a cost...or cost charge\"), indicating the sentence describes indexing or distinguishing higher-value land purchase orders.\nThe structure \"an order with a charge\" requires a dollar limit or procedural descriptor to follow like \"agreement of $50\" or \"of enough charge.\"",
+  "extracted": true
+ },
+ {
+  "idx": 118,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:75267",
+  "explanation": "Academic/optical microscopy journal article describing an experimental approach, establishing technical scope with Italian English (\"is a critical test system developed\").\n\nThe abstract/conclusion structure demands demonstrating feasibility and capability of the embedded system \u2014 \"one-chip fiber-aspect configuration combining the measurement elements with the microchannel structure.\"\n\nFinal token \"and\" is a conjunction continuing \"simultaneous in-situ observation and,\" within a component clause \"allows the simultaneous in-situ observation and\" \u2014 within this compound phrase, what follows must be a parallel measurement term completing the conjunction, likely \"electrical excitation\" or \"in-situ electrical measurement\" continuing \"The apparatus enables direct optical observation combined with simultaneous in situ observation and.\"",
+  "extracted": true
+ },
+ {
+  "idx": 119,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:1739",
+  "explanation": "UK retailer pairings: \"This grey pr\u00e9sente dari cotton & elastane babygro from H&M Kids teamed with [our] organic cotton babygro bib.\"\n\nProduct listing/description format: measurement/size details expected after fabric description, as seen throughout listing infant garments.\n\nFinal token \"L\" begins a fabric specification or sizing note (following \"Fabric: 100% cotton/nelton knit. L\"), likely mid-word or part of a UK sizing code (e.g., \"Lining: L95%\" or \"Linen lyocell blend\"), continuing the garment technical specification sentence: \"Made in Italy. L[inen]\" promising additional material/construction details.",
+  "extracted": true
+ },
+ {
+  "idx": 120,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:88469",
+  "explanation": "Italian language pattern of musician profile resumes, each presenting credentials with concert/documental video work as thematic center.\n\nThe document is an ongoing list for \"China Stage Production Agency,\" detailing each Italian musician/company's contribution to live performances, PA, and sound equipment work (Mortezza, Bedogni, Nick, Hugs).\n\nFinal token \" (\": an open parenthesis following \"several concert event (\", continuing Nick Dentico's description (\"he works as PA for some italian Theater and adult concerts (\"), requiring specific event names or venues to follow like \"festivals, stadium show, The confirms delegation\").\nThe sentence \"he works in PA for different italian concerts (...\" is mid-clause, part of \"all type of musical events concerts (\"\nwith immediate semantic expectation for place names or event types completing this parenthetical list.",
+  "extracted": true
+ },
+ {
+  "idx": 121,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:95436",
+  "explanation": "The text contains redundant lag content about Australian poker/casino games (\"the best review gaming sites in australia\"), suggesting formulaic SEO content or template filler text.\n\nThe closing phrase \"free pokies canada indie slots online bonus rounds free games australia\" is being repeated, reaching a near-duplicate state of the opening line.\n\nThe final token \" p\" is a truncated \" p\" in the repeated phrase, part of \"best review gaming sites uae slots list ca review casino australia\" \u2014 the sentence \"search for reputable casino games, play free pokies canada indie slots online bonus rounds free games australia, review best free cash pokies australia\" needs completion (\"os\" to finish the truncated word).",
+  "extracted": true
+ },
+ {
+  "idx": 122,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:69323",
+  "explanation": "Academic or journalistic debate/film introduction tone \u2014 a structured description of a book or TV programme's subject matter about the US election and American foreign policy.\n\nThe sentence establishes a pattern describing American foreign malignancy, suggesting conceptual framing toward a critical geopolitical analysis of international/U.S. role.\n\nFinal token \"Americans\" is mid-clause (\"how the US and Americans\" or \"how Americans and the American people\"), part of an incomplete relative clause (\"how the war in Iraq affects America and how Americans and Americans\") within quotation marks \"What this war means to the USA and how Americans and Americans\" \u2014 next tokens will likely finish this noun phrase, probably with \"can be framed,\" \"react,\" \"be seen,\" or \"see themselves.\"",
+  "extracted": true
+ },
+ {
+  "idx": 123,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:4800",
+  "explanation": "Corporate/promotional press release for a Thailand-owned Formula 1 event, establishing agreement details and discount promotions throughout.\n\nNarrative momentum: details of the Dubai Desert GMT2 dealership offer have been explained, and now the concluding sentence enumerates the location and opportunity for Dubai Desert GMT2 customers to attend (\"guaranteed reserved seat opportunities for\"}\n\nFinal token \"the\" opens a noun phrase within the sentence \"can participate and experience the Dubai Desert Rallies GP seats at the...\" located mid-prepositional phrase, part of the registration promotion statement \"Customers can purchase race tickets for the historic Formula One Shanghai Grand Prix 2014 at the Emirates Circuit at the...\"\nnext tokens must be a venue name (e.g., \"Dubai World Racing Track\" or \"Singapore International Circuit\").",
+  "extracted": true
+ },
+ {
+  "idx": 124,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:20551",
+  "explanation": "List structure: multiple forum descriptions concatenated one after another, each introducing a community for a specific topic (civs, rifles, nerfs, etc.).\n\nThe pattern of naming the forum + adding additional descriptors (\"Welcome to my\u549dForum. This forum mainly deals with Civ 5, though it is also us for talking about footbal club\u4e89\u8bba\") suggests continued elaboration on community focus.\n\nFinal token \"to discuss\" opens a relative clause (\"to discuss other sport club here, also to discuss\") mid-sentence, \"a forum just for Gears of war UK players. But this forum is also here to discuss...\"), within a community explanation requiring a noun phrase naming another shared hobby/topic (e.g., \"tracking,\" \"all kinds of sports related to gaming\").",
+  "extracted": true
+ },
+ {
+  "idx": 125,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:46928",
+  "explanation": "(Activity/promotional/promotional band announcement) \u2014 fans of Nashville music powerhouse collective OH! are being informed of an upcoming new show, establishing momentum for continued fan event announcement copy.\n\nNarrative momentum: after listing concert descriptors (\"inviting a TON of friends and collaborators to Nashville!\" / \"two chame'LUMs joining us this week\"), the statement has reached a recursive question \"hey-mitical vibes keeps on growing!\" \u2014 more fan-focused continuation or further excitement details expected.\n\nFinal token \"thrilled\" opens a predicate adjective phrase (\"we're thrilled,\" matching earlier framing \"Boy, we're thrilled\"), mid-sentence, part of a repetitive/promotional sentence like \"We're super excited to tell ya...\" or \"to announce...\" continuing the TRAFFIC REMIX promotion.",
+  "extracted": true
+ },
+ {
+  "idx": 126,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:76663",
+  "explanation": "Historical genealogy/family narrative, mixing military/civilian American WWII military service terminology (\"Aaron Miller goin Vietnam,\" \"Joe Mae\") with folksy Appalachian regional dialect.\n\nThe parenthetical list of life events (\"bhought\u6b64\u4e8b hill,\" \"first WWII shipped to Okinawa.....ElementAtVictoria N.Z.\"), establishing expectation for continued enumeration of military or business work experiences or locations.\n\nFinal token \"as\" is a preposition beginning a phrase \"3 months as [something], 39 watch as,\" mid-sentence (\"39 months stint... 3 months as\"), within the military dialect phrase controlling corrupt translators/workers \u2014 the sentence \"39 months there 3 month as\" immediately requires a noun or role, e.g., \"armacerto oiler,\" \"navy,\" or \"merchant marine\" completing that subordinate clause.",
+  "extracted": true
+ },
+ {
+  "idx": 127,
+  "doc_id": "/workspace-vast/celeste/nla-data/finefineweb_100k.parquet:train:84141",
+  "explanation": "Weather/climate report pattern: Indian meteorological data presented sequentially \u2014 sequential weeks of Monsoon performance.\n\nThe narrative momentum is tracking Monsoon progress week by week/monthly, with Fairweather taking time to establish dominance in June; the sentence \"The last week has witnessed lowest ever rainfall in the country since June\" sets up a continuation highlighting poor Monsoon timings or anomalous patterns.\n\nFinal token \"Mon\" is an abbreviation mid-word or start of a noun phrase (\"highest Mon-\"), within a contrastive clause (\"The lowest recorded Monsoon revision ever or the least vigorously Monsoon performances in the last two days saw the lowest-ever pace; rather typical rapid Mon[soon]\" \u2014 outcome is unfinished, immediately requiring \"Monsoon\" or a specific quantified indicator like \"Monsoon rainfall\") continuing the comparative explanation.",
+  "extracted": true
+ }
+]

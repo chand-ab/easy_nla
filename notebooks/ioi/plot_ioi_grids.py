@@ -2,7 +2,7 @@
 
     ioi_patch_conditions_grid.png    ioi_intervention.py's six conditions —
                                      4 layer panels, 5 shot counts per bar group
-    ioi_text_intervention_grid.png   ioi_text_intervention.py's edits —
+    ioi_text_intervention_grid.svg   ioi_text_intervention.py's edits —
                                      4 layer rows x 2 groups (A: rows the round
                                      trip got right; B: rows it got wrong)
 
@@ -18,7 +18,7 @@ continuation instead and writes a suffixed file.
     python notebooks/ioi/plot_ioi_grids.py --figure text    # one of them
     python notebooks/ioi/plot_ioi_grids.py --metric answer
 
-Needs matplotlib and numpy. Figures land in notebooks/ioi/figures/ (gitignored).
+Needs matplotlib and numpy. Figures land in notebooks/ioi/figure_results/.
 """
 
 from __future__ import annotations
@@ -44,7 +44,7 @@ sys.path.insert(0, str(HERE))
 from ioi_intervention import CONDITIONS, METRICS as PATCH_METRICS, PLOT_SKIP  # noqa: E402
 
 RESULTS = HERE / "results"
-OUT_DIR = HERE / "figures"
+OUT_DIR = HERE / "figure_results"
 
 # Gemma-3-12B decoder depth, for the "block k of N" label only.
 N_BLOCKS = 48
@@ -444,7 +444,7 @@ def _text_panel(ax, spec, cells: dict[int, dict], group: str, metric: str, targe
               edgecolor="#cccccc", labelcolor=INK_MUTED, ncols=1)
 
 
-def draw_text(metric: str, out_png: Path) -> None:
+def draw_text(metric: str, out_path: Path) -> None:
     cells = {L: {s: _text_cell(s, L) for s in SHOTS} for L in LAYERS}
     print(f"text grid: read {len(LAYERS) * len(SHOTS)} archives")
 
@@ -502,52 +502,10 @@ def draw_text(metric: str, out_png: Path) -> None:
         fig.text(0.048, 0.962 - i * 0.017, line, fontsize=9.4, color=INK_MUTED,
                  ha="left", va="top")
 
-    # Wrapped by hand to each column's width. Seven body lines is the ceiling
-    # before the block collides with the closing bullets.
-    terms_a = [
-        "Column A terms",
-        "The first six groups replace the IO name wherever it appears in the AV's verbalization; the last three",
-        "(right of the dashed rule) throw that verbalization away and leave one sentence naming the person instead —",
-        "the same template column B calls a gold sentence, with a different name; same rows, same targets",
-        "n = rows naming the IO, of rows the round trip got right.  IO name — the answer, the name the AV wrote",
-        "→ S — replace IO by the prompt's other name.  → other, in prompt — a few-shot demo name, never IO or S;",
-        "        not in prompt — absent from it. Both pool 3 draws",
-        "×3 copies — the same name as the bar to its left, three times at every site",
-    ]
-    terms_b = [
-        "Column B terms",
-        'gold sentence — Final token "to" is a preposition mid-sentence,',
-        '        immediately expecting "<IO name>" as the answer.',
-        "IO name only — that bare name alone, with no sentence around it",
-        "no name — the same sentence with the quoted name deleted",
-        "S sentence — the same sentence, with S in place of the IO name",
-    ]
-    terms_top = 0.174
-    for (xl, _), block in zip(cols, (terms_a, terms_b)):
-        fig.text(xl, terms_top, block[0], fontsize=9.4, color=INK, va="top")
-        fig.text(xl, terms_top - 0.020, "\n".join(block[1:]), fontsize=8.6,
-                 color=INK_MUTED, va="top", linespacing=1.55)
-
-    notes = [
-        "bars within a group = 0 / 2 / 4 / 6 / 8-shot (legend)",
-        "the A / B split is by `answer`, the first-word metric — so here an `unedited` bar off 1.00 / 0.00 "
-        "is the two metrics disagreeing, not a bug"
-        if metric != "answer" else
-        "the A / B split is by this same metric, so the `unedited` bars are 1.00 / 0.00 by construction — "
-        "reference points, not results",
-        "error bars = 95% Wilson intervals over ROWS, not draws — the two → other arms "
-        "pool three substitutions per prompt, which are not three independent trials",
-        "n ≤ 5 rows — the interval spans most of [0, 1]; not a measurement",
-    ]
-    for i, line in enumerate(notes):
-        fig.text(0.033, 0.068 - i * 0.0145, "•", fontsize=8.4, color=INK_MUTED, va="top")
-        fig.text(0.048, 0.068 - i * 0.0145, line, fontsize=8.8, color=INK_MUTED,
-                 ha="left", va="top")
-
-    out_png.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(out_png, facecolor=SURFACE)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(out_path, facecolor=SURFACE, bbox_inches="tight", pad_inches=0.25)
     plt.close(fig)
-    print(f"wrote {out_png}")
+    print(f"wrote {out_path}")
 
 
 # ==========================================================================
@@ -567,7 +525,7 @@ def main():
         if args.metric not in TEXT_METRICS:
             ap.error(f"the text figure has no metric {args.metric!r}; "
                      f"pick one of {tuple(TEXT_METRICS)}")
-        draw_text(args.metric, args.out_dir / f"ioi_text_intervention_grid{suffix}.png")
+        draw_text(args.metric, args.out_dir / f"ioi_text_intervention_grid{suffix}.svg")
 
 
 if __name__ == "__main__":

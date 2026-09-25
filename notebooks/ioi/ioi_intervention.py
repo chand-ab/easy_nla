@@ -265,7 +265,7 @@ def run(args) -> dict:
     )
     # Resolve BEFORE the adapter load: on Gemma-3 the LM is nested under
     # model.language_model.*, so an adapter keyed on model.layers.* matches
-    # nothing and PEFT silently random-inits (see plan_gemma_layers.md).
+    # nothing and PEFT silently random-inits.
     base = resolve_text_model(raw).to(args.device).eval()
     layers = resolve_decoder_layers(base)
     assert 0 <= layer < len(layers), f"layer {layer} out of range ({len(layers)} blocks)"

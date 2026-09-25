@@ -1,0 +1,220 @@
+{
+ "build": {
+  "seed": 0,
+  "n": 42,
+  "per_pair": 7,
+  "stamp": "s0n42v2r1"
+ },
+ "answers": [
+  {
+   "t": 0,
+   "pick": 0,
+   "why": "requiring vs completing"
+  },
+  {
+   "t": 1,
+   "pick": 2,
+   "why": "structured vs none"
+  },
+  {
+   "t": 2,
+   "pick": 0,
+   "why": "momentum vs none"
+  },
+  {
+   "t": 3,
+   "pick": 0,
+   "why": "journalistic vs nigerian"
+  },
+  {
+   "t": 4,
+   "pick": 0,
+   "why": "mention of countries ghana and nigeria"
+  },
+  {
+   "t": 5,
+   "pick": 1,
+   "why": "starts with nigerian"
+  },
+  {
+   "t": 6,
+   "pick": 1,
+   "why": "length"
+  },
+  {
+   "t": 7,
+   "pick": 2,
+   "why": "length"
+  },
+  {
+   "t": 8,
+   "pick": 1,
+   "why": "spanish brand"
+  },
+  {
+   "t": 9,
+   "pick": 0,
+   "why": "final token ..."
+  },
+  {
+   "t": 10,
+   "pick": 1,
+   "why": "guess"
+  },
+  {
+   "t": 11,
+   "pick": 0,
+   "why": "alien"
+  },
+  {
+   "t": 12,
+   "pick": 1,
+   "why": "length"
+  },
+  {
+   "t": 13,
+   "pick": 0,
+   "why": "guess"
+  },
+  {
+   "t": 14,
+   "pick": 2,
+   "why": "q&a"
+  },
+  {
+   "t": 15,
+   "pick": 0,
+   "why": "guess"
+  },
+  {
+   "t": 16,
+   "pick": 2,
+   "why": "length"
+  },
+  {
+   "t": 17,
+   "pick": 2,
+   "why": "product listing"
+  },
+  {
+   "t": 18,
+   "pick": 0,
+   "why": "guess"
+  },
+  {
+   "t": 19,
+   "pick": 0,
+   "why": "guess"
+  },
+  {
+   "t": 20,
+   "pick": 1,
+   "why": "autobiography mention"
+  },
+  {
+   "t": 21,
+   "pick": 0,
+   "why": "final token lesbian lesbian"
+  },
+  {
+   "t": 22,
+   "pick": 2,
+   "why": "guess"
+  },
+  {
+   "t": 23,
+   "pick": 1,
+   "why": "requiring"
+  },
+  {
+   "t": 24,
+   "pick": 1,
+   "why": "chinese in last paragraph"
+  },
+  {
+   "t": 25,
+   "pick": 0,
+   "why": "demanding"
+  },
+  {
+   "t": 26,
+   "pick": 0,
+   "why": "requires vs none"
+  },
+  {
+   "t": 27,
+   "pick": 1,
+   "why": "caribbean vs none"
+  },
+  {
+   "t": 28,
+   "pick": 1,
+   "why": "russian"
+  },
+  {
+   "t": 29,
+   "pick": 0,
+   "why": "within"
+  },
+  {
+   "t": 30,
+   "pick": 0,
+   "why": "suggesting"
+  },
+  {
+   "t": 31,
+   "pick": 0,
+   "why": "expects"
+  },
+  {
+   "t": 32,
+   "pick": 1,
+   "why": "guess"
+  },
+  {
+   "t": 33,
+   "pick": 0,
+   "why": "length"
+  },
+  {
+   "t": 34,
+   "pick": 0,
+   "why": ""
+  },
+  {
+   "t": 35,
+   "pick": 1,
+   "why": "virtual"
+  },
+  {
+   "t": 36,
+   "pick": 0,
+   "why": "guess"
+  },
+  {
+   "t": 37,
+   "pick": 2,
+   "why": ""
+  },
+  {
+   "t": 38,
+   "pick": 1,
+   "why": ""
+  },
+  {
+   "t": 39,
+   "pick": 0,
+   "why": ""
+  },
+  {
+   "t": 40,
+   "pick": 2,
+   "why": "french"
+  },
+  {
+   "t": 41,
+   "pick": 0,
+   "why": ""
+  }
+ ]
+}

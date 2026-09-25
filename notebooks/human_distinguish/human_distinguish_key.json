@@ -1,0 +1,934 @@
+{
+ "build": {
+  "seed": 0,
+  "n": 42,
+  "per_pair": 7,
+  "stamp": "s0n42v2r1"
+ },
+ "key": [
+  {
+   "t": 0,
+   "doc_idx": 23,
+   "pair": [
+    "nla3",
+    "nla4"
+   ],
+   "factor": "SFT init vs RL data order",
+   "arms": [
+    "nla4",
+    "nla3",
+    "nla4",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed1",
+    "temp1_seed3",
+    "temp1_seed0",
+    "temp1_seed2"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 1,
+   "doc_idx": 92,
+   "pair": [
+    "nla1",
+    "nla3"
+   ],
+   "factor": "SFT init (+ rollout)",
+   "arms": [
+    "nla1",
+    "nla3",
+    "nla1",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed1",
+    "temp1_seed0",
+    "temp1_seed0",
+    "temp1_seed2"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 2,
+   "doc_idx": 107,
+   "pair": [
+    "nla2",
+    "nla4"
+   ],
+   "factor": "RL data order",
+   "arms": [
+    "nla2",
+    "nla4",
+    "nla4",
+    "nla2"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed3",
+    "temp1_seed1",
+    "temp1_seed2"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 3,
+   "doc_idx": 51,
+   "pair": [
+    "nla1",
+    "nla2"
+   ],
+   "factor": "rollout noise floor",
+   "arms": [
+    "nla2",
+    "nla2",
+    "nla1",
+    "nla1"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed3",
+    "temp1_seed1",
+    "temp1_seed2"
+   ],
+   "correct": 0
+  },
+  {
+   "t": 4,
+   "doc_idx": 90,
+   "pair": [
+    "nla3",
+    "nla4"
+   ],
+   "factor": "SFT init vs RL data order",
+   "arms": [
+    "nla3",
+    "nla3",
+    "nla4",
+    "nla4"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed1",
+    "temp1_seed0",
+    "temp1_seed3"
+   ],
+   "correct": 0
+  },
+  {
+   "t": 5,
+   "doc_idx": 105,
+   "pair": [
+    "nla1",
+    "nla4"
+   ],
+   "factor": "RL data order (+ rollout)",
+   "arms": [
+    "nla4",
+    "nla1",
+    "nla4",
+    "nla1"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed1",
+    "temp1_seed1",
+    "temp1_seed2"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 6,
+   "doc_idx": 100,
+   "pair": [
+    "nla1",
+    "nla4"
+   ],
+   "factor": "RL data order (+ rollout)",
+   "arms": [
+    "nla4",
+    "nla1",
+    "nla4",
+    "nla1"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed2",
+    "temp1_seed2",
+    "temp1_seed0"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 7,
+   "doc_idx": 85,
+   "pair": [
+    "nla1",
+    "nla3"
+   ],
+   "factor": "SFT init (+ rollout)",
+   "arms": [
+    "nla3",
+    "nla1",
+    "nla1",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed1",
+    "temp1_seed0",
+    "temp1_seed1"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 8,
+   "doc_idx": 80,
+   "pair": [
+    "nla1",
+    "nla4"
+   ],
+   "factor": "RL data order (+ rollout)",
+   "arms": [
+    "nla4",
+    "nla4",
+    "nla1",
+    "nla1"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed2",
+    "temp1_seed0",
+    "temp1_seed2"
+   ],
+   "correct": 0
+  },
+  {
+   "t": 9,
+   "doc_idx": 0,
+   "pair": [
+    "nla2",
+    "nla3"
+   ],
+   "factor": "SFT init",
+   "arms": [
+    "nla2",
+    "nla2",
+    "nla3",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed1",
+    "temp1_seed0",
+    "temp1_seed3"
+   ],
+   "correct": 0
+  },
+  {
+   "t": 10,
+   "doc_idx": 78,
+   "pair": [
+    "nla1",
+    "nla3"
+   ],
+   "factor": "SFT init (+ rollout)",
+   "arms": [
+    "nla3",
+    "nla1",
+    "nla3",
+    "nla1"
+   ],
+   "seeds": [
+    "temp1_seed3",
+    "temp1_seed2",
+    "temp1_seed0",
+    "temp1_seed1"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 11,
+   "doc_idx": 63,
+   "pair": [
+    "nla1",
+    "nla2"
+   ],
+   "factor": "rollout noise floor",
+   "arms": [
+    "nla2",
+    "nla1",
+    "nla1",
+    "nla2"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed3",
+    "temp1_seed0",
+    "temp1_seed2"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 12,
+   "doc_idx": 122,
+   "pair": [
+    "nla1",
+    "nla2"
+   ],
+   "factor": "rollout noise floor",
+   "arms": [
+    "nla1",
+    "nla2",
+    "nla1",
+    "nla2"
+   ],
+   "seeds": [
+    "temp1_seed1",
+    "temp1_seed2",
+    "temp1_seed3",
+    "temp1_seed3"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 13,
+   "doc_idx": 111,
+   "pair": [
+    "nla1",
+    "nla2"
+   ],
+   "factor": "rollout noise floor",
+   "arms": [
+    "nla1",
+    "nla1",
+    "nla2",
+    "nla2"
+   ],
+   "seeds": [
+    "temp1_seed1",
+    "temp1_seed2",
+    "temp1_seed1",
+    "temp1_seed0"
+   ],
+   "correct": 0
+  },
+  {
+   "t": 14,
+   "doc_idx": 42,
+   "pair": [
+    "nla2",
+    "nla3"
+   ],
+   "factor": "SFT init",
+   "arms": [
+    "nla3",
+    "nla2",
+    "nla2",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed2",
+    "temp1_seed1",
+    "temp1_seed3",
+    "temp1_seed0"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 15,
+   "doc_idx": 31,
+   "pair": [
+    "nla1",
+    "nla4"
+   ],
+   "factor": "RL data order (+ rollout)",
+   "arms": [
+    "nla1",
+    "nla1",
+    "nla4",
+    "nla4"
+   ],
+   "seeds": [
+    "temp1_seed1",
+    "temp1_seed0",
+    "temp1_seed3",
+    "temp1_seed2"
+   ],
+   "correct": 0
+  },
+  {
+   "t": 16,
+   "doc_idx": 93,
+   "pair": [
+    "nla1",
+    "nla3"
+   ],
+   "factor": "SFT init (+ rollout)",
+   "arms": [
+    "nla1",
+    "nla3",
+    "nla3",
+    "nla1"
+   ],
+   "seeds": [
+    "temp1_seed2",
+    "temp1_seed2",
+    "temp1_seed1",
+    "temp1_seed3"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 17,
+   "doc_idx": 41,
+   "pair": [
+    "nla3",
+    "nla4"
+   ],
+   "factor": "SFT init vs RL data order",
+   "arms": [
+    "nla3",
+    "nla4",
+    "nla4",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed1",
+    "temp1_seed0",
+    "temp1_seed1",
+    "temp1_seed2"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 18,
+   "doc_idx": 123,
+   "pair": [
+    "nla3",
+    "nla4"
+   ],
+   "factor": "SFT init vs RL data order",
+   "arms": [
+    "nla4",
+    "nla3",
+    "nla4",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed2",
+    "temp1_seed2",
+    "temp1_seed3"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 19,
+   "doc_idx": 8,
+   "pair": [
+    "nla2",
+    "nla4"
+   ],
+   "factor": "RL data order",
+   "arms": [
+    "nla2",
+    "nla2",
+    "nla4",
+    "nla4"
+   ],
+   "seeds": [
+    "temp1_seed1",
+    "temp1_seed0",
+    "temp1_seed3",
+    "temp1_seed1"
+   ],
+   "correct": 0
+  },
+  {
+   "t": 20,
+   "doc_idx": 24,
+   "pair": [
+    "nla2",
+    "nla3"
+   ],
+   "factor": "SFT init",
+   "arms": [
+    "nla2",
+    "nla3",
+    "nla3",
+    "nla2"
+   ],
+   "seeds": [
+    "temp1_seed2",
+    "temp1_seed1",
+    "temp1_seed2",
+    "temp1_seed3"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 21,
+   "doc_idx": 72,
+   "pair": [
+    "nla3",
+    "nla4"
+   ],
+   "factor": "SFT init vs RL data order",
+   "arms": [
+    "nla3",
+    "nla3",
+    "nla4",
+    "nla4"
+   ],
+   "seeds": [
+    "temp1_seed3",
+    "temp1_seed2",
+    "temp1_seed3",
+    "temp1_seed2"
+   ],
+   "correct": 0
+  },
+  {
+   "t": 22,
+   "doc_idx": 28,
+   "pair": [
+    "nla1",
+    "nla4"
+   ],
+   "factor": "RL data order (+ rollout)",
+   "arms": [
+    "nla4",
+    "nla1",
+    "nla1",
+    "nla4"
+   ],
+   "seeds": [
+    "temp1_seed1",
+    "temp1_seed0",
+    "temp1_seed2",
+    "temp1_seed2"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 23,
+   "doc_idx": 30,
+   "pair": [
+    "nla1",
+    "nla3"
+   ],
+   "factor": "SFT init (+ rollout)",
+   "arms": [
+    "nla1",
+    "nla1",
+    "nla3",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed1",
+    "temp1_seed0",
+    "temp1_seed1",
+    "temp1_seed2"
+   ],
+   "correct": 0
+  },
+  {
+   "t": 24,
+   "doc_idx": 102,
+   "pair": [
+    "nla2",
+    "nla4"
+   ],
+   "factor": "RL data order",
+   "arms": [
+    "nla2",
+    "nla4",
+    "nla2",
+    "nla4"
+   ],
+   "seeds": [
+    "temp1_seed3",
+    "temp1_seed3",
+    "temp1_seed2",
+    "temp1_seed0"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 25,
+   "doc_idx": 18,
+   "pair": [
+    "nla1",
+    "nla2"
+   ],
+   "factor": "rollout noise floor",
+   "arms": [
+    "nla1",
+    "nla2",
+    "nla1",
+    "nla2"
+   ],
+   "seeds": [
+    "temp1_seed3",
+    "temp1_seed0",
+    "temp1_seed2",
+    "temp1_seed3"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 26,
+   "doc_idx": 69,
+   "pair": [
+    "nla3",
+    "nla4"
+   ],
+   "factor": "SFT init vs RL data order",
+   "arms": [
+    "nla3",
+    "nla3",
+    "nla4",
+    "nla4"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed1",
+    "temp1_seed1",
+    "temp1_seed3"
+   ],
+   "correct": 0
+  },
+  {
+   "t": 27,
+   "doc_idx": 57,
+   "pair": [
+    "nla2",
+    "nla4"
+   ],
+   "factor": "RL data order",
+   "arms": [
+    "nla2",
+    "nla4",
+    "nla4",
+    "nla2"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed3",
+    "temp1_seed1",
+    "temp1_seed3"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 28,
+   "doc_idx": 11,
+   "pair": [
+    "nla1",
+    "nla3"
+   ],
+   "factor": "SFT init (+ rollout)",
+   "arms": [
+    "nla1",
+    "nla3",
+    "nla1",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed3",
+    "temp1_seed3",
+    "temp1_seed0",
+    "temp1_seed0"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 29,
+   "doc_idx": 10,
+   "pair": [
+    "nla1",
+    "nla2"
+   ],
+   "factor": "rollout noise floor",
+   "arms": [
+    "nla2",
+    "nla2",
+    "nla1",
+    "nla1"
+   ],
+   "seeds": [
+    "temp1_seed3",
+    "temp1_seed2",
+    "temp1_seed1",
+    "temp1_seed0"
+   ],
+   "correct": 0
+  },
+  {
+   "t": 30,
+   "doc_idx": 40,
+   "pair": [
+    "nla3",
+    "nla4"
+   ],
+   "factor": "SFT init vs RL data order",
+   "arms": [
+    "nla3",
+    "nla4",
+    "nla4",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed2",
+    "temp1_seed1",
+    "temp1_seed0",
+    "temp1_seed0"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 31,
+   "doc_idx": 65,
+   "pair": [
+    "nla1",
+    "nla3"
+   ],
+   "factor": "SFT init (+ rollout)",
+   "arms": [
+    "nla3",
+    "nla1",
+    "nla1",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed0",
+    "temp1_seed3",
+    "temp1_seed2"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 32,
+   "doc_idx": 62,
+   "pair": [
+    "nla2",
+    "nla3"
+   ],
+   "factor": "SFT init",
+   "arms": [
+    "nla3",
+    "nla2",
+    "nla3",
+    "nla2"
+   ],
+   "seeds": [
+    "temp1_seed1",
+    "temp1_seed2",
+    "temp1_seed0",
+    "temp1_seed1"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 33,
+   "doc_idx": 13,
+   "pair": [
+    "nla2",
+    "nla4"
+   ],
+   "factor": "RL data order",
+   "arms": [
+    "nla2",
+    "nla4",
+    "nla2",
+    "nla4"
+   ],
+   "seeds": [
+    "temp1_seed3",
+    "temp1_seed0",
+    "temp1_seed2",
+    "temp1_seed3"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 34,
+   "doc_idx": 38,
+   "pair": [
+    "nla1",
+    "nla4"
+   ],
+   "factor": "RL data order (+ rollout)",
+   "arms": [
+    "nla1",
+    "nla4",
+    "nla1",
+    "nla4"
+   ],
+   "seeds": [
+    "temp1_seed3",
+    "temp1_seed2",
+    "temp1_seed0",
+    "temp1_seed0"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 35,
+   "doc_idx": 70,
+   "pair": [
+    "nla2",
+    "nla3"
+   ],
+   "factor": "SFT init",
+   "arms": [
+    "nla2",
+    "nla2",
+    "nla3",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed3",
+    "temp1_seed2",
+    "temp1_seed0"
+   ],
+   "correct": 0
+  },
+  {
+   "t": 36,
+   "doc_idx": 37,
+   "pair": [
+    "nla2",
+    "nla4"
+   ],
+   "factor": "RL data order",
+   "arms": [
+    "nla4",
+    "nla2",
+    "nla2",
+    "nla4"
+   ],
+   "seeds": [
+    "temp1_seed2",
+    "temp1_seed0",
+    "temp1_seed3",
+    "temp1_seed3"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 37,
+   "doc_idx": 109,
+   "pair": [
+    "nla2",
+    "nla4"
+   ],
+   "factor": "RL data order",
+   "arms": [
+    "nla2",
+    "nla4",
+    "nla2",
+    "nla4"
+   ],
+   "seeds": [
+    "temp1_seed2",
+    "temp1_seed0",
+    "temp1_seed3",
+    "temp1_seed2"
+   ],
+   "correct": 1
+  },
+  {
+   "t": 38,
+   "doc_idx": 15,
+   "pair": [
+    "nla1",
+    "nla4"
+   ],
+   "factor": "RL data order (+ rollout)",
+   "arms": [
+    "nla1",
+    "nla4",
+    "nla4",
+    "nla1"
+   ],
+   "seeds": [
+    "temp1_seed3",
+    "temp1_seed3",
+    "temp1_seed1",
+    "temp1_seed2"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 39,
+   "doc_idx": 126,
+   "pair": [
+    "nla1",
+    "nla2"
+   ],
+   "factor": "rollout noise floor",
+   "arms": [
+    "nla2",
+    "nla1",
+    "nla1",
+    "nla2"
+   ],
+   "seeds": [
+    "temp1_seed2",
+    "temp1_seed1",
+    "temp1_seed3",
+    "temp1_seed0"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 40,
+   "doc_idx": 113,
+   "pair": [
+    "nla2",
+    "nla3"
+   ],
+   "factor": "SFT init",
+   "arms": [
+    "nla3",
+    "nla2",
+    "nla2",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed2",
+    "temp1_seed1",
+    "temp1_seed3",
+    "temp1_seed1"
+   ],
+   "correct": 2
+  },
+  {
+   "t": 41,
+   "doc_idx": 101,
+   "pair": [
+    "nla2",
+    "nla3"
+   ],
+   "factor": "SFT init",
+   "arms": [
+    "nla2",
+    "nla2",
+    "nla3",
+    "nla3"
+   ],
+   "seeds": [
+    "temp1_seed0",
+    "temp1_seed1",
+    "temp1_seed0",
+    "temp1_seed3"
+   ],
+   "correct": 0
+  }
+ ]
+}
