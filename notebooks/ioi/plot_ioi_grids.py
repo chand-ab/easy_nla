@@ -1,10 +1,13 @@
 """Draw the two IOI figures from the archives in results/. No GPU, no model load.
 
-    ioi_patch_conditions_grid.png    ioi_intervention.py's six conditions —
+    ioi_patch_conditions_grid.svg    ioi_intervention.py's six conditions —
                                      4 layer panels, 5 shot counts per bar group
     ioi_text_intervention_grid.svg   ioi_text_intervention.py's edits —
                                      4 layer rows x 2 groups (A: rows the round
                                      trip got right; B: rows it got wrong)
+    ioi_patch_conditions_<k>shot.svg (opt-in, --figure layers) the six conditions
+                                     at ONE shot count, one bar per layer, no
+                                     prose — the grid's hues, but meaning layer
 
 In both, each bar GROUP is one condition and the five bars inside it are
 0/2/4/6/8-shot, one hue per shot count, the same five hues everywhere — so colour
@@ -17,6 +20,7 @@ continuation instead and writes a suffixed file.
     python notebooks/ioi/plot_ioi_grids.py                  # both figures
     python notebooks/ioi/plot_ioi_grids.py --figure text    # one of them
     python notebooks/ioi/plot_ioi_grids.py --metric answer
+    python notebooks/ioi/plot_ioi_grids.py --figure layers --shots 2
 
 Needs matplotlib and numpy. Figures land in notebooks/ioi/figure_results/.
 """
@@ -62,6 +66,11 @@ SHOT_COLORS = ("#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4")
 assert len(SHOT_COLORS) == len(SHOTS)
 
 DEFAULT_METRIC = "answer_tok1"
+
+# Layer hues for the by-layer figure: the grid's palette, reused. Here a hue
+# means a layer, not a shot count — the legend says which.
+LAYER_COLORS = SHOT_COLORS[:len(LAYERS)]
+assert len(LAYER_COLORS) == len(LAYERS)
 
 
 def wilson(k: int, n: int, z: float = 1.96) -> tuple[float, float]:
@@ -240,6 +249,56 @@ def draw_patch(metric: str, out_png: Path) -> None:
     fig.savefig(out_png, facecolor=SURFACE)
     plt.close(fig)
     print(f"wrote {out_png}")
+
+
+def draw_patch_by_layer(metric: str, shots: int, out_path: Path) -> None:
+    """One axes at one shot count: condition groups x one bar per layer. No prose."""
+    archives = [_patch_archive(shots, L) for L in LAYERS]
+    print(f"by-layer patch figure: read {len(archives)} archives ({shots}-shot)")
+    shown = [c for c in CONDITIONS if c[0] not in PLOT_SKIP
+             and all(c[0] in a["summary"] for a in archives)]
+    _, chance = PATCH_METRICS[metric]
+
+    fig, ax = plt.subplots(figsize=(10.0, 4.6), dpi=200, layout="constrained")
+    fig.patch.set_facecolor(SURFACE)
+    ax.set_facecolor(SURFACE)
+    x = np.arange(len(shown), dtype=float)
+    width = 0.8 / len(LAYERS)
+    for li, a in enumerate(archives):
+        n = a["n"]
+        vals = [a["summary"][k][metric] for k, _ in shown]
+        ci = [wilson(round(v * n), n) for v in vals]
+        err = [[max(0.0, v - lo) for v, (lo, _) in zip(vals, ci)],
+               [max(0.0, hi - v) for v, (_, hi) in zip(vals, ci)]]
+        pos = x + (li - (len(LAYERS) - 1) / 2) * width
+        ax.bar(pos, vals, width=width * 0.88, color=LAYER_COLORS[li], zorder=3,
+               label=f"layer {a['layer'] + 1} / {N_BLOCKS}")
+        ax.errorbar(pos, vals, yerr=err, fmt="none", ecolor=INK_MUTED,
+                    elinewidth=0.8, capsize=1.8, capthick=0.8, zorder=5)
+    if chance is not None:
+        ax.axhline(chance, color=INK_MUTED, lw=1.0, ls=(0, (4, 3)), zorder=2)
+
+    ax.set_title(f"{shots}-shot", fontsize=12, color=INK, pad=9)
+    ax.set_ylim(0, 1.05)
+    ax.set_yticks(np.arange(0, 1.01, 0.25))
+    ax.set_xticks(x)
+    ax.set_xticklabels([lab for _, lab in shown], fontsize=9, color=INK)
+    ax.set_xlim(-0.6, len(shown) - 0.4)
+    ax.tick_params(axis="x", length=0, pad=6)
+    ax.set_ylabel(PATCH_METRICS[metric][0].split(" — ")[0].lower(),
+                  fontsize=9.5, color=INK_MUTED, labelpad=6)
+    ax.grid(axis="y", color="#dddddd", lw=0.8, zorder=0)
+    ax.set_axisbelow(True)
+    for xi in x[:-1]:
+        ax.axvline(xi + 0.5, color="#e8e8e8", lw=0.8, zorder=1)
+    # The one piece of text kept: without it the colours cannot be read.
+    ax.legend(loc="upper right", fontsize=8, frameon=True, framealpha=0.94,
+              edgecolor="#cccccc", labelcolor=INK_MUTED)
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(out_path, facecolor=SURFACE)
+    plt.close(fig)
+    print(f"wrote {out_path}")
 
 
 # ==========================================================================
@@ -512,15 +571,22 @@ def draw_text(metric: str, out_path: Path) -> None:
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--figure", choices=("patch", "text", "both"), default="both")
+    ap.add_argument("--figure", choices=("patch", "text", "both", "layers"), default="both",
+                    help="layers = the six conditions at one shot count, coloured by layer "
+                         "(not part of 'both')")
     ap.add_argument("--metric", choices=tuple(PATCH_METRICS), default=DEFAULT_METRIC,
                     help="the text figure supports answer_tok1 and answer only")
     ap.add_argument("--out-dir", type=Path, default=OUT_DIR)
+    ap.add_argument("--shots", type=int, choices=SHOTS, default=2,
+                    help="--figure layers only: the shot count to draw")
     args = ap.parse_args()
 
     suffix = "" if args.metric == DEFAULT_METRIC else f"_{args.metric}"
+    if args.figure == "layers":
+        draw_patch_by_layer(args.metric, args.shots,
+                            args.out_dir / f"ioi_patch_conditions_{args.shots}shot{suffix}.svg")
     if args.figure in ("patch", "both"):
-        draw_patch(args.metric, args.out_dir / f"ioi_patch_conditions_grid{suffix}.png")
+        draw_patch(args.metric, args.out_dir / f"ioi_patch_conditions_grid{suffix}.svg")
     if args.figure in ("text", "both"):
         if args.metric not in TEXT_METRICS:
             ap.error(f"the text figure has no metric {args.metric!r}; "
