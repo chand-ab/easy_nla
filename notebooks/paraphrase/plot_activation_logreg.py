@@ -44,7 +44,7 @@ negative result.
 
 Runtime is ~25 min for the default three layers, dominated by the inner C search
 (5 outer x 5 inner x 9 grid points x 6 pairs x 3 layers). Results are archived to
-results/paraphrase/activation_logreg_<pool>.json; --from-json redraws in seconds.
+results/activation_logreg_<pool>.json; --from-json redraws in seconds.
 """
 
 import argparse
@@ -72,7 +72,7 @@ CMAP = LinearSegmentedColormap.from_list("seq_blue", BLUE_STEPS)
 # The activations come from collect_explanation_activations.py, which reads the
 # GREEDY generation caches by construction (see its --gen-dir help). Verified for
 # the shipped npz by row identity: its 127 rows per arm are exactly the cross-arm
-# intersection of valid explanations in results/paraphrase/generations/temp0 — including the
+# intersection of valid explanations in results/generations/temp0 — including the
 # idx-94 nla3 token-cap failure that the temp1 seeds do not reproduce.
 DECODE = "temperature = 0"
 
@@ -230,7 +230,7 @@ def main():
     here = Path(__file__).resolve().parent
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--npz", default=str(here / "results" / "paraphrase" / "activations" / "greedy_base_subset.npz"),
+    ap.add_argument("--npz", default=str(here / "results" / "activations" / "greedy_base_subset.npz"),
                     help="from collect_explanation_activations.py; not shipped (24 MB)")
     ap.add_argument("--layers", nargs="+", type=int, default=[6, 14, 21],
                     help="hidden_states indices (NLA layer L lives at index L+1)")
@@ -247,14 +247,14 @@ def main():
     ap.add_argument("--out", default=None)
     ap.add_argument("--json", default=None,
                     help="where the scored matrices are written (default "
-                         "results/paraphrase/activation_logreg_<pool>.json)")
+                         "results/activation_logreg_<pool>.json)")
     ap.add_argument("--from-json", action="store_true",
                     help="redraw from a previous run's json instead of "
                          "recomputing; the nested CV takes ~25 min")
     args = ap.parse_args()
 
     jpath = Path(args.json) if args.json else \
-        here / "results" / "paraphrase" / f"activation_logreg_{args.pool}.json"
+        here / "results" / f"activation_logreg_{args.pool}.json"
 
     if args.from_json:
         r = json.loads(jpath.read_text())

@@ -143,19 +143,19 @@ def summarize(mat, names):
 
 def main():
     # Defaults resolve relative to THIS file, not the cwd, so `python
-    # notebooks/ioi/plot_swap_matrix.py` regenerates both figures from any
+    # notebooks/paraphrase/plot_swap_matrix.py` regenerates both figures from any
     # directory with no arguments.
     here = Path(__file__).resolve().parent
     ap = argparse.ArgumentParser(
-        description="Render the AV/AR swap-matrix figures from results/paraphrase/.")
-    ap.add_argument("--temp0-json", default=str(here / "results" / "paraphrase" / "matrix_temp0.json"))
+        description="Render the AV/AR swap-matrix figures from results/.")
+    ap.add_argument("--temp0-json", default=str(here / "results" / "matrix_temp0.json"))
     ap.add_argument("--temp1-json", nargs="+",
-                    default=sorted(str(p) for p in (here / "results" / "paraphrase").glob("matrix_temp1_seed*.json")),
+                    default=sorted(str(p) for p in (here / "results").glob("matrix_temp1_seed*.json")),
                     help="one matrix.json per seed; averaged")
     ap.add_argument("--names", nargs="+", default=["nla1", "nla2", "nla3", "nla4"])
     ap.add_argument("--out-dir", default=str(here / "figure_results"))
     args = ap.parse_args()
-    assert args.temp1_json, f"no matrix_temp1_seed*.json found in {here / 'results' / 'paraphrase'}"
+    assert args.temp1_json, f"no matrix_temp1_seed*.json found in {here / 'results'}"
     out = Path(args.out_dir)
     out.mkdir(parents=True, exist_ok=True)
     names = args.names

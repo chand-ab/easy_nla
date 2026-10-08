@@ -20,7 +20,7 @@ share the ramp itself (plot_swap_matrix.CMAP) so the figure reads as one family,
 and each bar states its own scale — the accuracy bar anchored at 50 = chance,
 the FVE bar keyed to the data range.
 
-Redraws in seconds from results/paraphrase/; no model or GPU needed. Writes
+Redraws in seconds from results/; no model or GPU needed. Writes
 figure_results/paraphrase_identity.svg.
 """
 
@@ -191,7 +191,10 @@ def draw(m_orig, m_para, acc, out):
              va="bottom", fontsize=11, color=INK_MUTED, linespacing=1.3)
 
     out.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(out, facecolor=SURFACE)
+    # Fixed salt and no timestamp, so a redraw from unchanged data is byte-identical
+    # and the tracked SVG only shows a diff when the figure actually changes.
+    plt.rcParams["svg.hashsalt"] = "paraphrase_identity"
+    fig.savefig(out, facecolor=SURFACE, metadata={"Date": None})
     plt.close(fig)
     print(f"wrote {out}")
 
@@ -199,7 +202,7 @@ def draw(m_orig, m_para, acc, out):
 def main():
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--data-dir", type=Path, default=HERE / "results" / "paraphrase")
+    p.add_argument("--data-dir", type=Path, default=HERE / "results")
     p.add_argument("--logreg-json", type=Path, default=None,
                    help="default: <data-dir>/activation_logreg_mean.json")
     p.add_argument("--hs-layer", type=int, default=21,

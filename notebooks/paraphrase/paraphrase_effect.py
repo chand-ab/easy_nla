@@ -88,7 +88,7 @@ def main():
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--matrix", action="append", required=True, metavar="LABEL=PATH",
                    help="Repeatable. First one is treated as the baseline.")
-    p.add_argument("--gen-dir", type=Path, default=HERE / "results/paraphrase/generations/temp0",
+    p.add_argument("--gen-dir", type=Path, default=HERE / "results/generations/temp0",
                    help="Source of doc_id per row, for clustering the bootstrap")
     p.add_argument("--reps", type=int, default=10000)
     p.add_argument("--seed", type=int, default=0)

@@ -83,7 +83,7 @@ def draw_combined(m_orig, m_para, out):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--data-dir", type=Path, default=HERE / "results" / "paraphrase")
+    p.add_argument("--data-dir", type=Path, default=HERE / "results")
     p.add_argument("--out-dir", type=Path, default=HERE / "figure_results")
     args = p.parse_args()
 

@@ -23,14 +23,14 @@ construction rather than by argument.
 Output is drop-in for the scorer. Each level gets its own out-dir laid out the
 way `eval_matrix.py` expects, so scoring needs no new code path:
 
-    python notebooks/ioi/paraphrase_generations.py \
-        --gen-dir notebooks/ioi/results/paraphrase/generations/temp0 \
-        --out-root notebooks/ioi/results/paraphrase/generations \
+    python notebooks/paraphrase/paraphrase_generations.py \
+        --gen-dir notebooks/paraphrase/results/generations/temp0 \
+        --out-root notebooks/paraphrase/results/generations \
         --tag temp0
 
-    # -> notebooks/ioi/results/paraphrase/generations/temp0_para_medium/generations/nla1.json ...
-    python notebooks/ioi/eval_matrix.py --phase score \
-        --out-dir notebooks/ioi/results/paraphrase/generations/temp0_para_medium \
+    # -> notebooks/paraphrase/results/generations/temp0_para_medium/generations/nla1.json ...
+    python notebooks/paraphrase/eval_matrix.py --phase score \
+        --out-dir notebooks/paraphrase/results/generations/temp0_para_medium \
         --nla name=nla1,ar_ckpt=... [...] --rl-parquet ...
 
 `explanation` holds the paraphrase (that is the field the scorer reads);
@@ -217,7 +217,7 @@ def parse_args():
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--gen-dir", required=True, type=Path,
                    help="Directory of cached generation sets (nla1.json ...), "
-                        "e.g. notebooks/ioi/results/paraphrase/generations/temp0")
+                        "e.g. notebooks/paraphrase/results/generations/temp0")
     p.add_argument("--out-root", required=True, type=Path,
                    help="Parent for the per-level output dirs")
     p.add_argument("--tag", default=None,
@@ -234,7 +234,7 @@ def parse_args():
                         "for a longer paraphrase plus the tag wrapper.")
     p.add_argument("--overlap-threshold", type=float, default=0.7,
                    help="Rows at or above this kept too much vocabulary; reported, "
-                        "not dropped (ioi_intervention.py uses the same 0.7).")
+                        "not dropped (notebooks/ioi/ioi_intervention.py uses the same 0.7).")
     p.add_argument("--limit", type=int, default=None,
                    help="Only the first N rows per arm — smoke test.")
     p.add_argument("--dtype", choices=["bf16", "fp16"], default="bf16")
